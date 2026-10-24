@@ -7,7 +7,8 @@ See [project context](docs/PROJECT_CONTEXT.md) for dataset requirements,
 planned evaluation, and future RAG and agent work.
 
 The inherited mock command still echoes prompts offline. The parse-ticket command
-calls the selected provider only when you explicitly run it. No evaluation pipeline is included.
+calls the selected provider only when you explicitly run it. Saved batch results can be
+evaluated entirely offline.
 
 ## Quick start
 
@@ -245,3 +246,56 @@ Offline unit tests without reading the real datasets:
 ```powershell
 python -m pytest -q tests/test_app.py tests/test_models.py tests/test_openrouter.py tests/test_batch.py tests/test_ollama.py
 ```
+
+## Offline evaluation
+
+Evaluate the existing OpenRouter and Ollama baselines without contacting either provider:
+
+```powershell
+python -m ai_project eval --predictions results/openrouter_v1.json --golden data/golden_set.json --output results/openrouter_v1_eval.md
+python -m ai_project eval --predictions results/ollama_qwen3_8b_v1.json --golden data/golden_set.json --output results/ollama_qwen3_8b_v1_eval.md
+```
+
+Omit `--output` for a console summary only. Use a new `.json` output path for a
+machine-readable report, or `.md` for a human-readable Markdown report. Both print
+the same concise console summary. Add `--overwrite` to replace an existing report.
+Predictions and golden data cannot be used as output destinations, even with `--overwrite`.
+JSON reports preserve available run and per-record provider/model/prompt/sampling metadata.
+The eval command does not load provider settings, read `.env`, or make API calls.
+
+Records match by integer `ticket_id` to golden `id`, independently of list order.
+Each of the seven scored fields uses **all golden records** as its denominator:
+category, priority, application, language, requires_support, details.error_code,
+and details.error_message. Missing, failed, schema-invalid, and duplicate-ID
+predictions count as incorrect in every field. Duplicate golden IDs and malformed
+golden outputs are rejected; duplicate prediction IDs are reported and never
+arbitrarily resolved. Extra prediction IDs do not enter field accuracy.
+
+Enums and booleans compare exactly. Nullable text (application and both details
+fields) uses Python `strip().casefold()` to ignore surrounding whitespace and case,
+including Unicode case folding. Null remains distinct from an empty string.
+Punctuation, quotes, and internal whitespace are preserved. Detailed mismatches
+retain the original values. Markdown escapes table delimiters, HTML characters,
+backticks, and backslashes; JSON quotes distinguish empty strings from null, and
+missing/unusable predictions have an explicit marker.
+
+Valid-output rate covers the entire batch, including non-golden tickets: successful
+outputs must validate against `HRSupportTicket` and have an integer ticket ID.
+The denominator is `max(total_tickets, len(results))`, so declared but absent
+entries count as invalid and extra entries cannot disappear from the denominator.
+Duplicate entries remain individual input predictions for schema validity, but are
+unusable for golden matching. Failed, missing, and invalid outputs are invalid.
+Count inconsistencies, malformed entries, missing IDs, incomplete batches, and
+invalid timings appear in report issues. Malformed top-level structures/counts
+are rejected. An empty validity denominator yields null/N/A.
+
+Latency uses all success-status predictions with finite, nonnegative numeric
+`elapsed_seconds`, even if schema validation fails. Booleans and numeric strings
+are excluded. Percentiles use linear interpolation (type 7): sort the n samples,
+locate `(n - 1) * p`, then interpolate between neighboring samples for p=0.50/0.95.
+One sample returns itself; no samples yields null. Failures are excluded from latency.
+
+`summary` and `suggested_actions` are excluded from automated exact-match accuracy:
+equivalent summaries can use different wording, and several action selections,
+orders, and phrasings can be appropriate. They still participate in schema validation.
+No LLM judge is used. Run all offline tests with `python -m pytest`.

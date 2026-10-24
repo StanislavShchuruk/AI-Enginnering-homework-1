@@ -73,7 +73,7 @@ class Settings:
 
     @classmethod
     def ollama_from_env(cls) -> "Settings":
-        # Process environment only: no key is needed and no secret files are loaded.
+        load_dotenv(Path.cwd() / ".env")
         try:
             temperature = float(os.getenv("OLLAMA_TEMPERATURE", "0"))
             top_p = float(os.getenv("OLLAMA_TOP_P", "1"))

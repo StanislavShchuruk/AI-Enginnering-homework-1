@@ -10,12 +10,15 @@ from pydantic import ValidationError
 
 from ai_project.batch import parse_all
 from ai_project.config import Settings
+from ai_project.evaluation import evaluate, load_json, markdown, summary
 from ai_project.providers import ProviderError, create_provider
 from ai_project.service import AIService
 
 
 def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
+    if argv and argv[0] == "eval":
+        return eval_main(argv[1:])
     if argv and argv[0] == "parse-all":
         return parse_all_main(argv[1:])
     if argv and argv[0] == "parse-ticket":
@@ -32,6 +35,42 @@ def main(argv: list[str] | None = None) -> int:
         print(service.run(args.prompt))
     except ValueError as exc:
         parser.error(str(exc))
+    return 0
+
+
+def eval_main(argv: list[str]) -> int:
+    parser = argparse.ArgumentParser(description="Evaluate saved predictions entirely offline.")
+    parser.add_argument("--predictions", type=Path, required=True)
+    parser.add_argument("--golden", type=Path, required=True)
+    parser.add_argument("--output", type=Path)
+    parser.add_argument("--overwrite", action="store_true", help="Replace an existing report.")
+    args = parser.parse_args(argv)
+    try:
+        if args.output:
+            if args.output.suffix.lower() not in (".json", ".md"):
+                raise ValueError("Output must end in .json or .md.")
+            if args.output.resolve() in (
+                args.predictions.resolve(),
+                args.golden.resolve(),
+            ):
+                raise ValueError("Output cannot replace predictions or golden data.")
+            if args.output.exists() and not args.overwrite:
+                raise ValueError("Output exists; choose a new path or pass --overwrite.")
+        report = evaluate(load_json(args.predictions), load_json(args.golden))
+        if args.output:
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            content = (
+                markdown(report)
+                if args.output.suffix.lower() == ".md"
+                else (json.dumps(report, ensure_ascii=False, indent=2, allow_nan=False) + "\n")
+            )
+            with args.output.open("w" if args.overwrite else "x", encoding="utf-8") as stream:
+                stream.write(content)
+    except (ValueError, OSError) as exc:
+        parser.exit(1, f"Evaluation failed: {exc}\n")
+    print(summary(report))
+    if args.output:
+        print(f"Saved evaluation to {args.output}")
     return 0
 
 
