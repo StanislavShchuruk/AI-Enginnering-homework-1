@@ -1,0 +1,884 @@
+{
+  "metadata": {
+    "provider": "openrouter",
+    "configured_model": "google/gemini-3.1-flash-lite",
+    "prompt_version": "v1",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "timestamp": "2026-10-18T09:30:21.291781+00:00"
+  },
+  "total_tickets": 30,
+  "completed": true,
+  "results": [
+    {
+      "ticket_id": 1,
+      "status": "success",
+      "output": {
+        "summary": "User is unable to sign in to the HR portal despite resetting the password.",
+        "category": "authentication",
+        "priority": "medium",
+        "application": "HR portal",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": "incorrect password"
+        },
+        "suggested_actions": [
+          "Clear browser cache and cookies",
+          "Try logging in using an incognito or private browser window",
+          "Ensure Caps Lock is turned off"
+        ]
+      },
+      "elapsed_seconds": 2.0741974000120535,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1088,
+        "completion_tokens": 141,
+        "total_tokens": 1229
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 2,
+      "status": "success",
+      "output": {
+        "summary": "Missing attendance record for yesterday despite working 08:00-17:00.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check your internet connection and refresh the application.",
+          "Verify if you have any pending sync notifications.",
+          "Contact your manager to manually adjust your attendance record."
+        ]
+      },
+      "elapsed_seconds": 1.0733708000043407,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1099,
+        "completion_tokens": 144,
+        "total_tokens": 1243
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 3,
+      "status": "success",
+      "output": {
+        "summary": "User unable to book annual leave due to insufficient balance error despite dashboard showing 5 days remaining.",
+        "category": "absence",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": "insufficient balance"
+        },
+        "suggested_actions": [
+          "Check if the leave request overlaps with existing bookings or public holidays.",
+          "Verify if the dashboard balance is updated in real-time.",
+          "Contact HR to confirm your current leave entitlement and balance."
+        ]
+      },
+      "elapsed_seconds": 1.210559800005285,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1089,
+        "completion_tokens": 155,
+        "total_tokens": 1244
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 4,
+      "status": "success",
+      "output": {
+        "summary": "Incorrect shift start time displayed for Saturday",
+        "category": "shifts",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact your manager to request a shift correction",
+          "Check if you have permission to edit your own schedule",
+          "Verify the shift details in the system settings"
+        ]
+      },
+      "elapsed_seconds": 1.1946242999983951,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1084,
+        "completion_tokens": 133,
+        "total_tokens": 1217
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 5,
+      "status": "success",
+      "output": {
+        "summary": "Overtime for two night shifts is missing from the current month's payslip.",
+        "category": "payroll",
+        "priority": "high",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact the payroll department to verify the overtime processing status.",
+          "Check your shift records to ensure the night shifts were correctly logged.",
+          "Review your contract terms regarding overtime payment cycles."
+        ]
+      },
+      "elapsed_seconds": 1.2589159000199288,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1094,
+        "completion_tokens": 146,
+        "total_tokens": 1240
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 6,
+      "status": "success",
+      "output": {
+        "summary": "User is unable to edit emergency contact information in the employee app due to a missing edit button.",
+        "category": "employee_profile",
+        "priority": "low",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if you have the necessary permissions to edit your profile.",
+          "Contact your HR department to update your emergency contact details.",
+          "Verify if there is a specific 'Edit' or 'Pencil' icon elsewhere on the profile page."
+        ]
+      },
+      "elapsed_seconds": 1.2698691999830771,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1082,
+        "completion_tokens": 161,
+        "total_tokens": 1243
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 7,
+      "status": "success",
+      "output": {
+        "summary": "Employee calendar fails with HTTP 500 error when switching months",
+        "category": "technical",
+        "priority": "medium",
+        "application": "HR portal",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "500",
+          "error_message": "Internal Server Error"
+        },
+        "suggested_actions": [
+          "Clear browser cache and cookies",
+          "Try accessing the calendar from a different device",
+          "Contact IT support to check if the issue is account-specific"
+        ]
+      },
+      "elapsed_seconds": 1.1663913000083994,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1214,
+        "completion_tokens": 147,
+        "total_tokens": 1361
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 8,
+      "status": "success",
+      "output": {
+        "summary": "User can access ESS on mobile but receives a 403 error on desktop, possibly due to account removal.",
+        "category": "authentication",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "403",
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Clear browser cache and cookies",
+          "Verify account access permissions with your manager",
+          "Try accessing the desktop site in an incognito window"
+        ]
+      },
+      "elapsed_seconds": 1.3908652999962214,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1096,
+        "completion_tokens": 148,
+        "total_tokens": 1244
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 9,
+      "status": "success",
+      "output": {
+        "summary": "Discrepancy between approved leave email and system status",
+        "category": "absence",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact your manager to verify the approval status in their dashboard",
+          "Check if the leave request appears in your history or notifications",
+          "Contact HR or IT support to investigate the synchronization issue"
+        ]
+      },
+      "elapsed_seconds": 1.2821395000210032,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1087,
+        "completion_tokens": 143,
+        "total_tokens": 1230
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 10,
+      "status": "success",
+      "output": {
+        "summary": "User clocked out twice by accident, resulting in an invalid sequence error.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": "invalid sequence"
+        },
+        "suggested_actions": [
+          "Contact your manager to correct the attendance record.",
+          "Provide the exact time of the incorrect clock-out entry.",
+          "Check your attendance history for any other discrepancies."
+        ]
+      },
+      "elapsed_seconds": 1.3558286000043154,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1083,
+        "completion_tokens": 143,
+        "total_tokens": 1226
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 11,
+      "status": "success",
+      "output": {
+        "summary": "Roster for next week is not displaying correctly after changing the location filter.",
+        "category": "shifts",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Clear your browser cache and cookies.",
+          "Reset the location filter to 'All' to see if the data reappears.",
+          "Refresh the page or log out and log back in."
+        ]
+      },
+      "elapsed_seconds": 1.109081900009187,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1086,
+        "completion_tokens": 145,
+        "total_tokens": 1231
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 12,
+      "status": "success",
+      "output": {
+        "summary": "System shows zero worked hours for 12 employees despite existing attendance records, impacting payroll.",
+        "category": "payroll",
+        "priority": "high",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify if the attendance records are approved or locked in the system.",
+          "Check if there is a synchronization delay between the attendance and payroll modules.",
+          "Contact the technical support team immediately to escalate the data processing issue."
+        ]
+      },
+      "elapsed_seconds": 1.3183512999967206,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1112,
+        "completion_tokens": 154,
+        "total_tokens": 1266
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 13,
+      "status": "success",
+      "output": {
+        "summary": "Address change not updating in profile",
+        "category": "employee_profile",
+        "priority": "low",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Try clearing your browser cache and cookies",
+          "Attempt to update the address again and verify the save confirmation",
+          "Contact HR if the issue persists after re-saving"
+        ]
+      },
+      "elapsed_seconds": 1.484379799978342,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1083,
+        "completion_tokens": 136,
+        "total_tokens": 1219
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 14,
+      "status": "success",
+      "output": {
+        "summary": "Absence request page freezes when submitting a half-day request in ESS web.",
+        "category": "absence",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Clear browser cache and cookies",
+          "Try using a different web browser",
+          "Check if the request appears in the list after a page refresh"
+        ]
+      },
+      "elapsed_seconds": 1.0719602000026498,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1236,
+        "completion_tokens": 139,
+        "total_tokens": 1375
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 15,
+      "status": "success",
+      "output": {
+        "summary": "Password reset links are expiring immediately upon receipt.",
+        "category": "authentication",
+        "priority": "high",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": "invalid token"
+        },
+        "suggested_actions": [
+          "Clear browser cache and cookies",
+          "Try using an incognito or private browser window",
+          "Wait 30 minutes before requesting a new link"
+        ]
+      },
+      "elapsed_seconds": 1.1924850000068545,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1080,
+        "completion_tokens": 135,
+        "total_tokens": 1215
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 16,
+      "status": "success",
+      "output": {
+        "summary": "Discrepancy in recorded working hours and presence of E_OUT error warning.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "E_OUT",
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check your clock-in and clock-out timestamps for the affected days.",
+          "Contact your manager to verify the correct hours worked.",
+          "Request a manual correction of your attendance records."
+        ]
+      },
+      "elapsed_seconds": 1.5670108000049368,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1093,
+        "completion_tokens": 150,
+        "total_tokens": 1243
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 17,
+      "status": "success",
+      "output": {
+        "summary": "User wants to cancel a pending leave request.",
+        "category": "absence",
+        "priority": "low",
+        "application": null,
+        "language": "en",
+        "requires_support": false,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Navigate to your leave requests section in the application.",
+          "Locate the pending request in your history or dashboard.",
+          "Select the option to cancel or withdraw the request."
+        ]
+      },
+      "elapsed_seconds": 1.1386063999962062,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1079,
+        "completion_tokens": 136,
+        "total_tokens": 1215
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 18,
+      "status": "success",
+      "output": {
+        "summary": "Shift swap accepted but schedule not updated for Friday.",
+        "category": "shifts",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact your manager to confirm the shift status.",
+          "Check if the swap request was fully processed in the system.",
+          "Verify the schedule with your colleague Sam."
+        ]
+      },
+      "elapsed_seconds": 1.1803625999891665,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1092,
+        "completion_tokens": 135,
+        "total_tokens": 1227
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 19,
+      "status": "success",
+      "output": {
+        "summary": "Salary was deposited into an old bank account despite updating details in the portal.",
+        "category": "payroll",
+        "priority": "high",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact the payroll department to verify the bank account update status.",
+          "Provide proof of the bank account update from the portal.",
+          "Request a trace or correction for the misdirected salary payment."
+        ]
+      },
+      "elapsed_seconds": 1.4584465000079945,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1084,
+        "completion_tokens": 146,
+        "total_tokens": 1230
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 20,
+      "status": "success",
+      "output": {
+        "summary": "The user reports incorrect data display and a non-functional button, similar to a previous issue.",
+        "category": "technical",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Clear browser cache and cookies",
+          "Try accessing the application using a different browser",
+          "Provide a screenshot of the incorrect numbers and the non-functional button"
+        ]
+      },
+      "elapsed_seconds": 1.1275607999996282,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1087,
+        "completion_tokens": 144,
+        "total_tokens": 1231
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 21,
+      "status": "success",
+      "output": {
+        "summary": "Attendance record shows absence without code and missed clock-in for a sick day.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact your manager to update your attendance status.",
+          "Submit a formal sick leave request if required by company policy.",
+          "Verify if your sick leave request was previously approved."
+        ]
+      },
+      "elapsed_seconds": 1.3420506999827921,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1095,
+        "completion_tokens": 143,
+        "total_tokens": 1238
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 22,
+      "status": "success",
+      "output": {
+        "summary": "Користувач не може скасувати заявку на відпустку, яка знаходиться у статусі «Очікує погодження».",
+        "category": "absence",
+        "priority": "medium",
+        "application": null,
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте наявність кнопки скасування у деталях заявки",
+          "Зверніться до безпосереднього керівника для відхилення заявки",
+          "Зверніться до відділу кадрів для ручного скасування запиту"
+        ]
+      },
+      "elapsed_seconds": 1.1316004999971483,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1094,
+        "completion_tokens": 178,
+        "total_tokens": 1272
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 23,
+      "status": "success",
+      "output": {
+        "summary": "Відсутня доплата за нічні зміни у розрахунковому листі за вересень.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": null,
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Зверніться до відділу кадрів або бухгалтерії з вашим розрахунковим листом.",
+          "Підготуйте табель обліку робочого часу за вересень для підтвердження відпрацьованих нічних змін.",
+          "Надішліть письмовий запит на перерахунок заробітної плати відповідальному менеджеру."
+        ]
+      },
+      "elapsed_seconds": 1.3022166000155266,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1102,
+        "completion_tokens": 195,
+        "total_tokens": 1297
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 24,
+      "status": "success",
+      "output": {
+        "summary": "Сторінка графіка змін не завантажується після оновлення",
+        "category": "shifts",
+        "priority": "medium",
+        "application": "HR portal",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Спробуйте очистити кеш та файли cookie браузера",
+          "Спробуйте скористатися іншим браузером або режимом інкогніто",
+          "Зверніться до безпосереднього керівника для уточнення графіку роботи"
+        ]
+      },
+      "elapsed_seconds": 1.2514053999911994,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1250,
+        "completion_tokens": 167,
+        "total_tokens": 1417
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 25,
+      "status": "success",
+      "output": {
+        "summary": "Відсутній запис про вчорашній clock out у системі обліку робочого часу.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте історію браузера або кеш",
+          "Зверніться до менеджера для ручного коригування запису",
+          "Надайте точний час, коли ви намагалися зробити clock out"
+        ]
+      },
+      "elapsed_seconds": 1.35973820000072,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1100,
+        "completion_tokens": 161,
+        "total_tokens": 1261
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 26,
+      "status": "success",
+      "output": {
+        "summary": "Користувач не може увійти в HR portal через помилку 403 access denied.",
+        "category": "authentication",
+        "priority": "high",
+        "application": "HR portal",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": "403",
+          "error_message": "access denied"
+        },
+        "suggested_actions": [
+          "Очистіть кеш та файли cookie у вашому браузері",
+          "Спробуйте увійти через режим інкогніто",
+          "Зверніться до технічної підтримки для перевірки прав доступу"
+        ]
+      },
+      "elapsed_seconds": 1.2610606999951415,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1103,
+        "completion_tokens": 175,
+        "total_tokens": 1278
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 27,
+      "status": "success",
+      "output": {
+        "summary": "Невідповідність часу зміни у розкладі на суботу",
+        "category": "shifts",
+        "priority": "medium",
+        "application": null,
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Зверніться до свого безпосереднього керівника для уточнення графіка",
+          "Перевірте актуальність розкладу в системі",
+          "Зафіксуйте домовленість про зміну в письмовому вигляді"
+        ]
+      },
+      "elapsed_seconds": 1.0075003000092693,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1104,
+        "completion_tokens": 158,
+        "total_tokens": 1262
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 28,
+      "status": "success",
+      "output": {
+        "summary": "Неможливо вибрати дату для лікарняного через помилку invalid date",
+        "category": "absence",
+        "priority": "medium",
+        "application": null,
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": "invalid date"
+        },
+        "suggested_actions": [
+          "Очистіть кеш та кукі браузера",
+          "Спробуйте скористатися іншим браузером",
+          "Зробіть скріншот помилки та надішліть у службу підтримки"
+        ]
+      },
+      "elapsed_seconds": 1.108795200008899,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1098,
+        "completion_tokens": 159,
+        "total_tokens": 1257
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 29,
+      "status": "success",
+      "output": {
+        "summary": "Не сохраняются изменения номера телефона в профиле сотрудника",
+        "category": "employee_profile",
+        "priority": "medium",
+        "application": "HR portal",
+        "language": "ru",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Очистите кэш браузера и попробуйте снова",
+          "Проверьте наличие прав на редактирование контактных данных",
+          "Обратитесь в службу поддержки для проверки логов синхронизации"
+        ]
+      },
+      "elapsed_seconds": 1.2289035999856424,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1225,
+        "completion_tokens": 152,
+        "total_tokens": 1377
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 30,
+      "status": "success",
+      "output": {
+        "summary": "Уменьшение суммы в расчетном листе и отсутствие строки с надбавкой.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": null,
+        "language": "ru",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Сравните текущий расчетный лист с предыдущими за прошлые месяцы",
+          "Обратитесь в отдел кадров или бухгалтерию для разъяснения начислений",
+          "Запросите детализацию выплат за текущий период"
+        ]
+      },
+      "elapsed_seconds": 1.228042300004745,
+      "model": "google/gemini-3.1-flash-lite",
+      "usage": {
+        "prompt_tokens": 1101,
+        "completion_tokens": 162,
+        "total_tokens": 1263
+      },
+      "error": null
+    }
+  ]
+}
