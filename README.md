@@ -299,3 +299,66 @@ One sample returns itself; no samples yields null. Failures are excluded from la
 equivalent summaries can use different wording, and several action selections,
 orders, and phrasings can be appropriate. They still participate in schema validation.
 No LLM judge is used. Run all offline tests with `python -m pytest`.
+
+## Offline multi-run comparison and cost estimates
+
+Compare saved runs using the same golden set, without reading `.env` or contacting
+OpenRouter or Ollama:
+
+```powershell
+python -m ai_project compare --predictions results/openrouter_v1.json results/ollama_qwen3_8b_v1.json --golden data/golden_set.json --output results/comparison.md
+```
+
+The output must be a new `.md` file. Existing files are protected; choose a new
+filename for another comparison. Predictions, tickets, golden labels, and prompts
+are never updated. The table includes run metadata, golden document count, input
+record count, aggregate and field-level accuracy, valid-output rate, and latency
+p50/p95. Accuracy and latency reuse the offline evaluator described above.
+
+Hosted token costs require an explicit model-keyed `--pricing` JSON file. Each key
+must match `metadata.configured_model`. For example, a **hypothetical illustration,
+not current provider prices**, saved as `pricing.example.json`:
+
+```json
+{
+  "your-configured-model-id": {
+    "input_usd_per_million": 2.0,
+    "output_usd_per_million": 4.0
+  }
+}
+```
+
+Supply rates you have chosen for the recorded model and run; no prices are fetched
+or assumed. Both prices must be finite nonnegative numbers. Explicit zero is
+allowed. The report prints the configured rates for review.
+
+```powershell
+python -m ai_project compare --predictions results/openrouter_v1.json results/ollama_qwen3_8b_v1.json --golden data/golden_set.json --pricing pricing.example.json --power-watts 200 --electricity-usd-per-kwh 0.25 --output results/comparison_with_costs.md
+```
+
+The power and electricity values above are also illustrative. Local options apply
+to every Ollama run in that comparison; compare separately if machines or tariffs
+differ. The report shows Ollama API fee as $0, independently of whether electricity
+can be estimated. Local inference still has energy, hardware, and operating costs.
+
+Hosted USD per 1,000 attempted documents is:
+`(sum(prompt_tokens) * input_price + sum(completion_tokens) * output_price) / 1_000_000 * 1_000 / record_count`.
+Usage comes from each saved record's `usage.prompt_tokens` and
+`usage.completion_tokens`, including failed records. Missing prices, missing or
+invalid usage (even for one failure), or an incomplete/empty/count-inconsistent
+batch yield N/A, never an assumed zero. Prices apply to the configured model;
+recorded response model names are listed to expose aliases or routing differences.
+These are **estimated token-based costs, not actual billed charges**. Unrecorded
+retries, caching, discounts, routing fees, taxes, and billing adjustments are not
+accounted for. Failed requests can incur charges not present in saved usage.
+
+Local estimated electricity USD per 1,000 attempted documents is:
+`power_watts / 1_000 * sum(elapsed_seconds) / 3_600 * electricity_usd_per_kwh * 1_000 / record_count`.
+It uses all measured record times, including failures. Missing power, tariff, or
+any timing yields N/A; incomplete/empty/count-inconsistent batches also yield N/A.
+Power and tariff must be finite nonnegative numbers. Summing record times assumes
+sequential processing and approximates active processing energy; it is not a
+measurement of electricity use. It excludes idle time outside the records,
+hardware amortization, and other operating costs. Latency retains the evaluator's
+success-only sampling, whereas costs include all recorded attempts. Different
+hardware, system load, model routing, and missing metadata limit comparisons.

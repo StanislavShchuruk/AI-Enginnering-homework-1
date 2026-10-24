@@ -1,0 +1,6 @@
+{
+  "google/gemini-3.1-flash-lite": {
+    "input_usd_per_million": 0.25,
+    "output_usd_per_million": 1.50
+  }
+}

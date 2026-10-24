@@ -6,10 +6,12 @@ import logging
 import sys
 from pathlib import Path
 
-from pydantic import ValidationError
+from pydantic import TypeAdapter, ValidationError
 
 from ai_project.batch import parse_all
+from ai_project.comparison import compare_runs
 from ai_project.config import Settings
+from ai_project.costs import Electricity, TokenPrices
 from ai_project.evaluation import evaluate, load_json, markdown, summary
 from ai_project.providers import ProviderError, create_provider
 from ai_project.service import AIService
@@ -17,6 +19,8 @@ from ai_project.service import AIService
 
 def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
+    if argv and argv[0] == "compare":
+        return compare_main(argv[1:])
     if argv and argv[0] == "eval":
         return eval_main(argv[1:])
     if argv and argv[0] == "parse-all":
@@ -35,6 +39,44 @@ def main(argv: list[str] | None = None) -> int:
         print(service.run(args.prompt))
     except ValueError as exc:
         parser.error(str(exc))
+    return 0
+
+
+def compare_main(argv: list[str]) -> int:
+    parser = argparse.ArgumentParser(description="Compare saved prediction runs entirely offline.")
+    parser.add_argument("--predictions", type=Path, nargs="+", required=True)
+    parser.add_argument("--golden", type=Path, required=True)
+    parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--pricing", type=Path, help="Model-keyed JSON token prices in USD per 1M.")
+    parser.add_argument("--power-watts", type=float)
+    parser.add_argument("--electricity-usd-per-kwh", type=float)
+    args = parser.parse_args(argv)
+    try:
+        inputs = [*args.predictions, args.golden]
+        if args.pricing:
+            inputs.append(args.pricing)
+        if any(path.suffix.lower() != ".json" or path.name.startswith(".env") for path in inputs):
+            raise ValueError("Predictions, golden data, and pricing must be JSON files.")
+        if args.output.suffix.lower() != ".md":
+            raise ValueError("Comparison output must end in .md.")
+        if args.output.exists() or args.output.resolve() in [path.resolve() for path in inputs]:
+            raise ValueError("Comparison output must be a new file; existing files are protected.")
+        prices = (
+            TypeAdapter(dict[str, TokenPrices]).validate_python(load_json(args.pricing))
+            if args.pricing else {}
+        )
+        electricity = Electricity(
+            power_watts=args.power_watts, usd_per_kwh=args.electricity_usd_per_kwh
+        )
+        golden = load_json(args.golden)
+        runs = [(str(path), load_json(path)) for path in args.predictions]
+        content = compare_runs(runs, golden, prices, electricity)
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        with args.output.open("x", encoding="utf-8") as stream:
+            stream.write(content)
+    except (ValueError, OSError) as exc:
+        parser.exit(1, f"Comparison failed: {exc}\n")
+    print(f"Saved comparison to {args.output}")
     return 0
 
 
