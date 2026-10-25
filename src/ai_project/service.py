@@ -28,8 +28,8 @@ class AIService:
         return self.provider.generate(prompt).text
 
     def parse_ticket(self, ticket_id: int, project_root: Path, version: str = "v1") -> TicketResult:
-        if version != "v1":
-            raise ValueError("Only prompt version v1 is supported.")
+        if version not in ("v1", "v2"):
+            raise ValueError("Supported prompt versions are v1 and v2.")
         records = json.loads((project_root / "data/tickets.json").read_text(encoding="utf-8-sig"))
         if not isinstance(records, list):
             raise ValueError("tickets.json must contain an array.")

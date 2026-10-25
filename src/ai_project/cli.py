@@ -84,21 +84,28 @@ def eval_main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description="Evaluate saved predictions entirely offline.")
     parser.add_argument("--predictions", type=Path, required=True)
     parser.add_argument("--golden", type=Path, required=True)
+    parser.add_argument("--ids-file", type=Path, help="JSON array of golden IDs to score.")
     parser.add_argument("--output", type=Path)
     parser.add_argument("--overwrite", action="store_true", help="Replace an existing report.")
     args = parser.parse_args(argv)
     try:
+        ids = None
+        if args.ids_file is not None:
+            ids = load_json(args.ids_file)
+            if not isinstance(ids, list):
+                raise ValueError("IDs file must contain a JSON array of integers.")
         if args.output:
             if args.output.suffix.lower() not in (".json", ".md"):
                 raise ValueError("Output must end in .json or .md.")
             if args.output.resolve() in (
                 args.predictions.resolve(),
                 args.golden.resolve(),
+                args.ids_file.resolve() if args.ids_file is not None else None,
             ):
-                raise ValueError("Output cannot replace predictions or golden data.")
+                raise ValueError("Output cannot replace predictions, golden data, or IDs file.")
             if args.output.exists() and not args.overwrite:
                 raise ValueError("Output exists; choose a new path or pass --overwrite.")
-        report = evaluate(load_json(args.predictions), load_json(args.golden))
+        report = evaluate(load_json(args.predictions), load_json(args.golden), ids=ids)
         if args.output:
             args.output.parent.mkdir(parents=True, exist_ok=True)
             content = (
@@ -120,7 +127,7 @@ def parse_all_main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(
         description="Parse all HR tickets sequentially via the selected provider."
     )
-    parser.add_argument("--prompt-version", choices=["v1"], default="v1")
+    parser.add_argument("--prompt-version", choices=["v1", "v2"], default="v1")
     parser.add_argument("--provider", choices=["openrouter", "ollama"], default="openrouter")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--overwrite", action="store_true")
@@ -151,7 +158,7 @@ def parse_ticket_main(argv: list[str]) -> int:
     )
     parser.add_argument("--ticket-id", type=int, required=True)
     parser.add_argument("--provider", choices=["openrouter", "ollama"], default="openrouter")
-    parser.add_argument("--prompt-version", choices=["v1"], default="v1")
+    parser.add_argument("--prompt-version", choices=["v1", "v2"], default="v1")
     parser.add_argument("--project-root", type=Path, default=Path.cwd())
     args = parser.parse_args(argv)
     try:

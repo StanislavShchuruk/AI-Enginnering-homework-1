@@ -159,6 +159,7 @@ def project(tmp_path: Path) -> Path:
         json.dumps([{"id": 1, "text": "Cannot log in"}]), encoding="utf-8"
     )
     (tmp_path / "prompts/v1.txt").write_text("system v1", encoding="utf-8")
+    (tmp_path / "prompts/v2.txt").write_text("system v2", encoding="utf-8")
     return tmp_path
 
 
@@ -171,13 +172,14 @@ def test_service_loads_and_validates(project: Path) -> None:
     provider.generate.assert_called_once_with("Cannot log in", system_prompt="system v1")
 
 
-def test_service_supports_existing_prompt_location(project: Path) -> None:
+@pytest.mark.parametrize("version", ["v1", "v2"])
+def test_service_supports_existing_prompt_location(project: Path, version: str) -> None:
     (project / "docs").mkdir()
     (project / "prompts").rename(project / "docs/prompts")
     provider = MagicMock()
     provider.generate.return_value = GenerationResult(valid_output(), "test/model")
-    AIService(provider).parse_ticket(1, project)
-    provider.generate.assert_called_once_with("Cannot log in", system_prompt="system v1")
+    AIService(provider).parse_ticket(1, project, version)
+    provider.generate.assert_called_once_with("Cannot log in", system_prompt=f"system {version}")
 
 
 @pytest.mark.parametrize("content", ["not json", "{}"])
@@ -238,7 +240,8 @@ def test_missing_credentials() -> None:
         Settings.openrouter_from_env()
 
 
-def test_cli_json(project: Path, sdk, capsys) -> None:
+@pytest.mark.parametrize("version", ["v1", "v2"])
+def test_cli_json(project: Path, sdk, capsys, version: str) -> None:
     with patch(
         "ai_project.cli.Settings.openrouter_from_env",
         return_value=Settings(provider="openrouter", model="test/model", api_key="dummy"),
@@ -250,7 +253,7 @@ def test_cli_json(project: Path, sdk, capsys) -> None:
                     "--ticket-id",
                     "1",
                     "--prompt-version",
-                    "v1",
+                    version,
                     "--project-root",
                     str(project),
                 ]
@@ -298,3 +301,21 @@ def test_zero_retries(sdk) -> None:
         )
     assert create.call_count == 1
     sleep.assert_not_called()
+
+
+@pytest.mark.parametrize("version", ["v1", "v2"])
+def test_service_prefers_primary_prompt(project: Path, version: str) -> None:
+    fallback = project / "docs/prompts"
+    fallback.mkdir(parents=True)
+    (fallback / f"{version}.txt").write_text("fallback", encoding="utf-8")
+    provider = MagicMock()
+    provider.generate.return_value = GenerationResult(valid_output(), "test/model")
+    AIService(provider).parse_ticket(1, project, version)
+    provider.generate.assert_called_once_with("Cannot log in", system_prompt=f"system {version}")
+
+
+def test_unsupported_prompt_version_no_request(project: Path) -> None:
+    provider = MagicMock()
+    with pytest.raises(ValueError, match="Supported prompt versions"):
+        AIService(provider).parse_ticket(1, project, "v3")
+    provider.generate.assert_not_called()

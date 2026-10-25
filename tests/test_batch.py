@@ -28,6 +28,7 @@ def project(tmp_path: Path) -> Path:
         ),
         encoding="utf-8",
     )
+    (tmp_path / "prompts/v2.txt").write_text("system v2", encoding="utf-8")
     return tmp_path
 
 
@@ -133,7 +134,8 @@ def test_cli_requires_output() -> None:
     assert error.value.code == 2
 
 
-def test_cli_with_mocked_provider(project: Path) -> None:
+@pytest.mark.parametrize("version", ["v1", "v2"])
+def test_cli_with_mocked_provider(project: Path, version: str) -> None:
     provider = MagicMock()
     provider.generate.return_value = generation()
     with (
@@ -148,7 +150,7 @@ def test_cli_with_mocked_provider(project: Path) -> None:
                 [
                     "parse-all",
                     "--prompt-version",
-                    "v1",
+                    version,
                     "--output",
                     str(project / "out.json"),
                     "--project-root",
@@ -157,3 +159,17 @@ def test_cli_with_mocked_provider(project: Path) -> None:
             )
             == 0
         )
+
+    saved = json.loads((project / "out.json").read_text(encoding="utf-8"))
+    assert saved["metadata"]["prompt_version"] == version
+    assert all(item["status"] == "success" for item in saved["results"])
+    expected_prompt = "system v2" if version == "v2" else "system"
+    assert all(call.kwargs["system_prompt"] == expected_prompt
+               for call in provider.generate.call_args_list)
+
+
+@pytest.mark.parametrize("location", ["prompts", "docs/prompts"])
+def test_protected_v2_prompt(project: Path, location: str) -> None:
+    with pytest.raises(ValueError, match="datasets or prompts"):
+        parse_all(MagicMock(), Settings(), project, project / location / "v2.txt",
+                  "v2", overwrite=True)

@@ -72,8 +72,8 @@ def parse_all(
     *,
     overwrite: bool = False,
 ) -> dict[str, Any]:
-    if version != "v1":
-        raise ValueError("Only prompt version v1 is supported.")
+    if version not in ("v1", "v2"):
+        raise ValueError("Supported prompt versions are v1 and v2.")
     output = output.resolve()
     protected = [
         project_root / name
@@ -82,6 +82,8 @@ def parse_all(
             "data/golden_set.json",
             "prompts/v1.txt",
             "docs/prompts/v1.txt",
+            "prompts/v2.txt",
+            "docs/prompts/v2.txt",
         )
     ]
     if output in [path.resolve() for path in protected]:

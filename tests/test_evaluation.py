@@ -229,3 +229,69 @@ def test_cli_malformed_json(tmp_path: Path) -> None:
     with pytest.raises(SystemExit) as error:
         main(["eval", "--predictions", str(path), "--golden", str(path)])
     assert error.value.code == 1
+
+
+def test_selected_ids_preserve_batch_metrics() -> None:
+    predictions = batch(
+        entry(1, output=ticket(priority="high"), elapsed_seconds=1),
+        entry(2, elapsed_seconds=10),
+        entry(3, output={}, elapsed_seconds=20),
+        entry(4, status="error", output=None),
+        total_tickets=5,
+    )
+    original = copy.deepcopy(predictions)
+    reference = gold(1, 2, 3, 4, 5)
+    full = evaluate(predictions, reference)
+    selected = evaluate(predictions, reference, ids=[1, 5])
+    assert selected["golden_count"] == 2
+    assert selected["missing_golden_ids"] == [5]
+    assert selected["fields"]["priority"]["correct"] == 0
+    assert selected["fields"]["category"]["correct"] == 1
+    assert all(score["total"] == 2 for score in selected["fields"].values())
+    assert {item["ticket_id"] for item in selected["mismatches"]} == {1, 5}
+    assert selected["valid_output_rate"] == full["valid_output_rate"]
+    assert selected["latency_seconds"] == full["latency_seconds"]
+    assert selected["input_prediction_count"] == 4
+    assert "entire prediction batch" in markdown(selected)
+    assert "selected golden IDs: [1, 5]" in markdown(selected)
+    assert predictions == original
+    assert evaluate(predictions, reference, ids=None) == full
+
+
+@pytest.mark.parametrize("ids", [[], [1, 1], [True], [1.0], ["1"], [None], {}, "1", [99]])
+def test_invalid_selected_ids(ids: Any) -> None:
+    with pytest.raises(ValueError):
+        evaluate(batch(entry()), gold(1), ids=ids)
+
+
+@pytest.mark.parametrize("extension", ["md", "json"])
+def test_cli_ids_file(tmp_path: Path, extension: str) -> None:
+    predictions = tmp_path / "predictions.json"
+    golden = tmp_path / "golden.json"
+    ids_file = tmp_path / "ids.json"
+    output = tmp_path / f"report.{extension}"
+    predictions.write_text(json.dumps(batch(entry(1), entry(2))), encoding="utf-8")
+    golden.write_text(json.dumps(gold(1, 2)), encoding="utf-8")
+    ids_file.write_text("[2]", encoding="utf-8")
+    args = ["eval", "--predictions", str(predictions), "--golden", str(golden),
+            "--ids-file", str(ids_file)]
+    with patch("ai_project.cli.create_provider", side_effect=AssertionError("No provider")):
+        assert main([*args, "--output", str(output)]) == 0
+    content = output.read_text(encoding="utf-8")
+    if extension == "json":
+        report = json.loads(content)
+        assert report["golden_count"] == 1
+        assert report["fields"]["category"]["total"] == 1
+        assert report["valid_output_rate"]["total"] == 2
+        assert report["latency_seconds"]["samples"] == 2
+    else:
+        assert "Golden records: 1." in content
+        assert "entire prediction batch" in content
+    with pytest.raises(SystemExit):
+        main([*args, "--output", str(ids_file), "--overwrite"])
+    assert ids_file.read_text(encoding="utf-8") == "[2]"
+    for invalid in ["null", "[]", "[true]", "[1, 1]", "[99]", "{broken"]:
+        ids_file.write_text(invalid, encoding="utf-8")
+        with pytest.raises(SystemExit) as error:
+            main(args)
+        assert error.value.code == 1

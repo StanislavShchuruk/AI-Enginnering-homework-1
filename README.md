@@ -247,6 +247,11 @@ Offline unit tests without reading the real datasets:
 python -m pytest -q tests/test_app.py tests/test_models.py tests/test_openrouter.py tests/test_batch.py tests/test_ollama.py
 ```
 
+Both `parse-ticket` and `parse-all` accept `--prompt-version v1|v2` (default `v1`).
+Each version loads `prompts/<version>.txt` first, falling back to
+`docs/prompts/<version>.txt`. Prompt contents are used unchanged; missing or empty
+files still fail rather than falling back to another version.
+
 ## Offline evaluation
 
 Evaluate the existing OpenRouter and Ollama baselines without contacting either provider:
@@ -263,8 +268,25 @@ Predictions and golden data cannot be used as output destinations, even with `--
 JSON reports preserve available run and per-record provider/model/prompt/sampling metadata.
 The eval command does not load provider settings, read `.env`, or make API calls.
 
+To score only the development examples:
+
+```powershell
+python -m ai_project eval --predictions results/openrouter_v1.json --golden data/golden_set.json --ids-file data/development_ids.json
+```
+
+`--ids-file` must contain a nonempty JSON array of unique integers; booleans,
+strings, fractional values, duplicates, and IDs absent from the golden set are
+rejected. Field accuracy, mismatches, and missing-golden diagnostics use only the
+selected golden IDs. **Valid-output rate and latency still cover the entire
+prediction batch.** Filtered JSON, Markdown, and console reports state this scope
+and list the selected IDs. The full golden file is still schema-validated.
+The IDs file is also protected from being overwritten by report output.
+Omitting `--ids-file` preserves evaluation against all golden examples. Reserve
+holdout examples for final evaluation, not prompt optimization.
+
 Records match by integer `ticket_id` to golden `id`, independently of list order.
-Each of the seven scored fields uses **all golden records** as its denominator:
+Each of the seven scored fields uses **all golden records** (or the selected
+records with `--ids-file`) as its denominator:
 category, priority, application, language, requires_support, details.error_code,
 and details.error_message. Missing, failed, schema-invalid, and duplicate-ID
 predictions count as incorrect in every field. Duplicate golden IDs and malformed
@@ -362,3 +384,8 @@ measurement of electricity use. It excludes idle time outside the records,
 hardware amortization, and other operating costs. Latency retains the evaluator's
 success-only sampling, whereas costs include all recorded attempts. Different
 hardware, system load, model routing, and missing metadata limit comparisons.
+
+## Evaluation Results
+
+See the [Evaluation Report](docs/evaluation_report.md) for the
+comparison of Prompt v1 and v2 across Gemini and Qwen3 8B.

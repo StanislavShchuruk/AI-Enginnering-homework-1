@@ -1,0 +1,3206 @@
+{
+  "metadata": {
+    "provider": "ollama",
+    "configured_model": "qwen3:8b",
+    "prompt_version": "v2",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "timestamp": "2026-10-25T12:21:11.102527+00:00"
+  },
+  "total_tickets": 100,
+  "completed": true,
+  "results": [
+    {
+      "ticket_id": 1,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User cannot sign in to the HR portal and is receiving an 'incorrect password' error despite resetting the password this morning.",
+        "category": "authentication",
+        "priority": "medium",
+        "application": "HR portal",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": "'incorrect password'"
+        },
+        "suggested_actions": [
+          "Verify that the password was entered correctly, including case sensitivity and special characters.",
+          "Try logging in from a different device or network to rule out technical issues.",
+          "Contact technical support for further assistance with password reset or login issues."
+        ]
+      },
+      "elapsed_seconds": 5.664475300000049,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 802,
+        "completion_tokens": 149,
+        "total_tokens": 951
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 2,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User's clock-in for yesterday is missing, showing 0 hours instead of 8 hours with a 30-minute break.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check the attendance records for yesterday to confirm the clock-in and break times.",
+          "Contact technical support to investigate the missing clock-in data.",
+          "Verify if the time tracking settings are correctly configured to capture breaks."
+        ]
+      },
+      "elapsed_seconds": 3.164266999985557,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 814,
+        "completion_tokens": 143,
+        "total_tokens": 957
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 3,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User unable to book annual leave due to insufficient balance message despite having 5 days left.",
+        "category": "absence",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify that the leave balance displayed on the dashboard is up to date and reflects any recent changes.",
+          "Check if there are any pending approvals or restrictions on the leave balance.",
+          "Contact HR support to investigate the discrepancy in the leave balance."
+        ]
+      },
+      "elapsed_seconds": 3.0941343000158668,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 804,
+        "completion_tokens": 142,
+        "total_tokens": 946
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 4,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Saturday shift is incorrectly displayed as 6am instead of 6pm.",
+        "category": "shifts",
+        "priority": "high",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check the shift schedule settings to ensure correct time format is applied.",
+          "Contact your HR administrator to manually adjust the shift time.",
+          "Verify if there is a system-wide time format issue affecting all shifts."
+        ]
+      },
+      "elapsed_seconds": 3.075924100005068,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 799,
+        "completion_tokens": 132,
+        "total_tokens": 931
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 5,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Payslip looks off this month. I did two extra night shifts but the overtime line is blank. Maybe it's just not updated yet? Payday's tomorrow.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if the overtime hours have been correctly recorded in the system.",
+          "Verify if the payslip is generated for the correct pay period.",
+          "Contact payroll support to confirm if the overtime will be included in the upcoming payment."
+        ]
+      },
+      "elapsed_seconds": 3.246158200025093,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 808,
+        "completion_tokens": 155,
+        "total_tokens": 963
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 6,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User cannot edit emergency contact information in the employee app as no edit button is available.",
+        "category": "employee_profile",
+        "priority": "medium",
+        "application": "employee app",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if the edit option is available under a different menu section or settings.",
+          "Log out and log back in to ensure the interface is updated.",
+          "Contact HR or technical support for further assistance with editing the emergency contact information."
+        ]
+      },
+      "elapsed_seconds": 3.0821549000102095,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 797,
+        "completion_tokens": 141,
+        "total_tokens": 938
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 7,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Employee calendar fails with HTTP 500 error after selecting a month",
+        "category": "technical",
+        "priority": "high",
+        "application": "HR portal",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "500",
+          "error_message": "Internal Server Error"
+        },
+        "suggested_actions": [
+          "Check if the issue persists for other users or is specific to your account.",
+          "Contact your system administrator or IT support to investigate the server error.",
+          "Try accessing the calendar from a different device or network to rule out local issues."
+        ]
+      },
+      "elapsed_seconds": 3.106831900018733,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 920,
+        "completion_tokens": 145,
+        "total_tokens": 1065
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 8,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User can log into ESS on their phone but gets a 403 error on the desktop site, and their teammate mentioned they were removed from the site yesterday.",
+        "category": "authentication",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "403",
+          "error_message": "Forbidden"
+        },
+        "suggested_actions": [
+          "Check if your access rights have been changed or revoked by your HR administrator.",
+          "Try clearing your browser cache and cookies, then attempt to log in again.",
+          "Contact your IT or HR support team to confirm your access status and resolve the 403 error."
+        ]
+      },
+      "elapsed_seconds": 3.36613669997314,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 811,
+        "completion_tokens": 168,
+        "total_tokens": 979
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 9,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User requested 2 days off, received approval email, but calendar shows pending and manager sees nothing.",
+        "category": "absence",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if the absence request was submitted correctly and is visible in the manager's dashboard.",
+          "Contact HR support to verify the approval status and ensure the update is reflected in the system.",
+          "Confirm with the manager directly if they received the approval notification and if they can see the request."
+        ]
+      },
+      "elapsed_seconds": 3.195219299988821,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 802,
+        "completion_tokens": 153,
+        "total_tokens": 955
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 10,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User clocked out twice by accident and the system shows invalid sequence.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact HR or technical support to request deletion of the extra punch.",
+          "Check if there are any self-service options to correct the attendance record.",
+          "Provide details of the incorrect punch to the support team for faster resolution."
+        ]
+      },
+      "elapsed_seconds": 3.01388980000047,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 799,
+        "completion_tokens": 133,
+        "total_tokens": 932
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 11,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Roster for next week disappeared after changing location filter, only Monday and Tuesday are visible.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if the location filter was applied correctly and try changing it back to the default setting.",
+          "Refresh the page or log out and log back in to see if the issue persists.",
+          "Contact technical support for further assistance with the roster display issue."
+        ]
+      },
+      "elapsed_seconds": 3.091890100040473,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 801,
+        "completion_tokens": 143,
+        "total_tokens": 944
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 12,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Payroll closes today at 5 PM, but the system shows zero worked hours for 12 employees despite their attendance records having clockings.",
+        "category": "payroll",
+        "priority": "high",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify the payroll integration with the attendance module to ensure data synchronization.",
+          "Check for any system updates or maintenance that might have affected payroll processing.",
+          "Contact technical support to investigate the discrepancy in worked hours for the affected employees."
+        ]
+      },
+      "elapsed_seconds": 3.1417330999975093,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 827,
+        "completion_tokens": 150,
+        "total_tokens": 977
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 13,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Changed address last week, saved it, but the profile still shows the previous postcode.",
+        "category": "employee_profile",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if the address change was saved correctly in the system.",
+          "Contact HR or technical support to verify the update and resolve the display issue.",
+          "Ensure there are no pending approvals or delays in processing the address change."
+        ]
+      },
+      "elapsed_seconds": 3.1243392000324093,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 798,
+        "completion_tokens": 137,
+        "total_tokens": 935
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 14,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Absence request page freezing after selecting half-day duration and absence code",
+        "category": "absence",
+        "priority": "high",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if the issue persists on different browsers or devices.",
+          "Try clearing the browser cache and cookies before attempting the request again.",
+          "Contact technical support if the problem continues, providing details of the steps taken."
+        ]
+      },
+      "elapsed_seconds": 3.0656134000164457,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 941,
+        "completion_tokens": 133,
+        "total_tokens": 1074
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 15,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Reset link says expired instantly. Requested three links in 10 min and every one says invalid token",
+        "category": "authentication",
+        "priority": "high",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if the email address used for the password reset is correct and matches the registered account.",
+          "Try requesting a new password reset link after a longer period of time.",
+          "Contact technical support for further assistance with the password reset functionality."
+        ]
+      },
+      "elapsed_seconds": 3.073668800003361,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 797,
+        "completion_tokens": 144,
+        "total_tokens": 941
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 16,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User reports discrepancy in worked hours and a red E_OUT warning on Tuesday.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check the attendance records for Tuesday to verify the actual hours worked.",
+          "Review the E_OUT warning message for more details on the issue.",
+          "Contact HR or technical support to resolve the discrepancy and warning."
+        ]
+      },
+      "elapsed_seconds": 3.0286131999455392,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 806,
+        "completion_tokens": 131,
+        "total_tokens": 937
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 17,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User wants to cancel a leave request they submitted by mistake that is still awaiting approval.",
+        "category": "absence",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact your HR department to request cancellation of the leave request.",
+          "Check if there is an option to withdraw or cancel pending leave requests within the HR system.",
+          "Provide any necessary details or documentation to support the cancellation request."
+        ]
+      },
+      "elapsed_seconds": 3.0540980000514537,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 793,
+        "completion_tokens": 138,
+        "total_tokens": 931
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 18,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Shift swap was accepted by Sam but both are still assigned to Friday. Uncertainty about whether to attend.",
+        "category": "shifts",
+        "priority": "high",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact HR or shift management to confirm the shift swap status and new assignments.",
+          "Check the updated schedule in the HR system or communication channel for any changes.",
+          "Reach out to Sam to clarify if there was an error in the shift swap process."
+        ]
+      },
+      "elapsed_seconds": 3.123057199991308,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 806,
+        "completion_tokens": 147,
+        "total_tokens": 953
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 19,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Bank details were updated in the portal, but salary was sent to the old account again.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify that the bank details were correctly updated in the portal.",
+          "Contact the payroll department to confirm if they received the updated bank details.",
+          "Check the payroll records or contact the bank to confirm the payment details used."
+        ]
+      },
+      "elapsed_seconds": 3.1551600999664515,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 799,
+        "completion_tokens": 138,
+        "total_tokens": 937
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 20,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "The system is experiencing the same issue as last month with strange numbers and a non-functional button.",
+        "category": "technical",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if the issue persists across different browsers or devices.",
+          "Review recent system updates or changes that may have caused the issue.",
+          "Contact technical support for further assistance."
+        ]
+      },
+      "elapsed_seconds": 2.980270500003826,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 800,
+        "completion_tokens": 128,
+        "total_tokens": 928
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 21,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User was off sick on Monday but the attendance screen marks them absent without a code and indicates they missed clock-in, despite not working that day.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact your HR or payroll department to report the incorrect attendance record.",
+          "Provide medical proof or sick leave documentation to support your absence.",
+          "Check if there is a specific process for reporting unclocked days or sick leave in your system."
+        ]
+      },
+      "elapsed_seconds": 3.1420013000024483,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 808,
+        "completion_tokens": 152,
+        "total_tokens": 960
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 22,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Не можу скасувати заявку на відпустку, яку подав учора. Статус «Очікує погодження».",
+        "category": "absence",
+        "priority": "medium",
+        "application": null,
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте, чи є можливість скасувати заявку в налаштуваннях системи.",
+          "Спробуйте відкрити заявку з іншого пристрою або браузера.",
+          "Зверніться до керівника або технічної підтримки для допомоги."
+        ]
+      },
+      "elapsed_seconds": 3.5789485000423156,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 822,
+        "completion_tokens": 212,
+        "total_tokens": 1034
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 23,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "У розрахунковому листі за вересень відсутня доплата за нічні зміни, хоча працював дві ночі.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": null,
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте звіт про робочі години та зміни за вересень для підтвердження виконання нічних змін.",
+          "Зверніться до керівника або відділу кадрів для уточнення причин відсутності доплати.",
+          "Запросіть відповідні документи, щоб підтвердити роботу нічних змін, і подайте скаргу або запит на корекцію розрахунку."
+        ]
+      },
+      "elapsed_seconds": 4.0228036000044085,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 838,
+        "completion_tokens": 277,
+        "total_tokens": 1115
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 24,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Після оновлення сторінка графіка змін працює неправильно, і не відображає зміни на наступний тиждень",
+        "category": "shifts",
+        "priority": "medium",
+        "application": "HR portal",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте, чи інші користувачі також стикаються з цим проблемою",
+          "Спробуйте використовувати інший браузер або пристрій для доступу до HR portal",
+          "Зв’яжіться з технічною підтримкою для додаткової перевірки"
+        ]
+      },
+      "elapsed_seconds": 3.710367299965583,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 1038,
+        "completion_tokens": 228,
+        "total_tokens": 1266
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 25,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Користувач виконав clock out вчора, але сьогодні в attendance немає запису, навіть після оновлення сторінки.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": "ShiftBoard",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте, чи правильно виконано clock out, можливо, була помилка при виконанні операції.",
+          "Спробуйте вийти з облікового запису та увійти знову, щоб очистити сесію.",
+          "Зв'яжіться з технічною підтримкою для перевірки збереження даних у системі."
+        ]
+      },
+      "elapsed_seconds": 3.8093339999904856,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 837,
+        "completion_tokens": 243,
+        "total_tokens": 1080
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 26,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Не можу зайти в HR portal, пароль правильний, але отримую access denied 403",
+        "category": "technical",
+        "priority": "high",
+        "application": "HR portal",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": "403",
+          "error_message": "access denied"
+        },
+        "suggested_actions": [
+          "Перевірте, чи не видалено ваше облікове запис у системі.",
+          "Спробуйте відновити доступ через технічну підтримку.",
+          "Перезавантажте браузер або спробуйте інший пристрій."
+        ]
+      },
+      "elapsed_seconds": 3.4056269000284374,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 832,
+        "completion_tokens": 188,
+        "total_tokens": 1020
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 27,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "У мене на суботу стоїть рання зміна, хоча менеджер говорив, що буде вечірня.",
+        "category": "shifts",
+        "priority": "medium",
+        "application": null,
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте зміну у розкладі з менеджером для уточнення.",
+          "Зверніться до HR або технічної підтримки для виправлення розкладу.",
+          "Підтвердіть зміну з менеджером, щоб уникнути помилки."
+        ]
+      },
+      "elapsed_seconds": 3.5521912000258453,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 831,
+        "completion_tokens": 203,
+        "total_tokens": 1034
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 28,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Форма не дозволяє вибрати дату лікарняного, хоча день доступний в календарі",
+        "category": "absence",
+        "priority": "medium",
+        "application": null,
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": "invalid date",
+          "error_message": "Некоректна дата"
+        },
+        "suggested_actions": [
+          "Перевірте, чи правильно вибрана дата в календарі та відповідає вона формату дати, встановленому в системі.",
+          "Спробуйте відкрити форму в іншому браузері або очистити кеш браузера.",
+          "Зверніться до технічної підтримки для перевірки помилки в системі."
+        ]
+      },
+      "elapsed_seconds": 3.719461400003638,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 832,
+        "completion_tokens": 235,
+        "total_tokens": 1067
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 29,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "После изменения номера телефона в профиле сотрудника он не сохраняется, хотя система показывает, что изменения приняты.",
+        "category": "employee_profile",
+        "priority": "medium",
+        "application": "HR portal",
+        "language": "ru",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Проверьте, не блокируются ли изменения из-за правил доступа или ролей.",
+          "Попробуйте очистить кэш браузера и повторите попытку.",
+          "Свяжитесь с технической поддержкой для проверки синхронизации данных между системами."
+        ]
+      },
+      "elapsed_seconds": 3.3846254000090994,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 978,
+        "completion_tokens": 183,
+        "total_tokens": 1161
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 30,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "В расчетном листе сумма меньше обычной, хотя смен было столько же, и пропала строка с надбавкой. Неясно, ошибка или удержание.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": null,
+        "language": "ru",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Проверьте данные о сменах и надбавках в системе на наличие ошибок или изменений.",
+          "Сравните текущий расчетный лист с предыдущими для выявления возможных изменений в настройках или правилах.",
+          "Обратитесь в техническую поддержку для проверки корректности расчета и отсутствия ошибок в системе."
+        ]
+      },
+      "elapsed_seconds": 3.5184003000031225,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 827,
+        "completion_tokens": 207,
+        "total_tokens": 1034
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 31,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "ESS won't send MFA code after replacing phone, still locked out after two attempts",
+        "category": "authentication",
+        "priority": "high",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact IT support to request a reset of the MFA enrolment due to phone replacement",
+          "Verify if the new phone number is correctly registered in the system",
+          "Check if there are any alternative authentication methods available"
+        ]
+      },
+      "elapsed_seconds": 3.144850699987728,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 802,
+        "completion_tokens": 138,
+        "total_tokens": 940
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 32,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User wants to know where to find information about annual leave carry-over for next year planning.",
+        "category": "absence",
+        "priority": "low",
+        "application": null,
+        "language": "en",
+        "requires_support": false,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check your employee handbook or company policy document for information on annual leave carry-over rules.",
+          "Contact your HR department for clarification on how annual leave is carried over between years.",
+          "Review your previous year's payslip or leave records for any mention of carry-over entitlements."
+        ]
+      },
+      "elapsed_seconds": 3.1454655999550596,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 793,
+        "completion_tokens": 149,
+        "total_tokens": 942
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 33,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Clock-in terminal shows error E_CLOCK_07: badge not recognised, preventing three warehouse staff from recording time as the shift starts now.",
+        "category": "attendance",
+        "priority": "high",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "E_CLOCK_07",
+          "error_message": "badge not recognised"
+        },
+        "suggested_actions": [
+          "Check if the badges are properly programmed and activated in the system.",
+          "Verify that the clock-in terminal is functioning correctly and try using a different terminal if available.",
+          "Contact technical support to resolve the badge recognition issue immediately."
+        ]
+      },
+      "elapsed_seconds": 3.1898409000132233,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 805,
+        "completion_tokens": 156,
+        "total_tokens": 961
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 34,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "In Shifts, my approved Sunday swap still lists me on the late shift. Manager says the swap is final; please correct the assignment.",
+        "category": "shifts",
+        "priority": "medium",
+        "application": "Shifts",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify with your manager that the shift swap request was properly submitted and approved.",
+          "Check if there are any pending approvals or additional steps required to finalize the swap.",
+          "Contact HR or technical support if the shift assignment is not updated despite the approval."
+        ]
+      },
+      "elapsed_seconds": 3.1645248000277206,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 802,
+        "completion_tokens": 156,
+        "total_tokens": 958
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 35,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Payroll export in PayHub fails with PAY_409, 'Period locked'. Payroll cutoff is in 30 minutes for the whole branch. Please help urgently.",
+        "category": "payroll",
+        "priority": "high",
+        "application": "PayHub",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "PAY_409",
+          "error_message": "Period locked"
+        },
+        "suggested_actions": [
+          "Check if the payroll period has been locked by the system or HR team.",
+          "Contact the HR or payroll administrator to unlock the period if necessary.",
+          "Proceed with the export immediately if the period is unlocked to meet the cutoff deadline."
+        ]
+      },
+      "elapsed_seconds": 3.259395500004757,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 810,
+        "completion_tokens": 168,
+        "total_tokens": 978
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 36,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User wants to update their preferred name in Workday to change the badge name when convenient.",
+        "category": "employee_profile",
+        "priority": "medium",
+        "application": "Workday",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Log in to Workday and navigate to the personal profile section.",
+          "Look for an option to update the preferred name or badge name.",
+          "Contact HR or Workday support if the option is not available or if assistance is needed."
+        ]
+      },
+      "elapsed_seconds": 3.107453200034797,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 799,
+        "completion_tokens": 143,
+        "total_tokens": 942
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 37,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "HR Portal bug: uploading a 200 KB PDF file via Help > Attach file results in an HTTP 502 Bad Gateway error instead of a support confirmation.",
+        "category": "technical",
+        "priority": "medium",
+        "application": "HR Portal",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "502",
+          "error_message": "Bad Gateway"
+        },
+        "suggested_actions": [
+          "Try uploading the file again after clearing browser cache and cookies.",
+          "Test the upload process in an incognito/private browsing mode.",
+          "Contact technical support if the issue persists across different browsers."
+        ]
+      },
+      "elapsed_seconds": 3.191255200013984,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 826,
+        "completion_tokens": 155,
+        "total_tokens": 981
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 38,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "The thing won't save. Same as before. Can someone look?",
+        "category": "technical",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if there are any error messages or codes displayed when attempting to save.",
+          "Try refreshing the page or restarting the application.",
+          "Contact technical support for further assistance."
+        ]
+      },
+      "elapsed_seconds": 3.0226200000033714,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 787,
+        "completion_tokens": 123,
+        "total_tokens": 910
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 39,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User is asking if there is a self-service way to download last month's payslip from ESS.",
+        "category": "payroll",
+        "priority": "low",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": false,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check the ESS menu for a 'Payslip' or 'My Payslips' section.",
+          "Look for an option to select or filter by the month of the payslip.",
+          "If the option is not visible, contact your HR or payroll team for guidance."
+        ]
+      },
+      "elapsed_seconds": 3.180700800032355,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 801,
+        "completion_tokens": 154,
+        "total_tokens": 955
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 40,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User is unable to upload a sick leave certificate in ESS due to a 'File too large' error, even though the file size is 12 MB and a smaller 1 MB scan also resulted in the same error.",
+        "category": "absence",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": "'File too large'"
+        },
+        "suggested_actions": [
+          "Check if there is a specific file size limit set for uploads in the ESS application.",
+          "Contact technical support to confirm if the file size limit is correctly configured.",
+          "Try uploading the file from a different device or network to rule out any technical issues."
+        ]
+      },
+      "elapsed_seconds": 3.305261099943891,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 814,
+        "completion_tokens": 178,
+        "total_tokens": 992
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 41,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Badge reader logged me out at 12:01 while I was still working till 16:00. No error. Supervisor needs to review yesterday's record.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check your attendance records for any discrepancies or logs related to the badge reader activity.",
+          "Contact your supervisor to request a review of the attendance record for the day in question.",
+          "Ensure your badge is functioning correctly and there are no physical issues with the reader."
+        ]
+      },
+      "elapsed_seconds": 3.2978494000271894,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 810,
+        "completion_tokens": 163,
+        "total_tokens": 973
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 42,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User is asking where to check next week's published shifts in RotaCloud as they are new and haven't opened the schedule yet.",
+        "category": "shifts",
+        "priority": "low",
+        "application": "RotaCloud",
+        "language": "en",
+        "requires_support": false,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Navigate to the 'Shifts' section in RotaCloud.",
+          "Look for the calendar view or weekly schedule to see published shifts.",
+          "Check the 'Published' filter to view upcoming shifts for next week."
+        ]
+      },
+      "elapsed_seconds": 3.128837800002657,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 799,
+        "completion_tokens": 149,
+        "total_tokens": 948
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 43,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "HR Portal shows 'Account disabled' despite HR confirming employment, preventing login.",
+        "category": "authentication",
+        "priority": "high",
+        "application": "HR Portal",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": "'Account disabled'"
+        },
+        "suggested_actions": [
+          "Contact HR to confirm the account status and request a reactivation.",
+          "Reach out to technical support to investigate the account disablement issue.",
+          "Check if there are any pending actions or notifications related to the account in the HR Portal."
+        ]
+      },
+      "elapsed_seconds": 3.072314199991524,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 800,
+        "completion_tokens": 141,
+        "total_tokens": 941
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 44,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Employee photo upload in Workday returns PHOTO_415 error with 'Unsupported media type' even when using JPG files.",
+        "category": "technical",
+        "priority": "medium",
+        "application": "Workday",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "PHOTO_415",
+          "error_message": "Unsupported media type"
+        },
+        "suggested_actions": [
+          "Verify the file format is strictly JPG and not JPEG.",
+          "Try uploading the photo from a different device or browser.",
+          "Contact Workday support for further assistance with the error."
+        ]
+      },
+      "elapsed_seconds": 3.1076834999839775,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 831,
+        "completion_tokens": 147,
+        "total_tokens": 978
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 45,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "ESS dashboard bug: at 125% browser zoom, Help covers Sign out. Repro on Edge with a narrow window; resetting zoom makes it usable.",
+        "category": "technical",
+        "priority": "low",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Reset browser zoom level to 100% to resolve the layout issue.",
+          "Try accessing the ESS dashboard in a different browser or window size.",
+          "Ensure the browser and ESS application are updated to the latest version."
+        ]
+      },
+      "elapsed_seconds": 3.2815363999689,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 819,
+        "completion_tokens": 156,
+        "total_tokens": 975
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 46,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User requests an employment confirmation letter from HR for a rental application due next week.",
+        "category": "other",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact HR directly to request the employment confirmation letter.",
+          "Provide the landlord's contact information to HR for expedited processing.",
+          "Follow up with HR if the letter is not received by the deadline."
+        ]
+      },
+      "elapsed_seconds": 3.0074066999950446,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 795,
+        "completion_tokens": 131,
+        "total_tokens": 926
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 47,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User booked tomorrow off in ESS, but it now shows both approved and rejected statuses, and the manager cannot resolve it.",
+        "category": "absence",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact the HR support team to investigate the conflicting status in ESS.",
+          "Check if there are any pending approvals or notifications related to the absence request.",
+          "Document the issue and provide screenshots for reference when contacting support."
+        ]
+      },
+      "elapsed_seconds": 3.084536000038497,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 804,
+        "completion_tokens": 146,
+        "total_tokens": 950
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 48,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Salary arrived twice today in PayHub with the same reference.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": "PayHub",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact the payroll team to confirm the duplicate payment and request an investigation.",
+          "Check the payment reference details to ensure there were no errors in the payroll processing.",
+          "Wait for confirmation from payroll before taking any action to avoid further complications."
+        ]
+      },
+      "elapsed_seconds": 3.0500265000155196,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 798,
+        "completion_tokens": 137,
+        "total_tokens": 935
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 49,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "In ESS, the break time is showing as 3 hours instead of 30 minutes, and the manager has asked to report this issue.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify the break duration settings in ESS to ensure they are correctly configured.",
+          "Contact your manager to confirm the expected break duration and any specific instructions.",
+          "Reach out to HR or technical support for further assistance with the ESS break time discrepancy."
+        ]
+      },
+      "elapsed_seconds": 3.194686900009401,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 809,
+        "completion_tokens": 156,
+        "total_tokens": 965
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 50,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "ShiftBoard is empty for everyone in the team, preventing them from seeing their assigned station for an upcoming shift.",
+        "category": "attendance",
+        "priority": "high",
+        "application": "ShiftBoard",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if the ShiftBoard application is experiencing a system-wide issue by contacting the support team.",
+          "Verify if shift assignments have been correctly uploaded to the system.",
+          "Notify the team to wait for further updates or instructions from the HR or shift management team."
+        ]
+      },
+      "elapsed_seconds": 3.200318499992136,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 810,
+        "completion_tokens": 150,
+        "total_tokens": 960
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 51,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User forgot their password for Workday and is asking where to reset it.",
+        "category": "authentication",
+        "priority": "medium",
+        "application": "Workday",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Visit the Workday login page and click on 'Forgot Password?' to initiate the reset process.",
+          "Check your email for a password reset link sent by Workday.",
+          "Contact your organization's HR or IT support if you are unable to reset the password."
+        ]
+      },
+      "elapsed_seconds": 3.1016070999903604,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 792,
+        "completion_tokens": 144,
+        "total_tokens": 936
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 52,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User is asking if they can withdraw a pending overtime claim or if their manager needs to do it.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact your manager to confirm the process for withdrawing the overtime claim.",
+          "Reach out to the HR or payroll department for clarification on the procedure.",
+          "Check if there are any company policies or guidelines related to overtime claims."
+        ]
+      },
+      "elapsed_seconds": 3.2213004999794066,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 801,
+        "completion_tokens": 140,
+        "total_tokens": 941
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 53,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "New starter in HR Portal is listed under the wrong department, and manager approval is going to someone unfamiliar.",
+        "category": "employee_profile",
+        "priority": "medium",
+        "application": "HR Portal",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify the department assignment for the new starter in the HR Portal.",
+          "Check the manager approval routing settings to ensure they are correctly configured.",
+          "Contact the HR administrator to review and correct the department and approval routing."
+        ]
+      },
+      "elapsed_seconds": 3.096620099968277,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 798,
+        "completion_tokens": 142,
+        "total_tokens": 940
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 54,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Overnight shift in ESS splits into two days and loses the last hour after midnight.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check the shift calculation settings in ESS to ensure overnight shifts are correctly handled.",
+          "Verify if the system is properly accounting for the 30-minute break during the shift calculation.",
+          "Contact technical support to investigate the issue with the shift splitting after midnight."
+        ]
+      },
+      "elapsed_seconds": 3.108712800021749,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 819,
+        "completion_tokens": 146,
+        "total_tokens": 965
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 55,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Annual leave request for 0.5 day reduces balance by 1 full day in Workday. I selected Morning; summary showed half day before submitting.",
+        "category": "absence",
+        "priority": "medium",
+        "application": "Workday",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify the leave request settings in Workday to ensure half-day requests are processed correctly.",
+          "Contact HR or Workday support to investigate the discrepancy in leave balance reduction.",
+          "Check if there are any system updates or known issues affecting leave calculations in Workday."
+        ]
+      },
+      "elapsed_seconds": 3.178591799980495,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 805,
+        "completion_tokens": 161,
+        "total_tokens": 966
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 56,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Roster PDF download from ShiftBoard has yesterday's version, website has today's. Which one should our supervisor use?",
+        "category": "shifts",
+        "priority": "medium",
+        "application": "ShiftBoard",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify the date of the roster on the ShiftBoard website to ensure it reflects the most recent updates.",
+          "Check if there is a manual refresh or update option available for the ShiftBoard PDF download.",
+          "Contact technical support to confirm if there is a known issue with the PDF download functionality."
+        ]
+      },
+      "elapsed_seconds": 3.19963489996735,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 798,
+        "completion_tokens": 160,
+        "total_tokens": 958
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 57,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Tax deduction changed on PayHub statement after moving region, asking for clarification on applied tax code.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": "PayHub",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact payroll department to confirm the tax code applied and its reason.",
+          "Review the PayHub statement for any additional details or notes regarding the tax deduction change.",
+          "Check if there are any regional tax regulations or changes that may affect the deduction."
+        ]
+      },
+      "elapsed_seconds": 3.216255299979821,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 798,
+        "completion_tokens": 146,
+        "total_tokens": 944
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 58,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "HR Portal session signs out every 20 seconds with error SESSION_EXPIRED, occurring on both office wifi and mobile hotspot.",
+        "category": "technical",
+        "priority": "high",
+        "application": "HR Portal",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "SESSION_EXPIRED",
+          "error_message": "Session expired"
+        },
+        "suggested_actions": [
+          "Check if the session timeout setting is configured correctly in the HR Portal settings.",
+          "Try clearing the browser cache and cookies, then log in again.",
+          "Contact technical support to investigate potential server-side session management issues."
+        ]
+      },
+      "elapsed_seconds": 3.1532420000294223,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 804,
+        "completion_tokens": 150,
+        "total_tokens": 954
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 59,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User is asking about a policy for bringing bikes into the office and mentions not finding it in the handbook.",
+        "category": "other",
+        "priority": "low",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check the company's internal policy database or intranet for additional guidelines.",
+          "Contact the HR department to confirm if there is a specific bike policy.",
+          "Review the employee handbook again for any sections related to workplace equipment or transportation."
+        ]
+      },
+      "elapsed_seconds": 3.0955368000431918,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 794,
+        "completion_tokens": 143,
+        "total_tokens": 937
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 60,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Workday home screen spins forever after selecting Benefits; no benefits data appears. Other pages load, and clearing browser cache didn't help.",
+        "category": "technical",
+        "priority": "medium",
+        "application": "Workday",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Try accessing Workday from a different browser or device.",
+          "Check if there are any system-wide issues reported by other users.",
+          "Contact Workday support for further assistance with the specific error."
+        ]
+      },
+      "elapsed_seconds": 3.0918238000012934,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 801,
+        "completion_tokens": 143,
+        "total_tokens": 944
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 61,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "ESS leave calendar incorrectly shows a bank holiday as a working day, causing an extra day to be used in leave request.",
+        "category": "absence",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify the time zone settings in the ESS leave calendar to ensure it is correctly set to Kyiv instead of London.",
+          "Check if there are any manual overrides or custom settings affecting the display of bank holidays.",
+          "Contact HR or technical support to confirm the correct configuration for the leave calendar and bank holiday settings."
+        ]
+      },
+      "elapsed_seconds": 3.2831055999849923,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 804,
+        "completion_tokens": 164,
+        "total_tokens": 968
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 62,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Clockout failed due to phone battery dying, and the user was on site until 19:10. They need to know who approves a manual correction.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact your manager or HR representative to request approval for a manual correction to your attendance record.",
+          "Ensure your device is charged and functioning properly to avoid similar issues in the future.",
+          "Check if your organization has a specific process for manual attendance corrections and follow it accordingly."
+        ]
+      },
+      "elapsed_seconds": 3.191321699996479,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 799,
+        "completion_tokens": 162,
+        "total_tokens": 961
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 63,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "ShiftBoard is sending 'new rota' notifications six times for the same unchanged shift.",
+        "category": "shifts",
+        "priority": "medium",
+        "application": "ShiftBoard",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if there are any recent changes to the shift or rota that may have been unintentionally saved.",
+          "Verify if the notification settings in ShiftBoard are configured correctly to avoid duplicate alerts.",
+          "Contact technical support to investigate the cause of the repeated notifications."
+        ]
+      },
+      "elapsed_seconds": 3.1056859000236727,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 803,
+        "completion_tokens": 148,
+        "total_tokens": 951
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 64,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User needs an accessible payslip as the PayHub PDF is an image and screen reader cannot read amounts.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": "PayHub",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Request a readable version of the payslip from payroll.",
+          "Contact the payroll department to explain the accessibility issue.",
+          "Use alternative tools or methods to extract text from the PDF if available."
+        ]
+      },
+      "elapsed_seconds": 3.142105899984017,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 802,
+        "completion_tokens": 137,
+        "total_tokens": 939
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 65,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User wants to view their emergency contact details in ESS without making any changes.",
+        "category": "employee_profile",
+        "priority": "low",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Log in to ESS and navigate to the employee profile section.",
+          "Check the personal information or emergency contact details subsection.",
+          "Contact HR support if the information is not visible or accessible."
+        ]
+      },
+      "elapsed_seconds": 3.01013020001119,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 792,
+        "completion_tokens": 131,
+        "total_tokens": 923
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 66,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "HR Portal maintenance banner indicates service should be back at 10:00, but 503 Service Unavailable error persists at 10:45, affecting the entire office.",
+        "category": "technical",
+        "priority": "high",
+        "application": "HR Portal",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "503",
+          "error_message": "Service Unavailable"
+        },
+        "suggested_actions": [
+          "Check official communication channels for updates on the maintenance status.",
+          "Try accessing the HR Portal from a different network or device.",
+          "Contact technical support if the issue persists after attempting the above steps."
+        ]
+      },
+      "elapsed_seconds": 3.256728300009854,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 816,
+        "completion_tokens": 162,
+        "total_tokens": 978
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 67,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "The user suspects that the hours are incorrect and mentions leave, but cannot provide more details at the moment.",
+        "category": "attendance",
+        "priority": "unknown",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check the attendance records for any discrepancies.",
+          "Review the leave request to confirm if it affects the hours.",
+          "Provide more details when available to clarify the issue."
+        ]
+      },
+      "elapsed_seconds": 3.0134459999972023,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 798,
+        "completion_tokens": 129,
+        "total_tokens": 927
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 68,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User changed surname in Workday with a document, but approval is pending for 3 weeks. HR needs to check the request.",
+        "category": "employee_profile",
+        "priority": "medium",
+        "application": "Workday",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Contact HR directly to follow up on the surname change request.",
+          "Verify if the supporting document was correctly uploaded and approved.",
+          "Check for any additional steps required in the Workday system for approval."
+        ]
+      },
+      "elapsed_seconds": 3.1003434999729507,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 800,
+        "completion_tokens": 144,
+        "total_tokens": 944
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 69,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "My manager declined my shift swap because minimum staffing wasn't met. I need to find the swap rules.",
+        "category": "shifts",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check the company's HR policy document for shift swap guidelines.",
+          "Review the shift swap rules section in the employee handbook.",
+          "Contact your manager or HR for clarification on the staffing requirements."
+        ]
+      },
+      "elapsed_seconds": 3.2583862000028603,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 799,
+        "completion_tokens": 135,
+        "total_tokens": 934
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 70,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "ESS rejects a time correction with 'End before start' for 23:00 to 07:00 next day. Both dates are entered correctly; tried twice.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify that the time format and date entries are correctly formatted according to the system's requirements.",
+          "Check if there are any specific rules or validations set for time corrections in the ESS application.",
+          "Contact technical support for further assistance with the 'End before start' error."
+        ]
+      },
+      "elapsed_seconds": 3.314241399988532,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 811,
+        "completion_tokens": 168,
+        "total_tokens": 979
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 71,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User wants to know if they can save an unfinished leave request in Workday and return later for completion.",
+        "category": "absence",
+        "priority": "low",
+        "application": "Workday",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if Workday provides a 'Save Draft' or 'Save and Continue Later' option when creating a leave request.",
+          "Look for a 'Cancel' or 'Exit' button to exit without submitting the request.",
+          "Consult Workday's help documentation or contact your HR administrator for specific guidance on saving leave requests."
+        ]
+      },
+      "elapsed_seconds": 3.216177999973297,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 793,
+        "completion_tokens": 163,
+        "total_tokens": 956
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 72,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "PayHub shows a bonus as paid, but it is not reflected in the bank transfer. Base salary has arrived. Need to reconcile the bonus payment.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify the payment details in PayHub to ensure the bonus was processed correctly.",
+          "Contact the finance or payroll team to investigate the discrepancy between the recorded payment and the bank transfer.",
+          "Check the bank statement for any pending or delayed transactions related to the bonus."
+        ]
+      },
+      "elapsed_seconds": 3.215360000031069,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 800,
+        "completion_tokens": 158,
+        "total_tokens": 958
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 73,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Authenticator works now after correcting phone time. HR Portal login is successful. Updating the ticket, no further assistance needed.",
+        "category": "authentication",
+        "priority": "low",
+        "application": "HR Portal",
+        "language": "en",
+        "requires_support": false,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": []
+      },
+      "elapsed_seconds": 2.7414508999790996,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 799,
+        "completion_tokens": 96,
+        "total_tokens": 895
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 74,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Contact search in HR Portal returns HTTP 500 error for names with an apostrophe.",
+        "category": "technical",
+        "priority": "medium",
+        "application": "HR Portal",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": "500",
+          "error_message": "Internal Server Error"
+        },
+        "suggested_actions": [
+          "Check if the issue persists with other names containing special characters.",
+          "Try clearing the browser cache and cookies, then repeat the search.",
+          "Contact technical support with the exact error message and steps to reproduce the issue."
+        ]
+      },
+      "elapsed_seconds": 3.118676999991294,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 823,
+        "completion_tokens": 145,
+        "total_tokens": 968
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 75,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "ESS changed my language to Polish after an update. I need to set it back to English.",
+        "category": "employee_profile",
+        "priority": "low",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check the language settings in the account preferences or profile settings.",
+          "Look for a language toggle option in the application menu or settings.",
+          "Contact technical support if the language settings are not accessible or do not work."
+        ]
+      },
+      "elapsed_seconds": 3.0592060000053607,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 798,
+        "completion_tokens": 139,
+        "total_tokens": 937
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 76,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "80 shift assignments were imported into ShiftBoard, but only 40 appear after confirmation. No errors occurred, and reimport was not attempted to avoid duplicates. Support is needed before next week's rota is published.",
+        "category": "shifts",
+        "priority": "high",
+        "application": "ShiftBoard",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check if the shift assignments were correctly formatted during import.",
+          "Contact technical support to investigate the discrepancy in imported data.",
+          "Verify if the missing shifts can be manually added before the rota is published."
+        ]
+      },
+      "elapsed_seconds": 3.2337808000156656,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 820,
+        "completion_tokens": 164,
+        "total_tokens": 984
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 77,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Approved unpaid leave is displayed as paid in ESS.",
+        "category": "absence",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Verify the absence code configuration in the system to ensure it correctly reflects unpaid status.",
+          "Check if the absence request was submitted correctly and if the status was updated properly.",
+          "Contact HR or payroll to confirm the absence code and its impact on payroll processing."
+        ]
+      },
+      "elapsed_seconds": 3.1558005000115372,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 796,
+        "completion_tokens": 139,
+        "total_tokens": 935
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 78,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "HR Portal mobile app opens a blank page when tapping the privacy notice on Android 14.",
+        "category": "technical",
+        "priority": "medium",
+        "application": "HR Portal",
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Check for any recent updates or patches for the HR Portal app that may address this issue.",
+          "Try clearing the app cache and data through the device settings.",
+          "Contact technical support for further assistance with the app malfunction."
+        ]
+      },
+      "elapsed_seconds": 3.0698474000091664,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 810,
+        "completion_tokens": 140,
+        "total_tokens": 950
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 79,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "User is requesting help with their account but will provide more details after lunch.",
+        "category": "other",
+        "priority": "unknown",
+        "application": null,
+        "language": "en",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": []
+      },
+      "elapsed_seconds": 2.723966899968218,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 796,
+        "completion_tokens": 85,
+        "total_tokens": 881
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 80,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Не можу увійти в ESS після зміни телефону: код MFA не приходить",
+        "category": "authentication",
+        "priority": "high",
+        "application": "ESS",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте, чи правильно введено номер телефону в налаштуваннях ESS.",
+          "Спробуйте відновити доступ через службу підтримки ESS.",
+          "Зверніться до технічної підтримки для додаткової допомоги з MFA."
+        ]
+      },
+      "elapsed_seconds": 3.431624400021974,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 827,
+        "completion_tokens": 190,
+        "total_tokens": 1017
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 81,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Потрібна допомога з переглядом залишку відпустки в ESS для планування літа",
+        "category": "absence",
+        "priority": "low",
+        "application": "ESS",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перейдіть у розділ 'Відпустки' або 'Заяви на відпустку' у ESS.",
+          "Перевірте історію відпусток для визначення залишку.",
+          "Якщо не вдається знайти інформацію, зверніться до HR або технічної підтримки."
+        ]
+      },
+      "elapsed_seconds": 3.6859860999975353,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 818,
+        "completion_tokens": 218,
+        "total_tokens": 1036
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 82,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "У PayHub не нарахована зарплата всій нашій зміні, 18 людям. Сьогодні день виплати, бухгалтерія просить терміново перевірити експорт.",
+        "category": "payroll",
+        "priority": "high",
+        "application": "PayHub",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте експорт даних про зміни та нарахування зарплати в PayHub.",
+          "Зв'яжіться з технічною підтримкою PayHub для вирішення проблеми з нарахуванням зарплати.",
+          "Ознайомтеся з вимогами бухгалтерії щодо терміну перевірки та виплати зарплати."
+        ]
+      },
+      "elapsed_seconds": 4.126751400006469,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 839,
+        "completion_tokens": 260,
+        "total_tokens": 1099
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 83,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "У ESS зберігся двічі clock out о 18:15, тепер з'явилася помилка invalid sequence, менеджер просить видалити зайвий запис",
+        "category": "attendance",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": "invalid sequence",
+          "error_message": "invalid sequence"
+        },
+        "suggested_actions": [
+          "Перевірте правильність часу та дати для запису clock out.",
+          "Спробуйте видалити зайвий запис clock out через функцію редагування або видалення в ESS.",
+          "Якщо проблема продовжується, зверніться до технічної підтримки для вирішення помилки invalid sequence."
+        ]
+      },
+      "elapsed_seconds": 3.722341899992898,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 820,
+        "completion_tokens": 238,
+        "total_tokens": 1058
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 84,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "У ShiftBoard затверджений обмін змінами не відобразився, обидва залишилися на суботу",
+        "category": "shifts",
+        "priority": "medium",
+        "application": "ShiftBoard",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте, чи обмін змінами був правильно затверджений у системі.",
+          "Спробуйте оновити сторінку або перезапустити додаток для відображення оновлених даних.",
+          "Зв’яжіться з технічною підтримкою, якщо проблема залишається."
+        ]
+      },
+      "elapsed_seconds": 3.7413882999680936,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 825,
+        "completion_tokens": 221,
+        "total_tokens": 1046
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 85,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "У ESS не зберігається адреса після збереження",
+        "category": "employee_profile",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте, чи увійшли в систему як адміністратор або з правами на зміну профілю.",
+          "Спробуйте очистити кеш браузера та куки, потім увійдіть ще раз.",
+          "Зверніться до технічної підтримки для перевірки функціональності збереження даних."
+        ]
+      },
+      "elapsed_seconds": 3.6036032999982126,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 836,
+        "completion_tokens": 216,
+        "total_tokens": 1052
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 86,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Знову не відображаються правильні дані, цифри інші. Не пам'ятаю сторінку, потрібна допомога.",
+        "category": "technical",
+        "priority": "medium",
+        "application": "ShiftBoard",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте, чи сторінка правильно відкрита та не має помилок у URL.",
+          "Оновіть сторінку або перезавантажте браузер.",
+          "Спробуйте увійти в систему з іншого браузера або пристрою."
+        ]
+      },
+      "elapsed_seconds": 3.4940887999837287,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 815,
+        "completion_tokens": 205,
+        "total_tokens": 1020
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 87,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "HR Portal повертає 504 Gateway Timeout при відкритті довідника працівників",
+        "category": "technical",
+        "priority": "medium",
+        "application": "HR Portal",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": "504",
+          "error_message": "Gateway Timeout"
+        },
+        "suggested_actions": [
+          "Перезавантажте сторінку та спробуйте відкрити довідник знову.",
+          "Перевірте мережеві з'єднання та відключіть будь-які мережеві прокси.",
+          "Спробуйте відкрити довідник у іншому браузері або на іншому пристрої."
+        ]
+      },
+      "elapsed_seconds": 3.723332100023981,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 833,
+        "completion_tokens": 222,
+        "total_tokens": 1055
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 88,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Як у ESS скасувати чернетку заяви на відпустку, якщо ще не надіслав менеджеру?",
+        "category": "absence",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте, чи є варіанти скасування заяви у розділі редагування чернетки.",
+          "Спробуйте видалити чернетку або змінити статус на 'відмовлено' у відповідному розділі.",
+          "Якщо це неможливо, зверніться до технічної підтримки або менеджера для подальших дій."
+        ]
+      },
+      "elapsed_seconds": 4.3834949000156485,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 810,
+        "completion_tokens": 249,
+        "total_tokens": 1059
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 89,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "У графіку ESS нічна зміна закінчується раніше, ніж починається, дата завершення та початку збігаються. Працюю через північ, уточніть будь ласка.",
+        "category": "shifts",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте налаштування графіка змін у ESS для нічної зміни.",
+          "Уточніть дати початку та завершення зміни у відповідному розділі системи.",
+          "Зв'яжіться з технічною підтримкою або адміністрацією ESS для вирішення проблеми."
+        ]
+      },
+      "elapsed_seconds": 4.390616799995769,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 846,
+        "completion_tokens": 269,
+        "total_tokens": 1115
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 90,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Питається про правила компенсації за роботу у вихідний",
+        "category": "payroll",
+        "priority": "low",
+        "application": null,
+        "language": "uk",
+        "requires_support": false,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перегляньте внутрішні документи компанії або угоди з працівниками.",
+          "Зверніться до керівника або HR-служби для отримання детальної інформації.",
+          "Перевірте офіційні документи або угоди, які регулюють компенсацію за роботу у вихідні."
+        ]
+      },
+      "elapsed_seconds": 4.167371999996249,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 814,
+        "completion_tokens": 215,
+        "total_tokens": 1029
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 91,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "В ESS лікарняний не відправляєтся через помилку ABS_422, invalid date",
+        "category": "technical",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": "ABS_422",
+          "error_message": "invalid date"
+        },
+        "suggested_actions": [
+          "Перевірте правильність вибору дати у календарі перед відправленням.",
+          "Спробуйте очистити кеш браузера Edge та перезавантажити сторінку.",
+          "Зверніться до технічної підтримки для додаткової перевірки помилки ABS_422."
+        ]
+      },
+      "elapsed_seconds": 3.710824200010393,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 845,
+        "completion_tokens": 213,
+        "total_tokens": 1058
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 92,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "У PayHub сума правильна, але PDF розрахункового листа порожній. Повторне завантаження не вирішує проблему.",
+        "category": "payroll",
+        "priority": "medium",
+        "application": "PayHub",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте, чи правильно введено дані для генерації розрахункового листа.",
+          "Спробуйте відновити або перезавантажити сторінку, щоб вирішити можливу технічну непорочність.",
+          "Зверніться до технічної підтримки PayHub для додаткової допомоги."
+        ]
+      },
+      "elapsed_seconds": 3.990316100011114,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 826,
+        "completion_tokens": 239,
+        "total_tokens": 1065
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 93,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Мій профіль у HR Portal показує старого керівника після переведення, через це новий менеджер не бачить мої заявки",
+        "category": "employee_profile",
+        "priority": "medium",
+        "application": "HR Portal",
+        "language": "uk",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Перевірте, чи правильно встановлено нове призначення керівника у вашому профілі.",
+          "Зверніться до HR або технічної підтримки для виправлення помилки у профілі.",
+          "Уточніть, чи новий менеджер має доступ до вашої інформації у системі."
+        ]
+      },
+      "elapsed_seconds": 3.7958967000013217,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 830,
+        "completion_tokens": 230,
+        "total_tokens": 1060
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 94,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Ошибка 401 Unauthorized при входе в HR Portal после сброса пароля, проблема сохраняется и на другом браузере",
+        "category": "authentication",
+        "priority": "high",
+        "application": "HR Portal",
+        "language": "ru",
+        "requires_support": true,
+        "details": {
+          "error_code": "401",
+          "error_message": "Unauthorized"
+        },
+        "suggested_actions": [
+          "Проверьте, правильно ли введён логин и пароль, убедитесь, что нет опечаток.",
+          "Попробуйте войти в HR Portal через другой браузер или устройство.",
+          "Свяжитесь с технической поддержкой для проверки состояния системы и восстановления доступа."
+        ]
+      },
+      "elapsed_seconds": 3.3948824999970384,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 817,
+        "completion_tokens": 190,
+        "total_tokens": 1007
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 95,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Пользователь хочет узнать, где в ESS посмотреть историю смен за прошлый месяц для сверки записей.",
+        "category": "attendance",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "ru",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Проверьте раздел 'История смен' в ESS, где обычно отображаются записи о рабочих сменах.",
+          "Обратитесь в техническую поддержку ESS для получения точной информации о доступных разделах и функциях.",
+          "Свяжитесь с HR-администратором для получения помощи в доступе к необходимым данным."
+        ]
+      },
+      "elapsed_seconds": 3.4179119000327773,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 814,
+        "completion_tokens": 190,
+        "total_tokens": 1004
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 96,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "В PayHub при выгрузке расчётных листов возникает ошибка EXPORT_500, файл 0 байт, требуется выгрузка для всего филиала до 16:00",
+        "category": "payroll",
+        "priority": "high",
+        "application": "PayHub",
+        "language": "ru",
+        "requires_support": true,
+        "details": {
+          "error_code": "EXPORT_500",
+          "error_message": "Export failed"
+        },
+        "suggested_actions": [
+          "Проверьте стабильность интернет-соединения и попробуйте повторить выгрузку.",
+          "Обратитесь в техническую поддержку PayHub для устранения ошибки EXPORT_500.",
+          "Сообщите о проблеме руководству или бухгалтерии для координации альтернативного решения."
+        ]
+      },
+      "elapsed_seconds": 3.562682899995707,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 864,
+        "completion_tokens": 213,
+        "total_tokens": 1077
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 97,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "После изменения контакта для экстренной связи в Workday, сохранённое значение не изменилось.",
+        "category": "employee_profile",
+        "priority": "medium",
+        "application": "Workday",
+        "language": "ru",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Проверьте, правильно ли были введены данные в форме редактирования профиля.",
+          "Попробуйте обновить страницу или перезагрузить приложение.",
+          "Обратитесь в техническую поддержку Workday для проверки изменений."
+        ]
+      },
+      "elapsed_seconds": 3.441993100044783,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 807,
+        "completion_tokens": 166,
+        "total_tokens": 973
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 98,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Как оформить отпуск на полдня в ESS, первый раз делается, но ещё не отправлялось.",
+        "category": "absence",
+        "priority": "medium",
+        "application": "ESS",
+        "language": "ru",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Откройте ESS и перейдите в раздел управления отпусками.",
+          "Выберите дату и время для отпуска на полдня, убедитесь, что время указано корректно.",
+          "Проверьте, чтобы все поля были заполнены правильно, и отправьте заявку на утверждение."
+        ]
+      },
+      "elapsed_seconds": 3.539751400006935,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 799,
+        "completion_tokens": 175,
+        "total_tokens": 974
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 99,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "Терминал attendance не принял выход, пишет E_OFFLINE. Смена закончилась в 21:30, интернет уже появился, но запись так и не дошла",
+        "category": "attendance",
+        "priority": "medium",
+        "application": "attendance",
+        "language": "ru",
+        "requires_support": true,
+        "details": {
+          "error_code": "E_OFFLINE",
+          "error_message": "Терминал attendance не принял выход"
+        },
+        "suggested_actions": [
+          "Проверьте стабильность интернет-соединения на терминале.",
+          "Попробуйте перезапустить терминал для восстановления связи.",
+          "Обратитесь в техническую поддержку для проверки состояния терминала и синхронизации данных."
+        ]
+      },
+      "elapsed_seconds": 3.7435785999987274,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 819,
+        "completion_tokens": 200,
+        "total_tokens": 1019
+      },
+      "error": null
+    },
+    {
+      "ticket_id": 100,
+      "provider": "ollama",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "status": "success",
+      "output": {
+        "summary": "После обновления ShiftBoard две смены отображаются одновременно, manager указывает, что должна быть одна. Срочно, не понимаю.",
+        "category": "shifts",
+        "priority": "high",
+        "application": "ShiftBoard",
+        "language": "ru",
+        "requires_support": true,
+        "details": {
+          "error_code": null,
+          "error_message": null
+        },
+        "suggested_actions": [
+          "Проверьте настройки смен в ShiftBoard и убедитесь, что даты и временные интервалы корректны.",
+          "Свяжитесь с технической поддержкой ShiftBoard для проверки обновления и возможных ошибок.",
+          "Обратитесь к manager для уточнения правильного расписания и сравнения с текущим состоянием."
+        ]
+      },
+      "elapsed_seconds": 3.506836900021881,
+      "model": "qwen3:8b",
+      "usage": {
+        "prompt_tokens": 818,
+        "completion_tokens": 203,
+        "total_tokens": 1021
+      },
+      "error": null
+    }
+  ]
+}

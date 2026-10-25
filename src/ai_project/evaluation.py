@@ -66,7 +66,7 @@ def field_value(output: dict[str, Any], field: str) -> Any:
     return value
 
 
-def evaluate(predictions: Any, golden: Any) -> dict[str, Any]:
+def evaluate(predictions: Any, golden: Any, ids: list[int] | None = None) -> dict[str, Any]:
     if not isinstance(predictions, dict) or not isinstance(predictions.get("results"), list):
         raise ValueError("Predictions must be a parse-all object with a results array.")
     total = predictions.get("total_tickets")
@@ -87,6 +87,25 @@ def evaluate(predictions: Any, golden: Any) -> dict[str, Any]:
             )
         except ValidationError as exc:
             raise ValueError(f"Invalid golden output for ID {ticket_id}.") from exc
+
+    if ids is not None:
+        if not isinstance(ids, list) or not ids or any(type(value) is not int for value in ids):
+            raise ValueError("Selected IDs must be a nonempty array of integers (not booleans).")
+        if len(ids) != len(set(ids)):
+            raise ValueError("Selected IDs must not contain duplicates.")
+        unknown = sorted(set(ids) - set(expected))
+        if unknown:
+            raise ValueError(f"Selected IDs absent from Golden Set: {unknown}")
+        expected = {ticket_id: label for ticket_id, label in expected.items() if ticket_id in ids}
+
+    notes = NOTES
+    if ids is not None:
+        notes = {
+            **NOTES,
+            "scoring": NOTES["scoring"].replace("Every golden ID", "Every selected golden ID"),
+            "scope": f"Field accuracy and mismatches use selected golden IDs: {sorted(ids)}. "
+            "Valid-output rate and latency use the entire prediction batch, without ID filtering.",
+        }
 
     records = predictions["results"]
     issues: list[str] = []
@@ -195,7 +214,7 @@ def evaluate(predictions: Any, golden: Any) -> dict[str, Any]:
         },
         "mismatches": mismatches,
         "excluded_fields": EXCLUDED,
-        "notes": NOTES,
+        "notes": notes,
         "judge": "No LLM judge is used.",
     }
 
@@ -221,6 +240,8 @@ def summary(report: dict[str, Any]) -> str:
         f"Valid outputs: {rate['correct']}/{rate['total']} "
         f"({format_percent(rate['accuracy_percent'])})"
     ]
+    if "scope" in report["notes"]:
+        lines.append(report["notes"]["scope"])
     for field, score in report["fields"].items():
         lines.append(
             f"{field}: {score['correct']}/{score['total']} "
