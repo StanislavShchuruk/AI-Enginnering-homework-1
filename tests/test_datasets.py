@@ -45,7 +45,7 @@ def record_ids(records: list[dict[str, Any]], filename: str) -> list[int]:
     return ids
 
 
-@pytest.mark.parametrize("filename,count", [("tickets.json", 30), ("golden_set.json", 10)])
+@pytest.mark.parametrize("filename,count", [("tickets.json", 100), ("golden_set.json", 40)])
 def test_record_count(filename: str, count: int) -> None:
     records = load_records(filename)
     assert len(records) == count, f"{filename}: expected {count} records, got {len(records)}"
@@ -75,3 +75,75 @@ def test_expected_outputs_validate() -> None:
         except ValidationError as exc:
             errors.append(f"{label}: {exc}")
     assert not errors, "Invalid golden outputs:\n" + "\n".join(errors)
+
+
+def load_json(filename: str) -> Any:
+    return json.loads(
+        (DATA_DIR / filename).read_text(encoding="utf-8-sig"),
+        object_pairs_hook=reject_duplicate_keys,
+    )
+
+
+def test_ticket_shape_and_sequential_ids() -> None:
+    tickets = load_records("tickets.json")
+    assert record_ids(tickets, "tickets.json") == list(range(1, 101))
+    for ticket in tickets:
+        assert set(ticket) == {"id", "text"}
+        assert isinstance(ticket["text"], str) and ticket["text"].strip()
+    assert len({ticket["text"] for ticket in tickets}) == 100
+
+
+def test_language_distribution_and_golden_agreement() -> None:
+    # Human-authored language inventory: predominant prose, not product/error text.
+    languages = load_json("ticket_languages.json")
+    assert set(languages) == {"en", "uk", "ru"}
+    language_by_id: dict[int, str] = {}
+    for language, count in {"en": 70, "uk": 20, "ru": 10}.items():
+        ids = languages[language]
+        assert isinstance(ids, list) and len(ids) == count
+        assert all(type(value) is int for value in ids)
+        for ticket_id in ids:
+            assert ticket_id not in language_by_id
+            language_by_id[ticket_id] = language
+    assert set(language_by_id) == set(range(1, 101))
+    for case in load_records("golden_set.json"):
+        assert case["expected"]["language"] == language_by_id[case["id"]]
+
+
+def test_golden_splits() -> None:
+    development = load_json("development_ids.json")
+    holdout = load_json("holdout_ids.json")
+    for ids, count in [(development, 15), (holdout, 25)]:
+        assert isinstance(ids, list) and len(ids) == count
+        assert all(type(value) is int for value in ids)
+        assert len(set(ids)) == count
+    assert not set(development) & set(holdout)
+    cases = load_records("golden_set.json")
+    assert set(development) | set(holdout) == {case["id"] for case in cases}
+    assert {1, 2, 7, 10, 12, 14, 17, 18, 23, 24} <= set(development)
+    for case in cases:
+        assert set(case) == {"id", "expected"}
+
+
+def test_original_records_unchanged() -> None:
+    import hashlib
+
+    hashes = load_json("original_data_hashes.json")
+    for filename, count, key in [
+        ("tickets.json", 30, "tickets"), ("golden_set.json", 10, "golden")
+    ]:
+        original = load_records(filename)[:count]
+        canonical = json.dumps(
+            original, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+        ).encode("utf-8")
+        assert hashlib.sha256(canonical).hexdigest() == hashes[key]
+
+
+def test_golden_coverage() -> None:
+    labels = [case["expected"] for case in load_records("golden_set.json")]
+    assert {label["category"] for label in labels} == {
+        "authentication", "absence", "attendance", "shifts", "payroll",
+        "employee_profile", "technical", "other",
+    }
+    assert {label["priority"] for label in labels} == {"low", "medium", "high", "unknown"}
+    assert {label["requires_support"] for label in labels} == {True, False}

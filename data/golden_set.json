@@ -1,0 +1,735 @@
+[
+  {
+    "id": 1,
+    "expected": {
+      "summary": "Cannot log in to HR portal",
+      "category": "authentication",
+      "priority": "medium",
+      "application": "HR Portal",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": "Incorrect password"
+      },
+      "suggested_actions": [
+        "Verify login credentials",
+        "Try resetting the password"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "expected": {
+      "summary": "Attendance record shows zero hours despite the employee working",
+      "category": "attendance",
+      "priority": "medium",
+      "application": null,
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Contact your manager"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "expected": {
+      "summary": "Employee Calendar fails to load after switching months",
+      "category": "technical",
+      "priority": "medium",
+      "application": "HR Portal",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": "500",
+        "error_message": "Internal Server Error"
+      },
+      "suggested_actions": [
+        "Try refreshing the page and reopening Employee Calendar",
+        "Contact technical support and provide the steps to reproduce the issue"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "expected": {
+      "summary": "Duplicate clock-out records with invalid sequence error",
+      "category": "attendance",
+      "priority": "medium",
+      "application": null,
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": "invalid sequence"
+      },
+      "suggested_actions": [
+        "Contact your manager to review and correct the clocking records",
+        "Contact technical support if the issue cannot be resolved by your manager"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "expected": {
+      "summary": "Missing worked hours affecting payroll for 12 employees",
+      "category": "payroll",
+      "priority": "high",
+      "application": null,
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Contact payroll and technical support immediately",
+        "Provide the affected employee records and payroll deadline"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "expected": {
+      "summary": "Absence request page freezing",
+      "category": "absence",
+      "priority": "medium",
+      "application": "ESS",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Contact technical support and provide the steps to reproduce the issue"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "expected": {
+      "summary": "How to cancel a pending leave request",
+      "category": "absence",
+      "priority": "low",
+      "application": null,
+      "language": "en",
+      "requires_support": false,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Check whether the pending leave request has a cancellation option",
+        "If cancellation is unavailable, contact your manager for assistance"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "expected": {
+      "summary": "Shift swap was processed incorrectly",
+      "category": "shifts",
+      "priority": "medium",
+      "application": null,
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Contact your manager to review and correct the shift swap",
+        "Contact technical support if the issue cannot be resolved by your manager"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "expected": {
+      "summary": "Відсутні доплати за нічні зміни",
+      "category": "payroll",
+      "priority": "medium",
+      "application": null,
+      "language": "uk",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Зверніться до менеджера або відділу розрахунку заробітної плати для перевірки нарахувань за нічні зміни"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "expected": {
+      "summary": "Не завантажується графік робочих змін",
+      "category": "shifts",
+      "priority": "medium",
+      "application": "HR portal",
+      "language": "uk",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Зверніться до менеджера, щоб уточнити актуальний графік змін",
+        "Повідомте технічну підтримку про проблему із завантаженням графіка"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "expected": {
+      "summary": "Cannot receive MFA code after replacing phone",
+      "category": "authentication",
+      "priority": "medium",
+      "application": "ESS",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Contact IT to restore MFA access"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "expected": {
+      "summary": "How to check annual leave carryover",
+      "category": "absence",
+      "priority": "low",
+      "application": null,
+      "language": "en",
+      "requires_support": false,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Check the leave carryover policy"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "expected": {
+      "summary": "Badge error prevents three employees recording shift start",
+      "category": "attendance",
+      "priority": "high",
+      "application": null,
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": "E_CLOCK_07",
+        "error_message": "badge not recognised"
+      },
+      "suggested_actions": [
+        "Contact support about the affected terminal",
+        "Ask the supervisor to record the actual start times"
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "expected": {
+      "summary": "Approved Sunday shift swap is not reflected in assignment",
+      "category": "shifts",
+      "priority": "medium",
+      "application": "Shifts",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Ask the manager to review and correct the shift assignment"
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "expected": {
+      "summary": "Locked payroll period blocks branch export before cutoff",
+      "category": "payroll",
+      "priority": "high",
+      "application": "PayHub",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": "PAY_409",
+        "error_message": "Period locked"
+      },
+      "suggested_actions": [
+        "Contact payroll and technical support immediately",
+        "Provide the export error and cutoff time"
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "expected": {
+      "summary": "How to update a preferred name",
+      "category": "employee_profile",
+      "priority": "low",
+      "application": "Workday",
+      "language": "en",
+      "requires_support": false,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Check profile options for updating the preferred name"
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "expected": {
+      "summary": "Support attachment submission fails with HTTP 502",
+      "category": "technical",
+      "priority": "medium",
+      "application": "HR Portal",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": "502",
+        "error_message": "Bad Gateway"
+      },
+      "suggested_actions": [
+        "Contact technical support with the reproduction steps"
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "expected": {
+      "summary": "Unspecified saving problem",
+      "category": "other",
+      "priority": "unknown",
+      "application": null,
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Provide the application, affected screen and steps that fail"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "expected": {
+      "summary": "How to download a previous payslip",
+      "category": "payroll",
+      "priority": "low",
+      "application": "ESS",
+      "language": "en",
+      "requires_support": false,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Check the payslip section for a download option"
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "expected": {
+      "summary": "Sick leave attachment rejected even after reducing file size",
+      "category": "absence",
+      "priority": "medium",
+      "application": "ESS",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": "File too large"
+      },
+      "suggested_actions": [
+        "Contact support with file sizes and the upload error"
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "expected": {
+      "summary": "Clock-out recorded before the employee finished work",
+      "category": "attendance",
+      "priority": "medium",
+      "application": null,
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Ask the supervisor to review and correct the time record"
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "expected": {
+      "summary": "How to view published shifts",
+      "category": "shifts",
+      "priority": "low",
+      "application": "RotaCloud",
+      "language": "en",
+      "requires_support": false,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Check the published schedule in RotaCloud"
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "expected": {
+      "summary": "Account remains disabled after contract extension",
+      "category": "authentication",
+      "priority": "medium",
+      "application": "HR Portal",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": "Account disabled"
+      },
+      "suggested_actions": [
+        "Ask HR or IT to review account access after the extension"
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "expected": {
+      "summary": "JPG profile photo upload rejected",
+      "category": "employee_profile",
+      "priority": "medium",
+      "application": "Workday",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": "PHOTO_415",
+        "error_message": "Unsupported media type"
+      },
+      "suggested_actions": [
+        "Contact support with the file types and reproduction steps"
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "expected": {
+      "summary": "Help control overlaps Sign out at increased browser zoom",
+      "category": "technical",
+      "priority": "low",
+      "application": "ESS",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Use the working zoom setting if suitable",
+        "Report the browser and layout reproduction steps to support"
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "expected": {
+      "summary": "Employment confirmation letter requested for rental application",
+      "category": "other",
+      "priority": "medium",
+      "application": null,
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Ask HR for an employment confirmation letter"
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "expected": {
+      "summary": "Leave request has conflicting approval statuses",
+      "category": "absence",
+      "priority": "medium",
+      "application": "ESS",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Ask HR or support to verify the request status with the manager"
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "expected": {
+      "summary": "Salary received twice with matching transfer references",
+      "category": "payroll",
+      "priority": "medium",
+      "application": "PayHub",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Contact payroll to investigate the duplicate transfers"
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "expected": {
+      "summary": "Break recorded as three hours instead of thirty minutes",
+      "category": "attendance",
+      "priority": "medium",
+      "application": "ESS",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Ask the manager to review and correct the break record"
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "expected": {
+      "summary": "Entire team cannot view station assignments before shift start",
+      "category": "shifts",
+      "priority": "high",
+      "application": "ShiftBoard",
+      "language": "en",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Contact the manager immediately for station assignments",
+        "Report the team-wide schedule outage to support"
+      ]
+    }
+  },
+  {
+    "id": 80,
+    "expected": {
+      "summary": "Не надходить код MFA після зміни телефону",
+      "category": "authentication",
+      "priority": "medium",
+      "application": "ESS",
+      "language": "uk",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Зверніться до підтримки для відновлення доступу MFA"
+      ]
+    }
+  },
+  {
+    "id": 81,
+    "expected": {
+      "summary": "Де переглянути залишок відпустки",
+      "category": "absence",
+      "priority": "low",
+      "application": "ESS",
+      "language": "uk",
+      "requires_support": false,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Перевірте розділ відпусток і доступний залишок"
+      ]
+    }
+  },
+  {
+    "id": 82,
+    "expected": {
+      "summary": "Відсутня зарплата у 18 працівників у день виплати",
+      "category": "payroll",
+      "priority": "high",
+      "application": "PayHub",
+      "language": "uk",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Терміново зверніться до бухгалтерії та технічної підтримки",
+        "Повідомте про кількість працівників і необхідність перевірки експорту"
+      ]
+    }
+  },
+  {
+    "id": 83,
+    "expected": {
+      "summary": "Подвійний запис виходу спричиняє помилку послідовності",
+      "category": "attendance",
+      "priority": "medium",
+      "application": "ESS",
+      "language": "uk",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": "invalid sequence"
+      },
+      "suggested_actions": [
+        "Попросіть менеджера перевірити та виправити зайвий запис виходу"
+      ]
+    }
+  },
+  {
+    "id": 84,
+    "expected": {
+      "summary": "Затверджений обмін змінами не змінив призначення",
+      "category": "shifts",
+      "priority": "medium",
+      "application": "ShiftBoard",
+      "language": "uk",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Зверніться до менеджера для перевірки та виправлення обміну"
+      ]
+    }
+  },
+  {
+    "id": 85,
+    "expected": {
+      "summary": "Зміна адреси не зберігається попри підтвердження",
+      "category": "employee_profile",
+      "priority": "medium",
+      "application": "ESS",
+      "language": "uk",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Передайте підтримці кроки відтворення та повідомлення про успішне збереження"
+      ]
+    }
+  },
+  {
+    "id": 86,
+    "expected": {
+      "summary": "Незрозуміла розбіжність у цифрах на невідомій сторінці",
+      "category": "other",
+      "priority": "unknown",
+      "application": null,
+      "language": "uk",
+      "requires_support": true,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Уточніть назву програми, сторінку та очікувані значення"
+      ]
+    }
+  },
+  {
+    "id": 94,
+    "expected": {
+      "summary": "Ошибка авторизации сохраняется после сброса пароля",
+      "category": "authentication",
+      "priority": "medium",
+      "application": "HR Portal",
+      "language": "ru",
+      "requires_support": true,
+      "details": {
+        "error_code": "401",
+        "error_message": "Unauthorized"
+      },
+      "suggested_actions": [
+        "Обратитесь в поддержку для проверки доступа к учётной записи"
+      ]
+    }
+  },
+  {
+    "id": 95,
+    "expected": {
+      "summary": "Где посмотреть историю смен за прошлый месяц",
+      "category": "shifts",
+      "priority": "low",
+      "application": "ESS",
+      "language": "ru",
+      "requires_support": false,
+      "details": {
+        "error_code": null,
+        "error_message": null
+      },
+      "suggested_actions": [
+        "Проверьте возможность просмотра прошлых периодов в расписании"
+      ]
+    }
+  },
+  {
+    "id": 96,
+    "expected": {
+      "summary": "Экспорт расчётных листов филиала завершается ошибкой перед сроком выдачи",
+      "category": "payroll",
+      "priority": "high",
+      "application": "PayHub",
+      "language": "ru",
+      "requires_support": true,
+      "details": {
+        "error_code": "EXPORT_500",
+        "error_message": "Export failed"
+      },
+      "suggested_actions": [
+        "Срочно передайте бухгалтерии и поддержке ошибку и срок выдачи",
+        "Приложите шаги воспроизведения и размер полученного файла"
+      ]
+    }
+  }
+]

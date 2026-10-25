@@ -11,8 +11,8 @@ require human review.
 
 ## File structure and IDs
 
-data/tickets.json must be a JSON array containing exactly 30 ticket objects.
-data/golden_set.json must be a JSON array containing exactly 10 case objects,
+data/tickets.json must be a JSON array containing exactly 100 ticket objects.
+data/golden_set.json must be a JSON array containing exactly 40 case objects,
 each with an id and an expected HRSupportTicket object. IDs must be unique integers
 within each file; booleans are not IDs. Every golden ID must identify an input ticket.
 The golden set is a subset, so not all input IDs need golden labels.
@@ -100,6 +100,7 @@ when null. Additional fields are not allowed.
 
 Run python -m pytest from the project root after installing the dev dependencies.
 Tests check file parsing, counts, unique integer IDs, golden-to-input ID references,
-and every expected output against HRSupportTicket. They do not establish semantic
-label correctness, language distribution, or agreement with these decision rules;
+and every expected output against HRSupportTicket. Language counts are checked against a human-authored ID inventory, not automatic
+language detection. Tests do not establish semantic label correctness or agreement
+with these decision rules;
 those still need manual review. Validation never modifies either JSON file.

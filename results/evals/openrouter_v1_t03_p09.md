@@ -2,25 +2,25 @@
 
 Temperature: 0.3; top_p: 0.9.
 
-Golden records: 10. Input predictions: 30. Declared total: 30.
+Golden records: 40. Input predictions: 100. Declared total: 100.
 
-Valid-output rate: 30/30 (100.00%).
+Valid-output rate: 100/100 (100.00%).
 
 ## Field accuracy
 
 | Field | Correct/total | Accuracy |
 | --- | --- | --- |
-| category | 10/10 | 100.00% |
-| priority | 9/10 | 90.00% |
-| application | 10/10 | 100.00% |
-| language | 10/10 | 100.00% |
-| requires_support | 10/10 | 100.00% |
-| details.error_code | 10/10 | 100.00% |
-| details.error_message | 10/10 | 100.00% |
+| category | 37/40 | 92.50% |
+| priority | 32/40 | 80.00% |
+| application | 40/40 | 100.00% |
+| language | 38/40 | 95.00% |
+| requires_support | 40/40 | 100.00% |
+| details.error_code | 40/40 | 100.00% |
+| details.error_message | 40/40 | 100.00% |
 
 ## Latency (seconds)
 
-Samples: 30; p50: 1.248331250011688; p95: 1.9179066849872468.
+Samples: 100; p50: 1.399146350013325; p95: 1.9547215099708408.
 
 ## Mismatches
 
@@ -28,7 +28,19 @@ Samples: 30; p50: 1.248331250011688; p95: 1.9179066849872468.
 
 | Ticket ID | Field | Expected | Actual |
 | --- | --- | --- | --- |
+| 12 | category | "payroll" | "attendance" |
+| 12 | language | "en" | "uk" |
 | 18 | priority | "medium" | "high" |
+| 31 | priority | "medium" | "high" |
+| 38 | category | "other" | "technical" |
+| 38 | priority | "unknown" | "medium" |
+| 43 | priority | "medium" | "high" |
+| 46 | category | "other" | "employee_profile" |
+| 48 | priority | "medium" | "high" |
+| 80 | priority | "medium" | "high" |
+| 86 | priority | "unknown" | "medium" |
+| 94 | priority | "medium" | "high" |
+| 95 | language | "ru" | "uk" |
 
 ## Data issues
 

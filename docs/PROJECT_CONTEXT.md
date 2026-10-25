@@ -6,13 +6,12 @@ Parse unstructured HR support tickets into validated JSON and eventually provide
 preliminary troubleshooting. The current AI Engineering homework focuses on
 structured outputs, model evaluation, and prompt engineering.
 
-## Planned data
+## Current dataset
 
-- Input: 30 synthetic, realistic, messy HR support messages.
-- Languages: 21 English, 6 Ukrainian, and 3 Russian messages.
-- Golden set: 10 manually reviewed examples from the 30 messages.
-
-These are requirements for future dataset work; no dataset is generated yet.
+- 100 synthetic HR support messages: 70 English, 20 Ukrainian, 10 Russian.
+- 40 reference labels: 15 development examples and 25 holdout examples.
+- Existing 30 tickets and 10 labels are preserved; all original labels are in development.
+- See data/README.md for split usage, language inventory, and review status.
 
 ## Agreed output schema
 
@@ -56,8 +55,9 @@ retries, and offline mocked tests. The inherited mock CLI remains available.
 The existing schema is packaged at src/ai_project/models.py; the preexisting
 models/models.py copy is retained unchanged. The current v1 prompt is stored at
 docs/prompts/v1.txt, with prompts/v1.txt supported as the primary location.
-Do not change dataset/golden labels or v1 prompt, generate datasets, implement
-evaluations, prompt v2, or repair logic in this phase. Sequential batch
+The original provider implementation phase excluded dataset changes. The separately
+authorized dataset extension now contains 100 tickets and 40 reference labels;
+prompts, provider implementations, and prediction results remain unchanged. Sequential batch
 processing is now supported through parse-all, reusing single-ticket parsing and
 saving atomic incremental results. No automatic resume is implemented.
 Live API requests require explicit approval; automated tests use mocks only.

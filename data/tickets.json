@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "text": "Hi, I can't sign in to the HR portal. It says 'incorrect password' evn after I reseted it this morning."
+  },
+  {
+    "id": 2,
+    "text": "my clockin for yestarday is gone?? was there 08:00-17:00, break was 30mins. app shows 0 hours pls check"
+  },
+  {
+    "id": 3,
+    "text": "Trying to book annual leave for next Friday, but it keeps saying insufficient balance. Dashboard says I have 5 days left. What am I missing?"
+  },
+  {
+    "id": 4,
+    "text": "Hello, my Saturday shift is showing as 6am instead of 6pm. Can someone correct it before the weekend?"
+  },
+  {
+    "id": 5,
+    "text": "Payslip looks off this month. I did two extra night shifts but the overtime line is blank. Maybe it's just not updated yet? Payday's tomorrow."
+  },
+  {
+    "id": 6,
+    "text": "Where do I change my emergency contact in the employee app? I can see the old one but no edit button."
+  },
+  {
+    "id": 7,
+    "text": "Subject: Employee calendar fails with HTTP 500 after selecting a month\n\nHi support, since the update this morning I can't open the employee calendar in the HR portal. The rest of the employee profile works.\n\nSteps to reproduce:\n1. Sign in to the HR portal on desktop.\n2. Open Employees > Employee Calendar.\n3. Switch from October to September.\n\nExpected: calendar days and absence markers load for September.\nActual: blank calendar and '500 Internal Server Error'; sometimes the spinner just stays there.\n\nTried Chrome and Edge, refreshed and signed out/in. Same result. My colleague can open their own calendar, not sure if it's only my account. Need this for checking attendance before Friday."
+  },
+  {
+    "id": 8,
+    "text": "I can log into ESS on my phone but the desktop site throws 403. My teammate says I was removed from the site yesterday? not sure if that's related."
+  },
+  {
+    "id": 9,
+    "text": "I requested 2 days off, got an email saying approved, but calendar still says pending and manager sees nothing. Which one is correct?"
+  },
+  {
+    "id": 10,
+    "text": "hey, clocked OUT twice by accident last night, now the system says invalid sequence. Can u delete the extra punch?"
+  },
+  {
+    "id": 11,
+    "text": "Roster for next week disappeared after I changed location filter. I only see Monday and Tues, rest is blank. Is that normal?"
+  },
+  {
+    "id": 12,
+    "text": "URGENT! Payroll closes today at 5 PM, but the system shows zero worked hours for 12 employees. We checked their attendance records, and the clockings are there. If this isn't fixed today, their salaries will be calculated incorrectly."
+  },
+  {
+    "id": 13,
+    "text": "Changeded my address last week, saved it, but the profile keeps showing the previous postcode. No error popped up."
+  },
+  {
+    "id": 14,
+    "text": "Bug report - Absence request page freezing\n\nHello team, I think this started after today's release. I was trying to request a half-day absence, not a full day.\n\nRepro steps:\n1) Open ESS web > Absences > New request.\n2) Choose next Wednesday as the start date.\n3) Set duration to Half day and select Afternoon.\n4) Open the absence code dropdown.\n5) Pick a code and click Continue.\n\nExpected result: the next screen should show the request summary.\nActual result: screen goes white, no confirmation, no visible error. If I go back, there is no request in the list.\n\nI tried twice on my laptop (Chrome). On the mobile app I can open the form but haven't submitted because I don't want duplicate requests. Please check, thx."
+  },
+  {
+    "id": 15,
+    "text": "Reset link says expired instantly. Requested three links in 10 min and every one says invalid token :/"
+  },
+  {
+    "id": 16,
+    "text": "Yesterday shows 9h worked but I only did 7.5h. Also there's a red E_OUT warning on Tuesday. Could those be connected?"
+  },
+  {
+    "id": 17,
+    "text": "How do I cancel a leave request that I submitted by mistake? It's still awaiting approval."
+  },
+  {
+    "id": 18,
+    "text": "Shift swap was accepted by Sam but both of us are still assigned to Friday. I don't now whether I should show up or not, pleas advise ASAP."
+  },
+  {
+    "id": 19,
+    "text": "my bank details are updated in the portal but salary went to old account again. Can somebody check whether payroll got the change?"
+  },
+  {
+    "id": 20,
+    "text": "It's doing that thing again like last month. The numbers look weird and the button doesn't work. Please fix, thanks."
+  },
+  {
+    "id": 21,
+    "text": "I was off sick Monday but the attendance screen marks me absent without a code AND says I missed clock-in. I didn't work that day. What should I do?"
+  },
+  {
+    "id": 22,
+    "text": "Доброго дня! Не можу скасувати заявку на відпустку, яку подав учора. Статус ще «Очікує погодження»."
+  },
+  {
+    "id": 23,
+    "text": "У розрахунковому листі за вересень немає доплати за нічні зміни. Працював дві ночі, підкажіть, будь ласка, куди звернутися?"
+  },
+  {
+    "id": 24,
+    "text": "Доброго дня. Після останнього оновлення сторінка графіка змін працює дивно, і я не можу перевірити зміни на наступний тиждень.\n\nЯк повторити:\n1. Зайти в HR portal.\n2. Відкрити Shifts / My Schedule.\n3. Вибрати наступний тиждень і натиснути Apply.\n4. Переключити фільтр локації на Main site.\n\nОчікувано: показує всі зміни за тиждень.\nФактично: крутиться loading без кінця, а іноді список пустий. Ошибки ніякої не пише.\n\nПробував перезайти і обновити браузер, но не допомогло. На телефоні теж іноді пусто. Мені треба знати, чи виходити в неділю, бо менеджер поки не відповів."
+  },
+  {
+    "id": 25,
+    "text": "Привіт, вчора робив clock out, але сьогодні в attendance нічого нема. Пробував обновити сторінку, но нічого не помагає. Можете глянути?"
+  },
+  {
+    "id": 26,
+    "text": "Не можу зайти в HR portal, пароль точно правильний. Вчера ще все работало, а сьогодні пише access denied 403. We ghfdf xb чи щось зламалось?"
+  },
+  {
+    "id": 27,
+    "text": "В мене на суботу стоїть рання зміна, хоча менеджер говорив шо буде вечірня. В расписании досі 07:00, можете уточнити?"
+  },
+  {
+    "id": 28,
+    "text": "Хотів оформити лікарняний за понеділок, але форма не дає вибрати дату. Пише invalid date, хотя в календарі день доступний. Що робити?"
+  },
+  {
+    "id": 29,
+    "text": "Здравствуйте. После изменения номера телефона в профиле сотрудника он не сохраняется, хотя система показывает, что всё успешно.\n\nШаги для воспроизведения:\n1. Открываю Employee Profile в веб-версии HR portal.\n2. Нажимаю Edit возле Contact details.\n3. Ввожу новый номер (тестировал с вымышленным номером), жму Save.\n4. Вижу зелёное уведомление 'Changes saved'.\n5. Обновляю страницу.\n\nОжидание: отображается новый номер.\nФактически: опять старый номер, никаких ошибок. Повторял 3 раза в Chrome; в мобильном ESS тоже старые данные. Остальные поля не трогал. Это проблема синхронизации или я что-то делаю неправильно?"
+  },
+  {
+    "id": 30,
+    "text": "В ращётном листе сумма меньше обычной, хотя смен было столько же. Ещё пропала строка с надбавкой. Не знаю, ошибка это или удержание — помогите разобратся."
+  },
+  {
+    "id": 31,
+    "text": "ESS won't send my MFA code since I replaced my phone. Still locked out after two attempts, can IT reset the enrolment?"
+  },
+  {
+    "id": 32,
+    "text": "Where can I see how much annual leave carries over? Just planning next year, nothing broken."
+  },
+  {
+    "id": 33,
+    "text": "Clock-in terminal says E_CLOCK_07: badge not recognised. Three of us at the warehouse can't start recording time and the shift starts now."
+  },
+  {
+    "id": 34,
+    "text": "In Shifts, my approved Sunday swap still lists me on the late shift. Manager says the swap is final; please correct the assignment."
+  },
+  {
+    "id": 35,
+    "text": "Payroll export in PayHub fails with PAY_409, 'Period locked'. Payroll cutoff is in 30 minutes for the whole branch. Please help urgently."
+  },
+  {
+    "id": 36,
+    "text": "How do I update my preferred name in Workday? Legal name is correct, just want the badge name changed when convenient."
+  },
+  {
+    "id": 37,
+    "text": "HR Portal bug: open Help > Attach file, choose a 200 KB PDF, then Submit. Expected a support confirmation; actual HTTP 502 Bad Gateway. Reproduced in Chrome and Edge after signing in again. No ticket number appears."
+  },
+  {
+    "id": 38,
+    "text": "the thing wont save. same as before. can someone look?"
+  },
+  {
+    "id": 39,
+    "text": "Hi, is there a self-service way to download last month's payslip from ESS? No error, first time using it."
+  },
+  {
+    "id": 40,
+    "text": "My sick leave certificate upload in ESS says 'File too large' for a 12 MB PDF. Tried a smaller scan at 1 MB, same message. Request is still a draft."
+  },
+  {
+    "id": 41,
+    "text": "Badge reader logged me out at 12:01 while I was still working till 16:00. No error. Could my supervisor review yesterday's record?"
+  },
+  {
+    "id": 42,
+    "text": "Where do I check next week's published shifts in RotaCloud? I'm new and haven't opened the schedule yet."
+  },
+  {
+    "id": 43,
+    "text": "HR Portal says 'Account disabled' after my contract extension. HR confirmed I'm employed but I still can't sign in today."
+  },
+  {
+    "id": 44,
+    "text": "Employee photo upload in Workday returns PHOTO_415, 'Unsupported media type', even with a JPG. Steps: Profile > Photo > upload > Save. Tried two JPGs under 100 KB on desktop. Expected a new photo, actual old photo plus error."
+  },
+  {
+    "id": 45,
+    "text": "ESS dashboard bug: at 125% browser zoom, Help covers Sign out. Repro on Edge with a narrow window; resetting zoom makes it usable. No error, no deadline, reporting a small layout issue."
+  },
+  {
+    "id": 46,
+    "text": "Can HR send me a standard employment confirmation letter for my rental application? The landlord needs it next week."
+  },
+  {
+    "id": 47,
+    "text": "I booked tomorrow off in ESS but it now shows both approved and rejected. My manager can't resolve it either. Which status should I follow?"
+  },
+  {
+    "id": 48,
+    "text": "Salary arrived twice today in PayHub. Both transfers have the same reference, please have payroll investigate before I do anything."
+  },
+  {
+    "id": 49,
+    "text": "In ESS my check-in is fine but the break is 3 hours instead of 30 mins. Payroll not closed yet; manager asked me to raise this."
+  },
+  {
+    "id": 50,
+    "text": "ShiftBoard is empty for everyone in our 24-person team. Shift starts in 20 minutes and nobody can see which station to cover. Refreshing didn't help."
+  },
+  {
+    "id": 51,
+    "text": "forgot passwrod for Workday, where is reset? haven't tried anything yet."
+  },
+  {
+    "id": 52,
+    "text": "Can I withdraw a pending overtime claim or does my manager have to do it? This is about payment, not changing the clockings."
+  },
+  {
+    "id": 53,
+    "text": "New starter in HR Portal listed under wrong department, manager approval goes to someone I've never met. pls fix routing."
+  },
+  {
+    "id": 54,
+    "text": "After midnight my overnight shift in ESS splits into two days and loses the last hour. Worked 22:00-06:00 with 30 min break. Can you check the calculation?"
+  },
+  {
+    "id": 55,
+    "text": "Annual leave request for 0.5 day reduces balance by 1 full day in Workday. I selected Morning; summary showed half day before submitting."
+  },
+  {
+    "id": 56,
+    "text": "Roster PDF download from ShiftBoard has yesterday's version, website has today's. Which one should our supervisor use?"
+  },
+  {
+    "id": 57,
+    "text": "Tax deduction changed on my PayHub statement. I moved region last month; can payroll explain which tax code was applied?"
+  },
+  {
+    "id": 58,
+    "text": "My HR Portal session signs out every 20 sec, even while typing. Error SESSION_EXPIRED. Happens on office wifi and mobile hotspot."
+  },
+  {
+    "id": 59,
+    "text": "Do we have a policy for bringing bikes into the office? Couldn't find one in the handbook."
+  },
+  {
+    "id": 60,
+    "text": "Workday home screen spins forever after I select Benefits; no benefits data appears. Other pages load, clearing browser cache didn't help."
+  },
+  {
+    "id": 61,
+    "text": "ESS leave calendar shows a bank holiday as a working day, so my request uses one extra day. Team based in Kyiv, calendar says London."
+  },
+  {
+    "id": 62,
+    "text": "clockout failed, phone battery died. was on site till 19:10. who approves a manual correction?"
+  },
+  {
+    "id": 63,
+    "text": "ShiftBoard pushes 'new rota' notifications six times for the same unchanged shift. Schedule itself looks correct. Can this be checked when possible?"
+  },
+  {
+    "id": 64,
+    "text": "Need an accessible payslip: PayHub PDF is an image and my screen reader can't read amounts. Could payroll provide a readable version?"
+  },
+  {
+    "id": 65,
+    "text": "How can I view my emergency contact details in ESS? Not asking for a change."
+  },
+  {
+    "id": 66,
+    "text": "HR Portal maintenance banner says back at 10:00, it's now 10:45 and I still get 503 Service Unavailable on every page. Whole office affected."
+  },
+  {
+    "id": 67,
+    "text": "The hours are wrong I think. Or leave? I don't have the screen open now, will send more later."
+  },
+  {
+    "id": 68,
+    "text": "I changed surname in Workday with the requested document but approval has been pending for 3 weeks. Can HR check the request?"
+  },
+  {
+    "id": 69,
+    "text": "My manager declined my shift swap because minimum staffing wasn't met. Where can I read the swap rules? No system error."
+  },
+  {
+    "id": 70,
+    "text": "ESS rejects a time correction with 'End before start' for 23:00 to 07:00 next day. Both dates are entered correctly; tried twice."
+  },
+  {
+    "id": 71,
+    "text": "Can I save an unfinished leave request in Workday and come back later? Just need instructions."
+  },
+  {
+    "id": 72,
+    "text": "PayHub shows a bonus as paid but it isn't in the bank transfer. Base salary arrived. Please reconcile the bonus payment."
+  },
+  {
+    "id": 73,
+    "text": "Authenticator works now after I corrected my phone time. HR Portal login succeeds. Just updating the ticket, no help needed."
+  },
+  {
+    "id": 74,
+    "text": "Contact search in HR Portal returns HTTP 500 only for names with an apostrophe. Steps: Directory > type O'Neil > Search. Expected matching employees, got 'Internal Server Error'. Names without punctuation work; reproduced in Firefox."
+  },
+  {
+    "id": 75,
+    "text": "ESS changed my language to Polish after an update. Where can I set English again? I can still use the menu."
+  },
+  {
+    "id": 76,
+    "text": "We imported 80 shift assignments into ShiftBoard. Preview showed all rows, after Confirm only 40 appear. No errors; reimport not attempted to avoid duplicates. Need support before next week's rota is published."
+  },
+  {
+    "id": 77,
+    "text": "My approved unpaid leave is showing as paid in ESS. Please review the absence code before it reaches payroll."
+  },
+  {
+    "id": 78,
+    "text": "HR Portal mobile app opens a blank page when I tap the privacy notice. Android 14, app 4.2, reinstall didn't help. Desktop notice opens normally."
+  },
+  {
+    "id": 79,
+    "text": "hello support, can u help with my account? not sure what info you need, will explain after lunch."
+  },
+  {
+    "id": 80,
+    "text": "Не можу увійти в ESS після зміни телефону: код MFA не приходить. Перезапуск не допоміг, потрібне відновлення доступу."
+  },
+  {
+    "id": 81,
+    "text": "Підкажіть, де у ESS переглянути залишок відпустки? Помилки немає, хочу спланувати літо."
+  },
+  {
+    "id": 82,
+    "text": "У PayHub не нарахована зарплата всій нашій зміні, 18 людям. Сьогодні день виплати, бухгалтерія просить терміново перевірити експорт."
+  },
+  {
+    "id": 83,
+    "text": "В ESS учора clock out о 18:15 зберігся двічі. Тепер пише invalid sequence, менеджер просить прибрати зайвий запис."
+  },
+  {
+    "id": 84,
+    "text": "У ShiftBoard затверджений обмін змінами не відобразився: ми обидва залишилися на суботу. Прошу перевірити призначення."
+  },
+  {
+    "id": 85,
+    "text": "У ESS не зберігається адреса. Кроки: Profile > Edit > новий індекс > Save. Бачу Changes saved, після оновлення знову старий індекс. Chrome та телефон, повторив двічі."
+  },
+  {
+    "id": 86,
+    "text": "Знову не те показує, цифри інші. Не пам'ятаю сторінку, допоможіть розібратись."
+  },
+  {
+    "id": 87,
+    "text": "HR Portal повертає 504 Gateway Timeout при відкритті довідника працівників. Інші розділи доступні, колега бачить таку саму помилку."
+  },
+  {
+    "id": 88,
+    "text": "Як у ESS скасувати чернетку заяви на відпустку? Ще не надсилав менеджеру."
+  },
+  {
+    "id": 89,
+    "text": "В графіку ESS нічна зміна закінчується раніше ніж починається, дата завершення та сама. Насправді працюю через північ, уточніть будь ласка."
+  },
+  {
+    "id": 90,
+    "text": "Де знайти правила компенсації за роботу у вихідний? Я ще не подавав заяву, просто питаю."
+  },
+  {
+    "id": 91,
+    "text": "В ESS лікарняний не відправляєтся: ABS_422, invalid date. Обираю понеділок у календарі, тисну Надіслати, форма лишається відкритою. Повторюється в Edge."
+  },
+  {
+    "id": 92,
+    "text": "У PayHub сума правильна, але PDF розрахункового листа порожній. Спробував завантажити повторно, та сама біла сторінка."
+  },
+  {
+    "id": 93,
+    "text": "Мій профіль у HR Portal показує старого керівника після переведення. Через це новий менеджер не бачить мої заявки, можна виправити?"
+  },
+  {
+    "id": 94,
+    "text": "В HR Portal при входе ошибка 401 Unauthorized. Пароль сбрасывал, на другом браузере то же самое. Помогите восстановить доступ."
+  },
+  {
+    "id": 95,
+    "text": "Подскажите, где в ESS посмотреть историю смен за прошлый месяц? Ничего не сломалось, нужно свериться со своими записями."
+  },
+  {
+    "id": 96,
+    "text": "В PayHub выгрузка расчётных листов падает: EXPORT_500, 'Export failed'. Шаги: Payroll > месяц > Export PDF. Ожидался архив, скачивается файл 0 байт. Повторили два бухгалтера; выдача листов всему филиалу нужна сегодня до 16:00."
+  },
+  {
+    "id": 97,
+    "text": "Изменил контакт для экстренной связи в Workday, а после сохранения снова старое имя. Ошибок нет, можете проверить?"
+  },
+  {
+    "id": 98,
+    "text": "как оформить отпуск на полдня в ESS? первый раз делаю, пока не отправлял."
+  },
+  {
+    "id": 99,
+    "text": "Терминал attendance не принял выход, пишет E_OFFLINE. Смена закончилась в 21:30, интернет уже появился, но запись так и не дошла."
+  },
+  {
+    "id": 100,
+    "text": "После обновления ShiftBoard на воскресенье две смены одновременно. Manager говорит должна быть одна, какая верная? срочна не понимаю."
+  }
+]

@@ -2,25 +2,25 @@
 
 Temperature: 0.0; top_p: 1.0.
 
-Golden records: 10. Input predictions: 30. Declared total: 30.
+Golden records: 40. Input predictions: 100. Declared total: 100.
 
-Valid-output rate: 30/30 (100.00%).
+Valid-output rate: 100/100 (100.00%).
 
 ## Field accuracy
 
 | Field | Correct/total | Accuracy |
 | --- | --- | --- |
-| category | 10/10 | 100.00% |
-| priority | 5/10 | 50.00% |
-| application | 7/10 | 70.00% |
-| language | 10/10 | 100.00% |
-| requires_support | 9/10 | 90.00% |
-| details.error_code | 9/10 | 90.00% |
-| details.error_message | 9/10 | 90.00% |
+| category | 38/40 | 95.00% |
+| priority | 33/40 | 82.50% |
+| application | 40/40 | 100.00% |
+| language | 39/40 | 97.50% |
+| requires_support | 40/40 | 100.00% |
+| details.error_code | 40/40 | 100.00% |
+| details.error_message | 40/40 | 100.00% |
 
 ## Latency (seconds)
 
-Samples: 30; p50: 3.133763249992626; p95: 3.822610025007452.
+Samples: 100; p50: 2.3851341500412673; p95: 11.819117265040404.
 
 ## Mismatches
 
@@ -28,17 +28,16 @@ Samples: 30; p50: 3.133763249992626; p95: 3.822610025007452.
 
 | Ticket ID | Field | Expected | Actual |
 | --- | --- | --- | --- |
-| 1 | priority | "medium" | "high" |
-| 1 | application | "HR Portal" | null |
-| 1 | details.error_message | "Incorrect password" | "'incorrect password'" |
-| 7 | priority | "medium" | "high" |
-| 7 | application | "HR Portal" | null |
-| 7 | details.error_code | "500" | "HTTP 500" |
-| 14 | priority | "medium" | "high" |
-| 17 | priority | "low" | "medium" |
-| 17 | requires_support | false | true |
-| 18 | priority | "medium" | "high" |
-| 24 | application | "HR portal" | null |
+| 31 | priority | "medium" | "high" |
+| 38 | category | "other" | "technical" |
+| 38 | priority | "unknown" | "medium" |
+| 43 | priority | "medium" | "high" |
+| 46 | category | "other" | "employee_profile" |
+| 48 | priority | "medium" | "high" |
+| 80 | priority | "medium" | "high" |
+| 86 | priority | "unknown" | "medium" |
+| 94 | priority | "medium" | "high" |
+| 95 | language | "ru" | "uk" |
 
 ## Data issues
 

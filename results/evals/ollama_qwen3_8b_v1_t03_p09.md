@@ -2,25 +2,25 @@
 
 Temperature: 0.3; top_p: 0.9.
 
-Golden records: 10. Input predictions: 30. Declared total: 30.
+Golden records: 40. Input predictions: 100. Declared total: 100.
 
-Valid-output rate: 30/30 (100.00%).
+Valid-output rate: 100/100 (100.00%).
 
 ## Field accuracy
 
 | Field | Correct/total | Accuracy |
 | --- | --- | --- |
-| category | 10/10 | 100.00% |
-| priority | 5/10 | 50.00% |
-| application | 7/10 | 70.00% |
-| language | 10/10 | 100.00% |
-| requires_support | 9/10 | 90.00% |
-| details.error_code | 9/10 | 90.00% |
-| details.error_message | 9/10 | 90.00% |
+| category | 35/40 | 87.50% |
+| priority | 25/40 | 62.50% |
+| application | 32/40 | 80.00% |
+| language | 40/40 | 100.00% |
+| requires_support | 37/40 | 92.50% |
+| details.error_code | 37/40 | 92.50% |
+| details.error_message | 37/40 | 92.50% |
 
 ## Latency (seconds)
 
-Samples: 30; p50: 3.10251905003679; p95: 3.862270974990679.
+Samples: 100; p50: 3.6871092000219505; p95: 4.834221810020972.
 
 ## Mismatches
 
@@ -39,6 +39,32 @@ Samples: 30; p50: 3.10251905003679; p95: 3.862270974990679.
 | 17 | requires_support | false | true |
 | 18 | priority | "medium" | "high" |
 | 24 | application | "HR portal" | null |
+| 31 | priority | "medium" | "high" |
+| 34 | application | "Shifts" | null |
+| 36 | priority | "low" | "medium" |
+| 36 | requires_support | false | true |
+| 37 | priority | "medium" | "high" |
+| 37 | details.error_code | "502" | "HTTP 502" |
+| 38 | category | "other" | "technical" |
+| 38 | priority | "unknown" | "medium" |
+| 40 | details.error_message | "File too large" | "'File too large'" |
+| 43 | priority | "medium" | "high" |
+| 43 | application | "HR Portal" | null |
+| 43 | details.error_message | "Account disabled" | "'Account disabled'" |
+| 44 | category | "employee_profile" | "technical" |
+| 45 | application | "ESS" | null |
+| 46 | category | "other" | "employee_profile" |
+| 46 | priority | "medium" | "high" |
+| 47 | application | "ESS" | null |
+| 48 | priority | "medium" | "high" |
+| 80 | priority | "medium" | "high" |
+| 83 | details.error_code | null | "invalid sequence" |
+| 84 | application | "ShiftBoard" | null |
+| 86 | category | "other" | "technical" |
+| 86 | priority | "unknown" | "medium" |
+| 94 | priority | "medium" | "high" |
+| 95 | category | "shifts" | "attendance" |
+| 95 | requires_support | false | true |
 
 ## Data issues
 
