@@ -3,6 +3,7 @@
 import ipaddress
 import math
 import os
+from collections.abc import Mapping
 from dataclasses import dataclass, field
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -56,36 +57,40 @@ class Settings:
         )
 
     @classmethod
-    def openrouter_from_env(cls) -> "Settings":
-        load_dotenv(Path.cwd() / ".env")
-        key = os.getenv("OPENROUTER_API_KEY", "").strip()
-        model = os.getenv("OPENROUTER_MODEL", "").strip()
+    def openrouter_from_env(cls, values: Mapping[str, str] | None = None) -> "Settings":
+        if values is None:
+            load_dotenv(Path.cwd() / ".env")
+            values = os.environ
+        key = values.get("OPENROUTER_API_KEY", "").strip()
+        model = values.get("OPENROUTER_MODEL", "").strip()
         if not key or not model:
             raise ValueError("Set OPENROUTER_API_KEY and OPENROUTER_MODEL.")
         try:
-            temperature = float(os.getenv("OPENROUTER_TEMPERATURE", "0"))
-            top_p = float(os.getenv("OPENROUTER_TOP_P", "1"))
-            timeout = float(os.getenv("OPENROUTER_TIMEOUT_SECONDS", "30"))
-            retries = int(os.getenv("OPENROUTER_MAX_RETRIES", "2"))
+            temperature = float(values.get("OPENROUTER_TEMPERATURE", "0"))
+            top_p = float(values.get("OPENROUTER_TOP_P", "1"))
+            timeout = float(values.get("OPENROUTER_TIMEOUT_SECONDS", "30"))
+            retries = int(values.get("OPENROUTER_MAX_RETRIES", "2"))
         except ValueError:
             raise ValueError("OpenRouter numeric settings must contain valid numbers.") from None
         return cls("openrouter", model, key, temperature, top_p, timeout, retries)
 
     @classmethod
-    def ollama_from_env(cls) -> "Settings":
-        load_dotenv(Path.cwd() / ".env")
+    def ollama_from_env(cls, values: Mapping[str, str] | None = None) -> "Settings":
+        if values is None:
+            load_dotenv(Path.cwd() / ".env")
+            values = os.environ
         try:
-            temperature = float(os.getenv("OLLAMA_TEMPERATURE", "0"))
-            top_p = float(os.getenv("OLLAMA_TOP_P", "1"))
-            timeout = float(os.getenv("OLLAMA_TIMEOUT_SECONDS", "120"))
+            temperature = float(values.get("OLLAMA_TEMPERATURE", "0"))
+            top_p = float(values.get("OLLAMA_TOP_P", "1"))
+            timeout = float(values.get("OLLAMA_TIMEOUT_SECONDS", "120"))
         except ValueError:
             raise ValueError("Ollama numeric settings must contain valid numbers.") from None
         return cls(
             provider="ollama",
-            model=os.getenv("OLLAMA_MODEL", "qwen3:8b").strip(),
+            model=values.get("OLLAMA_MODEL", "qwen3:8b").strip(),
             temperature=temperature,
             top_p=top_p,
             timeout=timeout,
             max_retries=0,
-            base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").strip(),
+            base_url=values.get("OLLAMA_BASE_URL", "http://localhost:11434").strip(),
         )

@@ -1,0 +1,8 @@
+﻿[
+  {"provider":"openrouter","prompt_version":"v1","temperature":0,"top_p":1,"output":"results/openrouter_v1.json"},
+  {"provider":"ollama","prompt_version":"v1","temperature":0,"top_p":1,"output":"results/ollama_qwen3_8b_v1.json"},
+  {"provider":"openrouter","prompt_version":"v2","temperature":0,"top_p":1,"output":"results/openrouter_v2.json"},
+  {"provider":"ollama","prompt_version":"v2","temperature":0,"top_p":1,"output":"results/ollama_qwen3_8b_v2.json"},
+  {"provider":"openrouter","prompt_version":"v1","temperature":0.3,"top_p":0.9,"output":"results/openrouter_v1_t03_p09.json"},
+  {"provider":"ollama","prompt_version":"v1","temperature":0.3,"top_p":0.9,"output":"results/ollama_qwen3_8b_v1_t03_p09.json"}
+]

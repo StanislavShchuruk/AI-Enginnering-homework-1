@@ -1,5 +1,23 @@
 # AI HR Support Assistant
 
+## Quick Start
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -e '.[dev]'
+if (-not (Test-Path .env)) { Copy-Item .env.example .env }
+# Configure provider settings locally before live inference.
+python -m ai_project reproduce
+# Or regenerate reports from existing predictions without calling providers:
+python -m ai_project reproduce --eval-only
+```
+
+See [all commands and safe reruns](docs/commands.md) for setup, parsing, evaluation,
+and reproduction. The [manual evaluation report](docs/evaluation_report.md) remains
+separate from generated reports in `results/reproduction/`.
+
+
 A Python 3.11+ AI Engineering homework project for converting messy HR support
 messages into validated JSON with Pydantic v2. Supports single-ticket and sequential
 batch processing through OpenRouter or local Ollama, with offline mocked tests.

@@ -88,29 +88,57 @@ Both models improved in aggregate, but not uniformly across every field. Gemini'
 
 ## 7. Error Analysis
 
-### Gemini v2 — Three Holdout Mismatches
+The holdout evaluation revealed several recurring error patterns: category ambiguity, priority overestimation, multilingual classification errors, and incorrect extraction of application-specific error codes. The following five examples illustrate these issues.
 
-| Ticket | Field | Expected | Predicted |
-|---|---|---|---|
-| #46 | `category` | `other` | `employee_profile` |
-| #94 | `language` | `ru` | `uk` |
-| #96 | `details.error_code` | `EXPORT_500` | `500` |
+### Five Representative Errors
 
-Ticket #96 suggests a **possible** overgeneralization of the HTTP-code normalization rule: the model returned the numeric suffix rather than the complete application-specific code. This is a hypothesis, not a verified causal finding.
+| Ticket | Model | Field | Expected | Predicted |
+|---|---|---|---|---|
+| #46 | Gemini v2 | `category` | `other` | `employee_profile` |
+| #94 | Gemini v2 | `language` | `ru` | `uk` |
+| #96 | Gemini v2 | `details.error_code` | `EXPORT_500` | `500` |
+| #38 | Qwen3 v2 | `category` | `other` | `technical` |
+| #43 | Qwen3 v2 | `priority` | `medium` | `high` |
 
-### Qwen3 v2 — Persistent and New Issues
+**1. Ticket #46 — Incorrect category for an HR document request (Gemini v2)**
 
-Qwen3 v2 had **19 field mismatches** on the holdout split, compared with 24 in v1. Persistent examples include:
+The employee requested a standard employment confirmation letter for a rental application. The expected category was `other`, but Gemini predicted `employee_profile`.
 
-- #36: `priority=medium` instead of `low`, and `requires_support=true` instead of `false`.
-- #38 and #86: `category=technical` instead of `other`, and `priority=medium` instead of `unknown`.
-- #43, #80, and #94: `priority=high` instead of `medium`.
-- #40 and #43: error messages retained surrounding quotation marks.
-- #83: `invalid sequence` incorrectly placed in `details.error_code` instead of `null`.
+A possible explanation is that the model associated employment-related personal information with the employee profile category, even though the request concerned document issuance rather than profile modification. This illustrates a classification boundary that Prompt v2 did not fully resolve.
 
-Regressions also occurred: #50 changed to `attendance` instead of `shifts`, and #86 acquired an unsupported application value `ShiftBoard`. These errors show that better aggregate accuracy does not imply every instruction or ticket improved.
+**2. Ticket #94 — Russian classified as Ukrainian (Gemini v2)**
 
-**Methodological note:** The holdout findings are documented for final analysis, **not used to revise Prompt v2**. Doing so would compromise the split's role as a final evaluation set.
+The ticket was written predominantly in Russian and described an `HTTP 401 Unauthorized` login error in HR Portal. The expected language was `ru`, but Gemini predicted `uk`.
+
+The model may have confused closely related languages, particularly in an HR context containing shared terminology and English technical expressions. This demonstrates that otherwise accurate structured extraction does not guarantee correct language identification.
+
+**3. Ticket #96 — Application-specific error code truncated (Gemini v2)**
+
+The ticket reported a PayHub payroll export failure with the explicit error code `EXPORT_500`. Gemini extracted `500` instead of the complete code.
+
+A plausible explanation is overgeneralization of Prompt v2's HTTP error-code normalization instructions. The model may have interpreted the numeric suffix as the relevant code and discarded the application-specific prefix. This is particularly important because incomplete error codes can reduce the usefulness of downstream troubleshooting and ticket routing.
+
+**4. Ticket #38 — Vague report classified as a technical issue (Qwen3 v2)**
+
+The employee wrote: "the thing wont save. same as before. can someone look?" The expected category was `other`, but Qwen3 predicted `technical`.
+
+Although "won't save" suggests a possible software problem, the message does not identify an application or provide enough context to establish a concrete technical issue under the dataset's labeling rules. The model may have relied too strongly on a common technical symptom instead of preserving uncertainty. The same ticket also received `medium` priority instead of `unknown`.
+
+**5. Ticket #43 — Priority overestimation (Qwen3 v2)**
+
+The employee could not access HR Portal after a contract extension, despite HR confirming continued employment. The expected priority was `medium`, but Qwen3 predicted `high`.
+
+A possible explanation is that the model treated account lockout and inability to sign in as sufficient evidence of high urgency. However, the ticket did not establish the broader operational impact or critical deadline required by the dataset's priority rules. This reflects Qwen3's recurring tendency to overestimate priority.
+
+### Overall Error Patterns
+
+Gemini v2 produced only **3 field mismatches out of 175 holdout comparisons**, but its remaining errors show weaknesses in category boundaries, language identification, and preserving complete error codes.
+
+Qwen3 v2 produced **19 field mismatches**, down from 24 with Prompt v1. Its recurring weaknesses included priority overestimation, classification of vague requests as technical issues, incorrect `requires_support` decisions, and inconsistent error-message extraction. Some regressions also appeared, demonstrating that improvements in aggregate accuracy do not guarantee improvements for every individual ticket.
+
+These explanations are hypotheses based on the input messages, expected labels, and observed predictions. They are not verified descriptions of the models' internal reasoning.
+
+**Methodological note:** These holdout errors are analyzed for reporting purposes only. Prompt v2 remains unchanged; any further prompt iteration should be evaluated using newly collected labeled examples rather than optimizing against the existing holdout set.
 
 ## 8. Validity and Latency
 
@@ -180,6 +208,8 @@ For Gemini, the alternative configuration introduced errors in `category`, `prio
 ## 11. Conclusion and Recommendation
 
 **Select Gemini 3.1 Flash Lite + Prompt v2 (`temperature=0`, `top_p=1`)** as the strongest tested configuration for this homework. It achieved **98.29% holdout field accuracy**, improved by **3.43 percentage points** relative to Gemini v1, and maintained a **100% valid-output rate**. Qwen3 8B with Prompt v2 is a viable local alternative with **89.14% holdout field accuracy**, though it remains less reliable on priority, category, and support-intervention decisions.
+
+
 
 The Prompt v1 sampling experiment did not show an accuracy benefit from T=0.3/P=0.9, supporting the choice to retain T=0/P=1 for the tested final configuration. Prompt v2 is frozen for this evaluation. Further work should use **newly collected labeled examples** for subsequent prompt iterations, alongside a human-reviewed rubric for summaries and suggested actions, and tests of operational constraints such as cost, throughput, and policy safety.
 

@@ -14,11 +14,14 @@ from ai_project.config import Settings
 from ai_project.costs import Electricity, TokenPrices
 from ai_project.evaluation import evaluate, load_json, markdown, summary
 from ai_project.providers import ProviderError, create_provider
+from ai_project.reproduction import reproduce
 from ai_project.service import AIService
 
 
 def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
+    if argv and argv[0] == "reproduce":
+        return reproduce_main(argv[1:])
     if argv and argv[0] == "compare":
         return compare_main(argv[1:])
     if argv and argv[0] == "eval":
@@ -188,3 +191,22 @@ def provider_settings(provider: str) -> Settings:
     if provider == "ollama":
         return Settings.ollama_from_env()
     return Settings.openrouter_from_env()
+
+
+
+def reproduce_main(argv: list[str]) -> int:
+    parser = argparse.ArgumentParser(
+        description="Reproduce the configured experiments sequentially."
+    )
+    parser.add_argument("--eval-only", action="store_true",
+                        help="Regenerate reports from saved predictions without provider calls.")
+    parser.add_argument("--force", action="store_true",
+                        help="Rerun inference and overwrite prediction outputs.")
+    args = parser.parse_args(argv)
+    if args.eval_only and args.force:
+        parser.error("--eval-only and --force cannot be combined.")
+    try:
+        reproduce(Path.cwd(), eval_only=args.eval_only, force=args.force)
+    except (ValueError, OSError) as exc:
+        parser.exit(1, f"Reproduction failed: {exc}\n")
+    return 0
