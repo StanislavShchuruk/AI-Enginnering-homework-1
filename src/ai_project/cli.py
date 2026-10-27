@@ -11,7 +11,7 @@ from pydantic import TypeAdapter, ValidationError
 from ai_project.batch import parse_all
 from ai_project.comparison import compare_runs
 from ai_project.config import Settings
-from ai_project.costs import Electricity, TokenPrices
+from ai_project.costs import Electricity, PricingConfig, TokenPrices
 from ai_project.evaluation import evaluate, load_json, markdown, summary
 from ai_project.providers import ProviderError, create_provider
 from ai_project.reproduction import reproduce
@@ -50,7 +50,7 @@ def compare_main(argv: list[str]) -> int:
     parser.add_argument("--predictions", type=Path, nargs="+", required=True)
     parser.add_argument("--golden", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--pricing", type=Path, help="Model-keyed JSON token prices in USD per 1M.")
+    parser.add_argument("--pricing", type=Path, help="Pricing JSON with models and electricity settings, or legacy model-keyed rates.")
     parser.add_argument("--power-watts", type=float)
     parser.add_argument("--electricity-usd-per-kwh", type=float)
     args = parser.parse_args(argv)
@@ -64,13 +64,23 @@ def compare_main(argv: list[str]) -> int:
             raise ValueError("Comparison output must end in .md.")
         if args.output.exists() or args.output.resolve() in [path.resolve() for path in inputs]:
             raise ValueError("Comparison output must be a new file; existing files are protected.")
-        prices = (
-            TypeAdapter(dict[str, TokenPrices]).validate_python(load_json(args.pricing))
-            if args.pricing else {}
-        )
-        electricity = Electricity(
-            power_watts=args.power_watts, usd_per_kwh=args.electricity_usd_per_kwh
-        )
+        prices: dict[str, TokenPrices] = {}
+        energy: dict[str, float | None] = {}
+        if args.pricing:
+            raw = load_json(args.pricing)
+            if isinstance(raw, dict) and any(
+                key in raw for key in ("models", "power_watts", "usd_per_kwh")
+            ):
+                pricing = PricingConfig.model_validate(raw)
+                prices = pricing.models
+                energy = pricing.model_dump(include={"power_watts", "usd_per_kwh"})
+            else:
+                prices = TypeAdapter(dict[str, TokenPrices]).validate_python(raw)
+        if args.power_watts is not None:
+            energy["power_watts"] = args.power_watts
+        if args.electricity_usd_per_kwh is not None:
+            energy["usd_per_kwh"] = args.electricity_usd_per_kwh
+        electricity = Electricity.model_validate(energy)
         golden = load_json(args.golden)
         runs = [(str(path), load_json(path)) for path in args.predictions]
         content = compare_runs(runs, golden, prices, electricity)

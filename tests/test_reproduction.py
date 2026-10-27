@@ -9,11 +9,12 @@ import pytest
 
 from ai_project.cli import main
 from ai_project.comparison import compare_runs
-from ai_project.costs import TokenPrices
+from ai_project.costs import Electricity, TokenPrices
 from ai_project.evaluation import load_json
 from ai_project.providers import GenerationResult
 from ai_project.reproduction import (
     Experiment,
+    PricingConfig,
     experiment_settings,
     load_experiments,
     reproduce,
@@ -42,9 +43,9 @@ def project(tmp_path: Path) -> Path:
                                            for i in range(1, 41)])
     write(tmp_path / "data/golden_set.json", [{"id": i, "expected": output()}
                                               for i in range(1, 41)])
-    write(tmp_path / "config/pricing.json", {"test/hosted": {
+    write(tmp_path / "config/pricing.json", {"models": {"test/hosted": {
         "input_usd_per_million": 0.25, "output_usd_per_million": 1.5,
-    }})
+    }}, "power_watts": 500, "usd_per_kwh": 0.09557})
     write(tmp_path / "data/development_ids.json", list(range(1, 16)))
     write(tmp_path / "data/holdout_ids.json", list(range(16, 41)))
     (tmp_path / "docs/prompts").mkdir(parents=True)
@@ -276,9 +277,9 @@ def test_pricing_loaded_relative_to_project_root(
         dotenv.reset_mock()
     # A different working directory must not affect pricing resolution.
     monkeypatch.chdir(project.parent)
-    write(project / "config/pricing.json", {"test/hosted": {
+    write(project / "config/pricing.json", {"models": {"test/hosted": {
         "input_usd_per_million": 2.0, "output_usd_per_million": 6.0,
-    }})
+    }}, "power_watts": 500, "usd_per_kwh": 0.09557})
     with patch("ai_project.reproduction.compare_runs", wraps=compare_runs) as comparison:
         reproduce(project, eval_only=eval_only)
     comparison.assert_called_once()
@@ -287,10 +288,15 @@ def test_pricing_loaded_relative_to_project_root(
         input_usd_per_million=2.0, output_usd_per_million=6.0,
     )}
     electricity = comparison.call_args.args[3]
-    assert electricity.power_watts is None and electricity.usd_per_kwh is None
+    assert electricity.power_watts == 500 and electricity.usd_per_kwh == 0.09557
+    assert isinstance(electricity, Electricity)
     report = (project / "results/reproduction/comparison.md").read_text(encoding="utf-8")
     assert 'test/hosted' in report and 'input $2/1M tokens; output $6/1M tokens.' in report
     assert '$0.140000' in report
+    local = load_json(project / "results/ollama_qwen3_8b_v1.json")
+    seconds = sum(record["elapsed_seconds"] for record in local["results"])
+    expected = 0.5 * seconds / 3600 * 0.09557 * 1000 / 40
+    assert f"${expected:.6f}" in report
     if eval_only:
         factory.assert_not_called()
         dotenv.assert_not_called()
@@ -314,6 +320,8 @@ def test_bad_pricing_stops_before_providers_or_outputs(
     if content is None:
         path.unlink()
     else:
+        if content.startswith('{"model":'):
+            content = '{"models":' + content + '}'
         path.write_text(content, encoding="utf-8")
     monkeypatch.chdir(project)
     with pytest.raises(SystemExit) as error:
@@ -325,3 +333,33 @@ def test_bad_pricing_stops_before_providers_or_outputs(
     factory.assert_not_called()
     dotenv.assert_not_called()
     assert not (project / "results").exists()
+
+
+@pytest.mark.parametrize("field", ["power_watts", "usd_per_kwh"])
+@pytest.mark.parametrize("value", [-1, True, "500", float("nan"), float("inf")])
+@pytest.mark.parametrize("eval_only", [False, True])
+def test_invalid_electricity_stops_before_inference(
+    project: Path, providers, field: str, value: object, eval_only: bool
+) -> None:
+    _, factory, dotenv = providers
+    config = load_json(project / "config/pricing.json")
+    config[field] = value
+    write(project / "config/pricing.json", config)
+    with pytest.raises(ValueError, match="Cannot load config/pricing.json"):
+        reproduce(project, eval_only=eval_only)
+    factory.assert_not_called()
+    dotenv.assert_not_called()
+    assert not (project / "results").exists()
+
+
+@pytest.mark.parametrize("config", [{}, {"models": []}, {"models": {}, "extra": 1}])
+def test_invalid_pricing_structure(config: dict) -> None:
+    with pytest.raises(ValueError):
+        PricingConfig.model_validate(config)
+
+
+@pytest.mark.parametrize("energy", [{}, {"power_watts": None, "usd_per_kwh": None}])
+def test_optional_electricity_settings(energy: dict) -> None:
+    pricing = PricingConfig.model_validate({"models": {}, **energy})
+    assert pricing.models == {}
+    assert pricing.power_watts is None and pricing.usd_per_kwh is None

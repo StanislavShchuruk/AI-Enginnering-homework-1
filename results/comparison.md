@@ -6,8 +6,8 @@ All costs are USD estimates per 1,000 attempted documents; token estimates are n
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | "openrouter" | "google/gemini-3.1-flash-lite" | "v1" | 0.0 | 1.0 | 40 | 100 | 270/280 (96.43%) | 100/100 (100.00%) | 2.385134 | 11.819117 | $0.496070 | N/A |
 | 2 | "openrouter" | "google/gemini-3.1-flash-lite" | "v1" | 0.3 | 0.9 | 40 | 100 | 267/280 (95.36%) | 100/100 (100.00%) | 1.399146 | 1.954722 | $0.502520 | N/A |
-| 3 | "ollama" | "qwen3:8b" | "v1" | 0.0 | 1.0 | 40 | 100 | 243/280 (86.79%) | 100/100 (100.00%) | 3.213370 | 3.960792 | $0.000000 | N/A |
-| 4 | "ollama" | "qwen3:8b" | "v1" | 0.3 | 0.9 | 40 | 100 | 243/280 (86.79%) | 100/100 (100.00%) | 3.687109 | 4.834222 | $0.000000 | N/A |
+| 3 | "ollama" | "qwen3:8b" | "v1" | 0.0 | 1.0 | 40 | 100 | 243/280 (86.79%) | 100/100 (100.00%) | 3.213370 | 3.960792 | $0.000000 | $0.044906 |
+| 4 | "ollama" | "qwen3:8b" | "v1" | 0.3 | 0.9 | 40 | 100 | 243/280 (86.79%) | 100/100 (100.00%) | 3.687109 | 4.834222 | $0.000000 | $0.049980 |
 
 ## Field accuracy
 
@@ -27,15 +27,15 @@ All costs are USD estimates per 1,000 attempted documents; token estimates are n
   - Recorded response models: "google/gemini-3.1-flash-lite".
 - Run 2: "results&#92;&#92;openrouter_v1_t03_p09.json". Configured-model token rates applied to all recorded usage.
   - Recorded response models: "google/gemini-3.1-flash-lite".
-- Run 3: "results&#92;&#92;ollama_qwen3_8b_v1.json". Average power or electricity price not configured.
+- Run 3: "results&#92;&#92;ollama_qwen3_8b_v1.json". Configured average power applied to summed record elapsed time.
   - Recorded response models: "qwen3:8b".
-- Run 4: "results&#92;&#92;ollama_qwen3_8b_v1_t03_p09.json". Average power or electricity price not configured.
+- Run 4: "results&#92;&#92;ollama_qwen3_8b_v1_t03_p09.json". Configured average power applied to summed record elapsed time.
   - Recorded response models: "qwen3:8b".
 
 ## Pricing assumptions
 
 - "google/gemini-3.1-flash-lite": input $0.25/1M tokens; output $1.5/1M tokens.
-- Local average power: None W; electricity: None USD/kWh. None means not configured.
+- Local average power: 500.0 W; electricity: 0.09557 USD/kWh. None means not configured.
 
 ## Methodology and limitations
 

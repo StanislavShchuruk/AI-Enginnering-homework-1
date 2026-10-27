@@ -11,7 +11,7 @@ from pydantic import BaseModel, ConfigDict, Field, TypeAdapter
 from ai_project.batch import parse_all
 from ai_project.comparison import compare_runs
 from ai_project.config import Settings
-from ai_project.costs import Electricity, TokenPrices
+from ai_project.costs import PricingConfig
 from ai_project.evaluation import evaluate, load_json, markdown
 from ai_project.providers import create_provider
 from ai_project.service import AIService
@@ -91,13 +91,14 @@ def reproduce(root: Path, *, eval_only: bool = False, force: bool = False) -> No
     root = root.resolve()
     experiments = load_experiments(root / "experiments.json", root)
     try:
-        prices = TypeAdapter(dict[str, TokenPrices]).validate_python(
+        pricing = PricingConfig.model_validate(
             load_json(root / "config/pricing.json")
         )
     except (OSError, ValueError) as exc:
         raise ValueError(
             "Cannot load config/pricing.json: file is missing, unreadable, or invalid. "
-            "Expected model names mapped to nonnegative numeric input/output USD rates per million."
+            "Expected models mapped to token rates, with optional power_watts and "
+            "usd_per_kwh; all rates must be finite and nonnegative."
         ) from exc
     golden = load_json(root / "data/golden_set.json")
     empty = {"results": [], "total_tickets": 0, "completed": True}
@@ -203,7 +204,7 @@ def reproduce(root: Path, *, eval_only: bool = False, force: bool = False) -> No
         for scope, ids in scopes.items():
             report_path = report_dir / f"{Path(experiment.output).stem}_{scope}.md"
             reports[report_path] = markdown(evaluate(payload, golden, ids=ids))
-    reports[report_dir / "comparison.md"] = compare_runs(runs, golden, prices, Electricity())
+    reports[report_dir / "comparison.md"] = compare_runs(runs, golden, pricing.models, pricing)
     report_dir.mkdir(parents=True, exist_ok=True)
     for path, content in reports.items():
         path.write_text(content, encoding="utf-8")

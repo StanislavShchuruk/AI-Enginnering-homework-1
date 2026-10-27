@@ -253,3 +253,32 @@ def test_compare_cli_without_cost_configuration(tmp_path: Path) -> None:
     report = output.read_text(encoding="utf-8")
     assert "No token prices configured" in report
     assert "No explicit pricing" in report
+
+
+@pytest.mark.parametrize("override", [False, True])
+def test_compare_shared_pricing_and_energy_overrides(tmp_path: Path, override: bool) -> None:
+    hosted = tmp_path / "hosted.json"
+    local = tmp_path / "local.json"
+    golden = tmp_path / "golden.json"
+    pricing = tmp_path / "pricing.json"
+    output = tmp_path / "comparison.md"
+    hosted.write_text(json.dumps(run()), encoding="utf-8")
+    local.write_text(json.dumps(run("ollama")), encoding="utf-8")
+    golden.write_text(json.dumps(gold(1)), encoding="utf-8")
+    pricing.write_text(json.dumps({
+        "models": {k: v.model_dump() for k, v in PRICES.items()},
+        "power_watts": 500, "usd_per_kwh": 0.09557,
+    }), encoding="utf-8")
+    args = ["compare", "--predictions", str(hosted), str(local), "--golden", str(golden),
+            "--pricing", str(pricing), "--output", str(output)]
+    if override:
+        args += ["--power-watts", "0", "--electricity-usd-per-kwh", "0.25"]
+    with patch("ai_project.cli.compare_runs", wraps=compare_runs) as comparison:
+        assert main(args) == 0
+    electricity = comparison.call_args.args[3]
+    assert electricity.power_watts == (0 if override else 500)
+    assert electricity.usd_per_kwh == (0.25 if override else 0.09557)
+    report = output.read_text(encoding="utf-8")
+    assert "$0.400000" in report
+    expected = estimate_cost(run("ollama"), PRICES, electricity)["electricity_usd_per_1000"]
+    assert f"${expected:.6f}" in report

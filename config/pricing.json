@@ -1,6 +1,10 @@
 {
-  "google/gemini-3.1-flash-lite": {
-    "input_usd_per_million": 0.25,
-    "output_usd_per_million": 1.50
-  }
+  "models": {
+    "google/gemini-3.1-flash-lite": {
+      "input_usd_per_million": 0.25,
+      "output_usd_per_million": 1.50
+    }
+  },
+  "power_watts": 500,
+  "usd_per_kwh": 0.09557
 }

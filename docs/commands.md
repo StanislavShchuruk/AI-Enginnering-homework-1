@@ -95,28 +95,42 @@ python -m ai_project compare --predictions results/openrouter_v1.json results/ol
 python -m ai_project compare --predictions results/openrouter_v1.json results/ollama_qwen3_8b_v1.json --golden data/golden_set.json --pricing config/pricing.json --power-watts 150 --electricity-usd-per-kwh 0.10 --output results/manual_comparison_costs.md
 ```
 
-Pricing JSON maps configured model names to `input_usd_per_million` and
-`output_usd_per_million` rates. Missing prices/energy settings produce N/A, not zero
-cost (local API fee is zero). Both normal reproduction and `reproduce --eval-only`
-automatically load `config/pricing.json`, relative to the project root, and pass its
-validated rates to the consolidated comparison. A missing, unreadable, or invalid
-pricing file stops the workflow before inference or report writes. The file uses
-the same `TokenPrices` validation as `compare --pricing`: rates must be numeric,
-finite, and nonnegative, with both fields present and no extra fields.
+`compare --pricing` accepts the same configuration shown below, including electricity
+settings. Legacy JSON mapping model names directly to token rates is also supported.
+Explicit `--power-watts` and `--electricity-usd-per-kwh` flags override the corresponding
+file values, including when a flag is zero.
+
+Both normal reproduction and `reproduce --eval-only` automatically load
+`config/pricing.json` relative to the project root. Reproduction uses this format:
 
 ```json
 {
-  "your/configured-model": {
-    "input_usd_per_million": 0.25,
-    "output_usd_per_million": 1.5
-  }
+  "models": {
+    "google/gemini-3.1-flash-lite": {
+      "input_usd_per_million": 0.25,
+      "output_usd_per_million": 1.50
+    }
+  },
+  "power_watts": 500,
+  "usd_per_kwh": 0.09557
 }
 ```
 
-Use the exact configured model names as keys. Models without a matching rate still
-show N/A for hosted cost; an empty pricing object is valid. Reproduction keeps its
-existing unconfigured electricity settings; use `compare` separately to supply
-explicit power and electricity estimates.
+`models` is required and validates each entry using `TokenPrices`: both rates
+must be numeric, finite, and nonnegative, with no extra fields. Use the exact
+configured model names as keys; an empty `models` object is valid.
+`power_watts` and `usd_per_kwh` use `Electricity` validation: optional or null,
+otherwise numeric, finite, and nonnegative. Unknown configuration fields are rejected.
+A missing, unreadable, or invalid pricing file stops reproduction before inference
+or report writes.
+
+Both validated configurations are passed to the consolidated comparison. Missing
+model prices or electricity settings produce N/A; local API fees remain zero.
+With the configuration above, `python -m ai_project reproduce --eval-only`
+regenerates `results/reproduction/comparison.md` with OpenRouter token costs and
+Ollama electricity costs from saved predictions, without provider calls.
+Electricity costs use 500 W and $0.09557/kWh applied to recorded elapsed time,
+scaled to 1,000 attempted documents.
 
 ## Sampling
 

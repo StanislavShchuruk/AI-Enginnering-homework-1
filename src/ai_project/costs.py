@@ -20,6 +20,12 @@ class Electricity(BaseModel):
     usd_per_kwh: float | None = Field(default=None, ge=0, strict=True)
 
 
+class PricingConfig(Electricity):
+    """Model prices and electricity assumptions for offline comparison."""
+
+    models: dict[str, TokenPrices]
+
+
 def nonnegative_number(value: Any) -> bool:
     return type(value) in (int, float) and math.isfinite(value) and value >= 0
 
