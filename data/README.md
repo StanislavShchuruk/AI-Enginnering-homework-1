@@ -15,19 +15,6 @@ IDs 1–30 and the first 10 golden records are unchanged. New ticket IDs are 31�
 The files define an explicit partition; existing evaluation code and historical
 prediction results have not been changed to apply these splits automatically.
 
-## Language and preservation
-
-`ticket_languages.json` is a manually assigned inventory of IDs by predominant
-language of meaningful prose. English product names and quoted errors do not
-change a Ukrainian or Russian ticket's language. Original IDs 22–28 are Ukrainian
-and 29–30 are Russian (the old planning notes incorrectly specified 6/3).
-New tickets add 49 English, 13 Ukrainian, and 8 Russian examples for totals 70/20/10.
-Tests verify the inventory and agreement with golden labels, not linguistic truth.
-
-`original_data_hashes.json` stores SHA-256 hashes of the original record arrays,
-serialized as UTF-8 JSON with sorted keys, no ASCII escaping, and compact separators.
-Tests use these to detect changes to original content, independent of file whitespace.
-
 ## Annotation provenance and review
 
 The 30 new reference labels were independently authored from the ticket texts and

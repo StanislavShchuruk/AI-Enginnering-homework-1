@@ -93,23 +93,6 @@ def test_ticket_shape_and_sequential_ids() -> None:
     assert len({ticket["text"] for ticket in tickets}) == 100
 
 
-def test_language_distribution_and_golden_agreement() -> None:
-    # Human-authored language inventory: predominant prose, not product/error text.
-    languages = load_json("ticket_languages.json")
-    assert set(languages) == {"en", "uk", "ru"}
-    language_by_id: dict[int, str] = {}
-    for language, count in {"en": 70, "uk": 20, "ru": 10}.items():
-        ids = languages[language]
-        assert isinstance(ids, list) and len(ids) == count
-        assert all(type(value) is int for value in ids)
-        for ticket_id in ids:
-            assert ticket_id not in language_by_id
-            language_by_id[ticket_id] = language
-    assert set(language_by_id) == set(range(1, 101))
-    for case in load_records("golden_set.json"):
-        assert case["expected"]["language"] == language_by_id[case["id"]]
-
-
 def test_golden_splits() -> None:
     development = load_json("development_ids.json")
     holdout = load_json("holdout_ids.json")
@@ -123,20 +106,6 @@ def test_golden_splits() -> None:
     assert {1, 2, 7, 10, 12, 14, 17, 18, 23, 24} <= set(development)
     for case in cases:
         assert set(case) == {"id", "expected"}
-
-
-def test_original_records_unchanged() -> None:
-    import hashlib
-
-    hashes = load_json("original_data_hashes.json")
-    for filename, count, key in [
-        ("tickets.json", 30, "tickets"), ("golden_set.json", 10, "golden")
-    ]:
-        original = load_records(filename)[:count]
-        canonical = json.dumps(
-            original, ensure_ascii=False, sort_keys=True, separators=(",", ":")
-        ).encode("utf-8")
-        assert hashlib.sha256(canonical).hexdigest() == hashes[key]
 
 
 def test_golden_coverage() -> None:

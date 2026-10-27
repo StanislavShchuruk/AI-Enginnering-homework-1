@@ -16,6 +16,4 @@ models/*
 !data/golden_set.json
 !data/development_ids.json
 !data/holdout_ids.json
-!data/ticket_languages.json
-!data/original_data_hashes.json
 !data/README.md

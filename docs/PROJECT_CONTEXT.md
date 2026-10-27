@@ -11,7 +11,7 @@ structured outputs, model evaluation, and prompt engineering.
 - 100 synthetic HR support messages: 70 English, 20 Ukrainian, 10 Russian.
 - 40 reference labels: 15 development examples and 25 holdout examples.
 - Existing 30 tickets and 10 labels are preserved; all original labels are in development.
-- See data/README.md for split usage, language inventory, and review status.
+- See data/README.md for split usage and review status.
 
 ## Agreed output schema
 
