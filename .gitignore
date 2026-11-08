@@ -17,3 +17,13 @@ models/*
 !data/development_ids.json
 !data/holdout_ids.json
 !data/README.md
+# Raw Homework 2 corpus and offline corpus validation results.
+!data/documents/
+!data/documents/**
+!data/manifest.json
+!data/CORPUS_README.md
+!data/corpus_validation.json
+project-helpers/
+project-helpers/**
+tmp/
+.pytest_tmp*/

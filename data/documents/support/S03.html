@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Authentication Troubleshooting</title><style>body{font:16px/1.6 system-ui,sans-serif;color:#172b3a;max-width:900px;margin:40px auto;padding:0 24px}h1{font-size:30px;line-height:1.25}h2{font-size:21px;margin-top:28px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #b8c5cd;padding:9px;text-align:left}th{background:#eef3f6}ol,ul{margin:8px 0}@media print{body{margin:0;max-width:none}h2{break-after:avoid}tr{break-inside:avoid}}body{max-width:780px;color:#24343a}h1{font-size:28px}h2{font-size:19px;color:#28575b}th{background:#edf5f3}li{margin:8px 0}</style></head><body><main>
+<h1>Authentication Troubleshooting</h1>
+<p>IT Support | Updated 1 September 2026</p>
+<h2>Triage the visible failure</h2>
+<p>Record the failed action and whether it happened before or after MFA. Use the code to choose the next step.</p>
+<table><thead><tr><th scope="col">Code</th><th scope="col">Meaning</th><th scope="col">First action</th></tr></thead><tbody>
+<tr><td>HTTP 401</td><td>No valid authenticated session</td><td>Follow Session recovery below</td></tr>
+<tr><td>HTTP 403</td><td>Signed in, but permission is missing</td><td>Check organization and ask HR to review the role</td></tr>
+<tr><td>AUTH-423</td><td>Temporary lockout</td><td>Wait for the lockout to end</td></tr>
+<tr><td>AUTH-DISABLED</td><td>Account disabled by HR</td><td>Ask HR to review; a password reset will not reactivate it</td></tr>
+</tbody></table>
+<p>Do not clear cookies repeatedly before recording the failure.</p>
+<h2>Session recovery</h2>
+<ol start="1">
+<li value="1">Save unsent text locally without copying confidential record contents.</li>
+<li value="2">Sign out, close other PeopleFlow tabs, and reopen the approved workspace bookmark.</li>
+<li value="3">Sign in once and verify the selected organization.</li>
+<li value="4">Repeat the action on a nonsensitive record if possible.</li>
+</ol>
+<p>If a new session resolves HTTP 401, the earlier session likely expired. Sessions expire after 30 minutes idle or 12 hours from sign-in. A recurring 401 immediately after sign-in may indicate blocked first-party cookies or a stale organizational login route. Use a supported browser and permit the organization&#x27;s required first-party session cookies. Do not disable browser security globally.</p>
+<h2>MFA and lockout</h2>
+<p>Authenticator codes contain six digits and rotate every 30 seconds. Set automatic device time and use the next newly generated code once. Five failed password attempts within 15 minutes trigger a 30-minute lockout. Wait for the lockout to end rather than creating a series of reset requests. A password reset link lasts 20 minutes and is invalidated when a newer link is requested. AUTH-410 means the reset link has expired or been replaced.</p>
+<h2>Escalation and disabled accounts</h2>
+<p>Lost MFA enrollment requires HR identity verification before an administrator resets it. An AUTH-DISABLED account must be reviewed by HR; support cannot infer employment status or reverse deactivation. For persistent failures, submit browser and application versions, the error code, event time with timezone, and whether a fresh session worked. Never submit a password, MFA code, reset link, session cookie, or recovery secret. Support Escalation &amp; Security Incidents applies if an unexpected authentication event suggests unauthorized access rather than an ordinary login failure.</p>
+</main></body></html>

@@ -1,5 +1,20 @@
 # AI HR Support Assistant
 
+## PeopleFlow document corpus
+
+The [32-document PeopleFlow corpus](data/CORPUS_README.md) is fictional.
+PeopleFlow, its employer, all identities, contact details, medical examples,
+salary amounts, payment identifiers, procedures and contractual benefits are
+invented for this project. No document represents real employment, legal,
+taxation or privacy guidance. Reserved email and phone examples and masked
+bank details must remain nonfunctional when revising the materials.
+
+The files under `data/documents/` are presented as raw client-provided documents.
+Technical IDs, access groups, PII flags and version relationships belong in
+`data/manifest.json`; the source documents carry only ordinary business metadata.
+Offline structured extraction is available; see [extraction documentation](docs/EXTRACTION.md).
+RAG retrieval and generation are not implemented.
+
 ## Quick Start
 
 ```powershell
@@ -407,3 +422,10 @@ hardware, system load, model routing, and missing metadata limit comparisons.
 
 See the [Evaluation Report](docs/evaluation_report.md) for the
 comparison of Prompt v1 and v2 across Gemini and Qwen3 8B.
+
+## Homework 2: document extraction
+
+Extract the raw HR corpus locally with
+`python -m ai_project extract-corpus --output data/extracted/run-01`.
+The output directory must be new. See [extraction documentation](docs/EXTRACTION.md)
+for the schema, dependencies, validation, and known format limitations.

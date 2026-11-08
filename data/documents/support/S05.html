@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Payroll Troubleshooting</title><style>body{font:16px/1.6 system-ui,sans-serif;color:#172b3a;max-width:900px;margin:40px auto;padding:0 24px}h1{font-size:30px;line-height:1.25}h2{font-size:21px;margin-top:28px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #b8c5cd;padding:9px;text-align:left}th{background:#eef3f6}ol,ul{margin:8px 0}@media print{body{margin:0;max-width:none}h2{break-after:avoid}tr{break-inside:avoid}}body{max-width:780px;color:#24343a}h1{font-size:28px}h2{font-size:19px;color:#28575b}th{background:#edf5f3}li{margin:8px 0}</style></head><body><main>
+<h1>Payroll Troubleshooting</h1>
+<p>IT Support | Updated 1 September 2026</p>
+<h2>Identify the payroll stage</h2>
+<p>Check whether the problem concerns eligibility, calculation, publication, export, or settlement. A manager-approved allowance is not necessarily in the current run if approval arrived after cutoff. Payroll cutoff is the 20th calendar day at 17:00 UTC. Payslips are published on the last business day of the month by 18:00 UTC. Payment settlement may take two business days after the stated pay date.</p>
+<h2>Missing allowance procedure</h2>
+<ol start="1">
+<li value="1">Open the affected period in Pay &gt; Payslips and check the revision number.</li>
+<li value="2">Compare the allowance approval timestamp with the cutoff.</li>
+<li value="3">Check the allowance&#x27;s effective dates and whether the attendance condition was satisfied.</li>
+<li value="4">Submit Pay &gt; Report discrepancy with the approval reference and disputed line.</li>
+</ol>
+<p>An approval after cutoff normally appears in the following month&#x27;s adjustment run. An approval before cutoff that is missing from a Published statement needs Payroll Operations review. Support should not add an allowance manually or change an approval timestamp to force inclusion. PAY-404 means no statement is published; PAY-403 means access is denied rather than a calculation failure.</p>
+<h2>Export failures</h2>
+<p>PAY-EXPORT-017 means a configured export mapping is missing or invalid. Payroll Operations checks the rejected field, fixes the mapping, validates the full batch, and retries using the same payroll run reference and a new export attempt number. Check the previous attempt&#x27;s delivery status before retrying to prevent duplicate payments. An export marked Submitted is not proof of bank settlement. Never resolve an export failure by replacing a destination with a colleague&#x27;s payment details.</p>
+<h2>Confirm the corrected statement</h2>
+<p>Compare the base pay, allowance and deduction lines in the statement below. Verify that gross minus deductions equals net before investigating settlement. A corrected published statement receives a new revision and preserves the prior copy. Close the discrepancy only after Payroll Operations records the approved resolution, the employee can see the correct revision, and any required export or next-run adjustment is linked.</p>
+<h2>Statement under review</h2>
+<p>Emily Carter, EMP-3005; September base USD 3,200.00 plus approved allowance USD 120.00; gross USD 3,320.00; deductions USD 664.00; net USD 2,656.00. Payment destination: ****9162 at Alderhaven Community Bank.</p>
+</main></body></html>

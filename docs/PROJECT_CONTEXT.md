@@ -71,6 +71,16 @@ the process environment without reading .env or requiring a hosted API key.
 
 ## Future extensions
 
+Homework 2 Task 1 now provides offline document extraction and normalization in
+`src/ai_project/extraction`, using a separate Pydantic document/block schema.
+It preserves the complete PeopleFlow manifest metadata and ordered content,
+including sections, lists, table cells, and PDF page locations. Run
+`python -m ai_project extract-corpus --output data/extracted/run-01` with a new
+output directory. See `docs/EXTRACTION.md` for details and corpus validation.
+The Homework 1 ticket schema and providers are unchanged. Sanitization,
+deduplication, chunking, embeddings, retrieval, generation, and RAG evaluation
+remain outside the implemented scope.
+
 - Versioned prompts stored separately from application code.
 - RAG-based troubleshooting using relevant HR support knowledge.
 - Agentic troubleshooting workflows.

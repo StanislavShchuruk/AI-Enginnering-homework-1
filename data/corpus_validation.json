@@ -1,0 +1,90 @@
+{
+  "document_count": 32,
+  "format_distribution": {
+    "html": 11,
+    "pdf": 10,
+    "docx": 4,
+    "markdown": 7
+  },
+  "category_distribution": {
+    "manuals": 14,
+    "contracts": 3,
+    "policies": 5,
+    "support": 6,
+    "faq": 2,
+    "release_notes": 2
+  },
+  "group_distribution": {
+    "M": 12,
+    "C": 8,
+    "S": 6,
+    "F": 6
+  },
+  "status_distribution": {
+    "active": 29,
+    "superseded": 3
+  },
+  "synthetic_pii_documents": [
+    "C01",
+    "C02",
+    "C03",
+    "C05",
+    "M02",
+    "M04",
+    "M09",
+    "M12",
+    "S01",
+    "S05"
+  ],
+  "readable_document_count": 32,
+  "pii_safety_checks": {
+    "identity_profiles": 10,
+    "email_domain": "example.com",
+    "phone_range": "+1 NPA-555-0100 through +1 NPA-555-0199",
+    "bank_details": "masked suffixes only; no full payment credentials",
+    "addresses": "newly composed streets in the invented municipality of Alderhaven",
+    "dates_of_birth": "none present or added",
+    "scope": "Fixed authored examples and field patterns; not general PII detection"
+  },
+  "word_counts": {
+    "M01": 314,
+    "M02": 342,
+    "M03": 329,
+    "M04": 370,
+    "M05": 327,
+    "M06": 348,
+    "M07": 351,
+    "M08": 345,
+    "M09": 373,
+    "M10": 344,
+    "M11": 435,
+    "M12": 331,
+    "C01": 534,
+    "C02": 531,
+    "C03": 515,
+    "C04": 420,
+    "C05": 344,
+    "C06": 332,
+    "C07": 452,
+    "C08": 336,
+    "S01": 378,
+    "S02": 374,
+    "S03": 360,
+    "S04": 355,
+    "S05": 355,
+    "S06": 355,
+    "F01": 272,
+    "F02": 231,
+    "F03": 278,
+    "F04": 297,
+    "F05": 332,
+    "F06": 352
+  },
+  "supersession_links": {
+    "M06": "M07",
+    "F05": "F06",
+    "F03": "F04"
+  },
+  "failures": [],
+  "validation_scope": "Offline structural, editorial, business-fact and authored PII checks; not a general-purpose PII detector or legal review."
+}

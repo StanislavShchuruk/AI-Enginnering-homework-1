@@ -12,10 +12,15 @@ dependencies = [
     "pydantic>=2,<3",
     "openai>=1.50,<3",
     "python-dotenv>=1.0,<2",
+    "PyMuPDF>=1.24,<2",
+    "python-docx>=1.1,<2",
+    "beautifulsoup4>=4.12,<5",
+    "markdown-it-py>=3,<5",
 ]
 
 [project.optional-dependencies]
 dev = ["ruff>=0.6", "pytest>=8,<10"]
+corpus = ["python-docx>=1.1,<2", "reportlab>=4,<5", "pypdf>=5,<7"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

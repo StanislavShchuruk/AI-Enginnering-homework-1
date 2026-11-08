@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Login &amp; Password Reset Guide</title><style>body{font:16px/1.6 system-ui,sans-serif;color:#172b3a;max-width:900px;margin:40px auto;padding:0 24px}h1{font-size:30px;line-height:1.25}h2{font-size:21px;margin-top:28px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #b8c5cd;padding:9px;text-align:left}th{background:#eef3f6}ol,ul{margin:8px 0}@media print{body{margin:0;max-width:none}h2{break-after:avoid}tr{break-inside:avoid}}body{max-width:860px}h2{color:#24445e}li{margin:6px 0}</style></head><body><main>
+<h1>Login &amp; Password Reset Guide</h1>
+<h2>Access prerequisites</h2>
+<p>PeopleFlow requires an active organization membership and a supported browser: the current or immediately previous major Chrome, Edge, or Firefox release. Open the organization login page from the approved workspace bookmark. Account activation links expire after 48 hours. A pending invitation does not create a usable account until activation is completed. Authentication is independent of leave entitlement and payroll permissions.</p>
+<h2>Sign in and MFA</h2>
+<ol start="1">
+<li value="1">Select your organization, enter your work login, and choose Continue.</li>
+<li value="2">Enter your password. Passwords require at least 14 characters and cannot match the previous five passwords.</li>
+<li value="3">Enter the six-digit code from the enrolled authenticator. A code rotates every 30 seconds; set the device clock to automatic if codes are rejected.</li>
+<li value="4">Confirm the workspace name on the landing page before opening HR records.</li>
+</ol>
+<p>Five failed password attempts within 15 minutes cause a 30-minute lockout. Additional attempts during the lockout do not shorten it. Sessions expire after 30 minutes of inactivity or 12 hours after sign-in, whichever comes first. Unsaved forms are not automatically submitted when a session expires.</p>
+<h2>Reset a password</h2>
+<p>Choose Forgot password and submit the registered work login. The confirmation screen deliberately looks the same for known and unknown accounts. Reset links expire after 20 minutes and can be used once. Requesting another link invalidates previous unused links. After saving a new password, sign in again; the reset invalidates existing sessions but does not remove MFA enrollment.</p>
+<h2>Recovery boundaries</h2>
+<p>Lost authenticator access requires identity verification by the HR administrator before enrollment is reset. Support cannot disclose a recovery code or accept an approval through an ordinary chat message. HTTP 401 means the session is unauthenticated; HTTP 403 means a valid session lacks permission. AUTH-423 identifies a temporary lockout, while AUTH-410 identifies an expired reset link. Follow Authentication Troubleshooting if authentication still fails after one fresh sign-in attempt.</p>
+</main></body></html>

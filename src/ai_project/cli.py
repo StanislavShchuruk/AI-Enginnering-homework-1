@@ -20,6 +20,8 @@ from ai_project.service import AIService
 
 def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
+    if argv and argv[0] == "extract-corpus":
+        return extract_corpus_main(argv[1:])
     if argv and argv[0] == "reproduce":
         return reproduce_main(argv[1:])
     if argv and argv[0] == "compare":
@@ -43,6 +45,22 @@ def main(argv: list[str] | None = None) -> int:
     except ValueError as exc:
         parser.error(str(exc))
     return 0
+
+
+def extract_corpus_main(argv: list[str]) -> int:
+    from ai_project.extraction.corpus import extract_corpus
+
+    parser = argparse.ArgumentParser(description="Extract HR documents locally into structured JSON.")
+    parser.add_argument("--project-root", type=Path, default=Path.cwd())
+    parser.add_argument("--manifest", type=Path, default=Path("data/manifest.json"))
+    parser.add_argument("--output", type=Path, required=True, help="New directory for JSON artifacts.")
+    args = parser.parse_args(argv)
+    try:
+        report = extract_corpus(args.project_root, args.project_root / args.manifest, args.output)
+    except (ValueError, OSError) as exc:
+        parser.exit(1, f"Extraction failed: {exc}\n")
+    print(json.dumps(report, ensure_ascii=False, indent=2))
+    return int(bool(report["errors"] or report["empty_documents"]))
 
 
 def compare_main(argv: list[str]) -> int:

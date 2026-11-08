@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Clock-In / Clock-Out Manual</title><style>body{font:16px/1.6 system-ui,sans-serif;color:#172b3a;max-width:900px;margin:40px auto;padding:0 24px}h1{font-size:30px;line-height:1.25}h2{font-size:21px;margin-top:28px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #b8c5cd;padding:9px;text-align:left}th{background:#eef3f6}ol,ul{margin:8px 0}@media print{body{margin:0;max-width:none}h2{break-after:avoid}tr{break-inside:avoid}}body{max-width:860px}h2{color:#24445e}li{margin:6px 0}</style></head><body><main>
+<h1>Clock-In / Clock-Out Manual</h1>
+<h2>Register actual time</h2>
+<p>Clock-in and clock-out record actual attendance, not merely the published roster. Open My time &gt; Clock and confirm the workplace timezone displayed above the controls. A shift may cross midnight; always inspect both the date and the time. PeopleFlow stores timestamps in UTC and presents them in the workplace timezone. A daylight-saving transition is calculated from elapsed UTC time, not by subtracting displayed local clock labels.</p>
+<h2>Daily procedure</h2>
+<ol start="1">
+<li value="1">Select Clock in when work begins. Confirm that an open attendance session appears.</li>
+<li value="2">Select Start break when an unpaid break begins, then End break on return.</li>
+<li value="3">Select Clock out when work ends and review the closed attendance interval.</li>
+<li value="4">Check the daily total after the next calculation cycle, which runs every five minutes.</li>
+</ol>
+<p>One open attendance session is allowed per employee. CLOCK-409 means an open session already exists or a repeated clock-out was attempted. It does not mean the first event failed. Refresh the timeline before retrying. CLOCK-422 means event ordering is invalid, such as a break end preceding its start. PeopleFlow does not manufacture a missing clock-out from a roster end time.</p>
+<h2>Breaks and missing events</h2>
+<p>A 30-minute unpaid break is expected for shifts longer than six hours, but the system deducts recorded breaks only; it does not silently deduct an unrecorded break. A missing break generates a manager review flag. Worked time equals the closed interval minus recorded unpaid breaks. A 09:00-17:30 interval with a 30-minute unpaid break produces 8.00 hours.</p>
+<h2>Corrections and exceptions</h2>
+<p>For current records, use Attendance Correction Guide v2 to submit a self-service correction request. Employees propose corrected values; approval still belongs to the manager. A terminal outage should be documented with the approximate event times and a workplace explanation. Do not enter another clock-in to close an earlier session. If the total remains zero after five minutes despite a closed interval, use Attendance Troubleshooting and include the attendance calculation status in the ticket.</p>
+</main></body></html>
