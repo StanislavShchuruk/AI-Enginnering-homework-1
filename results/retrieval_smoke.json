@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-19",
+  "question": "До якого числа треба використати перенесену відпустку за контрактом A?",
+  "input": "data/chunked/task3-run02/chunks.jsonl",
+  "embedding_model": "bge-m3",
+  "vector_dimension": 1024,
+  "source_sha256": "429649032efba26439e267c7da639daf1ef1dd29491d84224a8e0c1e9bdb15f7",
+  "jsonl_count": 184,
+  "indexed_count": 184,
+  "qdrant_collection_count": 1,
+  "hr_target_rank": 2,
+  "public_hr_confidential_count": 0,
+  "public_top5": [
+    {
+      "rank": 1,
+      "score": 0.6205314426001682,
+      "chunk_id": "F01-9e534a93237a375af6ca2eb68dab4f1e8f7190eb7a671050e065d60664450390",
+      "document_id": "F01",
+      "document_title": "Employee FAQ",
+      "section_path": [
+        "Employee FAQ",
+        "Which annual leave balance applies?"
+      ],
+      "source_reference": "data/documents/faq/F01.md",
+      "access_group": "all_employees"
+    },
+    {
+      "rank": 2,
+      "score": 0.605082021143998,
+      "chunk_id": "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4",
+      "document_id": "C04",
+      "document_title": "Annual Leave Policy",
+      "section_path": [
+        "Annual Leave Policy",
+        "Carry-over and scheduling"
+      ],
+      "source_reference": "data/documents/policies/C04.pdf",
+      "access_group": "all_employees"
+    },
+    {
+      "rank": 3,
+      "score": 0.5920688357056191,
+      "chunk_id": "C04-f176eb8a7591c663a80950667ffdb798b2f83410b50967428f51d16879ec0fe1",
+      "document_id": "C04",
+      "document_title": "Annual Leave Policy",
+      "section_path": [
+        "Annual Leave Policy",
+        "Entitlement and scope"
+      ],
+      "source_reference": "data/documents/policies/C04.pdf",
+      "access_group": "all_employees"
+    },
+    {
+      "rank": 4,
+      "score": 0.5907443086312434,
+      "chunk_id": "M03-17ea89a19501c60c3e3813356b5b3a6338d423e9aba06ad0d98c82064ae9eb72",
+      "document_id": "M03",
+      "document_title": "Annual Leave Request Guide",
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Choose the correct balance"
+      ],
+      "source_reference": "data/documents/manuals/M03.html",
+      "access_group": "all_employees"
+    },
+    {
+      "rank": 5,
+      "score": 0.5843678721936184,
+      "chunk_id": "C07-326d3d1ddc46d4ede7b00e31093bdf962f50ffc90ac362bf371a76964ff6ba02",
+      "document_id": "C07",
+      "document_title": "Probation & Contract Changes",
+      "section_path": [
+        "Probation & Contract Changes",
+        "Downstream controls"
+      ],
+      "source_reference": "data/documents/policies/C07.docx",
+      "access_group": "all_employees"
+    }
+  ],
+  "hr_top5": [
+    {
+      "rank": 1,
+      "score": 0.6205314426001682,
+      "chunk_id": "F01-9e534a93237a375af6ca2eb68dab4f1e8f7190eb7a671050e065d60664450390",
+      "document_id": "F01",
+      "document_title": "Employee FAQ",
+      "section_path": [
+        "Employee FAQ",
+        "Which annual leave balance applies?"
+      ],
+      "source_reference": "data/documents/faq/F01.md",
+      "access_group": "all_employees"
+    },
+    {
+      "rank": 2,
+      "score": 0.6160747498199107,
+      "chunk_id": "C01-d8f3fa0636d02219f47289e9d71105fc2154b1b5acb2f4104c45420d59330910",
+      "document_id": "C01",
+      "document_title": "Full-Time Employment Contract A",
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "4 Leave and sickness"
+      ],
+      "source_reference": "data/documents/contracts/C01.docx",
+      "access_group": "hr_confidential"
+    },
+    {
+      "rank": 3,
+      "score": 0.605938622912202,
+      "chunk_id": "C02-7213775f8220c8c359d72e6b65b1afc76e92027d043bdd46c11bd2e98e13afde",
+      "document_id": "C02",
+      "document_title": "Part-Time Employment Contract B",
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Taking leave and reporting sickness"
+      ],
+      "source_reference": "data/documents/contracts/C02.docx",
+      "access_group": "hr_confidential"
+    },
+    {
+      "rank": 4,
+      "score": 0.605082021143998,
+      "chunk_id": "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4",
+      "document_id": "C04",
+      "document_title": "Annual Leave Policy",
+      "section_path": [
+        "Annual Leave Policy",
+        "Carry-over and scheduling"
+      ],
+      "source_reference": "data/documents/policies/C04.pdf",
+      "access_group": "all_employees"
+    },
+    {
+      "rank": 5,
+      "score": 0.5920688357056191,
+      "chunk_id": "C04-f176eb8a7591c663a80950667ffdb798b2f83410b50967428f51d16879ec0fe1",
+      "document_id": "C04",
+      "document_title": "Annual Leave Policy",
+      "section_path": [
+        "Annual Leave Policy",
+        "Entitlement and scope"
+      ],
+      "source_reference": "data/documents/policies/C04.pdf",
+      "access_group": "all_employees"
+    }
+  ]
+}

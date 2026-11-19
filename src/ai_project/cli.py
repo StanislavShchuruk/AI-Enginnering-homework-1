@@ -20,6 +20,16 @@ from ai_project.service import AIService
 
 def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
+    if argv and argv[0] == "eval-retrieval":
+        from ai_project.retrieval_evaluation import evaluation_main
+
+        return evaluation_main(argv[1:])
+    if argv and argv[0] in {"index-corpus", "search"}:
+        from ai_project.retrieval import retrieval_main
+
+        return retrieval_main(argv[0], argv[1:])
+    if argv and argv[0] in {"ingest-corpus", "sanitize-corpus"}:
+        return ingestion_main(argv[1:], sanitize_only=argv[0] == "sanitize-corpus")
     if argv and argv[0] == "extract-corpus":
         return extract_corpus_main(argv[1:])
     if argv and argv[0] == "reproduce":
@@ -45,6 +55,38 @@ def main(argv: list[str] | None = None) -> int:
     except ValueError as exc:
         parser.error(str(exc))
     return 0
+
+
+def ingestion_main(argv: list[str], *, sanitize_only: bool = False) -> int:
+    from ai_project.chunking import ChunkingConfig
+    from ai_project.ingestion import load_config, process_corpus
+
+    parser = argparse.ArgumentParser(description="Sanitize and deduplicate HR documents locally.")
+    parser.add_argument("--project-root", type=Path, default=Path.cwd())
+    parser.add_argument("--manifest", type=Path, default=Path("data/manifest.json"))
+    parser.add_argument("--output", type=Path, required=True, help="New sanitized output directory.")
+    parser.add_argument("--config", type=Path, help="Local JSON detection configuration.")
+    parser.add_argument("--target-tokens", type=int, default=400)
+    parser.add_argument("--max-tokens", type=int, default=600)
+    if sanitize_only:
+        parser.add_argument("--input", type=Path, required=True, help="Existing extracted JSON directory.")
+    args = parser.parse_args(argv)
+    try:
+        report = process_corpus(
+            args.project_root, args.project_root / args.manifest, args.output,
+            extracted=args.input if sanitize_only else None, config=load_config(args.config),
+            chunking=ChunkingConfig(target_tokens=args.target_tokens, max_tokens=args.max_tokens),
+        )
+    except (ValueError, OSError):
+        parser.exit(1, "Processing setup failed; check paths, metadata and detection configuration.\n")
+    print(f"Sanitized {report['sanitized_documents']}/{report['manifest_documents']} documents; "
+          f"included {report['included_documents']}; "
+          f"excluded duplicates {report['excluded_duplicate_documents']}; "
+          f"withheld {report['withheld_documents']}; "
+          f"redactions {sum(report['redaction_counts'].values())}; "
+          f"chunks {report['chunking']['chunk_count']}. "
+          f"See chunks.jsonl, chunking_manifest.json and report.json in {args.output}.")
+    return int(bool(report["errors"]))
 
 
 def extract_corpus_main(argv: list[str]) -> int:

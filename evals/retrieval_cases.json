@@ -1,0 +1,357 @@
+{
+  "schema_version": "1.0",
+  "status": "draft",
+  "source_sha256": "429649032efba26439e267c7da639daf1ef1dd29491d84224a8e0c1e9bdb15f7",
+  "labeling_method": "Initial expected chunks selected directly from canonical corpus text before Task 5 search runs. R01 repeats the previously observed Task 4 smoke case. During user review, R01 was expanded to include the Employee FAQ chunk after checking its carry-over deadline against the corpus, and R05 was expanded to include the v2.0 release-notes chunk after verifying its correction window and locked-period route. Remaining labels still require review.",
+  "cases": [
+    {
+      "id": "R01",
+      "question": "До якого числа треба використати перенесену відпустку за контрактом A?",
+      "allowed_access_groups": [
+        "all_employees",
+        "hr_confidential"
+      ],
+      "topic": "leave",
+      "label_note": "User-reviewed relevance includes the Contract A leave section and the Employee FAQ carry-over explanation, which both support the 31 March deadline. Both chunks are relevant; the question does not require quoting the contract itself. Existing smoke question.",
+      "expected_chunk_ids": [
+        "C01-d8f3fa0636d02219f47289e9d71105fc2154b1b5acb2f4104c45420d59330910",
+        "F01-9e534a93237a375af6ca2eb68dab4f1e8f7190eb7a671050e065d60664450390"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "C01-d8f3fa0636d02219f47289e9d71105fc2154b1b5acb2f4104c45420d59330910",
+          "document_title": "Full-Time Employment Contract A",
+          "section_path": [
+            "Full-Time Employment Contract A",
+            "4 Leave and sickness"
+          ],
+          "version": "2.0",
+          "excerpt": "Up to five unused annual leave days may carry over if approved by 15 December and must be used by 31 March."
+        },
+        {
+          "chunk_id": "F01-9e534a93237a375af6ca2eb68dab4f1e8f7190eb7a671050e065d60664450390",
+          "document_title": "Employee FAQ",
+          "section_path": [
+            "Employee FAQ",
+            "Which annual leave balance applies?"
+          ],
+          "version": "2.0",
+          "excerpt": "Up to five approved carry-over days can be used until 31 March."
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "question": "Under Part-Time Employment Contract B, from which consecutive scheduled sick workday is medical evidence required?",
+      "allowed_access_groups": [
+        "all_employees",
+        "hr_confidential"
+      ],
+      "topic": "leave",
+      "label_note": "Exact Contract B source required, even where Contract A has the same rule.",
+      "expected_chunk_ids": [
+        "C02-7213775f8220c8c359d72e6b65b1afc76e92027d043bdd46c11bd2e98e13afde"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "C02-7213775f8220c8c359d72e6b65b1afc76e92027d043bdd46c11bd2e98e13afde",
+          "document_title": "Part-Time Employment Contract B",
+          "section_path": [
+            "Part-Time Employment Contract B",
+            "Taking leave and reporting sickness"
+          ],
+          "version": "2.0",
+          "excerpt": "The first three consecutive scheduled sick workdays are covered by self-certification. Medical evidence is required from the fourth."
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "question": "За Annual Leave Policy, що витрачається першим: перенесені дні відпустки чи нарахування поточного року?",
+      "allowed_access_groups": [
+        "all_employees"
+      ],
+      "topic": "leave",
+      "label_note": "General policy governs consumption order; distinguish contract entitlement from administration.",
+      "expected_chunk_ids": [
+        "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4",
+          "document_title": "Annual Leave Policy",
+          "section_path": [
+            "Annual Leave Policy",
+            "Carry-over and scheduling"
+          ],
+          "version": "2.0",
+          "excerpt": "Carry-over expires on 31 March of the next year and is consumed before current-year accrual."
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "question": "In PeopleFlow v1.8, who adjusted an attendance record and when did the employee check the result?",
+      "allowed_access_groups": [
+        "all_employees"
+      ],
+      "topic": "attendance",
+      "label_note": "Historical v1.8 procedure required; do not substitute current self-service guidance.",
+      "expected_chunk_ids": [
+        "M06-22206e0d731cf4ddbb2e84553aebafbff0681bb4ef3e4749a22522bb3ca39cd4"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "M06-22206e0d731cf4ddbb2e84553aebafbff0681bb4ef3e4749a22522bb3ca39cd4",
+          "document_title": "Attendance Correction Guide v1",
+          "section_path": [
+            "Attendance Correction Guide v1",
+            "Manager-mediated correction"
+          ],
+          "version": "1.8",
+          "excerpt": "3. The manager opened Team > Attendance, selected the employee and date, and chose Adjust record.\n4. The manager entered the replacement values, recorded the employee's reason, and saved the adjustment.\n5. The employee reopened the timeline after the next five-minute calculation cycle to confirm the result."
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "question": "У PeopleFlow v2.0 який строк подання виправлення обліку часу та що робити з ATT-LOCK, навіть якщо ще не минуло 14 днів?",
+      "allowed_access_groups": [
+        "all_employees"
+      ],
+      "topic": "attendance",
+      "label_note": "User-reviewed relevance includes the two current-guide chunks and the v2.0 release-notes summary of the 14-day window and HR Payroll route for locked periods. The release notes do not name ATT-LOCK explicitly; the current guide connects that error code to the locked-period rule. Historical direct editing is not relevant.",
+      "expected_chunk_ids": [
+        "M07-165c674906938d2bfc324e62cc139f7820395a744230f112a6b4ef6f2febbbab",
+        "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e",
+        "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "M07-165c674906938d2bfc324e62cc139f7820395a744230f112a6b4ef6f2febbbab",
+          "document_title": "Attendance Correction Guide v2",
+          "section_path": [
+            "Attendance Correction Guide v2",
+            "Submit a correction"
+          ],
+          "version": "2.0",
+          "excerpt": "Self-service is available within 14 calendar days of the affected workday while the payroll period is unlocked."
+        },
+        {
+          "chunk_id": "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e",
+          "document_title": "Attendance Correction Guide v2",
+          "section_path": [
+            "Attendance Correction Guide v2",
+            "Outside the self-service window"
+          ],
+          "version": "2.0",
+          "excerpt": "ATT-LOCK means payroll has locked the period, even if the date falls within 14 days. ATT-422 means the proposed event sequence is invalid. Requests outside the window or in a locked period go to HR Payroll for a controlled adjustment;"
+        },
+        {
+          "chunk_id": "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101",
+          "document_title": "PeopleFlow Release Notes v2.0",
+          "section_path": [
+            "PeopleFlow Release Notes v2.0",
+            "New self-service actions"
+          ],
+          "version": "2.0",
+          "excerpt": "Employees now submit correction requests from their own attendance timeline. The window is 14 calendar days and payroll must be unlocked. One pending request per workday is allowed. Managers approve or reject; approval recalculates within five minutes. HR Payroll handles locked or older periods, replacing the former direct manager-edit route."
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "question": "According to Leave Request Guide v1 for v1.8, how did an employee cancel approved leave and confirm the balance was released?",
+      "allowed_access_groups": [
+        "all_employees"
+      ],
+      "topic": "leave",
+      "label_note": "Historical cancellation source required; current Cancel leave instructions are not applicable.",
+      "expected_chunk_ids": [
+        "F05-a844a9b7539be10f854fc90b9e88e83ce0281e0b0cd6b74c203c7c42255f0be4"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "F05-a844a9b7539be10f854fc90b9e88e83ce0281e0b0cd6b74c203c7c42255f0be4",
+          "document_title": "Leave Request Guide v1",
+          "section_path": [
+            "Leave Request Guide v1",
+            "Historical cancellation procedure"
+          ],
+          "version": "1.8",
+          "excerpt": "To cancel a pending or approved request, the employee contacted HR Support with the request reference, absence dates, and whether the entire request should be cancelled. HR checked whether leave had already started, reviewed any payroll impact, and recorded the cancellation. The employee then reopened the request to confirm Cancelled and checked the released balance."
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "question": "За Leave Request Guide v2, чи можна частково скасувати відпустку до її початку та чи потрібне нове погодження керівника для самого скасування?",
+      "allowed_access_groups": [
+        "all_employees"
+      ],
+      "topic": "leave",
+      "label_note": "Current v2 cancellation source required, in contrast to the v1 support-mediated workflow.",
+      "expected_chunk_ids": [
+        "F06-cbf4ce8fcbaf8bc32174326af396565bb05adbe6bd9494fd194d00dc0f29136e"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "F06-cbf4ce8fcbaf8bc32174326af396565bb05adbe6bd9494fd194d00dc0f29136e",
+          "document_title": "Leave Request Guide v2",
+          "section_path": [
+            "Leave Request Guide v2",
+            "Cancel before leave starts"
+          ],
+          "version": "2.0",
+          "excerpt": "No new manager approval or HR Support ticket is required. Partial cancellation is not available: cancel the entire unstarted request and submit a replacement for the dates still needed."
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "question": "For a v2.0 shift swap, how far in advance must I submit, how long does my colleague have to accept, and what minimum rest must the resulting roster preserve?",
+      "allowed_access_groups": [
+        "all_employees"
+      ],
+      "topic": "shifts",
+      "label_note": "Two chunks are needed for proposal timing and rest eligibility; colleague acceptance alone does not approve a swap.",
+      "expected_chunk_ids": [
+        "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c",
+        "M08-f126decb86737cdf531552e994a4c19cb20d395250c49af4acf9a965bca7f096"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c",
+          "document_title": "Shift Schedule & Swap Guide",
+          "section_path": [
+            "Shift Schedule & Swap Guide",
+            "Propose an employee swap"
+          ],
+          "version": "2.0",
+          "excerpt": "3. Submit at least 24 hours before the earlier of the two shift starts.\n4. Wait for the colleague to accept within 12 hours of the proposal."
+        },
+        {
+          "chunk_id": "M08-f126decb86737cdf531552e994a4c19cb20d395250c49af4acf9a965bca7f096",
+          "document_title": "Shift Schedule & Swap Guide",
+          "section_path": [
+            "Shift Schedule & Swap Guide",
+            "Eligibility controls"
+          ],
+          "version": "2.0",
+          "excerpt": "The resulting schedule must preserve 11 consecutive hours of rest between shifts"
+        }
+      ]
+    },
+    {
+      "id": "R09",
+      "question": "У Payslip & Payroll Portal Guide що означає статус платежу Submitted і скільки чекати після дати виплати перед повідомленням про затримку?",
+      "allowed_access_groups": [
+        "all_employees",
+        "hr_payroll"
+      ],
+      "topic": "payroll",
+      "label_note": "Restricted payroll guide supports both the status meaning and settlement-delay rule.",
+      "expected_chunk_ids": [
+        "M09-93bcd7c466126c564e1b9e94d8d0d83c5109350ab38b90812949ff2c35e728ef"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "M09-93bcd7c466126c564e1b9e94d8d0d83c5109350ab38b90812949ff2c35e728ef",
+          "document_title": "Payslip & Payroll Portal Guide",
+          "section_path": [
+            "Payslip & Payroll Portal Guide",
+            "Gross pay and net pay"
+          ],
+          "version": "2.0",
+          "excerpt": "A payment marked Submitted confirms that the export was sent, not that funds settled. Allow two business days after the stated pay date before reporting a settlement delay, unless the destination is visibly incorrect."
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "question": "According to Payroll Troubleshooting, when should an allowance approved after cutoff appear, and who reviews a pre-cutoff approval missing from a Published statement?",
+      "allowed_access_groups": [
+        "all_employees",
+        "hr_payroll"
+      ],
+      "topic": "payroll",
+      "label_note": "Troubleshooting cutoff rules, rather than generic payslip navigation, are the target.",
+      "expected_chunk_ids": [
+        "S05-1e43f76447840722f7b41b501b973da48368a0fab74a8ee423a9b876a81f4b05"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "S05-1e43f76447840722f7b41b501b973da48368a0fab74a8ee423a9b876a81f4b05",
+          "document_title": "Payroll Troubleshooting",
+          "section_path": [
+            "Payroll Troubleshooting",
+            "Missing allowance procedure"
+          ],
+          "version": "2.0",
+          "excerpt": "An approval after cutoff normally appears in the following month's adjustment run. An approval before cutoff that is missing from a Published statement needs Payroll Operations review."
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "question": "Коли спливає строк першої відповіді на Medium-звернення, відкрите у п’ятницю о 16:00 UTC, якщо свят немає?",
+      "allowed_access_groups": [
+        "all_employees"
+      ],
+      "topic": "support",
+      "label_note": "The concrete SLA clock example is sufficient; a resolution guarantee is not implied.",
+      "expected_chunk_ids": [
+        "S02-11691c4ea1e776d5b23b9cfdcdfe6037fca97802ef0f38c02a4fa0bf6e5e1216"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "S02-11691c4ea1e776d5b23b9cfdcdfe6037fca97802ef0f38c02a4fa0bf6e5e1216",
+          "document_title": "Support Priority & SLA Policy",
+          "section_path": [
+            "Support Priority & SLA Policy",
+            "Clock examples"
+          ],
+          "version": "2.0",
+          "excerpt": "A Medium ticket opened Friday at 16:00 UTC receives one business hour on Friday and reaches its four-hour first-response deadline Monday at 12:00 UTC, assuming neither day is an excluded holiday."
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "question": "In Authentication Troubleshooting, how many failed password attempts trigger lockout, over what time window, and how long does the lockout last?",
+      "allowed_access_groups": [
+        "all_employees"
+      ],
+      "topic": "support",
+      "label_note": "Exact lockout thresholds from troubleshooting; password-reset and MFA timing are distinct rules.",
+      "expected_chunk_ids": [
+        "S03-09a590ea31e9889002ef03509a1a894cfcc6101b053bca8a263803312f25148a"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "S03-09a590ea31e9889002ef03509a1a894cfcc6101b053bca8a263803312f25148a",
+          "document_title": "Authentication Troubleshooting",
+          "section_path": [
+            "Authentication Troubleshooting",
+            "MFA and lockout"
+          ],
+          "version": "2.0",
+          "excerpt": "Five failed password attempts within 15 minutes trigger a 30-minute lockout."
+        }
+      ]
+    }
+  ],
+  "access_control_cases": [
+    {
+      "id": "ACL01",
+      "question": "До якого числа треба використати перенесену відпустку за контрактом A?",
+      "allowed_access_groups": [
+        "all_employees"
+      ],
+      "forbidden_access_groups": [
+        "hr_confidential"
+      ],
+      "note": "Separate employee-only Contract A check; excluded from Recall@5 and MRR@5."
+    }
+  ]
+}

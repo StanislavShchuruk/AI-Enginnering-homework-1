@@ -77,9 +77,31 @@ It preserves the complete PeopleFlow manifest metadata and ordered content,
 including sections, lists, table cells, and PDF page locations. Run
 `python -m ai_project extract-corpus --output data/extracted/run-01` with a new
 output directory. See `docs/EXTRACTION.md` for details and corpus validation.
-The Homework 1 ticket schema and providers are unchanged. Sanitization,
-deduplication, chunking, embeddings, retrieval, generation, and RAG evaluation
-remain outside the implemented scope.
+Homework 2 Task 2 adds local deterministic sanitization and SHA-256 exact
+deduplication through `ingest-corpus` and `sanitize-corpus`. Sanitized output is
+separate from raw/extracted artifacts; access/lifecycle metadata is preserved.
+See `docs/SANITIZATION.md` for detection limits and hash/duplicate policy.
+Homework 2 Task 3 adds deterministic section-aware chunking after deduplication,
+with a configurable 400-token target and 600-token maximum using a documented
+local lexical counter. It writes chunks.jsonl, chunking_manifest.json and a
+three-document fixed-size comparison. Historical versions, access metadata,
+source/content hashes and page references are preserved. See README.md and
+docs/CHUNKING.md for observed corpus counts, examples and token-count limitations.
+Homework 2 Task 4 adds `index-corpus` and `search`, consuming canonical chunks.jsonl.
+Local Ollama /api/embed batches default to bge-m3; persistent Qdrant local mode
+uses cosine similarity and an access-group allowlist before ranking. Rebuilds
+publish a replacement collection, remove stale points, and record the model,
+vector dimension and input SHA-256. Default search allows only all_employees;
+--hr-access explicitly adds hr_confidential for local smoke testing. See
+docs/RETRIEVAL.md for PowerShell commands and validation results.
+Homework 2 Task 5 adds `eval-retrieval` with 12 draft corpus-grounded relevance
+cases and a separate employee-only Contract A access-control check. It validates
+labels against the active indexed corpus, calls the existing vector search at
+k=5, and reports mean Recall@5 and MRR@5. The saved vector baseline is provisional
+until the user reviews questions and expected chunks. See
+docs/RETRIEVAL_EVALUATION.md and evals/retrieval_cases.json.
+The Homework 1 ticket schema and providers are unchanged. BM25, reranking,
+generation, and answer evaluation remain outside the implemented scope.
 
 - Versioned prompts stored separately from application code.
 - RAG-based troubleshooting using relevant HR support knowledge.

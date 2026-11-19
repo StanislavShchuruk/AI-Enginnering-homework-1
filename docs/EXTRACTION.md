@@ -96,8 +96,9 @@ a warning with its source line. No raw source was changed. Every PDF reports
 the geometry/heading-inference advisory. No authored business content or table
 cells were lost in the corpus regression checks.
 
-No PII sanitization, deduplication, chunking, embeddings, storage/retrieval,
-generation, or RAG evaluation is included.
+This extraction stage does not sanitize or deduplicate. The separate Task 2
+workflow is documented in [SANITIZATION.md](SANITIZATION.md). Chunking, embeddings,
+storage/retrieval, generation and RAG evaluation remain unimplemented.
 
 Validated run: `data/extracted-v1.1/report.json` contains 32 successful
 documents, 494 blocks, 75,509 extracted characters, and five tables, with no

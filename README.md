@@ -429,3 +429,118 @@ Extract the raw HR corpus locally with
 `python -m ai_project extract-corpus --output data/extracted/run-01`.
 The output directory must be new. See [extraction documentation](docs/EXTRACTION.md)
 for the schema, dependencies, validation, and known format limitations.
+
+Task 2 adds local sanitization and exact deduplication:
+`python -m ai_project ingest-corpus --output data/sanitized`.
+For existing extraction JSON, use
+`python -m ai_project sanitize-corpus --input data/extracted --output data/sanitized-from-extracted`.
+See [sanitization documentation](docs/SANITIZATION.md) for configuration, access
+boundaries, duplicate policy and detection limitations.
+
+## Homework 2 Task 3: section-aware chunking
+
+`ingest-corpus` now runs extraction → sanitization → exact deduplication → chunking.
+It chunks only canonical sanitized semantic blocks, retaining historical versions
+and existing access metadata. Run locally, with a **new** output directory:
+
+```powershell
+python -m ai_project ingest-corpus --output data/chunked/task3-run04 --target-tokens 400 --max-tokens 600
+```
+
+The same chunking options work with `sanitize-corpus --input data/extracted`.
+Outputs include `chunks.jsonl`, `chunking_manifest.json`, `chunking_comparison.json`,
+and the existing `report.json` with an embedded chunking manifest. Source documents
+and sanitized duplicate audit files retain their existing formats.
+
+Chunks stay within the extraction's heading hierarchy. Whole paragraphs, consecutive
+list items (including numbered procedures), and tables are packed toward 400 tokens
+without exceeding 600. A fitting list or table stays whole even if it passes the
+target. Oversized lists split between items; oversized tables split between rows
+and repeat the first row as column headers. Oversized prose prefers line/paragraph,
+then sentence boundaries, falling back to token boundaries. There is no overlap
+between chunks apart from repeated table headers and markers on continued items.
+
+The shared, dependency-free counter is `unicode-word-or-punctuation-v1`: Python
+Unicode regex `\w+|[^\w\s]` counts each word/number run and each punctuation character;
+whitespace costs zero. Counts include rendered list markers, headings and table
+cells. These are reproducible lexical token counts, **not model tokenizer counts**;
+400/600 therefore do not guarantee an embedding model's token limit. The baseline
+uses hard 400-token windows of exactly the same rendered sanitized semantic stream,
+without section awareness, overlap or injected context.
+
+Observed comparison from `data/chunked/task3-run02/chunking_comparison.json`:
+
+| Document | Semantic tokens | Section-aware chunks | Fixed 400 chunks | Concrete first baseline boundary |
+| --- | ---: | ---: | ---: | --- |
+| M11 — Manager Approval Dashboard | 484 | 6 | 2 | `routes the matter` / `to HR Payroll.` |
+| C02 — Part-Time Employment Contract B | 621 | 7 | 2 | `Sick Pay & Absence` / `Policy apply to requests` |
+| S03 — Authentication Troubleshooting | 423 | 5 | 2 | `or recovery` / `secret. Support Escalation` |
+
+Section-aware chunking keeps each quoted sentence within its section: respectively
+95 tokens for “Concurrency and confidentiality”, 100 for “Taking leave and reporting
+sickness”, and 102 for “Escalation and disabled accounts”. M11's five-step procedure
+stays together (78 tokens); C02's ten-row table stays together (66 tokens). S03's
+four diagnostic steps and five-row error table also each stay whole. The JSON report
+records the actual boundary excerpts, section paths, block indices and protected
+structure chunk IDs for inspection.
+
+We choose section boundaries to keep policy rules and procedures attributable to
+their own topics. The 400-token target with 600-token slack permits larger intact
+procedures without forcing unrelated sections together. These documents have short
+sections: the observed maximum is only 188 tokens, and standalone parent headings
+can yield tiny chunks (minimum 2). The full corpus produces **184 chunks from 32
+documents**, versus 52 fixed-size chunks; this is an intentional fragmentation
+tradeoff, not evidence of better retrieval accuracy. Retrieval/embedding evaluation
+is deferred; the present corpus does not empirically establish an optimal size.
+
+Both full runs (`data/chunked/task3-run02` and `task3-run03`) produced byte-identical
+artifacts and IDs. No documents were withheld and no exact duplicates were found
+in this corpus. Historical documents M06, F03 and F05 remain in the chunks. All
+semantic content is preserved; non-semantic furniture is excluded. Tests exercise
+actual duplicate exclusion separately, explicit non-semantic flags, long lists and
+tables, oversized individual blocks, token limits, page metadata and stable IDs.
+
+Each chunk carries the source path, title, section path, version, effective date,
+complete original metadata, zero-based extraction block indices, locations and
+available page numbers. `source_hash` is SHA-256 of original bytes; `content_hash`
+is SHA-256 of normalized semantic content **before redaction**. Neither is a hash
+of the sanitized chunk. Chunk IDs use document ID plus SHA-256 of algorithm/counter
+versions, size settings, both document hashes, metadata, section, ordinal, block
+indices and chunk text. Output paths and run times do not enter IDs.
+
+See [chunking details](docs/CHUNKING.md) for splitting edge cases and verification.
+
+## Homework 2 Task 4: local indexing and search
+
+Build the canonical chunks with local Ollama embeddings and persistent Qdrant:
+
+```powershell
+python -m ai_project index-corpus --input data/chunked/task3-run02/chunks.jsonl --index data/index/peopleflow --embedding-model bge-m3
+$question = 'До якого числа треба використати перенесену відпустку за контрактом A?'
+python -m ai_project search $question
+python -m ai_project search $question --hr-access
+```
+
+The input path above is the documented default. Embeddings include title, section
+path and text; search uses the saved model and cosine similarity, returning five
+results by default. Access filtering happens before ranking. Default access allows
+only `all_employees`; `--hr-access` explicitly includes `hr_confidential` for local
+testing. Successful rebuilds replace the old collection and remove stale chunks.
+See [retrieval commands and verification](docs/RETRIEVAL.md) for setup, validation,
+metadata, access options and the observed corpus smoke test.
+
+## Homework 2 Task 5: provisional retrieval evaluation
+
+Review the 12 English/Ukrainian draft questions, expected chunk IDs and source
+excerpts in [evals/retrieval_cases.json](evals/retrieval_cases.json), then run:
+
+```powershell
+python -m ai_project eval-retrieval --cases evals/retrieval_cases.json --index data/index/peopleflow --output results/retrieval_vector_baseline.json
+```
+
+This evaluates the existing vector search at k=5, validates expected chunks
+against the current indexed corpus and case access groups, and reports mean
+Recall@5 and MRR@5. The employee-only Contract A access check is reported
+separately. The saved baseline is provisional until the draft labels are reviewed.
+See [retrieval evaluation](docs/RETRIEVAL_EVALUATION.md) for exact metric definitions,
+source/version distinctions, results and offline tests.
