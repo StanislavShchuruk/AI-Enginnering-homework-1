@@ -1,4 +1,4 @@
-"""Draft corpus-grounded evaluation of existing vector search, always at k=5."""
+"""Corpus-grounded evaluation of vector or hybrid search, always at k=5."""
 
 import argparse
 import hashlib
@@ -18,6 +18,7 @@ from pydantic import (
 )
 from qdrant_client import QdrantClient
 
+from ai_project.lexical import BM25_B, BM25_K1, CANDIDATES, RRF_K, TOKENIZER_VERSION
 from ai_project.retrieval import (
     ACCESS_GROUPS,
     DEFAULT_INDEX,
@@ -26,12 +27,13 @@ from ai_project.retrieval import (
     IndexMetadata,
     OllamaEmbedder,
     active_collection,
-    load_chunks,
+    indexed_chunks,
     search,
 )
 
 DEFAULT_CASES = Path("evals/retrieval_cases.json")
 DEFAULT_OUTPUT = Path("results/retrieval_vector_baseline.json")
+DEFAULT_HYBRID_OUTPUT = Path("results/retrieval_hybrid.json")
 K = 5
 Text = Annotated[str, StringConstraints(min_length=1, pattern=r"\S")]
 ChunkID = Annotated[str, StringConstraints(pattern=r"^.+-[0-9a-f]{64}$")]
@@ -121,38 +123,8 @@ def index_context(index_path: Path) -> tuple[str, IndexMetadata, dict[str, Index
         metadata = IndexMetadata.model_validate_json(
             (index_path / f"{collection}.json").read_text(encoding="utf-8")
         )
-        chunks, digest = load_chunks(Path(metadata.source_file))
-        if digest != metadata.source_sha256 or len(chunks) != metadata.chunk_count:
-            raise ValueError(
-                "Canonical chunks differ from the current index metadata; rebuild first"
-            )
-        corpus = {chunk.chunk_id: chunk for chunk in chunks}
-        seen: set[str] = set()
-        offset = None
-        while True:
-            points, offset = client.scroll(
-                collection, limit=256, offset=offset, with_payload=True, with_vectors=False
-            )
-            for point in points:
-                payload = point.payload or {}
-                chunk_id = payload.get("chunk_id")
-                chunk = corpus.get(chunk_id) if isinstance(chunk_id, str) else None
-                if (
-                    chunk is None
-                    or chunk_id in seen
-                    or payload
-                    != {
-                        **chunk.model_dump(mode="json"),
-                        "access_group": chunk.metadata["access_group"],
-                    }
-                ):
-                    raise ValueError("Persisted index payloads differ from canonical chunks")
-                seen.add(chunk_id)
-            if offset is None:
-                break
-        if seen != set(corpus):
-            raise ValueError("Indexed chunk IDs differ from canonical chunks")
-        return collection, metadata, corpus
+        chunks = indexed_chunks(client, collection, metadata)
+        return collection, metadata, {chunk.chunk_id: chunk for chunk in chunks}
     finally:
         client.close()
 
@@ -200,7 +172,10 @@ def evaluate_retrieval(
     index_path: Path = DEFAULT_INDEX,
     *,
     embedder: OllamaEmbedder | None = None,
+    mode: Literal["vector", "hybrid"] = "vector",
 ) -> dict[str, Any]:
+    if mode not in {"vector", "hybrid"}:
+        raise ValueError("Evaluation mode must be vector or hybrid")
     if cases_path.suffix.lower() != ".json" or cases_path.name.startswith(".env"):
         raise ValueError("Cases must be a JSON file")
     cases_bytes = cases_path.read_bytes()
@@ -218,6 +193,7 @@ def evaluate_retrieval(
             top_k=K,
             access_groups=case.allowed_access_groups,
             embedder=embedder,
+            mode=mode,
         )
         results.append(
             {
@@ -236,6 +212,7 @@ def evaluate_retrieval(
             top_k=K,
             access_groups=case.allowed_access_groups,
             embedder=embedder,
+            mode=mode,
         )
         forbidden = [
             hit["chunk_id"]
@@ -269,7 +246,17 @@ def evaluate_retrieval(
         "review_required": True,
         "cases_status": suite.status,
         "run_at_utc": datetime.now(UTC).isoformat(),
-        "retriever": "vector",
+        "retriever": mode,
+        "retrieval_config": {
+            "candidates_per_branch": CANDIDATES,
+            "rrf_k": RRF_K,
+            "branch_weights": {"vector": 1.0, "bm25": 1.0},
+            "bm25_k1": BM25_K1,
+            "bm25_b": BM25_B,
+            "tokenizer": TOKENIZER_VERSION,
+        }
+        if mode == "hybrid"
+        else {"vector_limit": K},
         "k": K,
         "cases_file": cases_path.as_posix(),
         "cases_sha256": hashlib.sha256(cases_bytes).hexdigest(),
@@ -295,13 +282,16 @@ def evaluate_retrieval(
 
 def evaluation_main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(
-        description="Provisional PeopleFlow vector retrieval eval at k=5."
+        description="Provisional PeopleFlow vector/hybrid retrieval eval at k=5."
     )
     parser.add_argument("--cases", type=Path, default=DEFAULT_CASES)
     parser.add_argument("--index", type=Path, default=DEFAULT_INDEX)
-    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--mode", choices=["vector", "hybrid"], default="vector")
+    parser.add_argument("--output", type=Path, help="Defaults to the selected mode's results file.")
     parser.add_argument("--ollama-url", default=DEFAULT_URL)
     args = parser.parse_args(argv)
+    if args.output is None:
+        args.output = DEFAULT_HYBRID_OUTPUT if args.mode == "hybrid" else DEFAULT_OUTPUT
     try:
         if args.output.suffix.lower() != ".json" or args.output.name.startswith(".env"):
             raise ValueError("Output must be a JSON report")
@@ -310,7 +300,10 @@ def evaluation_main(argv: list[str]) -> int:
         ):
             raise ValueError("Output cannot replace cases or write inside the index")
         report = evaluate_retrieval(
-            args.cases, args.index, embedder=OllamaEmbedder(args.ollama_url)
+            args.cases,
+            args.index,
+            embedder=OllamaEmbedder(args.ollama_url),
+            mode=args.mode,
         )
         if args.output.resolve() == Path(report["source_file"]).resolve():
             raise ValueError("Output cannot replace canonical chunks")
@@ -331,7 +324,7 @@ def evaluation_main(argv: list[str]) -> int:
         parser.exit(1, f"Retrieval evaluation failed: {exc}\n")
     metrics = report["relevance"]
     print(
-        f"PROVISIONAL: Recall@5={metrics['mean_recall_at_5']:.4f}; "
+        f"PROVISIONAL ({args.mode}): Recall@5={metrics['mean_recall_at_5']:.4f}; "
         f"MRR@5={metrics['mrr_at_5']:.4f}; misses={metrics['miss_count']}/{metrics['case_count']}"
     )
     print(

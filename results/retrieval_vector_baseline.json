@@ -2,8 +2,11 @@
   "status": "provisional",
   "review_required": true,
   "cases_status": "draft",
-  "run_at_utc": "2026-11-19T12:10:42.690316+00:00",
+  "run_at_utc": "2026-11-19T12:23:46.713537+00:00",
   "retriever": "vector",
+  "retrieval_config": {
+    "vector_limit": 5
+  },
   "k": 5,
   "cases_file": "evals/retrieval_cases.json",
   "cases_sha256": "30232948cf0587a5a6287edca2008e101a3889bbcd7292e072e5fac7d10c6f23",

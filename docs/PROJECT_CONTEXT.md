@@ -100,7 +100,12 @@ labels against the active indexed corpus, calls the existing vector search at
 k=5, and reports mean Recall@5 and MRR@5. The saved vector baseline is provisional
 until the user reviews questions and expected chunks. See
 docs/RETRIEVAL_EVALUATION.md and evals/retrieval_cases.json.
-The Homework 1 ticket schema and providers are unchanged. BM25, reranking,
+Homework 2 Task 6 adds `search --mode hybrid` over the same canonical chunks,
+combining access-filtered vector and Unicode BM25 candidates (up to 20 per branch)
+using equal-weight RRF with k=60. Vector search remains the default. Evaluation
+accepts --mode vector|hybrid and saves separate reports against unchanged labels.
+See docs/RETRIEVAL_EVALUATION.md for the comparison, including regressions.
+The Homework 1 ticket schema and providers are unchanged. Reranking,
 generation, and answer evaluation remain outside the implemented scope.
 
 - Versioned prompts stored separately from application code.

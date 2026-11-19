@@ -1,5 +1,10 @@
 # PeopleFlow local indexing and vector search
 
+Task 6 adds opt-in `search --mode hybrid` while retaining the vector default.
+See [hybrid retrieval and evaluation](RETRIEVAL_EVALUATION.md) for BM25/RRF details,
+the two-mode comparison and exact commands. The Task 4 smoke results below are
+the historical vector-only run.
+
 Task 4 reads the ingestion pipeline's canonical `chunks.jsonl` directly. It does
 not re-extract, re-sanitize, re-chunk, or discard historical versions. Defaults are
 `data/chunked/task3-run02/chunks.jsonl`, index directory `data/index/peopleflow`,

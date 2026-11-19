@@ -137,11 +137,13 @@ def test_evaluation_calls_existing_search_at_five_and_separates_access(evaluatio
     assert query.call_args_list[1].kwargs["access_groups"] == ["all_employees"]
 
 
-def test_real_local_search_integration(evaluation_fixture):
+@pytest.mark.parametrize("mode", ["vector", "hybrid"])
+def test_real_local_search_integration(evaluation_fixture, mode):
     path, index, _, _, _, embedder = evaluation_fixture
-    report = evaluate_retrieval(path, index, embedder=embedder)
+    report = evaluate_retrieval(path, index, embedder=embedder, mode=mode)
     assert report["relevance"]["mean_recall_at_5"] == 1
     assert report["access_control"]["passed"]
+    assert report["retriever"] == mode
     assert embedder.embed.call_count == 2
     assert all(call.args[1] == "test-embedding" for call in embedder.embed.call_args_list)
 
@@ -290,6 +292,22 @@ def test_cli_protects_cases_before_search(evaluation_fixture):
             )
     assert error.value.code == 1
     evaluate.assert_not_called()
+
+
+def test_hybrid_cli_default_output_is_separate(evaluation_fixture, tmp_path, monkeypatch):
+    path, index, _, _, _, embedder = evaluation_fixture
+    monkeypatch.chdir(tmp_path)
+    with patch("ai_project.retrieval_evaluation.OllamaEmbedder", return_value=embedder):
+        assert (
+            main(
+                ["eval-retrieval", "--cases", str(path), "--index", str(index), "--mode", "hybrid"]
+            )
+            == 0
+        )
+    report = json.loads((tmp_path / "results/retrieval_hybrid.json").read_text(encoding="utf-8"))
+    assert report["retriever"] == "hybrid"
+    assert report["retrieval_config"]["rrf_k"] == 60
+    assert not (tmp_path / "results/retrieval_vector_baseline.json").exists()
 
 
 def test_committed_suite_shape():

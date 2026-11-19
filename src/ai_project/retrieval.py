@@ -6,7 +6,7 @@ import json
 import math
 import re
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 from urllib.error import URLError
 from urllib.parse import urlsplit
 from urllib.request import ProxyHandler, Request, build_opener
@@ -16,6 +16,7 @@ from pydantic import BaseModel, ConfigDict, Field, model_validator
 from qdrant_client import QdrantClient, models
 
 from ai_project.chunking import Chunk
+from ai_project.lexical import CANDIDATES, BM25Index, reciprocal_rank_fusion
 
 DEFAULT_INPUT = Path("data/chunked/task3-run02/chunks.jsonl")
 DEFAULT_INDEX = Path("data/index/peopleflow")
@@ -149,6 +150,41 @@ def active_collection(client: QdrantClient) -> str:
     raise ValueError("No active index; run index-corpus first")
 
 
+def indexed_chunks(
+    client: QdrantClient,
+    collection: str,
+    metadata: IndexMetadata,
+) -> list[IndexChunk]:
+    """Verify canonical file provenance and exact membership/payloads of the active index."""
+    chunks, digest = load_chunks(Path(metadata.source_file))
+    if digest != metadata.source_sha256 or len(chunks) != metadata.chunk_count:
+        raise ValueError("Canonical chunks differ from the current index metadata; rebuild first")
+    corpus = {chunk.chunk_id: chunk for chunk in chunks}
+    seen: set[str] = set()
+    offset = None
+    while True:
+        points, offset = client.scroll(
+            collection, limit=256, offset=offset, with_payload=True, with_vectors=False
+        )
+        for point in points:
+            payload = point.payload or {}
+            chunk_id = payload.get("chunk_id")
+            chunk = corpus.get(chunk_id) if isinstance(chunk_id, str) else None
+            if (
+                chunk is None
+                or chunk_id in seen
+                or payload
+                != {**chunk.model_dump(mode="json"), "access_group": chunk.metadata["access_group"]}
+            ):
+                raise ValueError("Persisted index payloads differ from canonical chunks")
+            seen.add(chunk_id)
+        if offset is None:
+            break
+    if seen != set(corpus):
+        raise ValueError("Indexed chunk IDs differ from canonical chunks")
+    return chunks
+
+
 def build_index(
     input_path: Path = DEFAULT_INPUT,
     index_path: Path = DEFAULT_INDEX,
@@ -245,10 +281,13 @@ def search(
     top_k: int = 5,
     access_groups: list[str] | None = None,
     embedder: OllamaEmbedder | None = None,
+    mode: Literal["vector", "hybrid"] = "vector",
 ) -> list[dict[str, Any]]:
     groups = ["all_employees"] if access_groups is None else access_groups
     if not question.strip() or top_k < 1 or not groups or set(groups) - ACCESS_GROUPS:
         raise ValueError("Provide a nonempty question, positive top-k and known access groups")
+    if mode not in {"vector", "hybrid"}:
+        raise ValueError("Search mode must be vector or hybrid")
     if not (index_path / "qdrant").is_dir():
         raise ValueError("No local index; run index-corpus first")
     client = QdrantClient(path=str(index_path / "qdrant"))
@@ -257,6 +296,18 @@ def search(
         metadata = IndexMetadata.model_validate_json(
             (index_path / f"{collection}.json").read_text(encoding="utf-8")
         )
+        lexical = None
+        if mode == "hybrid":
+            chunks = indexed_chunks(client, collection, metadata)
+            lexical = BM25Index(
+                [
+                    {
+                        **chunk.model_dump(mode="json"),
+                        "access_group": chunk.metadata["access_group"],
+                    }
+                    for chunk in chunks
+                ]
+            )
         vectors = validate_vectors(
             (embedder or OllamaEmbedder()).embed([question], metadata.embedding_model),
             1,
@@ -265,7 +316,7 @@ def search(
         hits = client.query_points(
             collection,
             query=vectors[0],
-            limit=top_k,
+            limit=CANDIDATES if mode == "hybrid" else top_k,
             with_payload=True,
             query_filter=models.Filter(
                 must=[
@@ -276,10 +327,19 @@ def search(
                 ]
             ),
         ).points
-        return [
+        if mode == "hybrid":
+            hits.sort(key=lambda hit: (-hit.score, (hit.payload or {})["chunk_id"]))
+        vector = [
             {"rank": rank, "score": hit.score, **(hit.payload or {})}
             for rank, hit in enumerate(hits, 1)
         ]
+        if lexical is not None:
+            return reciprocal_rank_fusion(
+                vector,
+                lexical.search(question, groups, limit=CANDIDATES),
+                top_k=top_k,
+            )
+        return vector
     finally:
         client.close()
 
@@ -300,6 +360,7 @@ def retrieval_main(command: str, argv: list[str]) -> int:
     else:
         parser.add_argument("question")
         parser.add_argument("--top-k", type=int, default=5)
+        parser.add_argument("--mode", choices=["vector", "hybrid"], default="vector")
         parser.add_argument(
             "--access-group",
             action="append",
@@ -325,7 +386,12 @@ def retrieval_main(command: str, argv: list[str]) -> int:
             if args.hr_access:
                 groups.append("hr_confidential")
             result = search(
-                args.question, args.index, top_k=args.top_k, access_groups=groups, embedder=embedder
+                args.question,
+                args.index,
+                top_k=args.top_k,
+                access_groups=groups,
+                embedder=embedder,
+                mode=args.mode,
             )
     except (ValueError, OSError, RuntimeError) as exc:
         parser.exit(1, f"Local retrieval failed: {exc}\n")

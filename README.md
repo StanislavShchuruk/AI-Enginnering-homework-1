@@ -544,3 +544,20 @@ Recall@5 and MRR@5. The employee-only Contract A access check is reported
 separately. The saved baseline is provisional until the draft labels are reviewed.
 See [retrieval evaluation](docs/RETRIEVAL_EVALUATION.md) for exact metric definitions,
 source/version distinctions, results and offline tests.
+
+## Homework 2 Task 6: hybrid retrieval
+
+Vector search remains the default. Hybrid combines up to 20 access-filtered
+vector candidates and 20 BM25 candidates with equal-weight RRF (`k=60`):
+
+```powershell
+python -m ai_project search "ATT-LOCK v2.0" --mode hybrid
+python -m ai_project eval-retrieval --mode vector --output results/retrieval_vector_baseline.json
+python -m ai_project eval-retrieval --mode hybrid --output results/retrieval_hybrid.json
+```
+
+BM25 uses the active index's canonical chunks and indexes title, section and text.
+Unicode tokenization preserves English/Ukrainian words, `ATT-LOCK` and `v1.8`.
+Both modes run the same relevance cases and separate ACL01 check. See
+[retrieval comparison](docs/RETRIEVAL_EVALUATION.md) for exact commands, scores,
+per-case improvements/regressions and limitations. Reranking remains a follow-up.
