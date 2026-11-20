@@ -560,4 +560,22 @@ BM25 uses the active index's canonical chunks and indexes title, section and tex
 Unicode tokenization preserves English/Ukrainian words, `ATT-LOCK` and `v1.8`.
 Both modes run the same relevance cases and separate ACL01 check. See
 [retrieval comparison](docs/RETRIEVAL_EVALUATION.md) for exact commands, scores,
-per-case improvements/regressions and limitations. Reranking remains a follow-up.
+per-case improvements/regressions and limitations. Task 7 adds reranking below.
+
+## Homework 2 Task 7: optional local reranking
+
+`--mode hybrid-rerank` scores the complete access-filtered RRF candidate union
+using a local Sentence Transformers CrossEncoder before selecting the top five.
+The default is `BAAI/bge-reranker-v2-m3`; ties retain RRF order. Install only when
+needed, prepare the model once, then run the evaluation:
+
+```powershell
+python -m venv .venv-rerank --system-site-packages
+.venv-rerank/Scripts/python -m pip install -e ".[rerank]"
+.venv-rerank/Scripts/python -c "from ai_project.reranking import CrossEncoderReranker; CrossEncoderReranker(local_files_only=False)"
+.venv-rerank/Scripts/python -m ai_project eval-retrieval --mode hybrid-rerank --output results/retrieval_hybrid_rerank.json
+```
+
+Vector and hybrid need no reranker dependencies. The reviewed suite is shared by
+all three modes; reports include median query time and expected-chunk candidate
+coverage. See [setup and three-way comparison](docs/RETRIEVAL_EVALUATION.md).

@@ -17,6 +17,13 @@ from qdrant_client import QdrantClient, models
 
 from ai_project.chunking import Chunk
 from ai_project.lexical import CANDIDATES, BM25Index, reciprocal_rank_fusion
+from ai_project.reranking import (
+    DEFAULT_BATCH_SIZE,
+    DEFAULT_RERANKER,
+    CrossEncoderReranker,
+    Reranker,
+    rerank_candidates,
+)
 
 DEFAULT_INPUT = Path("data/chunked/task3-run02/chunks.jsonl")
 DEFAULT_INDEX = Path("data/index/peopleflow")
@@ -281,13 +288,15 @@ def search(
     top_k: int = 5,
     access_groups: list[str] | None = None,
     embedder: OllamaEmbedder | None = None,
-    mode: Literal["vector", "hybrid"] = "vector",
+    mode: Literal["vector", "hybrid", "hybrid-rerank"] = "vector",
+    reranker: Reranker | None = None,
+    diagnostics: dict[str, Any] | None = None,
 ) -> list[dict[str, Any]]:
     groups = ["all_employees"] if access_groups is None else access_groups
     if not question.strip() or top_k < 1 or not groups or set(groups) - ACCESS_GROUPS:
         raise ValueError("Provide a nonempty question, positive top-k and known access groups")
-    if mode not in {"vector", "hybrid"}:
-        raise ValueError("Search mode must be vector or hybrid")
+    if mode not in {"vector", "hybrid", "hybrid-rerank"}:
+        raise ValueError("Search mode must be vector, hybrid or hybrid-rerank")
     if not (index_path / "qdrant").is_dir():
         raise ValueError("No local index; run index-corpus first")
     client = QdrantClient(path=str(index_path / "qdrant"))
@@ -297,7 +306,7 @@ def search(
             (index_path / f"{collection}.json").read_text(encoding="utf-8")
         )
         lexical = None
-        if mode == "hybrid":
+        if mode != "vector":
             chunks = indexed_chunks(client, collection, metadata)
             lexical = BM25Index(
                 [
@@ -316,7 +325,7 @@ def search(
         hits = client.query_points(
             collection,
             query=vectors[0],
-            limit=CANDIDATES if mode == "hybrid" else top_k,
+            limit=CANDIDATES if mode != "vector" else top_k,
             with_payload=True,
             query_filter=models.Filter(
                 must=[
@@ -327,17 +336,32 @@ def search(
                 ]
             ),
         ).points
-        if mode == "hybrid":
+        if mode != "vector":
             hits.sort(key=lambda hit: (-hit.score, (hit.payload or {})["chunk_id"]))
         vector = [
             {"rank": rank, "score": hit.score, **(hit.payload or {})}
             for rank, hit in enumerate(hits, 1)
         ]
         if lexical is not None:
-            return reciprocal_rank_fusion(
+            pool = reciprocal_rank_fusion(
                 vector,
                 lexical.search(question, groups, limit=CANDIDATES),
-                top_k=top_k,
+                top_k=CANDIDATES * 2,
+            )
+            if diagnostics is not None:
+                diagnostics.update(
+                    candidate_ids=[hit["chunk_id"] for hit in pool],
+                    candidate_access_groups=[hit["access_group"] for hit in pool],
+                )
+            if mode == "hybrid-rerank":
+                return rerank_candidates(
+                    question, pool, reranker or CrossEncoderReranker(), groups, top_k=top_k
+                )
+            return pool[:top_k]
+        if diagnostics is not None:
+            diagnostics.update(
+                candidate_ids=[hit["chunk_id"] for hit in vector],
+                candidate_access_groups=[hit["access_group"] for hit in vector],
             )
         return vector
     finally:
@@ -345,7 +369,7 @@ def search(
 
 
 def retrieval_main(command: str, argv: list[str]) -> int:
-    parser = argparse.ArgumentParser(description="Local PeopleFlow vector indexing and search.")
+    parser = argparse.ArgumentParser(description="Local PeopleFlow indexing and retrieval modes.")
     parser.add_argument("--index", type=Path, default=DEFAULT_INDEX)
     parser.add_argument("--ollama-url", default=DEFAULT_URL)
     if command == "index-corpus":
@@ -360,7 +384,12 @@ def retrieval_main(command: str, argv: list[str]) -> int:
     else:
         parser.add_argument("question")
         parser.add_argument("--top-k", type=int, default=5)
-        parser.add_argument("--mode", choices=["vector", "hybrid"], default="vector")
+        parser.add_argument(
+            "--mode", choices=["vector", "hybrid", "hybrid-rerank"], default="vector"
+        )
+        parser.add_argument("--reranker-model", default=DEFAULT_RERANKER)
+        parser.add_argument("--reranker-batch-size", type=int, default=DEFAULT_BATCH_SIZE)
+        parser.add_argument("--reranker-device", default="cpu")
         parser.add_argument(
             "--access-group",
             action="append",
@@ -392,6 +421,13 @@ def retrieval_main(command: str, argv: list[str]) -> int:
                 access_groups=groups,
                 embedder=embedder,
                 mode=args.mode,
+                reranker=CrossEncoderReranker(
+                    args.reranker_model,
+                    batch_size=args.reranker_batch_size,
+                    device=args.reranker_device,
+                )
+                if args.mode == "hybrid-rerank"
+                else None,
             )
     except (ValueError, OSError, RuntimeError) as exc:
         parser.exit(1, f"Local retrieval failed: {exc}\n")

@@ -105,8 +105,15 @@ combining access-filtered vector and Unicode BM25 candidates (up to 20 per branc
 using equal-weight RRF with k=60. Vector search remains the default. Evaluation
 accepts --mode vector|hybrid and saves separate reports against unchanged labels.
 See docs/RETRIEVAL_EVALUATION.md for the comparison, including regressions.
-The Homework 1 ticket schema and providers are unchanged. Reranking,
-generation, and answer evaluation remain outside the implemented scope.
+Homework 2 Task 7 adds optional `hybrid-rerank` with local Sentence Transformers
+CrossEncoder scoring (default BAAI/bge-reranker-v2-m3) over the full deduplicated,
+access-filtered RRF pool. Final top-k follows scoring; ties retain RRF rank. The
+evaluation suite's status field accepts reviewed as well as draft; it was marked
+reviewed at the user's instruction without label changes for the three-way run.
+Reports include model identity, expected-chunk pool coverage and median query time.
+See docs/RETRIEVAL_EVALUATION.md for setup and results. The optional rerank extra
+is not needed by vector/hybrid. The Homework 1 ticket schema and providers are
+unchanged. Generation and answer evaluation remain outside the implemented scope.
 
 - Versioned prompts stored separately from application code.
 - RAG-based troubleshooting using relevant HR support knowledge.

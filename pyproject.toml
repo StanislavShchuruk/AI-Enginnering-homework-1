@@ -22,6 +22,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["ruff>=0.6", "pytest>=8,<10"]
 corpus = ["python-docx>=1.1,<2", "reportlab>=4,<5", "pypdf>=5,<7"]
+rerank = ["sentence-transformers>=5.1,<6"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

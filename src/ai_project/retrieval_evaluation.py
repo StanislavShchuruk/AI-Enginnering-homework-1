@@ -5,7 +5,9 @@ import hashlib
 import json
 from datetime import UTC, datetime
 from pathlib import Path
+from statistics import median
 from tempfile import NamedTemporaryFile
+from time import perf_counter
 from typing import Annotated, Any, Literal
 
 from pydantic import (
@@ -19,6 +21,12 @@ from pydantic import (
 from qdrant_client import QdrantClient
 
 from ai_project.lexical import BM25_B, BM25_K1, CANDIDATES, RRF_K, TOKENIZER_VERSION
+from ai_project.reranking import (
+    DEFAULT_BATCH_SIZE,
+    DEFAULT_RERANKER,
+    CrossEncoderReranker,
+    Reranker,
+)
 from ai_project.retrieval import (
     ACCESS_GROUPS,
     DEFAULT_INDEX,
@@ -34,6 +42,7 @@ from ai_project.retrieval import (
 DEFAULT_CASES = Path("evals/retrieval_cases.json")
 DEFAULT_OUTPUT = Path("results/retrieval_vector_baseline.json")
 DEFAULT_HYBRID_OUTPUT = Path("results/retrieval_hybrid.json")
+DEFAULT_RERANK_OUTPUT = Path("results/retrieval_hybrid_rerank.json")
 K = 5
 Text = Annotated[str, StringConstraints(min_length=1, pattern=r"\S")]
 ChunkID = Annotated[str, StringConstraints(pattern=r"^.+-[0-9a-f]{64}$")]
@@ -99,7 +108,7 @@ class AccessCase(QueryCase):
 
 class RetrievalCases(StrictModel):
     schema_version: Literal["1.0"]
-    status: Literal["draft"]
+    status: Literal["draft", "reviewed"]
     source_sha256: str = Field(pattern=r"^[0-9a-f]{64}$")
     labeling_method: Text
     cases: list[RelevanceCase] = Field(min_length=1)
@@ -172,10 +181,14 @@ def evaluate_retrieval(
     index_path: Path = DEFAULT_INDEX,
     *,
     embedder: OllamaEmbedder | None = None,
-    mode: Literal["vector", "hybrid"] = "vector",
+    mode: Literal["vector", "hybrid", "hybrid-rerank"] = "vector",
+    reranker: Reranker | None = None,
+    reranker_model: str = DEFAULT_RERANKER,
+    reranker_batch_size: int = DEFAULT_BATCH_SIZE,
+    reranker_device: str = "cpu",
 ) -> dict[str, Any]:
-    if mode not in {"vector", "hybrid"}:
-        raise ValueError("Evaluation mode must be vector or hybrid")
+    if mode not in {"vector", "hybrid", "hybrid-rerank"}:
+        raise ValueError("Evaluation mode must be vector, hybrid or hybrid-rerank")
     if cases_path.suffix.lower() != ".json" or cases_path.name.startswith(".env"):
         raise ValueError("Cases must be a JSON file")
     cases_bytes = cases_path.read_bytes()
@@ -185,8 +198,16 @@ def evaluate_retrieval(
         raise ValueError("Cases source hash differs from the indexed corpus; review labels first")
     validate_labels(suite, corpus)
     embedder = embedder or OllamaEmbedder()
+    initialization_started = perf_counter()
+    if mode == "hybrid-rerank" and reranker is None:
+        reranker = CrossEncoderReranker(
+            reranker_model, batch_size=reranker_batch_size, device=reranker_device
+        )
+    initialization_seconds = perf_counter() - initialization_started
     results = []
     for case in suite.cases:
+        diagnostics: dict[str, Any] = {}
+        started = perf_counter()
         hits = search(
             case.question,
             index_path,
@@ -194,18 +215,35 @@ def evaluate_retrieval(
             access_groups=case.allowed_access_groups,
             embedder=embedder,
             mode=mode,
+            reranker=reranker,
+            diagnostics=diagnostics,
         )
+        query_seconds = perf_counter() - started
+        candidate_ids = diagnostics.get("candidate_ids", [])
         results.append(
             {
                 "id": case.id,
                 "question": case.question,
                 "allowed_access_groups": case.allowed_access_groups,
                 "expected_chunk_ids": case.expected_chunk_ids,
+                "query_seconds": query_seconds,
+                "candidate_ids": candidate_ids,
+                "expected_in_candidate_pool": {
+                    chunk_id: chunk_id in candidate_ids for chunk_id in case.expected_chunk_ids
+                },
+                "expected_candidate_ranks": {
+                    chunk_id: candidate_ids.index(chunk_id) + 1
+                    if chunk_id in candidate_ids
+                    else None
+                    for chunk_id in case.expected_chunk_ids
+                },
                 **score_case(case.expected_chunk_ids, [hit["chunk_id"] for hit in hits]),
             }
         )
     access_results = []
     for case in suite.access_control_cases:
+        diagnostics = {}
+        started = perf_counter()
         hits = search(
             case.question,
             index_path,
@@ -213,6 +251,8 @@ def evaluate_retrieval(
             access_groups=case.allowed_access_groups,
             embedder=embedder,
             mode=mode,
+            reranker=reranker,
+            diagnostics=diagnostics,
         )
         forbidden = [
             hit["chunk_id"]
@@ -225,16 +265,24 @@ def evaluate_retrieval(
             for hit in hits
             if hit.get("access_group") not in case.allowed_access_groups
         ]
+        candidate_groups = diagnostics.get("candidate_access_groups", [])
+        unauthorized_candidates = sum(
+            group not in case.allowed_access_groups for group in candidate_groups
+        )
         access_results.append(
             {
                 **case.model_dump(),
+                "query_seconds": perf_counter() - started,
+                "candidate_count": len(diagnostics.get("candidate_ids", [])),
+                "candidate_access_groups": diagnostics.get("candidate_access_groups", []),
+                "unauthorized_candidate_count": unauthorized_candidates,
                 "ranked_ids": [hit["chunk_id"] for hit in hits],
                 "returned_access_groups": [hit.get("access_group") for hit in hits],
                 "returned_count": len(hits),
                 "forbidden_chunk_ids": forbidden,
                 "forbidden_chunk_count": len(forbidden),
                 "invisible_chunk_ids": invisible,
-                "passed": not forbidden and not invisible,
+                "passed": not forbidden and not invisible and unauthorized_candidates == 0,
             }
         )
     # Search reopens local Qdrant per query; reject a run spanning a concurrent rebuild.
@@ -242,8 +290,8 @@ def evaluate_retrieval(
     if final_collection != collection or final_metadata != metadata:
         raise ValueError("Active index changed during evaluation; rerun against a stable index")
     return {
-        "status": "provisional",
-        "review_required": True,
+        "status": "evaluated" if suite.status == "reviewed" else "provisional",
+        "review_required": suite.status != "reviewed",
         "cases_status": suite.status,
         "run_at_utc": datetime.now(UTC).isoformat(),
         "retriever": mode,
@@ -255,8 +303,20 @@ def evaluate_retrieval(
             "bm25_b": BM25_B,
             "tokenizer": TOKENIZER_VERSION,
         }
-        if mode == "hybrid"
+        if mode != "vector"
         else {"vector_limit": K},
+        "reranker_model": reranker.model_name if mode == "hybrid-rerank" else None,
+        "reranker_batch_size": getattr(reranker, "batch_size", reranker_batch_size)
+        if mode == "hybrid-rerank"
+        else None,
+        "reranker_device": getattr(reranker, "device", reranker_device)
+        if mode == "hybrid-rerank"
+        else None,
+        "reranker_initialization_seconds": initialization_seconds if mode == "hybrid-rerank" else 0,
+        "median_query_seconds": median(r["query_seconds"] for r in results),
+        "query_timing_scope": (
+            f"{len(results)} relevance queries; excludes model initialization and ACL check"
+        ),
         "k": K,
         "cases_file": cases_path.as_posix(),
         "cases_sha256": hashlib.sha256(cases_bytes).hexdigest(),
@@ -282,16 +342,23 @@ def evaluate_retrieval(
 
 def evaluation_main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(
-        description="Provisional PeopleFlow vector/hybrid retrieval eval at k=5."
+        description="PeopleFlow vector, hybrid and hybrid-rerank evaluation at k=5."
     )
     parser.add_argument("--cases", type=Path, default=DEFAULT_CASES)
     parser.add_argument("--index", type=Path, default=DEFAULT_INDEX)
-    parser.add_argument("--mode", choices=["vector", "hybrid"], default="vector")
+    parser.add_argument("--mode", choices=["vector", "hybrid", "hybrid-rerank"], default="vector")
+    parser.add_argument("--reranker-model", default=DEFAULT_RERANKER)
+    parser.add_argument("--reranker-batch-size", type=int, default=DEFAULT_BATCH_SIZE)
+    parser.add_argument("--reranker-device", default="cpu")
     parser.add_argument("--output", type=Path, help="Defaults to the selected mode's results file.")
     parser.add_argument("--ollama-url", default=DEFAULT_URL)
     args = parser.parse_args(argv)
     if args.output is None:
-        args.output = DEFAULT_HYBRID_OUTPUT if args.mode == "hybrid" else DEFAULT_OUTPUT
+        args.output = {
+            "vector": DEFAULT_OUTPUT,
+            "hybrid": DEFAULT_HYBRID_OUTPUT,
+            "hybrid-rerank": DEFAULT_RERANK_OUTPUT,
+        }[args.mode]
     try:
         if args.output.suffix.lower() != ".json" or args.output.name.startswith(".env"):
             raise ValueError("Output must be a JSON report")
@@ -304,6 +371,9 @@ def evaluation_main(argv: list[str]) -> int:
             args.index,
             embedder=OllamaEmbedder(args.ollama_url),
             mode=args.mode,
+            reranker_model=args.reranker_model,
+            reranker_batch_size=args.reranker_batch_size,
+            reranker_device=args.reranker_device,
         )
         if args.output.resolve() == Path(report["source_file"]).resolve():
             raise ValueError("Output cannot replace canonical chunks")
@@ -324,9 +394,10 @@ def evaluation_main(argv: list[str]) -> int:
         parser.exit(1, f"Retrieval evaluation failed: {exc}\n")
     metrics = report["relevance"]
     print(
-        f"PROVISIONAL ({args.mode}): Recall@5={metrics['mean_recall_at_5']:.4f}; "
+        f"{report['status'].upper()} ({args.mode}): Recall@5={metrics['mean_recall_at_5']:.4f}; "
         f"MRR@5={metrics['mrr_at_5']:.4f}; misses={metrics['miss_count']}/{metrics['case_count']}"
     )
+    print(f"Median query time: {report['median_query_seconds']:.3f}s")
     print(
         f"Access control: {'PASS' if report['access_control']['passed'] else 'FAIL'}; "
         f"saved {args.output}"

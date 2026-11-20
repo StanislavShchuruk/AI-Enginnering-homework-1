@@ -1,8 +1,8 @@
 {
-  "status": "provisional",
-  "review_required": true,
-  "cases_status": "draft",
-  "run_at_utc": "2026-11-19T12:24:16.343950+00:00",
+  "status": "evaluated",
+  "review_required": false,
+  "cases_status": "reviewed",
+  "run_at_utc": "2026-11-19T12:59:25.248802+00:00",
   "retriever": "hybrid",
   "retrieval_config": {
     "candidates_per_branch": 20,
@@ -15,9 +15,15 @@
     "bm25_b": 0.75,
     "tokenizer": "unicode-compounds-v1"
   },
+  "reranker_model": null,
+  "reranker_batch_size": null,
+  "reranker_device": null,
+  "reranker_initialization_seconds": 0,
+  "median_query_seconds": 2.1158779000106733,
+  "query_timing_scope": "12 relevance queries; excludes model initialization and ACL check",
   "k": 5,
   "cases_file": "evals/retrieval_cases.json",
-  "cases_sha256": "30232948cf0587a5a6287edca2008e101a3889bbcd7292e072e5fac7d10c6f23",
+  "cases_sha256": "2b97221c33aa998872e3a5e726859f86075ed12dc300ddfb74592369ff18d645",
   "embedding_model": "bge-m3",
   "vector_dimension": 1024,
   "source_sha256": "429649032efba26439e267c7da639daf1ef1dd29491d84224a8e0c1e9bdb15f7",
@@ -40,6 +46,54 @@
           "C01-d8f3fa0636d02219f47289e9d71105fc2154b1b5acb2f4104c45420d59330910",
           "F01-9e534a93237a375af6ca2eb68dab4f1e8f7190eb7a671050e065d60664450390"
         ],
+        "query_seconds": 2.1282185000018217,
+        "candidate_ids": [
+          "C04-f176eb8a7591c663a80950667ffdb798b2f83410b50967428f51d16879ec0fe1",
+          "C01-d1030ae0f8946d08567832c543a64ba7364d7866af876cb8aa2a35f8f8ff1735",
+          "C07-d617127bd09f0ea6887b6ab86aa38052bed35a7f697c9e4f8f843fad6508c684",
+          "F01-9e534a93237a375af6ca2eb68dab4f1e8f7190eb7a671050e065d60664450390",
+          "S01-f915e5f1b51bbd1701d5aa9b59c17262b0347b5c1012a647e92428b345dbc1e3",
+          "C01-d8f3fa0636d02219f47289e9d71105fc2154b1b5acb2f4104c45420d59330910",
+          "S01-34c9fbeb38589ee49c981f59e38a450383c3206aec65034ef812a949087167b5",
+          "C02-7213775f8220c8c359d72e6b65b1afc76e92027d043bdd46c11bd2e98e13afde",
+          "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4",
+          "S02-ce14b225ac4c561550d1a3ad4f8ce850847bb8663efd96393e5daba0af2cd23c",
+          "M03-6c1682f5c4a8196d39394042a86794682012883aa315b48b7b07cc5947b26842",
+          "M03-17ea89a19501c60c3e3813356b5b3a6338d423e9aba06ad0d98c82064ae9eb72",
+          "M12-3fdcce2bc502c5a08aceca918221f2b327957f78865df31685f72e10c887f9dd",
+          "C05-e1d6e0d88ac72388f51ba18c6dd18ffeca9b0275786c4a4959186c3dc4e53a09",
+          "C07-326d3d1ddc46d4ede7b00e31093bdf962f50ffc90ac362bf371a76964ff6ba02",
+          "C01-781a52a606482cbf77b1531b2333dfc88a740cfbd0636f3f744ff70e4f003d72",
+          "M05-23ad52788021c8aed813afdc317c3b2cefec1ca72aa7ce4f54ce3b2a1635c8a5",
+          "C01-d29b423126d67ec54a083fdf2376d9414840dc955c01b6d1c517dc68621ae530",
+          "C05-8b98fed0d4c0a2891fb2b50ebcd8ff4d691dea022c9d40a21fc790d0edc7fca2",
+          "C07-17c96f913885c0f29559d642b6ecbdfcb138f50037d49e0165efb1d94468dfef",
+          "M12-d9313b3880627f00a3e7ac9fbbb8a7780d7b211df18b3c9b00388b9ad0a101f1",
+          "C04-643b6bf7f48768c2c042c2366a8529634ccc340fe42ee27eeb9871bf03c1ee19",
+          "F06-5a13c52a4248a8cb8537daeee4e1179d73376e2daf0ca8b94bc82774a30957d6",
+          "C05-9e57dc84b26a9da05bb37dab6f3da239e20b505a97976a3081fc9987ebe8514b",
+          "F01-6c355e03bf87f05a3ff327879812a6dabe9f94468d5802c8b216e7bee323bd9d",
+          "C03-e10797b31b412b4d944213c1f016dab3fb980d39108e39a3f9a1fd9b63a116a9",
+          "M04-67b13f08fdb043341d8fef21f22ab86b0041c0170ee2727dac6d42fa975dfc4f",
+          "M10-f8fb202bc15ded637dcf2040d423c844aaeaa4c7f8ee21700d858b5418d863c1",
+          "S04-3b0dbd90631bf76e2de4b24756df682661ec4f645c068a73b1e761f026a61da1",
+          "C02-125677c85a2afe08b6230334f41ce085867524c02ca072b01a1e47775523b307",
+          "S01-63fde1dd992b4f596038e522e19a707cd91838e14a545f3ea370d949b75b6df8",
+          "M04-f6ec9bebf4cf88b6c601efdb4b9c329f601db78cba9c8efe04da6bca7d75987a",
+          "S03-09a590ea31e9889002ef03509a1a894cfcc6101b053bca8a263803312f25148a",
+          "C02-913c2b65598d4bd271bc6d679da2d00e15c982c67e303de9fa05b810d01c5431",
+          "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e",
+          "M04-716c478532f38d903e93ffea33e1568dc4bfbb9f595f4ce7432fda67a0996d89",
+          "S03-d41617c926610876273e1d21b6e692672af881b5a3d787b15c1983272752dbe0"
+        ],
+        "expected_in_candidate_pool": {
+          "C01-d8f3fa0636d02219f47289e9d71105fc2154b1b5acb2f4104c45420d59330910": true,
+          "F01-9e534a93237a375af6ca2eb68dab4f1e8f7190eb7a671050e065d60664450390": true
+        },
+        "expected_candidate_ranks": {
+          "C01-d8f3fa0636d02219f47289e9d71105fc2154b1b5acb2f4104c45420d59330910": 6,
+          "F01-9e534a93237a375af6ca2eb68dab4f1e8f7190eb7a671050e065d60664450390": 4
+        },
         "ranked_ids": [
           "C04-f176eb8a7591c663a80950667ffdb798b2f83410b50967428f51d16879ec0fe1",
           "C01-d1030ae0f8946d08567832c543a64ba7364d7866af876cb8aa2a35f8f8ff1735",
@@ -65,6 +119,38 @@
         "expected_chunk_ids": [
           "C02-7213775f8220c8c359d72e6b65b1afc76e92027d043bdd46c11bd2e98e13afde"
         ],
+        "query_seconds": 2.105864199984353,
+        "candidate_ids": [
+          "C02-7213775f8220c8c359d72e6b65b1afc76e92027d043bdd46c11bd2e98e13afde",
+          "M04-7fdd1bbf44b3d6660debc0b15f8738ecd485a29f401961394eec3a7796c53aaf",
+          "C03-e10797b31b412b4d944213c1f016dab3fb980d39108e39a3f9a1fd9b63a116a9",
+          "C02-a3446b68a01df6be73c520c6ab91a903de384fe44d2238d7317e49ba1fafdf99",
+          "C01-d8f3fa0636d02219f47289e9d71105fc2154b1b5acb2f4104c45420d59330910",
+          "C02-7915f0ec1378e62589981c265f32f6e80b3e594a2eab60aa544b384e294c3f9f",
+          "M04-716c478532f38d903e93ffea33e1568dc4bfbb9f595f4ce7432fda67a0996d89",
+          "C05-4b93b384ea1f6a27864edc5ff930b6169a7df24c9abea3aa24dad578d1dad5ee",
+          "C05-9e57dc84b26a9da05bb37dab6f3da239e20b505a97976a3081fc9987ebe8514b",
+          "C02-f3e9575f7595756c5002046a305661fd0e95fa9f3c3635038023c8bdcac91647",
+          "C02-66a582095445fe163c1494f5cc2688ee7a431cfc0b84e3b85dee1206dff03197",
+          "C02-125677c85a2afe08b6230334f41ce085867524c02ca072b01a1e47775523b307",
+          "C02-913c2b65598d4bd271bc6d679da2d00e15c982c67e303de9fa05b810d01c5431",
+          "C05-e1d6e0d88ac72388f51ba18c6dd18ffeca9b0275786c4a4959186c3dc4e53a09",
+          "C07-326d3d1ddc46d4ede7b00e31093bdf962f50ffc90ac362bf371a76964ff6ba02",
+          "C05-8b98fed0d4c0a2891fb2b50ebcd8ff4d691dea022c9d40a21fc790d0edc7fca2",
+          "M10-f8fb202bc15ded637dcf2040d423c844aaeaa4c7f8ee21700d858b5418d863c1",
+          "C04-f176eb8a7591c663a80950667ffdb798b2f83410b50967428f51d16879ec0fe1",
+          "F01-9e534a93237a375af6ca2eb68dab4f1e8f7190eb7a671050e065d60664450390",
+          "M04-f6ec9bebf4cf88b6c601efdb4b9c329f601db78cba9c8efe04da6bca7d75987a",
+          "C06-dbef03312f36cbcbf589fe04bfe87691b9bc4f8a77440ee8a529612f366d0ac9",
+          "C01-d29b423126d67ec54a083fdf2376d9414840dc955c01b6d1c517dc68621ae530",
+          "C03-d0fe39e395344a93a1675472bc1d955f2c7b9400e04f1e8850fe9bf4a05eef90"
+        ],
+        "expected_in_candidate_pool": {
+          "C02-7213775f8220c8c359d72e6b65b1afc76e92027d043bdd46c11bd2e98e13afde": true
+        },
+        "expected_candidate_ranks": {
+          "C02-7213775f8220c8c359d72e6b65b1afc76e92027d043bdd46c11bd2e98e13afde": 1
+        },
         "ranked_ids": [
           "C02-7213775f8220c8c359d72e6b65b1afc76e92027d043bdd46c11bd2e98e13afde",
           "M04-7fdd1bbf44b3d6660debc0b15f8738ecd485a29f401961394eec3a7796c53aaf",
@@ -87,6 +173,40 @@
         "expected_chunk_ids": [
           "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4"
         ],
+        "query_seconds": 2.1428082999773324,
+        "candidate_ids": [
+          "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4",
+          "M03-17ea89a19501c60c3e3813356b5b3a6338d423e9aba06ad0d98c82064ae9eb72",
+          "C04-438a76a47f019b640eff390adfd7a0121134aa063d6877bb8a26f56d01807605",
+          "C04-fb42c02e7ba11cda8998efde31367247ef9e8f5ba55472f48193b3b4ba4bc823",
+          "C04-ec13867a639c8d0d64fab62861f18a318dc2e1adb796c80c515fa8234212e99b",
+          "C04-f176eb8a7591c663a80950667ffdb798b2f83410b50967428f51d16879ec0fe1",
+          "C04-643b6bf7f48768c2c042c2366a8529634ccc340fe42ee27eeb9871bf03c1ee19",
+          "F01-9e534a93237a375af6ca2eb68dab4f1e8f7190eb7a671050e065d60664450390",
+          "M03-c6d1a4097d94950922425f7977c41f80228230b6178530e41475aad01ae6f839",
+          "M03-6c1682f5c4a8196d39394042a86794682012883aa315b48b7b07cc5947b26842",
+          "M03-b50354c7c414dd8d0548cae9f503ad737746c2a27ccea319b1103bdf95babbaa",
+          "F06-5a13c52a4248a8cb8537daeee4e1179d73376e2daf0ca8b94bc82774a30957d6",
+          "M03-81c54e0c088b4a97b8d5c8f997843e854233867e6e695ed58897b8e45e415fe8",
+          "F05-f4a41e6b4162d6f60f795531046aedf81fbec553967395344ba0d3156a3d968e",
+          "F06-b7ff7d7dcdf11b095c67b3e9e6c9921eab0a5e8ff5d44baeae3786dccfb3147e",
+          "F03-3b867947354f7db800d26e4751bb880b3ec0e5e036310a6da67ba96ed79a0b63",
+          "F05-020748f5d6610e003525b3a3ffe0fab0ad6a6979ca72d4cf995ea4dc997e509b",
+          "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101",
+          "C06-dbef03312f36cbcbf589fe04bfe87691b9bc4f8a77440ee8a529612f366d0ac9",
+          "C06-9c836d9ae58eb8ae70563ad07f5850da66dbf0ebbea1bbc334313ca3f81708d6",
+          "M06-dcd542ceb51779f39655a708614ab59c4b00fdbebc18177be015106ee537b960",
+          "C06-fddcb4d6f2119e571f9957e70ddaf80b9008f146d98715c92a9ea62c0313d6bc",
+          "M07-b7e5b288af18ebf5e622332a49d8899822a65e4f458f6670bdf7c45964c68ec1",
+          "C08-760927e360f44b7e3688712e494b11c12e0e727c19dd5fc3a2a981da1b6486fd",
+          "F05-a2c271e0021d27579b54018666104b88d1479e5986d39fd5220a640c1229d946"
+        ],
+        "expected_in_candidate_pool": {
+          "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4": true
+        },
+        "expected_candidate_ranks": {
+          "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4": 1
+        },
         "ranked_ids": [
           "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4",
           "M03-17ea89a19501c60c3e3813356b5b3a6338d423e9aba06ad0d98c82064ae9eb72",
@@ -109,6 +229,43 @@
         "expected_chunk_ids": [
           "M06-22206e0d731cf4ddbb2e84553aebafbff0681bb4ef3e4749a22522bb3ca39cd4"
         ],
+        "query_seconds": 2.1062701999908313,
+        "candidate_ids": [
+          "F03-0c335afe0f4dc96d185512a3b22766a0369f22c8dd32d4d053a1bf92b8a3c858",
+          "F03-3b867947354f7db800d26e4751bb880b3ec0e5e036310a6da67ba96ed79a0b63",
+          "F04-7b9319df0226ed492febd69000ada643bf21b6310b1a2b990f420a73a9733022",
+          "F03-7eef93789ef4a72ca38a7d3ea9d39c9ee362f445c20d3c4cf5b99d3efb8ac0d1",
+          "F04-e0ce92365eda2f3cca65fc4ce21125a988e60a46478cc7aab41a1382b44cf2d6",
+          "M06-22206e0d731cf4ddbb2e84553aebafbff0681bb4ef3e4749a22522bb3ca39cd4",
+          "F03-fc8366e8e55fc4ba99fb39e95c6a6af904adf2286bdee5afdc2f64c656e2665c",
+          "F03-de350fdbd763a55d965f70ff1e2c7daa1099eacc7beaaea15b200c0701c559eb",
+          "F03-4019ec92a072a0ee41b0ffc91e339d75c018171e26e67ee00fb7198bb2f62af4",
+          "M06-b4ba9ab266b7ab4a87c1f7869a1c7f938e3cf7a60f609dad886813f55eac901e",
+          "M06-fb8acde6a28de80e267695bc69216abd9ece53cd5aa8a9541ef53e8b04ddaf8e",
+          "S04-3b0dbd90631bf76e2de4b24756df682661ec4f645c068a73b1e761f026a61da1",
+          "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101",
+          "F04-e8e1d806ef5465bd140ae6567f91a31568c4eaac17b48621d91afe0519514bdb",
+          "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c",
+          "F05-f4a41e6b4162d6f60f795531046aedf81fbec553967395344ba0d3156a3d968e",
+          "M05-8ac5c62a9ab905a5e1df7d180cc3300ecb240949f73b4af2a3caa326c75c5b32",
+          "F05-a2c271e0021d27579b54018666104b88d1479e5986d39fd5220a640c1229d946",
+          "M08-3c8f396aa74605ec13cf970e46890f30ec6c832292b490bbf050af52036bacef",
+          "M07-d57bb54fd37d36ab4debc3472a906da19592175522ac45cf654c9da85ec281fa",
+          "M06-dcd542ceb51779f39655a708614ab59c4b00fdbebc18177be015106ee537b960",
+          "S04-d10a304d86f8a95dfde57688040e0169b4cce0cc3c107d85978b14b4d29d9a7e",
+          "C08-9b97fca6c715aa6b17512e807f83c2cbaed11d8cd858678eea43dbdfe00621e7",
+          "F01-464d1752559f6cc4ee15dd79a8ea172dd0c9bab74f2a2f4f97321f584f9e4b9e",
+          "S02-8fedb0eda33913bd7e55226b7eea74521dffb73f3e61cabc0f9f925a7d3e605e",
+          "S04-e0856f2c390a0bf231d1f12be845471c8c5ec0269a8ec51a24e38080755f1009",
+          "C07-1bb80fe76b53592ba55d8e97fa4bd6dfcd24b5f4e5cd9f500742eff3e904dd9b",
+          "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e"
+        ],
+        "expected_in_candidate_pool": {
+          "M06-22206e0d731cf4ddbb2e84553aebafbff0681bb4ef3e4749a22522bb3ca39cd4": true
+        },
+        "expected_candidate_ranks": {
+          "M06-22206e0d731cf4ddbb2e84553aebafbff0681bb4ef3e4749a22522bb3ca39cd4": 6
+        },
         "ranked_ids": [
           "F03-0c335afe0f4dc96d185512a3b22766a0369f22c8dd32d4d053a1bf92b8a3c858",
           "F03-3b867947354f7db800d26e4751bb880b3ec0e5e036310a6da67ba96ed79a0b63",
@@ -135,6 +292,46 @@
           "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e",
           "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101"
         ],
+        "query_seconds": 2.103040600020904,
+        "candidate_ids": [
+          "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e",
+          "F04-e0ce92365eda2f3cca65fc4ce21125a988e60a46478cc7aab41a1382b44cf2d6",
+          "S04-e0856f2c390a0bf231d1f12be845471c8c5ec0269a8ec51a24e38080755f1009",
+          "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101",
+          "F03-7eef93789ef4a72ca38a7d3ea9d39c9ee362f445c20d3c4cf5b99d3efb8ac0d1",
+          "F04-7b9319df0226ed492febd69000ada643bf21b6310b1a2b990f420a73a9733022",
+          "F04-e8e1d806ef5465bd140ae6567f91a31568c4eaac17b48621d91afe0519514bdb",
+          "M06-dcd542ceb51779f39655a708614ab59c4b00fdbebc18177be015106ee537b960",
+          "M07-165c674906938d2bfc324e62cc139f7820395a744230f112a6b4ef6f2febbbab",
+          "F03-fc8366e8e55fc4ba99fb39e95c6a6af904adf2286bdee5afdc2f64c656e2665c",
+          "M07-d57bb54fd37d36ab4debc3472a906da19592175522ac45cf654c9da85ec281fa",
+          "F01-ab1680ca26fcf554d67768a89e46427a8b624d90c0056eabcaa14c120ab5f537",
+          "F06-cbf4ce8fcbaf8bc32174326af396565bb05adbe6bd9494fd194d00dc0f29136e",
+          "F03-0c335afe0f4dc96d185512a3b22766a0369f22c8dd32d4d053a1bf92b8a3c858",
+          "F01-1832224ac45338b96adac4735fb570b0aba389a8f2a0ac8cecad43f08f9f26d5",
+          "F03-3b867947354f7db800d26e4751bb880b3ec0e5e036310a6da67ba96ed79a0b63",
+          "S04-d10a304d86f8a95dfde57688040e0169b4cce0cc3c107d85978b14b4d29d9a7e",
+          "F06-5a13c52a4248a8cb8537daeee4e1179d73376e2daf0ca8b94bc82774a30957d6",
+          "F01-e5c973bac47fd35cfdaa1c8714ec85f4a86f578d156bbe0cfc1e93ac5c11319f",
+          "S02-8fedb0eda33913bd7e55226b7eea74521dffb73f3e61cabc0f9f925a7d3e605e",
+          "S03-d41617c926610876273e1d21b6e692672af881b5a3d787b15c1983272752dbe0",
+          "M03-81c54e0c088b4a97b8d5c8f997843e854233867e6e695ed58897b8e45e415fe8",
+          "M01-aa9518ba27d6b6ceb98eb39bec9b20cc20a6404ca7aaf5ea8d10a44285a1cd0e",
+          "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c",
+          "S04-3b0dbd90631bf76e2de4b24756df682661ec4f645c068a73b1e761f026a61da1",
+          "F06-eeadd0f67bbdc5417f5698a6db0b61fc3bea365f3eb6bce6e7e967601aa92840",
+          "M07-f8b240be09bf0bffa5b668f14fc13c7fda3ccad8bf37c8a57c9f122c31f44025"
+        ],
+        "expected_in_candidate_pool": {
+          "M07-165c674906938d2bfc324e62cc139f7820395a744230f112a6b4ef6f2febbbab": true,
+          "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e": true,
+          "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101": true
+        },
+        "expected_candidate_ranks": {
+          "M07-165c674906938d2bfc324e62cc139f7820395a744230f112a6b4ef6f2febbbab": 9,
+          "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e": 1,
+          "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101": 4
+        },
         "ranked_ids": [
           "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e",
           "F04-e0ce92365eda2f3cca65fc4ce21125a988e60a46478cc7aab41a1382b44cf2d6",
@@ -159,6 +356,45 @@
         "expected_chunk_ids": [
           "F05-a844a9b7539be10f854fc90b9e88e83ce0281e0b0cd6b74c203c7c42255f0be4"
         ],
+        "query_seconds": 2.1035560000455007,
+        "candidate_ids": [
+          "F05-f4a41e6b4162d6f60f795531046aedf81fbec553967395344ba0d3156a3d968e",
+          "F03-de350fdbd763a55d965f70ff1e2c7daa1099eacc7beaaea15b200c0701c559eb",
+          "F05-a844a9b7539be10f854fc90b9e88e83ce0281e0b0cd6b74c203c7c42255f0be4",
+          "F05-a2c271e0021d27579b54018666104b88d1479e5986d39fd5220a640c1229d946",
+          "F01-1832224ac45338b96adac4735fb570b0aba389a8f2a0ac8cecad43f08f9f26d5",
+          "M03-81c54e0c088b4a97b8d5c8f997843e854233867e6e695ed58897b8e45e415fe8",
+          "F06-cbf4ce8fcbaf8bc32174326af396565bb05adbe6bd9494fd194d00dc0f29136e",
+          "C04-ec13867a639c8d0d64fab62861f18a318dc2e1adb796c80c515fa8234212e99b",
+          "F06-5a13c52a4248a8cb8537daeee4e1179d73376e2daf0ca8b94bc82774a30957d6",
+          "F03-3b867947354f7db800d26e4751bb880b3ec0e5e036310a6da67ba96ed79a0b63",
+          "M06-22206e0d731cf4ddbb2e84553aebafbff0681bb4ef3e4749a22522bb3ca39cd4",
+          "F03-fc8366e8e55fc4ba99fb39e95c6a6af904adf2286bdee5afdc2f64c656e2665c",
+          "M03-6c1682f5c4a8196d39394042a86794682012883aa315b48b7b07cc5947b26842",
+          "F03-4019ec92a072a0ee41b0ffc91e339d75c018171e26e67ee00fb7198bb2f62af4",
+          "F06-b7ff7d7dcdf11b095c67b3e9e6c9921eab0a5e8ff5d44baeae3786dccfb3147e",
+          "F03-7eef93789ef4a72ca38a7d3ea9d39c9ee362f445c20d3c4cf5b99d3efb8ac0d1",
+          "M07-b7e5b288af18ebf5e622332a49d8899822a65e4f458f6670bdf7c45964c68ec1",
+          "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101",
+          "F04-7b9319df0226ed492febd69000ada643bf21b6310b1a2b990f420a73a9733022",
+          "F06-af7180a97ea540bcbd534b8e071f0b5fd48b4f348cc7807efe6665d82fbf62cf",
+          "F04-e0ce92365eda2f3cca65fc4ce21125a988e60a46478cc7aab41a1382b44cf2d6",
+          "M03-b50354c7c414dd8d0548cae9f503ad737746c2a27ccea319b1103bdf95babbaa",
+          "F05-d5b6c13d410d74e82b6e2fde13a006c3706a331a26d595247f5916a03fc0a4db",
+          "M03-17ea89a19501c60c3e3813356b5b3a6338d423e9aba06ad0d98c82064ae9eb72",
+          "M03-c6d1a4097d94950922425f7977c41f80228230b6178530e41475aad01ae6f839",
+          "F03-0c335afe0f4dc96d185512a3b22766a0369f22c8dd32d4d053a1bf92b8a3c858",
+          "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c",
+          "C04-438a76a47f019b640eff390adfd7a0121134aa063d6877bb8a26f56d01807605",
+          "F06-eeadd0f67bbdc5417f5698a6db0b61fc3bea365f3eb6bce6e7e967601aa92840",
+          "M06-b4ba9ab266b7ab4a87c1f7869a1c7f938e3cf7a60f609dad886813f55eac901e"
+        ],
+        "expected_in_candidate_pool": {
+          "F05-a844a9b7539be10f854fc90b9e88e83ce0281e0b0cd6b74c203c7c42255f0be4": true
+        },
+        "expected_candidate_ranks": {
+          "F05-a844a9b7539be10f854fc90b9e88e83ce0281e0b0cd6b74c203c7c42255f0be4": 3
+        },
         "ranked_ids": [
           "F05-f4a41e6b4162d6f60f795531046aedf81fbec553967395344ba0d3156a3d968e",
           "F03-de350fdbd763a55d965f70ff1e2c7daa1099eacc7beaaea15b200c0701c559eb",
@@ -181,6 +417,38 @@
         "expected_chunk_ids": [
           "F06-cbf4ce8fcbaf8bc32174326af396565bb05adbe6bd9494fd194d00dc0f29136e"
         ],
+        "query_seconds": 2.1199042000225745,
+        "candidate_ids": [
+          "F06-cbf4ce8fcbaf8bc32174326af396565bb05adbe6bd9494fd194d00dc0f29136e",
+          "F06-5a13c52a4248a8cb8537daeee4e1179d73376e2daf0ca8b94bc82774a30957d6",
+          "F06-eeadd0f67bbdc5417f5698a6db0b61fc3bea365f3eb6bce6e7e967601aa92840",
+          "F05-a2c271e0021d27579b54018666104b88d1479e5986d39fd5220a640c1229d946",
+          "M03-b50354c7c414dd8d0548cae9f503ad737746c2a27ccea319b1103bdf95babbaa",
+          "F06-b7ff7d7dcdf11b095c67b3e9e6c9921eab0a5e8ff5d44baeae3786dccfb3147e",
+          "C04-ec13867a639c8d0d64fab62861f18a318dc2e1adb796c80c515fa8234212e99b",
+          "F06-af7180a97ea540bcbd534b8e071f0b5fd48b4f348cc7807efe6665d82fbf62cf",
+          "F05-020748f5d6610e003525b3a3ffe0fab0ad6a6979ca72d4cf995ea4dc997e509b",
+          "M03-81c54e0c088b4a97b8d5c8f997843e854233867e6e695ed58897b8e45e415fe8",
+          "F05-f4a41e6b4162d6f60f795531046aedf81fbec553967395344ba0d3156a3d968e",
+          "F05-d5b6c13d410d74e82b6e2fde13a006c3706a331a26d595247f5916a03fc0a4db",
+          "M03-c6d1a4097d94950922425f7977c41f80228230b6178530e41475aad01ae6f839",
+          "F01-1832224ac45338b96adac4735fb570b0aba389a8f2a0ac8cecad43f08f9f26d5",
+          "M03-6c1682f5c4a8196d39394042a86794682012883aa315b48b7b07cc5947b26842",
+          "F03-de350fdbd763a55d965f70ff1e2c7daa1099eacc7beaaea15b200c0701c559eb",
+          "F05-a844a9b7539be10f854fc90b9e88e83ce0281e0b0cd6b74c203c7c42255f0be4",
+          "M03-17ea89a19501c60c3e3813356b5b3a6338d423e9aba06ad0d98c82064ae9eb72",
+          "M07-d57bb54fd37d36ab4debc3472a906da19592175522ac45cf654c9da85ec281fa",
+          "M07-f8b240be09bf0bffa5b668f14fc13c7fda3ccad8bf37c8a57c9f122c31f44025",
+          "M07-b7e5b288af18ebf5e622332a49d8899822a65e4f458f6670bdf7c45964c68ec1",
+          "M07-165c674906938d2bfc324e62cc139f7820395a744230f112a6b4ef6f2febbbab",
+          "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e"
+        ],
+        "expected_in_candidate_pool": {
+          "F06-cbf4ce8fcbaf8bc32174326af396565bb05adbe6bd9494fd194d00dc0f29136e": true
+        },
+        "expected_candidate_ranks": {
+          "F06-cbf4ce8fcbaf8bc32174326af396565bb05adbe6bd9494fd194d00dc0f29136e": 1
+        },
         "ranked_ids": [
           "F06-cbf4ce8fcbaf8bc32174326af396565bb05adbe6bd9494fd194d00dc0f29136e",
           "F06-5a13c52a4248a8cb8537daeee4e1179d73376e2daf0ca8b94bc82774a30957d6",
@@ -204,6 +472,43 @@
           "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c",
           "M08-f126decb86737cdf531552e994a4c19cb20d395250c49af4acf9a965bca7f096"
         ],
+        "query_seconds": 2.1145458000246435,
+        "candidate_ids": [
+          "F01-e5c973bac47fd35cfdaa1c8714ec85f4a86f578d156bbe0cfc1e93ac5c11319f",
+          "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c",
+          "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101",
+          "M08-f126decb86737cdf531552e994a4c19cb20d395250c49af4acf9a965bca7f096",
+          "F03-4019ec92a072a0ee41b0ffc91e339d75c018171e26e67ee00fb7198bb2f62af4",
+          "M08-3c8f396aa74605ec13cf970e46890f30ec6c832292b490bbf050af52036bacef",
+          "F04-e0ce92365eda2f3cca65fc4ce21125a988e60a46478cc7aab41a1382b44cf2d6",
+          "M08-cb4b96254a4a4b9f04e8dace678b4b17a621f07e0bcba97cd62746e4d248961f",
+          "F03-7eef93789ef4a72ca38a7d3ea9d39c9ee362f445c20d3c4cf5b99d3efb8ac0d1",
+          "F06-5a13c52a4248a8cb8537daeee4e1179d73376e2daf0ca8b94bc82774a30957d6",
+          "M07-d57bb54fd37d36ab4debc3472a906da19592175522ac45cf654c9da85ec281fa",
+          "F04-7b9319df0226ed492febd69000ada643bf21b6310b1a2b990f420a73a9733022",
+          "F06-b7ff7d7dcdf11b095c67b3e9e6c9921eab0a5e8ff5d44baeae3786dccfb3147e",
+          "M07-165c674906938d2bfc324e62cc139f7820395a744230f112a6b4ef6f2febbbab",
+          "F01-1832224ac45338b96adac4735fb570b0aba389a8f2a0ac8cecad43f08f9f26d5",
+          "F01-ab1680ca26fcf554d67768a89e46427a8b624d90c0056eabcaa14c120ab5f537",
+          "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e",
+          "F05-f4a41e6b4162d6f60f795531046aedf81fbec553967395344ba0d3156a3d968e",
+          "C07-326d3d1ddc46d4ede7b00e31093bdf962f50ffc90ac362bf371a76964ff6ba02",
+          "F04-e8e1d806ef5465bd140ae6567f91a31568c4eaac17b48621d91afe0519514bdb",
+          "C06-7802f22dc6b0dadff07b7b4b3a99b1ea82f966a7b07ce2cd3a7841ac79965c56",
+          "F06-cbf4ce8fcbaf8bc32174326af396565bb05adbe6bd9494fd194d00dc0f29136e",
+          "F06-af7180a97ea540bcbd534b8e071f0b5fd48b4f348cc7807efe6665d82fbf62cf",
+          "M03-b50354c7c414dd8d0548cae9f503ad737746c2a27ccea319b1103bdf95babbaa",
+          "M10-db4f29c316703fcd2bc71f18d593d35aadb5eb15dd0580a0540641b0c19c2bc0",
+          "M08-1b2b55a64d0b55abf0f8159a9da69188d772a47d8bb5972c5b52105483d3a8c0"
+        ],
+        "expected_in_candidate_pool": {
+          "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c": true,
+          "M08-f126decb86737cdf531552e994a4c19cb20d395250c49af4acf9a965bca7f096": true
+        },
+        "expected_candidate_ranks": {
+          "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c": 2,
+          "M08-f126decb86737cdf531552e994a4c19cb20d395250c49af4acf9a965bca7f096": 4
+        },
         "ranked_ids": [
           "F01-e5c973bac47fd35cfdaa1c8714ec85f4a86f578d156bbe0cfc1e93ac5c11319f",
           "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c",
@@ -227,6 +532,46 @@
         "expected_chunk_ids": [
           "M09-93bcd7c466126c564e1b9e94d8d0d83c5109350ab38b90812949ff2c35e728ef"
         ],
+        "query_seconds": 2.0958228000090457,
+        "candidate_ids": [
+          "M09-93bcd7c466126c564e1b9e94d8d0d83c5109350ab38b90812949ff2c35e728ef",
+          "M09-828f925522df1559e4c52478427902061d814fab1470614f529ba6a37f56a2f4",
+          "M09-811834d9d123f4c9600aaec805436bedfca6a34be37dbfe7b0e867737a095903",
+          "M09-3f722b1325ad829fbb3cf30379f18b0c5571731ed47ac77127941d5d05b63cd0",
+          "F01-6c355e03bf87f05a3ff327879812a6dabe9f94468d5802c8b216e7bee323bd9d",
+          "M09-c6d6e6dae89bdf9f3555dcb791914e2b109633aa4e373bcf820e7b44453c7456",
+          "F01-ab1680ca26fcf554d67768a89e46427a8b624d90c0056eabcaa14c120ab5f537",
+          "S04-e0856f2c390a0bf231d1f12be845471c8c5ec0269a8ec51a24e38080755f1009",
+          "M08-cb4b96254a4a4b9f04e8dace678b4b17a621f07e0bcba97cd62746e4d248961f",
+          "S05-d0053d29db9735868715319fbba14dee2ab0a2604ff3ef3527bf4465d1e8d569",
+          "M09-4307491346b4b5ebe2ad1ef1bd8c6aaf7bcae5adde2a85cb2cd01b83bf311af6",
+          "M03-b50354c7c414dd8d0548cae9f503ad737746c2a27ccea319b1103bdf95babbaa",
+          "S05-1e43f76447840722f7b41b501b973da48368a0fab74a8ee423a9b876a81f4b05",
+          "F06-b7ff7d7dcdf11b095c67b3e9e6c9921eab0a5e8ff5d44baeae3786dccfb3147e",
+          "S05-297cd69b8bd4e6344b7e9fc6ae4e4befd4cbb538ef4c2291404bcab6305faf7e",
+          "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101",
+          "F06-af7180a97ea540bcbd534b8e071f0b5fd48b4f348cc7807efe6665d82fbf62cf",
+          "M01-29aafeea116992f0f05e604de2eea1a6d59d904730d2e75c8d4fa9d4114bb0ea",
+          "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c",
+          "M03-6c1682f5c4a8196d39394042a86794682012883aa315b48b7b07cc5947b26842",
+          "M07-165c674906938d2bfc324e62cc139f7820395a744230f112a6b4ef6f2febbbab",
+          "M06-dcd542ceb51779f39655a708614ab59c4b00fdbebc18177be015106ee537b960",
+          "C07-326d3d1ddc46d4ede7b00e31093bdf962f50ffc90ac362bf371a76964ff6ba02",
+          "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e",
+          "M08-3c8f396aa74605ec13cf970e46890f30ec6c832292b490bbf050af52036bacef",
+          "M01-aa9518ba27d6b6ceb98eb39bec9b20cc20a6404ca7aaf5ea8d10a44285a1cd0e",
+          "M05-23ad52788021c8aed813afdc317c3b2cefec1ca72aa7ce4f54ce3b2a1635c8a5",
+          "S02-5f967f33f59d7e2ce49176ba2745df9e222da33a00d4fadca4e860eba67ccecc",
+          "S05-202d2f64738c8febbc3fe609213d929d2818b43786a52de764448bf626bd1b1f",
+          "C06-148ca3508d02d2fcdeed510271ae911993b48e71a6593ad8a51095f6b6d27456",
+          "F05-a2c271e0021d27579b54018666104b88d1479e5986d39fd5220a640c1229d946"
+        ],
+        "expected_in_candidate_pool": {
+          "M09-93bcd7c466126c564e1b9e94d8d0d83c5109350ab38b90812949ff2c35e728ef": true
+        },
+        "expected_candidate_ranks": {
+          "M09-93bcd7c466126c564e1b9e94d8d0d83c5109350ab38b90812949ff2c35e728ef": 1
+        },
         "ranked_ids": [
           "M09-93bcd7c466126c564e1b9e94d8d0d83c5109350ab38b90812949ff2c35e728ef",
           "M09-828f925522df1559e4c52478427902061d814fab1470614f529ba6a37f56a2f4",
@@ -250,6 +595,43 @@
         "expected_chunk_ids": [
           "S05-1e43f76447840722f7b41b501b973da48368a0fab74a8ee423a9b876a81f4b05"
         ],
+        "query_seconds": 2.117209999996703,
+        "candidate_ids": [
+          "S05-1e43f76447840722f7b41b501b973da48368a0fab74a8ee423a9b876a81f4b05",
+          "F01-6c355e03bf87f05a3ff327879812a6dabe9f94468d5802c8b216e7bee323bd9d",
+          "S05-d0053d29db9735868715319fbba14dee2ab0a2604ff3ef3527bf4465d1e8d569",
+          "M09-828f925522df1559e4c52478427902061d814fab1470614f529ba6a37f56a2f4",
+          "S05-e9c1b372609e2710a5503bced44ddedde7cca1a1dd083659c6afdecb1e0f31d0",
+          "S05-2eff5e38f8be973835c0d5204d717103cae9ee250cdb4c3d99f65538b00f523d",
+          "M09-3f722b1325ad829fbb3cf30379f18b0c5571731ed47ac77127941d5d05b63cd0",
+          "C07-1bb80fe76b53592ba55d8e97fa4bd6dfcd24b5f4e5cd9f500742eff3e904dd9b",
+          "M07-b7e5b288af18ebf5e622332a49d8899822a65e4f458f6670bdf7c45964c68ec1",
+          "S02-5f967f33f59d7e2ce49176ba2745df9e222da33a00d4fadca4e860eba67ccecc",
+          "S04-68a041b58f8b0a8f7f341103bd79ba97ce1422e7bafb5e4cf175075700cb3e14",
+          "F03-7eef93789ef4a72ca38a7d3ea9d39c9ee362f445c20d3c4cf5b99d3efb8ac0d1",
+          "C07-326d3d1ddc46d4ede7b00e31093bdf962f50ffc90ac362bf371a76964ff6ba02",
+          "M09-811834d9d123f4c9600aaec805436bedfca6a34be37dbfe7b0e867737a095903",
+          "S04-d10a304d86f8a95dfde57688040e0169b4cce0cc3c107d85978b14b4d29d9a7e",
+          "S04-e0856f2c390a0bf231d1f12be845471c8c5ec0269a8ec51a24e38080755f1009",
+          "C04-643b6bf7f48768c2c042c2366a8529634ccc340fe42ee27eeb9871bf03c1ee19",
+          "F01-ab1680ca26fcf554d67768a89e46427a8b624d90c0056eabcaa14c120ab5f537",
+          "S05-297cd69b8bd4e6344b7e9fc6ae4e4befd4cbb538ef4c2291404bcab6305faf7e",
+          "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e",
+          "M08-7ab80a86f61e89f3aebb885db42f4081fce2d9d64f6c62a5a41f6c13b234f33c",
+          "F04-e8e1d806ef5465bd140ae6567f91a31568c4eaac17b48621d91afe0519514bdb",
+          "S04-3b0dbd90631bf76e2de4b24756df682661ec4f645c068a73b1e761f026a61da1",
+          "F03-0c335afe0f4dc96d185512a3b22766a0369f22c8dd32d4d053a1bf92b8a3c858",
+          "F05-a2c271e0021d27579b54018666104b88d1479e5986d39fd5220a640c1229d946",
+          "C08-9b97fca6c715aa6b17512e807f83c2cbaed11d8cd858678eea43dbdfe00621e7",
+          "C06-148ca3508d02d2fcdeed510271ae911993b48e71a6593ad8a51095f6b6d27456",
+          "S04-512f1c323d66dbb8d9b8b299988bd5c5e79f067ecb8f7cd378db70bb81ac31c7"
+        ],
+        "expected_in_candidate_pool": {
+          "S05-1e43f76447840722f7b41b501b973da48368a0fab74a8ee423a9b876a81f4b05": true
+        },
+        "expected_candidate_ranks": {
+          "S05-1e43f76447840722f7b41b501b973da48368a0fab74a8ee423a9b876a81f4b05": 1
+        },
         "ranked_ids": [
           "S05-1e43f76447840722f7b41b501b973da48368a0fab74a8ee423a9b876a81f4b05",
           "F01-6c355e03bf87f05a3ff327879812a6dabe9f94468d5802c8b216e7bee323bd9d",
@@ -272,6 +654,42 @@
         "expected_chunk_ids": [
           "S02-11691c4ea1e776d5b23b9cfdcdfe6037fca97802ef0f38c02a4fa0bf6e5e1216"
         ],
+        "query_seconds": 2.1470091000082903,
+        "candidate_ids": [
+          "S02-11691c4ea1e776d5b23b9cfdcdfe6037fca97802ef0f38c02a4fa0bf6e5e1216",
+          "S02-8fedb0eda33913bd7e55226b7eea74521dffb73f3e61cabc0f9f925a7d3e605e",
+          "S04-3b0dbd90631bf76e2de4b24756df682661ec4f645c068a73b1e761f026a61da1",
+          "F01-6c355e03bf87f05a3ff327879812a6dabe9f94468d5802c8b216e7bee323bd9d",
+          "M08-3c8f396aa74605ec13cf970e46890f30ec6c832292b490bbf050af52036bacef",
+          "M10-f8fb202bc15ded637dcf2040d423c844aaeaa4c7f8ee21700d858b5418d863c1",
+          "C06-148ca3508d02d2fcdeed510271ae911993b48e71a6593ad8a51095f6b6d27456",
+          "S02-5f967f33f59d7e2ce49176ba2745df9e222da33a00d4fadca4e860eba67ccecc",
+          "M03-b50354c7c414dd8d0548cae9f503ad737746c2a27ccea319b1103bdf95babbaa",
+          "C07-326d3d1ddc46d4ede7b00e31093bdf962f50ffc90ac362bf371a76964ff6ba02",
+          "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4",
+          "F05-020748f5d6610e003525b3a3ffe0fab0ad6a6979ca72d4cf995ea4dc997e509b",
+          "M05-4f4f74623df4be4a25a162b48296d8f06bbcc39a381d38ba4eb836bf54b8054d",
+          "F01-ab1680ca26fcf554d67768a89e46427a8b624d90c0056eabcaa14c120ab5f537",
+          "M05-23ad52788021c8aed813afdc317c3b2cefec1ca72aa7ce4f54ce3b2a1635c8a5",
+          "F06-af7180a97ea540bcbd534b8e071f0b5fd48b4f348cc7807efe6665d82fbf62cf",
+          "M07-b7e5b288af18ebf5e622332a49d8899822a65e4f458f6670bdf7c45964c68ec1",
+          "C07-17c96f913885c0f29559d642b6ecbdfcb138f50037d49e0165efb1d94468dfef",
+          "C08-df4dcaaa7c82fadca32903009e39805d33c465f86fca6a3b6ec8e2da76529e0f",
+          "F06-5a13c52a4248a8cb8537daeee4e1179d73376e2daf0ca8b94bc82774a30957d6",
+          "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101",
+          "M10-d0388c374f14e37f055c3d40e985c943cd9aa5209f0a8895e9d8da9ba56eca44",
+          "C08-0d93dcba25af8e340b4a4c9d622d5ea2d2a6365718eb0bd5ccd6ddb82381d4d2",
+          "F06-b7ff7d7dcdf11b095c67b3e9e6c9921eab0a5e8ff5d44baeae3786dccfb3147e",
+          "S03-d41617c926610876273e1d21b6e692672af881b5a3d787b15c1983272752dbe0",
+          "S04-e0856f2c390a0bf231d1f12be845471c8c5ec0269a8ec51a24e38080755f1009",
+          "F05-f4a41e6b4162d6f60f795531046aedf81fbec553967395344ba0d3156a3d968e"
+        ],
+        "expected_in_candidate_pool": {
+          "S02-11691c4ea1e776d5b23b9cfdcdfe6037fca97802ef0f38c02a4fa0bf6e5e1216": true
+        },
+        "expected_candidate_ranks": {
+          "S02-11691c4ea1e776d5b23b9cfdcdfe6037fca97802ef0f38c02a4fa0bf6e5e1216": 1
+        },
         "ranked_ids": [
           "S02-11691c4ea1e776d5b23b9cfdcdfe6037fca97802ef0f38c02a4fa0bf6e5e1216",
           "S02-8fedb0eda33913bd7e55226b7eea74521dffb73f3e61cabc0f9f925a7d3e605e",
@@ -294,6 +712,39 @@
         "expected_chunk_ids": [
           "S03-09a590ea31e9889002ef03509a1a894cfcc6101b053bca8a263803312f25148a"
         ],
+        "query_seconds": 2.1272747999755666,
+        "candidate_ids": [
+          "S03-09a590ea31e9889002ef03509a1a894cfcc6101b053bca8a263803312f25148a",
+          "M01-29aafeea116992f0f05e604de2eea1a6d59d904730d2e75c8d4fa9d4114bb0ea",
+          "S03-d31185a401edf892190d2bec61147e098674e7dc0f27d2445e46fe00b1037ad4",
+          "M01-e0c3b5d7dc916b26c029f65fce3312682f1b7e833644e5dcdbe951ebb80b2754",
+          "S03-71e54e2bd0c77ad0b487b9f842238b56ea0d98b716d0cd582933416d44d5aacf",
+          "S03-d41617c926610876273e1d21b6e692672af881b5a3d787b15c1983272752dbe0",
+          "S03-6476c471579ec9aa36ad1d18a590f77823394e1189eb45e1b4ebd3e2c8a46c61",
+          "M01-6c34153a058dd36c6a679a57bb06e71bbc2ff5b3e18b1a27f34ddfb071f0cf14",
+          "M01-aa9518ba27d6b6ceb98eb39bec9b20cc20a6404ca7aaf5ea8d10a44285a1cd0e",
+          "M07-2caa8a2aeb3bf1ea5fbdbe798d03242d2a976ec3492599b552a83fa9ff63554e",
+          "F03-3b867947354f7db800d26e4751bb880b3ec0e5e036310a6da67ba96ed79a0b63",
+          "M01-1dbc0f74ccae45f41da9dba917f2c9d46bd37e62752c86ec5d9a84a5e761f965",
+          "M05-8ac5c62a9ab905a5e1df7d180cc3300ecb240949f73b4af2a3caa326c75c5b32",
+          "F01-ab1680ca26fcf554d67768a89e46427a8b624d90c0056eabcaa14c120ab5f537",
+          "S04-e0856f2c390a0bf231d1f12be845471c8c5ec0269a8ec51a24e38080755f1009",
+          "C08-0d93dcba25af8e340b4a4c9d622d5ea2d2a6365718eb0bd5ccd6ddb82381d4d2",
+          "M10-f8fb202bc15ded637dcf2040d423c844aaeaa4c7f8ee21700d858b5418d863c1",
+          "S04-68a041b58f8b0a8f7f341103bd79ba97ce1422e7bafb5e4cf175075700cb3e14",
+          "S04-d10a304d86f8a95dfde57688040e0169b4cce0cc3c107d85978b14b4d29d9a7e",
+          "S06-73f45e352595158dc70a2526aec32e95735468ab9c4b08cf478f93f0c21424c7",
+          "S04-512f1c323d66dbb8d9b8b299988bd5c5e79f067ecb8f7cd378db70bb81ac31c7",
+          "C04-d678b76c960677507dfca5b9cef0cbd40f0a3d10ea464dacb5bf1857d6c300f4",
+          "F06-b7ff7d7dcdf11b095c67b3e9e6c9921eab0a5e8ff5d44baeae3786dccfb3147e",
+          "M05-f18b169ee9ee3d6b748464d82168d2356cc59bdc666c1f67258adaed9fc2c444"
+        ],
+        "expected_in_candidate_pool": {
+          "S03-09a590ea31e9889002ef03509a1a894cfcc6101b053bca8a263803312f25148a": true
+        },
+        "expected_candidate_ranks": {
+          "S03-09a590ea31e9889002ef03509a1a894cfcc6101b053bca8a263803312f25148a": 1
+        },
         "ranked_ids": [
           "S03-09a590ea31e9889002ef03509a1a894cfcc6101b053bca8a263803312f25148a",
           "M01-29aafeea116992f0f05e604de2eea1a6d59d904730d2e75c8d4fa9d4114bb0ea",
@@ -323,6 +774,44 @@
           "hr_confidential"
         ],
         "note": "Separate employee-only Contract A check; excluded from Recall@5 and MRR@5.",
+        "query_seconds": 2.104890800022986,
+        "candidate_count": 33,
+        "candidate_access_groups": [
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees",
+          "all_employees"
+        ],
+        "unauthorized_candidate_count": 0,
         "ranked_ids": [
           "C04-f176eb8a7591c663a80950667ffdb798b2f83410b50967428f51d16879ec0fe1",
           "M03-6c1682f5c4a8196d39394042a86794682012883aa315b48b7b07cc5947b26842",

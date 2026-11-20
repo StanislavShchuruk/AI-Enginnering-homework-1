@@ -1,9 +1,14 @@
-# PeopleFlow vector and hybrid retrieval evaluation (Tasks 5–6)
+# PeopleFlow retrieval and local reranking evaluation (Tasks 5–7)
 
-The evaluation calls `search` in vector or hybrid mode at **k=5**, with each
-case's exact allowed groups. Task 6 adds BM25 and rank fusion; reranking and
-answer generation remain follow-up tasks. Results are **provisional until the user reviews the draft
-questions and expected chunks**.
+The evaluation calls `search` in vector, hybrid or hybrid-rerank mode at **k=5**,
+with each case's exact allowed groups. Task 6 adds BM25 and rank fusion; Task 7
+adds a local CrossEncoder over the full fused candidate pool. Answer generation
+remains a follow-up task. The suite's existing `status` field now accepts `draft`
+or `reviewed`. At the user's explicit Task 7 instruction it was set to `reviewed`
+without changing questions, access groups, expected IDs or evidence. Reports from
+reviewed suites have `status: evaluated` and `review_required: false`; draft
+suites retain the earlier provisional behavior. The small case set still limits
+the conclusions that can be drawn from these metrics.
 
 ## Draft labels
 
@@ -18,6 +23,7 @@ Employee FAQ chunk after verifying that its carry-over explanation supports the
 same 31 March deadline.
 R05 was also expanded during user review to include the v2.0 release-notes
 summary of the correction window and the route for locked payroll periods.
+These label changes precede Task 7; no labels were tuned to reranker results.
 
 Each case includes its ID, question, allowed access groups, topic, labeling note,
 expected chunk IDs and one evidence entry per expected chunk. Each evidence entry
@@ -57,19 +63,40 @@ relevance metric. Missing/unauthorized access-group values also fail this check.
 
 ## Exact PowerShell commands
 
+Task 7 requires an optional setup step; vector and hybrid continue to work with
+the base installation and never import Sentence Transformers or PyTorch:
+
+```powershell
+python -m venv .venv-rerank --system-site-packages
+.venv-rerank/Scripts/python -m pip install -e ".[rerank]"
+# One-time public model download; inference itself runs locally.
+.venv-rerank/Scripts/python -c "from ai_project.reranking import CrossEncoderReranker; CrossEncoderReranker(local_files_only=False)"
+```
+
+The optional extra is `sentence-transformers>=5.1,<6`. Model files are cached in
+the git-ignored `data/models/reranker/` directory. Normal search/evaluation loads
+only cached model files (`local_files_only=True`), disables remote model code,
+and passes `token=False` so no Hugging Face credential is required. The default
+model is `BAAI/bge-reranker-v2-m3`, the default device is CPU, and the default
+pair batch size is 8. A different model may be selected with `--reranker-model`;
+its weights must be prepared in the same cache first.
+
 Run from the repository root with the existing local Ollama service and Task 4
 index available:
 
 ```powershell
-python -m ai_project eval-retrieval --mode vector --cases evals/retrieval_cases.json --index data/index/peopleflow --output results/retrieval_vector_baseline.json
+.venv-rerank/Scripts/python -m ai_project eval-retrieval --mode vector --cases evals/retrieval_cases.json --index data/index/peopleflow --output results/retrieval_vector_baseline.json
 if ($LASTEXITCODE -ne 0) { throw 'Vector evaluation failed' }
-python -m ai_project eval-retrieval --mode hybrid --cases evals/retrieval_cases.json --index data/index/peopleflow --output results/retrieval_hybrid.json
+.venv-rerank/Scripts/python -m ai_project eval-retrieval --mode hybrid --cases evals/retrieval_cases.json --index data/index/peopleflow --output results/retrieval_hybrid.json
 if ($LASTEXITCODE -ne 0) { throw 'Hybrid evaluation failed' }
+.venv-rerank/Scripts/python -m ai_project eval-retrieval --mode hybrid-rerank --cases evals/retrieval_cases.json --index data/index/peopleflow --reranker-model BAAI/bge-reranker-v2-m3 --reranker-batch-size 8 --reranker-device cpu --output results/retrieval_hybrid_rerank.json
+if ($LASTEXITCODE -ne 0) { throw 'Reranked evaluation failed' }
 
 $vector = Get-Content -Raw -Encoding utf8 results/retrieval_vector_baseline.json | ConvertFrom-Json
 $hybrid = Get-Content -Raw -Encoding utf8 results/retrieval_hybrid.json | ConvertFrom-Json
+$reranked = Get-Content -Raw -Encoding utf8 results/retrieval_hybrid_rerank.json | ConvertFrom-Json
 foreach ($field in @('source_sha256', 'cases_sha256', 'embedding_model', 'vector_dimension')) {
-    if ($vector.$field -ne $hybrid.$field) { throw "Comparison input mismatch: $field" }
+    if ($vector.$field -ne $hybrid.$field -or $vector.$field -ne $reranked.$field) { throw "Comparison input mismatch: $field" }
 }
 ```
 
@@ -86,7 +113,45 @@ succeeds. It records the embedding model, vector dimension, exact canonical sour
 SHA-256, cases-file SHA-256, UTC run time, per-case rankings and metrics. An API or
 validation failure leaves a previous report intact. An access-control failure is
 saved as a failed check and returns exit code 1. Relevance misses alone return 0
-because this draft baseline has no quality gate.
+because this evaluation has no quality gate.
+
+For `--mode hybrid-rerank`, the default output is the separate
+`results/retrieval_hybrid_rerank.json`. The model is loaded once per evaluation;
+`reranker_initialization_seconds` records that cost separately. `query_seconds`
+includes search, canonical/index validation inside search, embeddings, BM25/RRF
+and pair scoring. `median_query_seconds` is the median of the 12 relevance-query
+times, excluding model initialization, evaluator setup, and ACL01. ACL01 has its
+own query time. These are single local CPU runs, not a controlled latency benchmark.
+
+## Local reranking (Task 7)
+
+`hybrid-rerank` uses the unchanged Task 6 branch limits, BM25 settings and RRF.
+It builds the **complete deduplicated union** (at most 40 chunks) in RRF order,
+before any final top-five truncation. Each `(question, passage)` pair contains the
+original question and `document_title + newline + section_path joined by ' > ' +
+two newlines + text`. Sentence Transformers `CrossEncoder.predict` scores the
+pairs locally in batches. An identity output activation preserves raw logits;
+scores are not probabilities. Higher scores rank first, and exact score ties keep
+the original RRF rank. The final top-k is selected only after all pairs are scored.
+
+Both branches apply access filters before selecting candidates. A second check
+at the scorer boundary rejects unauthorized or missing-access candidates before
+constructing passages or calling the scorer. ACL01 records candidate access
+groups and rejects unauthorized candidates as well as unauthorized final hits.
+The report includes the reranker model/batch/device, original `candidate_ids` in
+RRF order, and `expected_in_candidate_pool`/`expected_candidate_ranks` for each
+expected chunk. This distinguishes a candidate-generation miss from a reranking
+failure. Search results retain the payload fields, use `score` for the CrossEncoder
+score and additionally expose `rrf_rank`/`rrf_score` for the selected hits.
+
+```powershell
+$question = 'До якого числа треба використати перенесену відпустку за контрактом A?'
+.venv-rerank/Scripts/python -m ai_project search $question --mode hybrid-rerank --hr-access --reranker-batch-size 8 --reranker-device cpu
+```
+
+The implementation follows the
+[Sentence Transformers CrossEncoder API](https://www.sbert.net/docs/package_reference/cross_encoder/model.html)
+and the [BAAI model card](https://huggingface.co/BAAI/bge-reranker-v2-m3).
 
 ## Hybrid retrieval implementation
 
@@ -162,11 +227,15 @@ IDs, Recall@5 and reciprocal rank:
   0.5; no expected chunk in the top five gives 0. A chunk below rank 5 does not count.
 
 `relevance` and `access_control` are separate report objects. The access-control
-case is excluded from the relevance denominator. Scores remain provisional:
-12 manually drafted cases are a small, unreviewed baseline, not a comprehensive
+case is excluded from the relevance denominator. The suite was marked reviewed
+for Task 7, but 12 manually selected cases are a small baseline, not a comprehensive
 retrieval evaluation or proof that other relevant chunks do not exist.
 
 ## Observed provisional baseline
+
+The following Task 5/6 relevance figures are retained for comparison. The current
+report files have since been regenerated with reviewed status and Task 7 timing
+and candidate diagnostics, without changing the relevance labels.
 
 The saved run below was regenerated after the user-reviewed additions of the FAQ
 to R01 and the F04 release-notes chunk to R05. Its cases-file hash matches the
@@ -208,8 +277,9 @@ questions and source labels have been reviewed.
 
 Both modes were rerun against the same 184-chunk `bge-m3` index and the unchanged
 case file containing the user-reviewed R01/R05 additions. Source hash, cases-file
-hash, model and vector dimension were verified equal across the reports. Labels
-remain marked draft because the full suite has not been approved as final.
+hash, model and vector dimension were verified equal across the reports. At the
+time of Task 6 the suite still had draft status; Task 7 explicitly changes the
+status to reviewed and regenerates all reports without changing labels.
 
 | Metric | Vector | Hybrid | Hybrid − vector |
 | --- | ---: | ---: | ---: |
@@ -267,13 +337,88 @@ Hybrid improves recall overall but does not dominate vector retrieval: the R01
 and R08 regressions outweigh the reciprocal-rank gains in mean MRR. The configured
 fusion, candidate limits and labels were left unchanged after observing these
 results. Both ACL01 runs return five `all_employees` results, with zero
-`hr_confidential` chunks. Reranking remains outside this task.
+`hr_confidential` chunks. Reranking is evaluated separately in Task 7 below.
+
+## Task 7 three-way comparison
+
+All three reports were regenerated from the same **reviewed 12-case suite**,
+including the R01/F01 and R05/F04 additions. The questions, expected IDs, evidence
+and access groups were verified unchanged from the pre-Task-7 suite. All reports
+share the source/cases hashes, `bge-m3` embedding model, 1024-vector dimension and
+184 indexed chunks. Hybrid and hybrid-rerank have identical per-case candidate
+IDs in identical RRF order and identical fusion settings.
+
+The new report is
+[retrieval_hybrid_rerank.json](../results/retrieval_hybrid_rerank.json).
+
+| Metric | Vector | Hybrid | Hybrid-rerank |
+| --- | ---: | ---: | ---: |
+| Mean Recall@5 | 0.805556 | 0.847222 | **1.000000** |
+| MRR@5 | 0.777778 | 0.756944 | **0.916667** |
+| Complete misses | 2/12 | 1/12 | **0/12** |
+| Median query time | 2.096 s | 2.116 s | **8.251 s** |
+| ACL01 | PASS | PASS | PASS |
+| ACL01 confidential final chunks | 0/5 | 0/5 | 0/5 |
+| ACL01 unauthorized pool chunks | 0 | 0 | 0 |
+
+The run used `BAAI/bge-reranker-v2-m3` on CPU with eight PyTorch threads and pair
+batch size 8, Sentence Transformers 5.7.0, PyTorch 2.15.0+cpu and Transformers
+5.23.0. Cached model revision:
+`953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e`. Reranker initialization from cache took
+6.933 s and is excluded from the median. Download/setup time is also excluded.
+No hosted reranking API was used. Vector and hybrid retain their original
+relevance scores, while reranking costs about 3.9 times hybrid's median query time
+on this machine.
+
+| Case | First rank: vector / hybrid / rerank | Recall@5: vector / hybrid / rerank |
+| --- | --- | --- |
+| R01 | 1 / 4 / **1** | 1.0 / 0.5 / **1.0** |
+| R02 | 1 / 1 / 1 | 1.0 / 1.0 / 1.0 |
+| R03 | 1 / 1 / 1 | 1.0 / 1.0 / 1.0 |
+| R04 | Miss / Miss / **2** | 0.0 / 0.0 / **1.0** |
+| R05 | 1 / 1 / 1 | 0.666667 / 0.666667 / **1.0** |
+| R06 | Miss / 3 / **1** | 0.0 / 1.0 / 1.0 |
+| R07 | 1 / 1 / 1 | 1.0 / 1.0 / 1.0 |
+| R08 | 1 / 2 / 2 | 1.0 / 1.0 / 1.0 |
+| R09 | 3 / 1 / 1 | 1.0 / 1.0 / 1.0 |
+| R10 | 1 / 1 / 1 | 1.0 / 1.0 / 1.0 |
+| R11 | 1 / 1 / 1 | 1.0 / 1.0 / 1.0 |
+| R12 | 1 / 1 / 1 | 1.0 / 1.0 / 1.0 |
+
+Candidate-pool inspection, with **pre-rerank RRF rank → final reranked rank**:
+
+- **R01:** C01 / 4 Leave and sickness **6 → 2**; F01 / Which annual leave balance
+  applies? **4 → 1**. Both were available before reranking. The contract chunk
+  would have been lost by trimming to the initial five, so full-pool scoring
+  restores recall from 0.5 to 1.0.
+- **R04:** M06 / Manager-mediated correction **6 → 2**, recovering the historical
+  v1.8 procedure missed by both earlier modes. This was a ranking failure, not a
+  missing candidate.
+- **R05:** M07 / Submit a correction **9 → 4**; M07 / Outside the self-service
+  window **1 → 1**; F04 / New self-service actions **4 → 2**. All three expected
+  chunks were in the pool; promoting the rank-nine chunk yields full coverage.
+- **R06:** F05 / Historical cancellation procedure **3 → 1**. Recall remains 1.0
+  relative to hybrid, with improved reciprocal rank.
+- **R09:** M09 / Gross pay and net pay **1 → 1**; full recall is retained.
+
+Every expected chunk in all 12 cases was present in the hybrid candidate pool;
+the reranked report records this per ID. Pool sizes ranged from 23 to 37. The
+same **33 authorized candidates** were available for ACL01 in hybrid and rerank;
+all had `all_employees` access and none had `hr_confidential` access.
+
+There are no Recall@5 or first-relevant-rank regressions relative to hybrid on
+this set. One supporting-source rank worsens in **R08**: its eligibility chunk
+moves from RRF rank 4 to reranked rank 5, while its proposal chunk remains rank 2.
+Relative to vector, R08 still has a worse first-relevant rank (2 versus 1).
+Perfect recall on these 12 reviewed cases is not evidence of general retrieval
+accuracy; no labels, branch limits, fusion weights or model settings were tuned
+after inspecting the reranked results.
 
 ## Offline tests
 
 ```powershell
-python -m pytest -q tests/test_hybrid_retrieval.py tests/test_retrieval.py tests/test_retrieval_evaluation.py -p no:cacheprovider --basetemp=.pytest_tmp_task6_verify
-python -m pytest -q -p no:cacheprovider --basetemp=.pytest_tmp_task6_all
+python -m pytest -q tests/test_reranking.py tests/test_hybrid_retrieval.py tests/test_retrieval.py tests/test_retrieval_evaluation.py -p no:cacheprovider --basetemp=.pytest_tmp_task7_verify
+python -m pytest -q -p no:cacheprovider --basetemp=.pytest_tmp_task7_all
 ```
 
 Tests use fake embeddings and real temporary local Qdrant indexes, with mocked
@@ -288,8 +433,14 @@ handling, deterministic ties, and pre-selection access filtering in both branche
 with more than 20 denied and allowed documents. Evaluation tests cover both modes
 and verify that hybrid's default report cannot overwrite the vector baseline.
 
+Task 7 uses a fake reranker to prove that the entire deduplicated pool is scored,
+a candidate initially ranked 8 can become final rank 1, exact score ties retain
+RRF order, and ACL01 restricted text never reaches the scorer. Additional checks
+cover score validation, pair formatting/batching, candidate-coverage diagnostics,
+reviewed status, and base modes working with reranker packages unavailable.
+
 Observed validation: Ruff passes for the changed modules and tests. The full
-suite has **373 passed and 21 subtests passed**, with
+suite has **386 passed and 21 subtests passed**, with
 the same pre-existing failure in
 `tests/test_ollama.py::test_defaults_do_not_load_secrets`: the existing Ollama
 settings loader calls `load_dotenv`, contrary to that test's expectation. This

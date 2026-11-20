@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "status": "draft",
+  "status": "reviewed",
   "source_sha256": "429649032efba26439e267c7da639daf1ef1dd29491d84224a8e0c1e9bdb15f7",
-  "labeling_method": "Initial expected chunks selected directly from canonical corpus text before Task 5 search runs. R01 repeats the previously observed Task 4 smoke case. During user review, R01 was expanded to include the Employee FAQ chunk after checking its carry-over deadline against the corpus, and R05 was expanded to include the v2.0 release-notes chunk after verifying its correction window and locked-period route. Remaining labels still require review.",
+  "labeling_method": "Initial expected chunks selected directly from canonical corpus text before Task 5 search runs. R01 repeats the previously observed Task 4 smoke case. During user review, R01 was expanded to include the Employee FAQ chunk after checking its carry-over deadline against the corpus, and R05 was expanded to include the v2.0 release-notes chunk after verifying its correction window and locked-period route. Status changed to reviewed at the user's explicit Task 7 instruction; questions, expected IDs and evidence remain unchanged.",
   "cases": [
     {
       "id": "R01",

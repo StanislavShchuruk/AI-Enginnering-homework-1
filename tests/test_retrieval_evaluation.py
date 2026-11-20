@@ -137,15 +137,52 @@ def test_evaluation_calls_existing_search_at_five_and_separates_access(evaluatio
     assert query.call_args_list[1].kwargs["access_groups"] == ["all_employees"]
 
 
-@pytest.mark.parametrize("mode", ["vector", "hybrid"])
+@pytest.mark.parametrize("mode", ["vector", "hybrid", "hybrid-rerank"])
 def test_real_local_search_integration(evaluation_fixture, mode):
     path, index, _, _, _, embedder = evaluation_fixture
-    report = evaluate_retrieval(path, index, embedder=embedder, mode=mode)
+    scorer = Mock(model_name="fake-reranker")
+    scorer.score.side_effect = lambda question, passages: [0.0] * len(passages)
+    scorer.batch_size = 8
+    scorer.device = "cpu"
+    report = evaluate_retrieval(path, index, embedder=embedder, mode=mode, reranker=scorer)
     assert report["relevance"]["mean_recall_at_5"] == 1
     assert report["access_control"]["passed"]
     assert report["retriever"] == mode
     assert embedder.embed.call_count == 2
     assert all(call.args[1] == "test-embedding" for call in embedder.embed.call_args_list)
+    assert all(report["relevance"]["cases"][0]["expected_in_candidate_pool"].values())
+    assert report["median_query_seconds"] >= 0
+
+
+def test_reviewed_status_and_labels_are_preserved(evaluation_fixture):
+    path, index, _, suite, _, embedder = evaluation_fixture
+    suite["status"] = "reviewed"
+    path.write_text(json.dumps(suite), encoding="utf-8")
+    report = evaluate_retrieval(path, index, embedder=embedder)
+    assert report["cases_status"] == "reviewed"
+    assert report["status"] == "evaluated"
+    assert report["review_required"] is False
+    assert (
+        report["relevance"]["cases"][0]["expected_chunk_ids"]
+        == (suite["cases"][0]["expected_chunk_ids"])
+    )
+
+
+def test_expected_candidate_coverage_is_recorded(evaluation_fixture):
+    path, index, _, _, records, embedder = evaluation_fixture
+    present, absent = [r["chunk_id"] for r in records[:2]]
+
+    def fake_search(question, index_path, **kwargs):
+        kwargs["diagnostics"].update(
+            candidate_ids=[present], candidate_access_groups=["all_employees"]
+        )
+        return [{"chunk_id": present, "access_group": "all_employees"}]
+
+    with patch("ai_project.retrieval_evaluation.search", side_effect=fake_search):
+        report = evaluate_retrieval(path, index, embedder=embedder, mode="hybrid")
+    case = report["relevance"]["cases"][0]
+    assert case["expected_in_candidate_pool"] == {present: True, absent: False}
+    assert case["expected_candidate_ranks"] == {present: 1, absent: None}
 
 
 def test_macro_averages_include_misses_and_exclude_access_case(evaluation_fixture):
