@@ -593,3 +593,22 @@ Use `--mode vector|hybrid|hybrid-rerank` to override retrieval. Only whole
 authorized chunks enter the budgeted context. Structured answers require citations
 on every claim, and citation labels use actual source metadata. See
 [RAG behavior, budgeting and exact local smoke commands](docs/RAG.md).
+
+## Homework 2 Task 9A: provisional RAG answer baseline
+
+The [draft 20-case suite](evals/rag_cases.json) labels required facts,
+qualifications, acceptable source chunks and answer statuses before generation.
+It covers English/Ukrainian questions, partial and unavailable answers, similar
+contracts and historical-version traps. Review the
+[question/fact/source sheet](results/rag_case_review.md), then inspect the
+[baseline report](results/rag_baseline.md).
+
+```powershell
+.venv-rerank/Scripts/python.exe -m ai_project eval-rag --output results/rag_baseline_reproduced.json
+```
+
+The local run uses `rag-v1`, `qwen3:8b`, hybrid-rerank/top five and the existing
+`ask` components. Status, citation membership, lexical fact signals and expected
+sources are reported separately; errors remain distinct from unavailable answers.
+Labels and results remain provisional pending review. See
+[exact commands, scoring limits and offline tests](docs/RAG_EVALUATION.md).

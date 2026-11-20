@@ -1,0 +1,11 @@
+Case,Completeness,Faithfulness,Reason
+R01,pass,pass,
+R04,pass,pass,
+R05,pass,pass,The answer gives the 14-calendar-day window and correctly routes ATT-LOCK to HR Payroll. I consider those two points sufficient for this question.
+R06,fail,pass,All the facts in the claims are confirmed. But the model returned partially and in missing_information it is stated that there is no way to check the balance, although she herself just listed it from S1.
+R07,fail,pass,The answer omits the step of submitting a replacement request for the dates the employee wants to keep.
+R11,pass,pass,
+N01,pass,n/a,
+P02,fail,fail,The model reported that the number was not available, but returned answered instead of partial. For the 30-minute block, it only cited the historical S1 v1.8, although the context contained the current S5, which directly confirms this rule.
+T01,pass,pass,
+N03,fail,fail,The model applied the 14-day rule from v2.0 to v3.0, and then itself admitted that there was no data on v3.0.

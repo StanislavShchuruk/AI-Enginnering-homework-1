@@ -57,6 +57,14 @@ class RagOllamaProvider(OllamaProvider):
     schema_name = "peopleflow_answer"
 
 
+class RagResponseError(ValueError):
+    """Retain invalid generation for offline review without displaying it as an answer."""
+
+    def __init__(self, artifact: dict[str, Any], message: str) -> None:
+        super().__init__(message)
+        self.artifact = artifact
+
+
 def context_json(sources: list[dict[str, Any]]) -> str:
     return json.dumps(sources, ensure_ascii=False, separators=(",", ":"))
 
@@ -131,15 +139,8 @@ def generate_answer(
     request += context_json(sources) + "}"
     started = time.perf_counter()
     generated = provider.generate(request, system_prompt=system)
-    try:
-        answer = RagAnswer.model_validate_json(generated.text)
-    except ValidationError:
-        raise ValueError("Generated answer failed structured response validation") from None
-    validate_citations(answer, sources)
-    return {
+    artifact = {
         "question": question,
-        "answer": answer.model_dump(mode="json"),
-        "rendered_answer": render_answer(answer, sources),
         "sources": sources,
         "context_tokens": tokens,
         "context_token_budget": token_budget,
@@ -147,9 +148,27 @@ def generate_answer(
         "retrieved_chunk_ids": [hit["chunk_id"] for hit in hits],
         "prompt_version": "rag-v1",
         "prompt_sha256": hashlib.sha256(system.encode()).hexdigest(),
+        "generation_request": request,
+        "raw_response": generated.text,
         "model": generated.model,
         "usage": generated.usage,
         "generation_seconds": round(time.perf_counter() - started, 3),
+    }
+    try:
+        answer = RagAnswer.model_validate_json(generated.text)
+        validate_citations(answer, sources)
+    except ValidationError:
+        raise RagResponseError(
+            artifact, "Generated answer failed structured response validation"
+        ) from None
+    except ValueError:
+        raise RagResponseError(
+            artifact, "Answer cited a source absent from the generation context"
+        ) from None
+    return {
+        **artifact,
+        "answer": answer.model_dump(mode="json"),
+        "rendered_answer": render_answer(answer, sources),
     }
 
 

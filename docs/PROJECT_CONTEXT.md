@@ -119,7 +119,20 @@ hybrid-rerank at top five by default, whole-chunk context budgeting, versioned
 display. Source IDs map to the exact included canonical chunks and metadata.
 Ollama settings now use process environment only, without loading `.env`.
 See docs/RAG.md for the budget definition, saved smoke answers and reproduction.
-Semantic evidence support checking and answer evaluation remain Task 9.
+Task 9A adds `eval-rag`, a draft 20-case English/Ukrainian answer suite with
+per-fact evidence/qualifications, a label-only review sheet and a local provisional
+baseline using unchanged rag-v1, qwen3:8b and hybrid-rerank. Status matching,
+citation membership, lexical fact signals and expected-source alignment are
+reported separately; retrieval/provider/validation errors are not unavailable
+answers. Raw responses and exact included excerpts are retained for review.
+See docs/RAG_EVALUATION.md. Semantic entailment, completeness, qualification and
+language/version assessment still require review; no automatic semantic pass is claimed.
+
+Task 9B adds `eval-rag-judge` for saved baseline answers using configurable
+OpenRouter inference, `rag-judge-v1`, strict per-claim support validation and
+separate completeness/faithfulness human calibration. Input hashes and saved
+generator context are verified offline; human scores never enter judge requests.
+Hosted execution requires explicit approval. See `docs/RAG_JUDGE.md`.
 
 - Versioned prompts stored separately from application code.
 - RAG-based troubleshooting using relevant HR support knowledge.

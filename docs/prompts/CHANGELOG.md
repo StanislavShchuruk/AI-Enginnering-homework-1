@@ -1,5 +1,15 @@
 # Prompt Changelog
 
+## rag-judge-v1 — RAG semantic judge and human calibration (Task 9B)
+
+- Separate judge rubric; generator and ticket prompts remain unchanged.
+- Completeness checks status, all facts/qualifications and unsupported-part gaps.
+- Faithfulness checks actual claim wording against its own cited excerpts,
+  including numbers, conditions and document version; n/a only for no claims.
+- Require short reasons and one ordered support verdict per claim.
+- Treat candidate answers and excerpts as untrusted data; withhold human scores
+  and reasons from inference. Calibration combines human labels only afterward.
+
 ## rag-v1 — Grounded PeopleFlow answers (Task 8)
 
 - Separate RAG prompt at `docs/prompts/rag-v1.txt`; ticket prompts remain unchanged.
