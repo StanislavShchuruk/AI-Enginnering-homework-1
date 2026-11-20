@@ -1,0 +1,343 @@
+{
+  "question": "What is the reimbursement limit for installing home solar panels under PeopleFlow policy?",
+  "answer": {
+    "status": "unavailable",
+    "claims": [],
+    "missing_information": "The requested information about the reimbursement limit for installing home solar panels under PeopleFlow policy is unavailable in the accessible documents."
+  },
+  "rendered_answer": "The requested information about the reimbursement limit for installing home solar panels under PeopleFlow policy is unavailable in the accessible documents.",
+  "sources": [
+    {
+      "source_id": "S1",
+      "chunk_id": "S02-8fedb0eda33913bd7e55226b7eea74521dffb73f3e61cabc0f9f925a7d3e605e",
+      "document_id": "S02",
+      "text": "Service calendar\n\nPeopleFlow's standard support hours are Monday through Friday, 09:00-17:00 UTC, excluding 1 January and 25 December. A business hour counts only inside that window. A business day contains eight support hours. Security incidents use the continuous reporting route in Support Escalation & Security Incidents. The targets below concern a human first response, not a guaranteed fix or approval.\n\nPriority\tQualification\tFirst response\tUpdate target\nHigh\tOrganization-wide outage, blocked payroll run before cutoff, suspected restricted-data exposure\t1 business hour\tEvery 2 business hours\nMedium\tOne user cannot complete core work; workable alternatives are limited\t4 business hours\tEach business day\nLow\tGuidance, cosmetic defect, nonblocking request\t2 business days\tEvery 3 business days",
+      "token_count": 139,
+      "source_reference": "data/documents/support/S02.md",
+      "document_title": "Support Priority & SLA Policy",
+      "section_path": [
+        "Support Priority & SLA Policy",
+        "Service calendar"
+      ],
+      "version": "2.0",
+      "effective_date": "2026-09-01",
+      "source_hash": "2b33b71212f93059899678f31271f225ceb8c5aba8d911b6718585ffedb0a868",
+      "content_hash": "d215bd852ba787e6c3f883c73f00a83a29cce80ac3bd6effb438047b5a2f9b57",
+      "metadata": {
+        "access_group": "all_employees",
+        "category": "support",
+        "contains_synthetic_pii": false,
+        "document_id": "S02",
+        "effective_date": "2026-09-01",
+        "format": "markdown",
+        "language": "en",
+        "path": "data/documents/support/S02.md",
+        "status": "active",
+        "superseded_by": null,
+        "supersedes": null,
+        "title": "Support Priority & SLA Policy",
+        "version": "2.0"
+      },
+      "block_indices": [
+        2,
+        3,
+        4
+      ],
+      "locations": [
+        {
+          "page": null,
+          "bbox": null,
+          "element": 4,
+          "line": 5,
+          "part": null
+        },
+        {
+          "page": null,
+          "bbox": null,
+          "element": 5,
+          "line": 6,
+          "part": null
+        },
+        {
+          "page": null,
+          "bbox": null,
+          "element": 6,
+          "line": 8,
+          "part": null
+        }
+      ],
+      "pages": []
+    },
+    {
+      "source_id": "S2",
+      "chunk_id": "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101",
+      "document_id": "F04",
+      "text": "New self-service actions\n\n- Employees now submit correction requests from their own attendance timeline. The window is 14 calendar days and payroll must be unlocked. One pending request per workday is allowed. Managers approve or reject; approval recalculates within five minutes. HR Payroll handles locked or older periods, replacing the former direct manager-edit route.\n- Employees now cancel pending or approved annual leave themselves before the first scheduled shift starts. Cancellation immediately releases the reserved or deducted balance and notifies the manager. Started leave still requires HR review. Employees no longer need to contact HR Support for every cancellation.\n- Employees can propose a swap at least 24 hours before the earlier shift starts. The colleague must accept within 12 hours; the manager then approves. Until approval updates both assignments, the original roster applies. Team, skill, overlap, 11-hour rest and weekly-hour checks apply. Unaccepted proposals expire after 12 hours or at the earlier shift start, whichever comes first.",
+      "token_count": 188,
+      "source_reference": "data/documents/release_notes/F04.md",
+      "document_title": "PeopleFlow Release Notes v2.0",
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "New self-service actions"
+      ],
+      "version": "2.0",
+      "effective_date": "2026-09-01",
+      "source_hash": "044b8c6646c03c8fe343c16e688ffea3913cbca0b3ab717045203978c485665a",
+      "content_hash": "704378eae7881054452e84e84f464aeb0c632584b5d12c8be934e634c9348dd9",
+      "metadata": {
+        "access_group": "all_employees",
+        "category": "release_notes",
+        "contains_synthetic_pii": false,
+        "document_id": "F04",
+        "effective_date": "2026-09-01",
+        "format": "markdown",
+        "language": "en",
+        "path": "data/documents/release_notes/F04.md",
+        "status": "active",
+        "superseded_by": null,
+        "supersedes": "F03",
+        "title": "PeopleFlow Release Notes v2.0",
+        "version": "2.0"
+      },
+      "block_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "locations": [
+        {
+          "page": null,
+          "bbox": null,
+          "element": 4,
+          "line": 5,
+          "part": null
+        },
+        {
+          "page": null,
+          "bbox": null,
+          "element": 6,
+          "line": 6,
+          "part": null
+        },
+        {
+          "page": null,
+          "bbox": null,
+          "element": 7,
+          "line": 7,
+          "part": null
+        },
+        {
+          "page": null,
+          "bbox": null,
+          "element": 8,
+          "line": 8,
+          "part": null
+        }
+      ],
+      "pages": []
+    },
+    {
+      "source_id": "S3",
+      "chunk_id": "F04-e8e1d806ef5465bd140ae6567f91a31568c4eaac17b48621d91afe0519514bdb",
+      "document_id": "F04",
+      "text": "Fixes and limits\n\n- The manager queue shows original and proposed attendance timelines side by side. Conflicting decisions return APPROVAL-409.\n- Payroll export mapping failures consistently return PAY-EXPORT-017.\n- TOIL and cash overtime rules are unchanged. Self-service does not unlock payroll, automatically pay extra attendance or expose medical attachments to managers.",
+      "token_count": 65,
+      "source_reference": "data/documents/release_notes/F04.md",
+      "document_title": "PeopleFlow Release Notes v2.0",
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "Fixes and limits"
+      ],
+      "version": "2.0",
+      "effective_date": "2026-09-01",
+      "source_hash": "044b8c6646c03c8fe343c16e688ffea3913cbca0b3ab717045203978c485665a",
+      "content_hash": "704378eae7881054452e84e84f464aeb0c632584b5d12c8be934e634c9348dd9",
+      "metadata": {
+        "access_group": "all_employees",
+        "category": "release_notes",
+        "contains_synthetic_pii": false,
+        "document_id": "F04",
+        "effective_date": "2026-09-01",
+        "format": "markdown",
+        "language": "en",
+        "path": "data/documents/release_notes/F04.md",
+        "status": "active",
+        "superseded_by": null,
+        "supersedes": "F03",
+        "title": "PeopleFlow Release Notes v2.0",
+        "version": "2.0"
+      },
+      "block_indices": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "locations": [
+        {
+          "page": null,
+          "bbox": null,
+          "element": 9,
+          "line": 10,
+          "part": null
+        },
+        {
+          "page": null,
+          "bbox": null,
+          "element": 11,
+          "line": 11,
+          "part": null
+        },
+        {
+          "page": null,
+          "bbox": null,
+          "element": 12,
+          "line": 12,
+          "part": null
+        },
+        {
+          "page": null,
+          "bbox": null,
+          "element": 13,
+          "line": 13,
+          "part": null
+        }
+      ],
+      "pages": []
+    },
+    {
+      "source_id": "S4",
+      "chunk_id": "F03-fc8366e8e55fc4ba99fb39e95c6a6af904adf2286bdee5afdc2f64c656e2665c",
+      "document_id": "F03",
+      "text": "PeopleFlow Release Notes v1.8\n\nReleased 2026-03-01. These notes cover the version used through 2026-08-31. PeopleFlow Release Notes v2.0 describe the changes introduced on 2026-09-01.",
+      "token_count": 43,
+      "source_reference": "data/documents/release_notes/F03.md",
+      "document_title": "PeopleFlow Release Notes v1.8",
+      "section_path": [
+        "PeopleFlow Release Notes v1.8"
+      ],
+      "version": "1.8",
+      "effective_date": "2026-03-01",
+      "source_hash": "82c7a9f7e57c1f06dfe429c001897c8c65102bf72237f76df087ee4aa744978f",
+      "content_hash": "1ef8719b9ee284070938f4dbddb0831c0f9ef138b41436502a459d36d8cea40e",
+      "metadata": {
+        "access_group": "all_employees",
+        "category": "release_notes",
+        "contains_synthetic_pii": false,
+        "document_id": "F03",
+        "effective_date": "2026-03-01",
+        "format": "markdown",
+        "language": "en",
+        "path": "data/documents/release_notes/F03.md",
+        "status": "superseded",
+        "superseded_by": "F04",
+        "supersedes": null,
+        "title": "PeopleFlow Release Notes v1.8",
+        "version": "1.8"
+      },
+      "block_indices": [
+        0,
+        1
+      ],
+      "locations": [
+        {
+          "page": null,
+          "bbox": null,
+          "element": 2,
+          "line": 1,
+          "part": null
+        },
+        {
+          "page": null,
+          "bbox": null,
+          "element": 3,
+          "line": 3,
+          "part": null
+        }
+      ],
+      "pages": []
+    },
+    {
+      "source_id": "S5",
+      "chunk_id": "F03-4019ec92a072a0ee41b0ffc91e339d75c018171e26e67ee00fb7198bb2f62af4",
+      "document_id": "F03",
+      "text": "Shift swaps\n\nSwaps were manager-initiated. Employees asked the manager to arrange a trade; the manager checked both workers' agreement, team skills, rest, and hour limits, then reassigned both shifts. There was no employee Propose swap button or colleague acceptance timer. The resulting schedule still required 11 consecutive hours of rest.",
+      "token_count": 62,
+      "source_reference": "data/documents/release_notes/F03.md",
+      "document_title": "PeopleFlow Release Notes v1.8",
+      "section_path": [
+        "PeopleFlow Release Notes v1.8",
+        "Shift swaps"
+      ],
+      "version": "1.8",
+      "effective_date": "2026-03-01",
+      "source_hash": "82c7a9f7e57c1f06dfe429c001897c8c65102bf72237f76df087ee4aa744978f",
+      "content_hash": "1ef8719b9ee284070938f4dbddb0831c0f9ef138b41436502a459d36d8cea40e",
+      "metadata": {
+        "access_group": "all_employees",
+        "category": "release_notes",
+        "contains_synthetic_pii": false,
+        "document_id": "F03",
+        "effective_date": "2026-03-01",
+        "format": "markdown",
+        "language": "en",
+        "path": "data/documents/release_notes/F03.md",
+        "status": "superseded",
+        "superseded_by": "F04",
+        "supersedes": null,
+        "title": "PeopleFlow Release Notes v1.8",
+        "version": "1.8"
+      },
+      "block_indices": [
+        8,
+        9
+      ],
+      "locations": [
+        {
+          "page": null,
+          "bbox": null,
+          "element": 10,
+          "line": 14,
+          "part": null
+        },
+        {
+          "page": null,
+          "bbox": null,
+          "element": 11,
+          "line": 15,
+          "part": null
+        }
+      ],
+      "pages": []
+    }
+  ],
+  "context_tokens": 2405,
+  "context_token_budget": 3200,
+  "token_counter": "unicode-word-or-punctuation-v1",
+  "retrieved_chunk_ids": [
+    "S02-8fedb0eda33913bd7e55226b7eea74521dffb73f3e61cabc0f9f925a7d3e605e",
+    "F04-053772e0634e9843d4e8becb9b1d255bda71ca64423f1f231cf347f82c060101",
+    "F04-e8e1d806ef5465bd140ae6567f91a31568c4eaac17b48621d91afe0519514bdb",
+    "F03-fc8366e8e55fc4ba99fb39e95c6a6af904adf2286bdee5afdc2f64c656e2665c",
+    "F03-4019ec92a072a0ee41b0ffc91e339d75c018171e26e67ee00fb7198bb2f62af4"
+  ],
+  "prompt_version": "rag-v1",
+  "prompt_sha256": "3ed9c93af1a35db9e201b03d902a5c4262ee6b104c21c465cc0ac4fbb5c630c8",
+  "model": "qwen3:8b",
+  "usage": {
+    "prompt_tokens": 3195,
+    "completion_tokens": 45,
+    "total_tokens": 3240
+  },
+  "generation_seconds": 3.66,
+  "retrieval": {
+    "mode": "hybrid-rerank",
+    "top_k": 5,
+    "index": "data\\index\\peopleflow",
+    "access_groups": [
+      "all_employees"
+    ],
+    "reranker_model": "BAAI/bge-reranker-v2-m3"
+  }
+}

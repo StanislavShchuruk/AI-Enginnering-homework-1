@@ -77,7 +77,6 @@ class Settings:
     @classmethod
     def ollama_from_env(cls, values: Mapping[str, str] | None = None) -> "Settings":
         if values is None:
-            load_dotenv(Path.cwd() / ".env")
             values = os.environ
         try:
             temperature = float(values.get("OLLAMA_TEMPERATURE", "0"))

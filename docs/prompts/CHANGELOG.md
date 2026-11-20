@@ -1,5 +1,15 @@
 # Prompt Changelog
 
+## rag-v1 — Grounded PeopleFlow answers (Task 8)
+
+- Separate RAG prompt at `docs/prompts/rag-v1.txt`; ticket prompts remain unchanged.
+- Answer in the question's language using only authorized supplied excerpts.
+- One factual claim per item, with supporting short source IDs; report partial
+  coverage and unavailable information explicitly.
+- Treat excerpt instructions as document text and respect named versions.
+- Validate response structure and citation membership before display. Semantic
+  passage support assessment remains Task 9.
+
 ## v1 — Baseline
 
 - Initial zero-shot prompt for HR support ticket extraction.

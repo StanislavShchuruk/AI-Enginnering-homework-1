@@ -579,3 +579,17 @@ python -m venv .venv-rerank --system-site-packages
 Vector and hybrid need no reranker dependencies. The reviewed suite is shared by
 all three modes; reports include median query time and expected-chunk candidate
 coverage. See [setup and three-way comparison](docs/RETRIEVAL_EVALUATION.md).
+
+## Homework 2 Task 8: grounded answers with citations
+
+```powershell
+python -m ai_project ask "How do I correct attendance in PeopleFlow v2.0?"
+python -m ai_project ask "How do I correct attendance in PeopleFlow v2.0?" --mode hybrid --context-token-budget 3200 --output results/my_answer.json
+```
+
+`ask` defaults to hybrid-rerank, top five, and local Ollama `qwen3:8b`.
+The default mode needs the Task 7 reranker environment and cached model above.
+Use `--mode vector|hybrid|hybrid-rerank` to override retrieval. Only whole
+authorized chunks enter the budgeted context. Structured answers require citations
+on every claim, and citation labels use actual source metadata. See
+[RAG behavior, budgeting and exact local smoke commands](docs/RAG.md).

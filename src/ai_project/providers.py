@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from typing import Any, Protocol
 
 from openai import APIConnectionError, APIStatusError, APITimeoutError, DefaultHttpxClient, OpenAI
+from pydantic import BaseModel
 
 from ai_project.config import Settings
 from ai_project.models import HRSupportTicket
@@ -39,6 +40,8 @@ class _ChatProvider:
 
     name: str
     base_url: str
+    response_model: type[BaseModel] = HRSupportTicket
+    schema_name: str = "hr_support_ticket"
 
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
@@ -73,9 +76,9 @@ class _ChatProvider:
                         response_format={
                             "type": "json_schema",
                             "json_schema": {
-                                "name": "hr_support_ticket",
+                                "name": self.schema_name,
                                 "strict": True,
-                                "schema": HRSupportTicket.model_json_schema(),
+                                "schema": self.response_model.model_json_schema(),
                             },
                         },
                         **self.request_options(),

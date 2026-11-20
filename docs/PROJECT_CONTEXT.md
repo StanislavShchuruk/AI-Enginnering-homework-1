@@ -113,7 +113,13 @@ reviewed at the user's instruction without label changes for the three-way run.
 Reports include model identity, expected-chunk pool coverage and median query time.
 See docs/RETRIEVAL_EVALUATION.md for setup and results. The optional rerank extra
 is not needed by vector/hybrid. The Homework 1 ticket schema and providers are
-unchanged. Generation and answer evaluation remain outside the implemented scope.
+unchanged. Task 8 adds `ask` with local Ollama generation (default qwen3:8b),
+hybrid-rerank at top five by default, whole-chunk context budgeting, versioned
+`rag-v1` prompting, structured claims, and citation membership validation before
+display. Source IDs map to the exact included canonical chunks and metadata.
+Ollama settings now use process environment only, without loading `.env`.
+See docs/RAG.md for the budget definition, saved smoke answers and reproduction.
+Semantic evidence support checking and answer evaluation remain Task 9.
 
 - Versioned prompts stored separately from application code.
 - RAG-based troubleshooting using relevant HR support knowledge.

@@ -20,6 +20,10 @@ from ai_project.service import AIService
 
 def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
+    if argv and argv[0] == "ask":
+        from ai_project.rag import ask_main
+
+        return ask_main(argv[1:])
     if argv and argv[0] == "eval-retrieval":
         from ai_project.retrieval_evaluation import evaluation_main
 
