@@ -1,0 +1,480 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          51.259986877441406,
+          379.0579528808594,
+          81.55398559570312
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide"
+      ],
+      "text": "Payslip & Payroll Portal Guide",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          85.01248931884766,
+          236.15699768066406,
+          99.43949127197266
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide"
+      ],
+      "text": "Payroll Operations | September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          111.38998413085938,
+          205.2349853515625,
+          129.29098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Access payslips safely"
+      ],
+      "text": "Access payslips safely",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          134.51248168945312,
+          529.8947143554688,
+          192.43948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Access payslips safely"
+      ],
+      "text": "Open Pay > Payslips and complete step-up MFA if requested. Employees see their own payslips; team managers do not receive payslip access merely through management permissions. Payslips are published on the last business day of each month by 18:00 UTC. A Draft payroll run is not visible in the employee portal. Payment initiation and bank settlement are separate events.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          204.38998413085938,
+          183.5120086669922,
+          222.29098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Read the statement"
+      ],
+      "text": "Read the statement",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          227.51248168945312,
+          396.2611389160156,
+          241.93948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Read the statement"
+      ],
+      "text": "Select the payroll month and verify the statement status is Published.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          250.01248168945312,
+          470.3912353515625,
+          264.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Read the statement"
+      ],
+      "text": "Compare base pay, approved allowances, overtime, deductions, and the net amount.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          272.5124816894531,
+          378.1695861816406,
+          286.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Read the statement"
+      ],
+      "text": "Open the line-item explanation for any unfamiliar deduction code.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          295.0124816894531,
+          483.2327575683594,
+          309.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Read the statement"
+      ],
+      "text": "Download the PDF only to an approved private location and sign out on shared devices.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          317.5124816894531,
+          531.6376953125,
+          389.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Read the statement"
+      ],
+      "text": "The payroll cutoff is the 20th calendar day at 17:00 UTC. Approvals received later normally appear in the following month's adjustment run. PAY-404 means no published statement exists for that period. PAY-403 means the session lacks access; never ask a colleague to download a statement on your behalf. PAY-EXPORT-017 means an export mapping failed and belongs with Payroll Operations rather than password support.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          401.8899841308594,
+          203.03799438476562,
+          419.7909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Gross pay and net pay"
+      ],
+      "text": "Gross pay and net pay",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          425.0124816894531,
+          529.3487548828125,
+          497.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Gross pay and net pay"
+      ],
+      "text": "Gross pay is the sum of base pay and eligible earnings. Net pay equals gross pay minus the displayed deductions; reimbursement lines are shown separately if the organization enables them. A payment marked Submitted confirms that the export was sent, not that funds settled. Allow two business days after the stated pay date before reporting a settlement delay, unless the destination is visibly incorrect.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          509.3899841308594,
+          188.60800170898438,
+          527.291015625
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Raise a discrepancy"
+      ],
+      "text": "Raise a discrepancy",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          532.5125122070312,
+          531.6587524414062,
+          604.9395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "Raise a discrepancy"
+      ],
+      "text": "Use Pay > Report discrepancy and select the period and line item. Describe the expected rule and link an approval reference where available. Do not include a bank destination in a general ticket field. Payment-destination updates require HR verification and a separate payroll review before cutoff. Payroll Troubleshooting explains allowance mismatches and export retries. A corrected payslip is issued as a new revision; the original remains in the restricted audit history.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          616.8900146484375,
+          242.0380096435547,
+          634.791015625
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "September statement extract"
+      ],
+      "text": "September statement extract",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          640.0125122070312,
+          503.0357666015625,
+          668.9395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Payslip & Payroll Portal Guide",
+        "September statement extract"
+      ],
+      "text": "[PERSON], [EMPLOYEE_ID]; September gross USD 4,200.00, deductions USD 840.00, net USD 3,360.00. Bank: Northmere Savings; account: [BANK_ACCOUNT]; routing: [BANK_ROUTING].",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          57.599998474121094,
+          804.280029296875,
+          537.8400268554688,
+          815.2720336914062
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "Payroll Operations 1",
+      "type": "footer"
+    }
+  ],
+  "content_hash": "7759b79b295ce48a29ea04054f124b9a1db2662bba1ebcf221459b07fae050f2",
+  "document_id": "M09",
+  "excluded_as_duplicate_of": null,
+  "format": "pdf",
+  "metadata": {
+    "access_group": "hr_payroll",
+    "category": "manuals",
+    "contains_synthetic_pii": true,
+    "document_id": "M09",
+    "effective_date": "2026-09-01",
+    "format": "pdf",
+    "language": "en",
+    "path": "data/documents/manuals/M09.pdf",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Payslip & Payroll Portal Guide",
+    "version": "2.0"
+  },
+  "redaction_counts": {
+    "BANK_ACCOUNT": 1,
+    "BANK_ROUTING": 1,
+    "EMPLOYEE_ID": 1,
+    "PERSON": 1
+  },
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "3f4708974f50c908775f5c8589039630da53e2847033205bca8f5af727bb5871",
+  "source_path": "data/documents/manuals/M09.pdf",
+  "title": "Payslip & Payroll Portal Guide",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+    "Source extraction warnings exist; inspect restricted inputs."
+  ]
+}

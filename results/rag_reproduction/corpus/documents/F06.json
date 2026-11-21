@@ -1,0 +1,330 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2"
+      ],
+      "text": "Leave Request Guide v2",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Current guide"
+      ],
+      "text": "Current guide",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Current guide"
+      ],
+      "text": "This v2.0 guide is effective from 2026-09-01 and supersedes Leave Request Guide v1. Annual leave submission remains employee self-service; cancellation of unstarted leave is now also self-service. The contract entitlements remain 25 days for A, 15 for B, and 28 for C. The upgrade does not reset balances or add entitlement. Annual Leave Policy governs monthly accrual and approved carry-over.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Submit and track"
+      ],
+      "text": "Submit and track",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Submit and track"
+      ],
+      "text": "Open My time > Leave > Annual leave and select the first and last dates.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Submit and track"
+      ],
+      "text": "Check scheduled workdays, excluded holidays, and any half-day selection.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Submit and track"
+      ],
+      "text": "Review the balance impact and add a handover note without sensitive health information.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Submit and track"
+      ],
+      "text": "Select Submit and retain the request reference.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "5.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Submit and track"
+      ],
+      "text": "Monitor Pending approval, Approved, or Rejected in My requests.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Submit and track"
+      ],
+      "text": "Submit at least five calendar days before the first absence unless the manager records an exception. Pending requests reserve days; approved requests consume them. Managers should decide within two business days. LEAVE-409 means an overlap exists. LEAVE-422 means a date range or fraction is invalid. A success banner does not replace checking the saved status.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Cancel before leave starts"
+      ],
+      "text": "Cancel before leave starts",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Cancel before leave starts"
+      ],
+      "text": "Open the pending or approved request and choose Cancel leave. Review the complete cancellation, confirm it, and check the new Cancelled status. PeopleFlow immediately restores the reservation or deduction and notifies the manager. No new manager approval or HR Support ticket is required. Partial cancellation is not available: cancel the entire unstarted request and submit a replacement for the dates still needed. The replacement needs approval and may encounter changed availability.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Boundary and payroll handling"
+      ],
+      "text": "Boundary and payroll handling",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 17,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v2",
+        "Boundary and payroll handling"
+      ],
+      "text": "Self-service cancellation closes at the first included scheduled shift's start, measured in the employee's workplace timezone. If the selected start date is nonworking, use the first scheduled shift included in the absence. After that boundary, HR reviews any correction against attendance and payroll. LEAVE-423 identifies a started request that cannot be cancelled through self-service. Cancelling a future request does not recall an existing payroll export. HR Payroll must reconcile an affected exported period separately. The old instruction to contact HR Support for every cancellation belongs only to superseded Leave Request Guide v1.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "774a04f28e2978263ee222559e37d5c64976d66a759954b2945e76633b401824",
+  "document_id": "F06",
+  "excluded_as_duplicate_of": null,
+  "format": "html",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "manuals",
+    "contains_synthetic_pii": false,
+    "document_id": "F06",
+    "effective_date": "2026-09-01",
+    "format": "html",
+    "language": "en",
+    "path": "data/documents/manuals/F06.html",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": "F05",
+    "title": "Leave Request Guide v2",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "c509e930dc8c30181c341f653698c7910298b7ed0556f9abc59d10db3a72cddf",
+  "source_path": "data/documents/manuals/F06.html",
+  "title": "Leave Request Guide v2",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

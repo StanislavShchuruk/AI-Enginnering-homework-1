@@ -1,0 +1,536 @@
+{
+  "blocks": [
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 0,
+        "line": null,
+        "page": null,
+        "part": "section0/header"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "PeopleFlow Demonstration Services",
+      "type": "header"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 0,
+        "line": null,
+        "page": null,
+        "part": "section0/footer"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "Employment agreement |",
+      "type": "footer"
+    },
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 0,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A"
+      ],
+      "text": "Full-Time Employment Contract A",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 1,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A"
+      ],
+      "text": "Agreement effective 1 September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 2,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A"
+      ],
+      "text": "This agreement is between PeopleFlow Demonstration Services (the Employer) and [PERSON] (the Employee). Employment commences on 2026-09-01. The Employee is appointed to administrative service work in the Operations team, reporting to the assigned team manager.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "1 Employee particulars"
+      ],
+      "text": "1 Employee particulars",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "1 Employee particulars"
+      ],
+      "text": "[PERSON]; [ADDRESS]; [EMAIL]. Annual base salary: USD 50,400.00, paid as USD 4,200.00 gross each month.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "2 Hours and place of work"
+      ],
+      "text": "2 Hours and place of work",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "2 Hours and place of work"
+      ],
+      "text": "The contracted working time is 40 hours/week, normally Monday through Friday, eight scheduled hours each day. Unpaid breaks fall outside those hours. The workplace timezone configured in PeopleFlow governs attendance and roster boundaries. Any change to the normal roster requires manager confirmation and must preserve the weekly total unless separately approved overtime applies.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 7,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "3 Salary and payment"
+      ],
+      "text": "3 Salary and payment",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "3 Salary and payment"
+      ],
+      "text": "The annual base salary is USD 50,400.00, payable in 12 equal gross monthly installments of USD 4,200.00, less applicable deductions. The Employee must arrange verification of the payment destination through HR Payroll. Payment details must not be changed by editing a support attachment.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "3 Salary and payment"
+      ],
+      "text": "Payroll cutoff is the 20th calendar day at 17:00 UTC. Payslips are published by 18:00 UTC on the last business day of the month. Settlement may take two business days after the stated pay date.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "4 Leave and sickness"
+      ],
+      "text": "4 Leave and sickness",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "4 Leave and sickness"
+      ],
+      "text": "The Employee is entitled to 25 days per calendar year of annual leave and 10 days per calendar year of paid sick leave. Annual leave accrues in equal monthly portions; pending requests reserve the available balance. Only scheduled missed workdays consume either allowance.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "4 Leave and sickness"
+      ],
+      "text": "Up to five unused annual leave days may carry over if approved by 15 December and must be used by 31 March. Sick leave does not carry over. The first three consecutive scheduled sick workdays may be self-certified; evidence is required from the fourth. The Annual Leave Policy and Sick Pay & Absence Policy govern administration.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "5 Additional hours"
+      ],
+      "text": "5 Additional hours",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "5 Additional hours"
+      ],
+      "text": "Overtime requires prior manager approval. Eligible actual work above 40 hours in a week may be compensated in cash or TOIL at 1.5 times the contractual hourly base or 1.5 hours of TOIL per eligible hour. The weekly overtime ceiling is 8 hours; total work must not exceed 48 hours. The Overtime & TOIL Policy applies to calculation and use.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "6 Probation and variations"
+      ],
+      "text": "6 Probation and variations",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "6 Probation and variations"
+      ],
+      "text": "A three-calendar-month probation period applies. It does not reduce the benefits in clause 4. Changes to hours, pay, contract type or entitlement require HR approval, an effective date and a new signed package. Neither a roster edit nor a profile change amends this agreement. Prior signed terms remain in the employment record.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 17,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "7 Records and acceptance"
+      ],
+      "text": "7 Records and acceptance",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 18,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "7 Records and acceptance"
+      ],
+      "text": "Confidential records are handled under the Employee Data Privacy Policy. The Employee may dispute an administrative calculation within 10 calendar days of notification; HR targets a written response within five business days. Original attendance and signed terms must be retained during review.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 19,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "7 Records and acceptance"
+      ],
+      "text": "Read the agreement and ask HR to correct any discrepancy before accepting it through My documents. Complete step-up MFA and retain the signature receipt with the signed copy.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 20,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "7 Records and acceptance"
+      ],
+      "text": "For the Employer: ____________________ Date: ____________________",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 21,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Full-Time Employment Contract A",
+        "7 Records and acceptance"
+      ],
+      "text": "Employee: [PERSON] ____________________ Date: ____________________",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "158a124719c8cea1113e8be7c255175acd2a62c4ccc439307317a06faa6a03c1",
+  "document_id": "C01",
+  "excluded_as_duplicate_of": null,
+  "format": "docx",
+  "metadata": {
+    "access_group": "hr_confidential",
+    "category": "contracts",
+    "contains_synthetic_pii": true,
+    "document_id": "C01",
+    "effective_date": "2026-09-01",
+    "format": "docx",
+    "language": "en",
+    "path": "data/documents/contracts/C01.docx",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Full-Time Employment Contract A",
+    "version": "2.0"
+  },
+  "redaction_counts": {
+    "ADDRESS": 1,
+    "EMAIL": 1,
+    "PERSON": 3
+  },
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "9bf43d18b693233a193398048671bd2410ed59d8c9ff9c6de5608316c4adfa9a",
+  "source_path": "data/documents/contracts/C01.docx",
+  "title": "Full-Time Employment Contract A",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

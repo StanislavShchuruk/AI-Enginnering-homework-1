@@ -1,0 +1,329 @@
+{
+  "blocks": [
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 0,
+        "line": null,
+        "page": null,
+        "part": "section0/footer"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "HR Operations |",
+      "type": "footer"
+    },
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 0,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy"
+      ],
+      "text": "Sick Pay & Absence Policy",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 1,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy"
+      ],
+      "text": "Policy owner: HR Operations",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 2,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy"
+      ],
+      "text": "Effective 1 September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy",
+        "Eligibility"
+      ],
+      "text": "Eligibility",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy",
+        "Eligibility"
+      ],
+      "text": "This policy sets out the contractual paid sickness allowances. Contract A provides 10 paid sick days, B provides 5, and C provides 12 each calendar year. Eligibility begins on the contractual start date, including during probation. Balances reset on 1 January and do not carry forward. Part-time Contract B already includes its agreed 5-day allowance; do not prorate it again.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy",
+        "Report and classify"
+      ],
+      "text": "Report and classify",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy",
+        "Report and classify"
+      ],
+      "text": "Report sickness before the scheduled shift begins where reasonably possible using Sick Leave Reporting Guide. Charge only missed scheduled workdays. A nonworking weekend between sick workdays does not consume a day but does not restart the evidence threshold. A partial sick day can be charged as half a scheduled day when HR confirms the recorded work interval. Sick leave must not be converted into annual leave without a separately reviewed request.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 7,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy",
+        "Evidence and payment"
+      ],
+      "text": "Evidence and payment",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy",
+        "Evidence and payment"
+      ],
+      "text": "Self-certification covers the first three consecutive scheduled workdays of an episode. Evidence is required from the fourth and should arrive within two business days of reaching that threshold. Until evidence is reviewed, the record remains Evidence pending. HR may provisionally withhold the disputed sick-pay portion but must preserve the reported absence. When evidence is accepted before cutoff, payroll includes the eligible amount; later acceptance produces a subsequent adjustment.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy",
+        "Confidentiality and exhausted balances"
+      ],
+      "text": "Confidentiality and exhausted balances",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy",
+        "Confidentiality and exhausted balances"
+      ],
+      "text": "Medical attachments are restricted to HR absence administrators. Managers receive absence dates, return expectations, and whether evidence requirements are satisfied, not the clinical narrative. Once the paid balance is exhausted, remaining sickness is recorded as unpaid sickness pending HR review. Payroll must not silently borrow from next year's allowance. A correction creates an audit revision and recalculates the remaining balance. The case note below shows how a three-day self-certified absence affects the balance.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy",
+        "Balance calculation from a closed absence"
+      ],
+      "text": "Balance calculation from a closed absence",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Pay & Absence Policy",
+        "Balance calculation from a closed absence"
+      ],
+      "text": "[PERSON], [EMPLOYEE_ID], absent [MEDICAL_INFO]. Contract A balance before this record: 10 paid sick days; charged: 3 days; remaining: 7 days. Evidence status: [MEDICAL_INFO].",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "6bdc069fef105b9253f03184c6012fefbef07af1bd9bb7743b98bd458d7f4f41",
+  "document_id": "C05",
+  "excluded_as_duplicate_of": null,
+  "format": "docx",
+  "metadata": {
+    "access_group": "hr_confidential",
+    "category": "policies",
+    "contains_synthetic_pii": true,
+    "document_id": "C05",
+    "effective_date": "2026-09-01",
+    "format": "docx",
+    "language": "en",
+    "path": "data/documents/policies/C05.docx",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Sick Pay & Absence Policy",
+    "version": "2.0"
+  },
+  "redaction_counts": {
+    "EMPLOYEE_ID": 1,
+    "MEDICAL_INFO": 2,
+    "PERSON": 1
+  },
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "cac43cc819781a07d160abd7c2f7b267988435f4d563d60b39646e7311b202df",
+  "source_path": "data/documents/policies/C05.docx",
+  "title": "Sick Pay & Absence Policy",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

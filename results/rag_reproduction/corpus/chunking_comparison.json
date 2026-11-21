@@ -1,0 +1,200 @@
+{
+  "baseline_tokens": 400,
+  "documents": [
+    {
+      "baseline_boundary": {
+        "after_token": 400,
+        "left_block_index": 15,
+        "left_section": [
+          "Part-Time Employment Contract B",
+          "Taking leave and reporting sickness"
+        ],
+        "left_text": "\nThe first three consecutive scheduled sick workdays are covered by self-certification. Medical evidence is required from the fourth. The Annual Leave Policy and Sick Pay & Absence",
+        "left_type": "paragraph",
+        "right_block_index": 15,
+        "right_section": [
+          "Part-Time Employment Contract B",
+          "Taking leave and reporting sickness"
+        ],
+        "right_text": "Policy apply to requests, evidence and balances.\n\nWork beyond the agreed hours\n\nPrior manager approval is required for overtime. Eligible actual work beyond 24 hours in a week may ",
+        "right_type": "paragraph",
+        "splits_block": true
+      },
+      "baseline_count": 2,
+      "document_id": "C02",
+      "protected_structures": [
+        {
+          "block_indices": [
+            6
+          ],
+          "markers": [],
+          "row_count": 10,
+          "structured_chunk_ids": [
+            "C02-7915f0ec1378e62589981c265f32f6e80b3e594a2eab60aa544b384e294c3f9f"
+          ],
+          "token_count": 66,
+          "type": "table"
+        }
+      ],
+      "role": "contract with table",
+      "semantic_tokens": 621,
+      "structured_boundary": {
+        "block_indices": [
+          13,
+          14,
+          15
+        ],
+        "end": "ays are covered by self-certification. Medical evidence is required from the fourth. The Annual Leave Policy and Sick Pay & Absence Policy apply to requests, evidence and balances.",
+        "section_path": [
+          "Part-Time Employment Contract B",
+          "Taking leave and reporting sickness"
+        ],
+        "start": "Taking leave and reporting sickness\n\nAnnual leave accrues monthly in equal portions. Pending requests reserve balance. Scheduled workdays alone consume annual or sick leave. Up to ",
+        "token_count": 100
+      },
+      "structured_count": 7,
+      "title": "Part-Time Employment Contract B"
+    },
+    {
+      "baseline_boundary": {
+        "after_token": 400,
+        "left_block_index": 14,
+        "left_section": [
+          "Manager Approval Dashboard",
+          "Concurrency and confidentiality"
+        ],
+        "left_text": "dates and the evidence-complete indicator but not confidential medical attachments. A payroll lock discovered during attendance approval blocks ledger changes and routes the matter",
+        "left_type": "paragraph",
+        "right_block_index": 14,
+        "right_section": [
+          "Manager Approval Dashboard",
+          "Concurrency and confidentiality"
+        ],
+        "right_text": "to HR Payroll. Do not clear the lock or reclassify a request merely to remove it from the queue.\n\nHandover to a delegate\n\nBefore going on leave, check that the delegate's team and ",
+        "right_type": "paragraph",
+        "splits_block": true
+      },
+      "baseline_count": 2,
+      "document_id": "M11",
+      "protected_structures": [
+        {
+          "block_indices": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "markers": [
+            "1.",
+            "2.",
+            "3.",
+            "4.",
+            "5."
+          ],
+          "row_count": 0,
+          "structured_chunk_ids": [
+            "M11-f78d75f5c43d1fb175c50c60d4ccc0d4ba3efd52425bb499af51221e2a3aa711"
+          ],
+          "token_count": 78,
+          "type": "list_item"
+        }
+      ],
+      "role": "step-by-step manual",
+      "semantic_tokens": 484,
+      "structured_boundary": {
+        "block_indices": [
+          13,
+          14
+        ],
+        "end": "k discovered during attendance approval blocks ledger changes and routes the matter to HR Payroll. Do not clear the lock or reclassify a request merely to remove it from the queue.",
+        "section_path": [
+          "Manager Approval Dashboard",
+          "Concurrency and confidentiality"
+        ],
+        "start": "Concurrency and confidentiality\n\nAPPROVAL-409 means someone else acted on the request after it was opened. Reload the record and read the saved decision before taking another actio",
+        "token_count": 95
+      },
+      "structured_count": 6,
+      "title": "Manager Approval Dashboard"
+    },
+    {
+      "baseline_boundary": {
+        "after_token": 400,
+        "left_block_index": 15,
+        "left_section": [
+          "Authentication Troubleshooting",
+          "Escalation and disabled accounts"
+        ],
+        "left_text": "r and application versions, the error code, event time with timezone, and whether a fresh session worked. Never submit a password, MFA code, reset link, session cookie, or recovery",
+        "left_type": "paragraph",
+        "right_block_index": 15,
+        "right_section": [
+          "Authentication Troubleshooting",
+          "Escalation and disabled accounts"
+        ],
+        "right_text": "secret. Support Escalation & Security Incidents applies if an unexpected authentication event suggests unauthorized access rather than an ordinary login failure.",
+        "right_type": "paragraph",
+        "splits_block": true
+      },
+      "baseline_count": 2,
+      "document_id": "S03",
+      "protected_structures": [
+        {
+          "block_indices": [
+            4
+          ],
+          "markers": [],
+          "row_count": 5,
+          "structured_chunk_ids": [
+            "S03-d31185a401edf892190d2bec61147e098674e7dc0f27d2445e46fe00b1037ad4"
+          ],
+          "token_count": 62,
+          "type": "table"
+        },
+        {
+          "block_indices": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "markers": [
+            "1.",
+            "2.",
+            "3.",
+            "4."
+          ],
+          "row_count": 0,
+          "structured_chunk_ids": [
+            "S03-d41617c926610876273e1d21b6e692672af881b5a3d787b15c1983272752dbe0"
+          ],
+          "token_count": 52,
+          "type": "list_item"
+        }
+      ],
+      "role": "short support guide",
+      "semantic_tokens": 423,
+      "structured_boundary": {
+        "block_indices": [
+          14,
+          15
+        ],
+        "end": "ookie, or recovery secret. Support Escalation & Security Incidents applies if an unexpected authentication event suggests unauthorized access rather than an ordinary login failure.",
+        "section_path": [
+          "Authentication Troubleshooting",
+          "Escalation and disabled accounts"
+        ],
+        "start": "Escalation and disabled accounts\n\nLost MFA enrollment requires HR identity verification before an administrator resets it. An AUTH-DISABLED account must be reviewed by HR; support ",
+        "token_count": 102
+      },
+      "structured_count": 5,
+      "title": "Authentication Troubleshooting"
+    }
+  ],
+  "structure_config": {
+    "max_tokens": 600,
+    "target_tokens": 400
+  },
+  "token_counter": "unicode-word-or-punctuation-v1"
+}

@@ -1,0 +1,287 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 2,
+        "line": 1,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0"
+      ],
+      "text": "PeopleFlow Release Notes v2.0",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": 3,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0"
+      ],
+      "text": "Released 2026-09-01. This release replaces v1.8 and introduces employee attendance correction requests, leave cancellation, and shift swap proposals. The upgrade preserves historical records and audit events. Contract entitlements do not change because the application version changes.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": 5,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "New self-service actions"
+      ],
+      "text": "New self-service actions",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": 6,
+        "page": null,
+        "part": null
+      },
+      "marker": "-",
+      "ordered": false,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "New self-service actions"
+      ],
+      "text": "Employees now submit correction requests from their own attendance timeline. The window is 14 calendar days and payroll must be unlocked. One pending request per workday is allowed. Managers approve or reject; approval recalculates within five minutes. HR Payroll handles locked or older periods, replacing the former direct manager-edit route.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 7,
+        "line": 7,
+        "page": null,
+        "part": null
+      },
+      "marker": "-",
+      "ordered": false,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "New self-service actions"
+      ],
+      "text": "Employees now cancel pending or approved annual leave themselves before the first scheduled shift starts. Cancellation immediately releases the reserved or deducted balance and notifies the manager. Started leave still requires HR review. Employees no longer need to contact HR Support for every cancellation.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": 8,
+        "page": null,
+        "part": null
+      },
+      "marker": "-",
+      "ordered": false,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "New self-service actions"
+      ],
+      "text": "Employees can propose a swap at least 24 hours before the earlier shift starts. The colleague must accept within 12 hours; the manager then approves. Until approval updates both assignments, the original roster applies. Team, skill, overlap, 11-hour rest and weekly-hour checks apply. Unaccepted proposals expire after 12 hours or at the earlier shift start, whichever comes first.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": 10,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "Fixes and limits"
+      ],
+      "text": "Fixes and limits",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": 11,
+        "page": null,
+        "part": null
+      },
+      "marker": "-",
+      "ordered": false,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "Fixes and limits"
+      ],
+      "text": "The manager queue shows original and proposed attendance timelines side by side. Conflicting decisions return APPROVAL-409.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": 12,
+        "page": null,
+        "part": null
+      },
+      "marker": "-",
+      "ordered": false,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "Fixes and limits"
+      ],
+      "text": "Payroll export mapping failures consistently return PAY-EXPORT-017.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": 13,
+        "page": null,
+        "part": null
+      },
+      "marker": "-",
+      "ordered": false,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "Fixes and limits"
+      ],
+      "text": "TOIL and cash overtime rules are unchanged. Self-service does not unlock payroll, automatically pay extra attendance or expose medical attachments to managers.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": 15,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "For administrators upgrading from v1.8"
+      ],
+      "text": "For administrators upgrading from v1.8",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": 16,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v2.0",
+        "For administrators upgrading from v1.8"
+      ],
+      "text": "Verify role mappings and delegation periods before using the new dashboard. Historical direct attendance adjustments remain visible as completed manager events. For an old date corrected after cutover, use Attendance Correction Guide v2 and the current HR exception route.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "704378eae7881054452e84e84f464aeb0c632584b5d12c8be934e634c9348dd9",
+  "document_id": "F04",
+  "excluded_as_duplicate_of": null,
+  "format": "markdown",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "release_notes",
+    "contains_synthetic_pii": false,
+    "document_id": "F04",
+    "effective_date": "2026-09-01",
+    "format": "markdown",
+    "language": "en",
+    "path": "data/documents/release_notes/F04.md",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": "F03",
+    "title": "PeopleFlow Release Notes v2.0",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "044b8c6646c03c8fe343c16e688ffea3913cbca0b3ab717045203978c485665a",
+  "source_path": "data/documents/release_notes/F04.md",
+  "title": "PeopleFlow Release Notes v2.0",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

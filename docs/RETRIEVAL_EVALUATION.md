@@ -417,8 +417,8 @@ after inspecting the reranked results.
 ## Offline tests
 
 ```powershell
-python -m pytest -q tests/test_reranking.py tests/test_hybrid_retrieval.py tests/test_retrieval.py tests/test_retrieval_evaluation.py -p no:cacheprovider --basetemp=.pytest_tmp_task7_verify
-python -m pytest -q -p no:cacheprovider --basetemp=.pytest_tmp_task7_all
+python -m pytest -q tests/test_reranking.py tests/test_hybrid_retrieval.py tests/test_retrieval.py tests/test_retrieval_evaluation.py -p no:cacheprovider
+python -m pytest -q -p no:cacheprovider
 ```
 
 Tests use fake embeddings and real temporary local Qdrant indexes, with mocked

@@ -1,0 +1,309 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 2,
+        "line": 1,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ"
+      ],
+      "text": "Manager FAQ",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": 3,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "What should I approve first?"
+      ],
+      "text": "What should I approve first?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": 4,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "What should I approve first?"
+      ],
+      "text": "Start with the oldest pending request in Team > Approvals. Decide within two business days. Reminders arrive after one business day; HR escalation follows after three. Support ticket SLAs are separate.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": 6,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "Can I edit attendance directly?"
+      ],
+      "text": "Can I edit attendance directly?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": 7,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "Can I edit attendance directly?"
+      ],
+      "text": "In v2.0, decide the employee's correction request. Direct manager edits belong to v1.8. Locked records go to HR Payroll; do not remove a lock to clear the queue. Approved corrections recalculate within five minutes.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 7,
+        "line": 9,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "Does colleague acceptance finalize a swap?"
+      ],
+      "text": "Does colleague acceptance finalize a swap?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": 10,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "Does colleague acceptance finalize a swap?"
+      ],
+      "text": "No. Check both assignments for skills, weekly hours and 11 consecutive hours of rest, then approve or reject. Until approval updates both assignments together, the original roster applies.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": 12,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "Must I approve a leave cancellation?"
+      ],
+      "text": "Must I approve a leave cancellation?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": 13,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "Must I approve a leave cancellation?"
+      ],
+      "text": "Employees cancel pending or approved annual leave before its first scheduled shift starts. You receive a notification; no further approval is needed. Started leave requires HR review. The former instruction to contact HR Support is historical.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": 15,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "Can a delegate approve everything?"
+      ],
+      "text": "Can a delegate approve everything?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": 16,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "Can a delegate approve everything?"
+      ],
+      "text": "A delegate acts only for the configured team and dates, without access to medical attachments or payslips. Self-approval is blocked and routed to an alternative approver. If APPROVAL-409 appears, reload: another decision has already been saved.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": 18,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "Does more attendance mean automatic overtime?"
+      ],
+      "text": "Does more attendance mean automatic overtime?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": 19,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager FAQ",
+        "Does more attendance mean automatic overtime?"
+      ],
+      "text": "No. Check prior approval and the actual-work interval. The 1.5 multiplier, 8-hour weekly overtime limit, 48-hour total-work limit and 40-hour TOIL cap still apply.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "3bad8df7bb164d85568c65c2618d538096a7285a0a13d7576ec8eae63f40e1cf",
+  "document_id": "F02",
+  "excluded_as_duplicate_of": null,
+  "format": "markdown",
+  "metadata": {
+    "access_group": "managers_hr",
+    "category": "faq",
+    "contains_synthetic_pii": false,
+    "document_id": "F02",
+    "effective_date": "2026-09-01",
+    "format": "markdown",
+    "language": "en",
+    "path": "data/documents/faq/F02.md",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Manager FAQ",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "db114e4bf869b95e4468b106d4accffade77dd17f6b31f492ed8c80be2002407",
+  "source_path": "data/documents/faq/F02.md",
+  "title": "Manager FAQ",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

@@ -27,6 +27,7 @@ rerank = ["sentence-transformers>=5.1,<6"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+addopts = "--basetemp=tmp/pytest-current"
 
 [project.scripts]
 ai-project = "ai_project.cli:main"

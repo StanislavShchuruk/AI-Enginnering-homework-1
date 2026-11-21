@@ -20,6 +20,14 @@ from ai_project.service import AIService
 
 def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
+    if argv and argv[0] == "ci-rag":
+        from ai_project.rag_ci import ci_main
+
+        return ci_main(argv[1:])
+    if argv and argv[0] == "reproduce-rag":
+        from ai_project.rag_reproduction import reproduction_main
+
+        return reproduction_main(argv[1:])
     if argv and argv[0] == "eval-rag-judge":
         from ai_project.rag_judge import judge_main
 

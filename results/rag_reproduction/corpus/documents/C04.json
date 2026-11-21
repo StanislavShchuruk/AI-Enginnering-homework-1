@@ -1,0 +1,422 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          51.11998748779297,
+          297.02398681640625,
+          84.16798400878906
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy"
+      ],
+      "text": "Annual Leave Policy",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          85.01248931884766,
+          198.38848876953125,
+          99.43949127197266
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy"
+      ],
+      "text": "Policy owner: HR Operations",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          107.51248931884766,
+          193.1699676513672,
+          121.93949127197266
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy"
+      ],
+      "text": "Effective 1 September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          133.88998413085938,
+          202.2969970703125,
+          151.79098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy",
+        "Entitlement and scope"
+      ],
+      "text": "Entitlement and scope",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          157.01248168945312,
+          521.4002685546875,
+          214.93948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy",
+        "Entitlement and scope"
+      ],
+      "text": "Contract A grants 25 annual leave days, Contract B 15, and Contract C 28 per calendar year. Contract B's 15 days are already the agreed part-time entitlement and must not be multiplied by a second part-time factor. A day means the employee's scheduled workday; a half day means half of that day's scheduled hours.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          226.88998413085938,
+          218.93698120117188,
+          244.79098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy",
+        "Accrual and reservations"
+      ],
+      "text": "Accrual and reservations",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          250.01248168945312,
+          525.7997436523438,
+          336.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy",
+        "Accrual and reservations"
+      ],
+      "text": "Entitlement accrues at one twelfth of the assigned annual amount at each month end. Keep the internal accrual ledger to four decimal places and round the displayed balance to two decimals. A midyear starter accrues only for complete calendar months of active employment under this policy. Pending requests reserve balance; approved requests consume balance. Rejected, withdrawn, and cancelled requests release their reservations or deductions. An employee may not submit a request that exceeds the available accrued balance.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          348.8899841308594,
+          228.30996704101562,
+          366.7909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy",
+        "Carry-over and scheduling"
+      ],
+      "text": "Carry-over and scheduling",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          372.0124816894531,
+          531.8401489257812,
+          444.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy",
+        "Carry-over and scheduling"
+      ],
+      "text": "Up to five unused days may carry into the next calendar year if a manager approves carry-over by 15 December. Carry-over expires on 31 March of the next year and is consumed before current-year accrual. The rest expires at year end. Organization holidays and nonworking roster days do not consume annual leave. Submit requests at least five calendar days before the first absence; a manager may approve shorter notice with a recorded exception reason.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          456.3899841308594,
+          225.42398071289062,
+          474.2909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy",
+        "Approval and cancellation"
+      ],
+      "text": "Approval and cancellation",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          479.5124816894531,
+          528.1727294921875,
+          566.4395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy",
+        "Approval and cancellation"
+      ],
+      "text": "Managers assess team coverage and should decide within two business days. They must record a reason when rejecting a request. From 2026-09-01, employees can cancel pending or approved annual leave themselves before its first scheduled shift starts. Cancellation restores the appropriate balance immediately and notifies the manager. Once the absence has begun, HR must review any correction. Annual Leave Request Guide and Leave Request Guide v2 describe the active interface. Leave Request Guide v1 is historical and its support-mediated cancellation process is superseded.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          578.3900146484375,
+          243.51998901367188,
+          596.291015625
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy",
+        "Policy decisions and reviews"
+      ],
+      "text": "Policy decisions and reviews",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          601.5125122070312,
+          522.9016723632812,
+          659.4395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy",
+        "Policy decisions and reviews"
+      ],
+      "text": "HR Operations owns this policy and reviews it every 12 months. A scheduled review does not change an approved absence or a contractual entitlement. Amendments require an authorized approver, an effective date and a published replacement. The assigned contract controls numerical entitlement; team calendar settings cannot reduce it.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          667.5125122070312,
+          517.6306762695312,
+          710.9395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Policy",
+        "Policy decisions and reviews"
+      ],
+      "text": "An employee may dispute an outcome within 10 calendar days of notification. HR records a linked case and targets a written response within five business days. The existing status and evidence remain in place while the review is pending.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          57.599998474121094,
+          804.280029296875,
+          537.8400268554688,
+          815.2720336914062
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "HR Operations 1",
+      "type": "footer"
+    }
+  ],
+  "content_hash": "7f23bc9c6094aa6adbf52528634998c246a628f8ed72c614a08778cc6bcebce2",
+  "document_id": "C04",
+  "excluded_as_duplicate_of": null,
+  "format": "pdf",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "policies",
+    "contains_synthetic_pii": false,
+    "document_id": "C04",
+    "effective_date": "2026-09-01",
+    "format": "pdf",
+    "language": "en",
+    "path": "data/documents/policies/C04.pdf",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Annual Leave Policy",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "a37a037ef8a1179864752097f8c01624112af44dcd57bab72f5a238434fadd0f",
+  "source_path": "data/documents/policies/C04.pdf",
+  "title": "Annual Leave Policy",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+    "Source extraction warnings exist; inspect restricted inputs."
+  ]
+}

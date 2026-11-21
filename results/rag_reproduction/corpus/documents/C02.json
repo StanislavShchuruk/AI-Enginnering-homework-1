@@ -1,0 +1,577 @@
+{
+  "blocks": [
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 0,
+        "line": null,
+        "page": null,
+        "part": "section0/header"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "PeopleFlow Demonstration Services",
+      "type": "header"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 0,
+        "line": null,
+        "page": null,
+        "part": "section0/footer"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "Employment agreement |",
+      "type": "footer"
+    },
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 0,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B"
+      ],
+      "text": "Part-Time Employment Contract B",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 1,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B"
+      ],
+      "text": "Agreement effective 1 September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 2,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B"
+      ],
+      "text": "PeopleFlow Demonstration Services offers [PERSON] employment in the Operations team from 2026-09-01 on the following part-time terms. The role comprises administrative service work and reports to the assigned team manager.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Schedule of agreed terms"
+      ],
+      "text": "Schedule of agreed terms",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": [
+        [
+          "Item",
+          "Agreed term"
+        ],
+        [
+          "Employee",
+          "[PERSON]"
+        ],
+        [
+          "Contract",
+          "B"
+        ],
+        [
+          "Working time",
+          "24 hours/week"
+        ],
+        [
+          "Normal attendance",
+          "Monday, Wednesday, and Friday, eight scheduled hours each day"
+        ],
+        [
+          "Annual salary",
+          "USD 28,800.00 gross"
+        ],
+        [
+          "Monthly installment",
+          "USD 2,400.00 gross"
+        ],
+        [
+          "Annual leave",
+          "15 days per calendar year"
+        ],
+        [
+          "Paid sick leave",
+          "5 days per calendar year"
+        ],
+        [
+          "Probation",
+          "Three calendar months"
+        ]
+      ],
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Schedule of agreed terms"
+      ],
+      "text": "Item\tAgreed term\nEmployee\t[PERSON]\nContract\tB\nWorking time\t24 hours/week\nNormal attendance\tMonday, Wednesday, and Friday, eight scheduled hours each day\nAnnual salary\tUSD 28,800.00 gross\nMonthly installment\tUSD 2,400.00 gross\nAnnual leave\t15 days per calendar year\nPaid sick leave\t5 days per calendar year\nProbation\tThree calendar months",
+      "type": "table"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Schedule of agreed terms"
+      ],
+      "text": "[PERSON]; [PHONE]; [EMPLOYEE_ID]. Annual base salary: USD 28,800.00, paid as USD 2,400.00 gross each month.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Working arrangements"
+      ],
+      "text": "Working arrangements",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 7,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Working arrangements"
+      ],
+      "text": "Unpaid breaks are outside the contracted hours. The workplace timezone in PeopleFlow determines roster and attendance boundaries. A roster change requires manager confirmation and must preserve the weekly total unless overtime is separately approved.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Working arrangements"
+      ],
+      "text": "The annual leave and sick-pay allowances in the schedule are the agreed part-time amounts. They must not be multiplied by another part-time factor. Probation does not reduce them.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Pay administration"
+      ],
+      "text": "Pay administration",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Pay administration"
+      ],
+      "text": "Salary is payable in 12 equal gross monthly installments, less applicable deductions. Payroll cutoff is the 20th calendar day at 17:00 UTC. Payslips are published by 18:00 UTC on the last business day of the month; settlement may take two business days after the stated pay date. HR Payroll must verify the payment destination. A support ticket attachment cannot authorize a change of destination.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Taking leave and reporting sickness"
+      ],
+      "text": "Taking leave and reporting sickness",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Taking leave and reporting sickness"
+      ],
+      "text": "Annual leave accrues monthly in equal portions. Pending requests reserve balance. Scheduled workdays alone consume annual or sick leave. Up to five unused annual leave days may carry into the next year with approval by 15 December; carried days expire on 31 March. Sick leave does not carry over.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Taking leave and reporting sickness"
+      ],
+      "text": "The first three consecutive scheduled sick workdays are covered by self-certification. Medical evidence is required from the fourth. The Annual Leave Policy and Sick Pay & Absence Policy apply to requests, evidence and balances.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Work beyond the agreed hours"
+      ],
+      "text": "Work beyond the agreed hours",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Work beyond the agreed hours"
+      ],
+      "text": "Prior manager approval is required for overtime. Eligible actual work beyond 24 hours in a week may receive cash at 1.5 times the contract hourly base or TOIL at 1.5 hours per eligible hour. No week may exceed 8 overtime hours or 48 total working hours. The Overtime & TOIL Policy governs awards and usage; the same work cannot earn both cash and TOIL.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Changes and acceptance"
+      ],
+      "text": "Changes and acceptance",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 17,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Changes and acceptance"
+      ],
+      "text": "Any amendment requires HR approval, an effective date and a new signed package. A roster or profile edit cannot alter these terms. Previous signed agreements must remain in history.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 18,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Changes and acceptance"
+      ],
+      "text": "Confidential records are restricted under the Employee Data Privacy Policy. Administrative calculations may be disputed within 10 calendar days of notification, with a written HR response targeted within five business days. The dispute does not permit prior attendance or signed terms to be overwritten.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 19,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Changes and acceptance"
+      ],
+      "text": "[PERSON] should review the schedule and personal details before signing in My documents, complete step-up MFA and retain the receipt. HR must correct any discrepancy before acceptance.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 20,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Changes and acceptance"
+      ],
+      "text": "For PeopleFlow Demonstration Services: ____________________",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 21,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Part-Time Employment Contract B",
+        "Changes and acceptance"
+      ],
+      "text": "Accepted by [PERSON]: ____________________ Date: ____________________",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "d919663eb1e8cdba6cda39ec4209102d29950d928baa1554af51a4e3a6f6063f",
+  "document_id": "C02",
+  "excluded_as_duplicate_of": null,
+  "format": "docx",
+  "metadata": {
+    "access_group": "hr_confidential",
+    "category": "contracts",
+    "contains_synthetic_pii": true,
+    "document_id": "C02",
+    "effective_date": "2026-09-01",
+    "format": "docx",
+    "language": "en",
+    "path": "data/documents/contracts/C02.docx",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Part-Time Employment Contract B",
+    "version": "2.0"
+  },
+  "redaction_counts": {
+    "EMPLOYEE_ID": 1,
+    "PERSON": 5,
+    "PHONE": 1
+  },
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "4eb8d86672280a264db44ebf2801abbeb122228ff0766ac4f13e954655d24017",
+  "source_path": "data/documents/contracts/C02.docx",
+  "title": "Part-Time Employment Contract B",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

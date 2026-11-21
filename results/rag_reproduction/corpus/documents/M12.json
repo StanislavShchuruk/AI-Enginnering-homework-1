@@ -1,0 +1,354 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures"
+      ],
+      "text": "Employee Documents & E-Signatures",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Document workspace"
+      ],
+      "text": "Document workspace",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Document workspace"
+      ],
+      "text": "My documents separates employee uploads, assigned acknowledgements, and signature packages. Uploading a file does not mean HR has accepted it, and acknowledging a policy does not execute a contract amendment. Document status can be Uploaded, Under review, Accepted, Rejected, Awaiting signature, or Completed. A signature package must contain the approved terms before it is sent to the employee.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Upload and review"
+      ],
+      "text": "Upload and review",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Upload and review"
+      ],
+      "text": "Choose the correct document category before selecting a local file.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Upload and review"
+      ],
+      "text": "Upload PDF, DOCX, PNG, or JPEG up to 10 MB; password-protected files are rejected.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Upload and review"
+      ],
+      "text": "Confirm that the preview shows the intended pages and no unrelated material.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Upload and review"
+      ],
+      "text": "Submit for review and inspect the status after the upload scan finishes.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Upload and review"
+      ],
+      "text": "DOC-413 indicates a size limit, DOC-415 an unsupported type, and DOC-422 a protected or unreadable file. Scanning normally finishes within two minutes. Do not rename an executable to bypass a type restriction. HR may reject an incomplete upload with a reason; submit a new revision rather than overwriting a previously accepted file.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Sign an assigned package"
+      ],
+      "text": "Sign an assigned package",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Sign an assigned package"
+      ],
+      "text": "Open the package from My documents, read every page, and choose Continue to signature. Complete step-up MFA, confirm the displayed signer identity, and select Sign. The service records the package hash, timestamp in UTC, consent version, and signer display name. A completed receipt is available alongside the signed copy. Invitations expire after seven calendar days; HR must reissue an expired package rather than backdate a receipt.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "If the package is wrong"
+      ],
+      "text": "If the package is wrong",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "If the package is wrong"
+      ],
+      "text": "If the signer identity or terms are wrong, stop before signing and choose Request correction. A signature cannot be removed through self-service; HR issues a replacement package and preserves the previous audit trail. Managers can see completion status for assigned team acknowledgements but cannot browse identity uploads. The receipt shows who signed, which package was signed, and when. Keep it with the completed package so HR can trace a later replacement.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 17,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Completed signature receipt"
+      ],
+      "text": "Completed signature receipt",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 18,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Documents & E-Signatures",
+        "Completed signature receipt"
+      ],
+      "text": "[PERSON]; [EMAIL]; signed document SIG-2026-1012 on 2026-09-08 at 10:15 UTC.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "4d3ce9fef48ee1e2b971e771de7d8c0c4465a5f7d104ed172f1ec3a2ce74ce64",
+  "document_id": "M12",
+  "excluded_as_duplicate_of": null,
+  "format": "html",
+  "metadata": {
+    "access_group": "hr_confidential",
+    "category": "manuals",
+    "contains_synthetic_pii": true,
+    "document_id": "M12",
+    "effective_date": "2026-09-01",
+    "format": "html",
+    "language": "en",
+    "path": "data/documents/manuals/M12.html",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Employee Documents & E-Signatures",
+    "version": "2.0"
+  },
+  "redaction_counts": {
+    "EMAIL": 1,
+    "PERSON": 1
+  },
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "7dc80762ed8b771ba95c48429edf63e63142867be2c3ebf917cf91f7ec9992ec",
+  "source_path": "data/documents/manuals/M12.html",
+  "title": "Employee Documents & E-Signatures",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

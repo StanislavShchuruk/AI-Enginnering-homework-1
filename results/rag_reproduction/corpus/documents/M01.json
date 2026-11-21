@@ -1,0 +1,309 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide"
+      ],
+      "text": "Login & Password Reset Guide",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Access prerequisites"
+      ],
+      "text": "Access prerequisites",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Access prerequisites"
+      ],
+      "text": "PeopleFlow requires an active organization membership and a supported browser: the current or immediately previous major Chrome, Edge, or Firefox release. Open the organization login page from the approved workspace bookmark. Account activation links expire after 48 hours. A pending invitation does not create a usable account until activation is completed. Authentication is independent of leave entitlement and payroll permissions.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Sign in and MFA"
+      ],
+      "text": "Sign in and MFA",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Sign in and MFA"
+      ],
+      "text": "Select your organization, enter your work login, and choose Continue.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Sign in and MFA"
+      ],
+      "text": "Enter your password. Passwords require at least 14 characters and cannot match the previous five passwords.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Sign in and MFA"
+      ],
+      "text": "Enter the six-digit code from the enrolled authenticator. A code rotates every 30 seconds; set the device clock to automatic if codes are rejected.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Sign in and MFA"
+      ],
+      "text": "Confirm the workspace name on the landing page before opening HR records.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Sign in and MFA"
+      ],
+      "text": "Five failed password attempts within 15 minutes cause a 30-minute lockout. Additional attempts during the lockout do not shorten it. Sessions expire after 30 minutes of inactivity or 12 hours after sign-in, whichever comes first. Unsaved forms are not automatically submitted when a session expires.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Reset a password"
+      ],
+      "text": "Reset a password",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Reset a password"
+      ],
+      "text": "Choose Forgot password and submit the registered work login. The confirmation screen deliberately looks the same for known and unknown accounts. Reset links expire after 20 minutes and can be used once. Requesting another link invalidates previous unused links. After saving a new password, sign in again; the reset invalidates existing sessions but does not remove MFA enrollment.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Recovery boundaries"
+      ],
+      "text": "Recovery boundaries",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Login & Password Reset Guide",
+        "Recovery boundaries"
+      ],
+      "text": "Lost authenticator access requires identity verification by the HR administrator before enrollment is reset. Support cannot disclose a recovery code or accept an approval through an ordinary chat message. HTTP 401 means the session is unauthenticated; HTTP 403 means a valid session lacks permission. AUTH-423 identifies a temporary lockout, while AUTH-410 identifies an expired reset link. Follow Authentication Troubleshooting if authentication still fails after one fresh sign-in attempt.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "8a0948a125e3a313b86664d0427b4d79ca91e223c5959188b05f68104368801a",
+  "document_id": "M01",
+  "excluded_as_duplicate_of": null,
+  "format": "html",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "manuals",
+    "contains_synthetic_pii": false,
+    "document_id": "M01",
+    "effective_date": "2026-09-01",
+    "format": "html",
+    "language": "en",
+    "path": "data/documents/manuals/M01.html",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Login & Password Reset Guide",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "4d27426e9c1b903720b8ba17d7a121a04f279c65667d6b225fc97f7f0732e768",
+  "source_path": "data/documents/manuals/M01.html",
+  "title": "Login & Password Reset Guide",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

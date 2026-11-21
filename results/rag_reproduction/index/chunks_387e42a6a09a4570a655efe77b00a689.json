@@ -1,0 +1,9 @@
+{
+  "embedding_model": "bge-m3",
+  "vector_dimension": 1024,
+  "source_file": "C:\\Users\\schur\\Documents\\Codex\\2026-10-15\\ca\\outputs\\AI-Enginnering-homework-1\\results\\rag_reproduction.json\\corpus\\chunks.jsonl",
+  "source_sha256": "429649032efba26439e267c7da639daf1ef1dd29491d84224a8e0c1e9bdb15f7",
+  "chunk_count": 184,
+  "embedding_format": "title-section-text-v1",
+  "distance": "Cosine"
+}

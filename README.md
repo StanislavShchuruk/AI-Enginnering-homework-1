@@ -13,7 +13,94 @@ The files under `data/documents/` are presented as raw client-provided documents
 Technical IDs, access groups, PII flags and version relationships belong in
 `data/manifest.json`; the source documents carry only ordinary business metadata.
 Offline structured extraction is available; see [extraction documentation](docs/EXTRACTION.md).
-RAG retrieval and generation are not implemented.
+Local RAG retrieval, structured generation, and offline evaluation are implemented.
+See the [final PeopleFlow report](REPORT.md),
+[retrieval comparison](docs/RETRIEVAL_EVALUATION.md), and
+[hosted judge and human calibration](docs/RAG_JUDGE.md).
+
+## Reproduce PeopleFlow RAG (Task 10)
+
+Run from the repository root with Python 3.11+, the tracked synthetic corpus,
+Ollama installed and running on localhost:11434, and enough memory/disk for
+`bge-m3`, `qwen3:8b`, and the CPU reranker. Prepare the environment and models
+once (these setup commands download packages/models):
+
+```powershell
+py -3.11 -m venv .venv-rerank
+.\.venv-rerank\Scripts\python.exe -m pip install -e ".[dev,corpus,rerank]"
+ollama pull bge-m3
+ollama pull qwen3:8b
+.\.venv-rerank\Scripts\python.exe -c "from ai_project.reranking import CrossEncoderReranker; CrossEncoderReranker(local_files_only=False)"
+$env:OLLAMA_BASE_URL = 'http://localhost:11434'
+$env:OLLAMA_TEMPERATURE = '0'
+$env:OLLAMA_TOP_P = '1'
+$env:OLLAMA_TIMEOUT_SECONDS = '120'
+```
+
+Start the Ollama application (or `ollama serve` in another terminal) before running
+this **one command** on the configured machine:
+
+```powershell
+.\.venv-rerank\Scripts\python.exe -m ai_project reproduce-rag --output data/runs/task10-local-01
+```
+
+Use a new output directory for each run. This reuses `process_corpus`,
+`build_index`, and `evaluate_rag` sequentially: extraction, sanitization,
+deduplication and section chunking; bge-m3/Qdrant indexing; then 20 live
+qwen3:8b answers with hybrid + reranking, top five, `rag-v1`, and context budget
+3200. It needs no hosted credentials and reads local Ollama settings only from
+the process environment. The generation model is fixed by the existing baseline
+evaluator. Outputs under `data/runs/task10-local-01/` are:
+
+- `corpus/report.json`, `documents/`, `chunks.jsonl`, `chunking_manifest.json`,
+  and `chunking_comparison.json` (all beneath `corpus/`).
+- `index/`: persistent Qdrant collections and embedding metadata.
+- `rag.json` and `rag.md`: live answers, exact contexts, usage/timing and scores.
+
+Existing runs are preserved. Ingestion failures stop before indexing. Any invalid
+generation returns exit code 1 after saving the evaluation, including the known
+baseline schema failure if reproduced. Partial stage outputs remain available for
+diagnosis; this command does not resume. The live run measures **current retrieval
+and generation**; its results may differ from saved baseline answers.
+
+For credential-free offline verification (no Ollama or reranker installation needed):
+
+```powershell
+python -m pip install -e ".[dev,corpus]"
+python -m pytest -q
+python -m ai_project ci-rag
+```
+
+Pytest stores temporary run files in `tmp/pytest-current/`, which it clears before
+each run. Previous local run folders are kept in `tmp/pytest-history/`. Both paths
+are ignored by Git; test source files remain in `tests/`.
+
+`ci-rag` rebuilds canonical chunks offline from tracked sources, checks the saved
+baseline against corpus/test-set/prompt hashes and its exact original contexts,
+then recomputes current deterministic scores from raw responses and current labels.
+It ignores saved scores. The 20-case gates require at least 19 valid structures,
+16 expected-status matches (invalid responses count as status failures), and valid
+citation membership for every schema-valid response. Output includes counts,
+thresholds, failing IDs and separate lexical/source signals; exit code 1 means a
+gate or artifact check failed. Stale artifacts require rebuilding/reviewing labels
+and regenerating the baseline on a configured machine, rather than editing hashes.
+The GitHub workflow runs this replay and all tests on PRs and pushes to `main`,
+the current default branch. Tests cover retrieval and ACL01 with fake embeddings
+and rerankers. Replay checks scorer behavior on saved outputs; it does not measure
+current model/retrieval quality or establish semantic correctness.
+
+The optional hosted judge evaluates saved answers separately, after explicit
+approval for paid inference and configuration using [.env.example](.env.example):
+
+```powershell
+python -m ai_project eval-rag-judge --validate-only
+python -m ai_project eval-rag-judge --baseline results/rag_baseline.json --cases evals/rag_cases.json --human-labels evals/rag_human_labels.csv --output results/rag_judge_task10_local.json
+```
+
+The second command calls OpenRouter; use a new output name each time. See
+[judge setup and scoring](docs/RAG_JUDGE.md) for credentials, model selection,
+agreement denominators and limits. The [final report](REPORT.md) distinguishes
+local RAG, deterministic replay, semantic judging and human agreement.
 
 ## Quick Start
 
@@ -531,7 +618,7 @@ metadata, access options and the observed corpus smoke test.
 
 ## Homework 2 Task 5: provisional retrieval evaluation
 
-Review the 12 English/Ukrainian draft questions, expected chunk IDs and source
+Review the 12 English/Ukrainian questions, expected chunk IDs and source
 excerpts in [evals/retrieval_cases.json](evals/retrieval_cases.json), then run:
 
 ```powershell
@@ -596,8 +683,7 @@ on every claim, and citation labels use actual source metadata. See
 
 ## Homework 2 Task 9A: provisional RAG answer baseline
 
-The [draft 20-case suite](evals/rag_cases.json) labels required facts,
-qualifications, acceptable source chunks and answer statuses before generation.
+All [20-case suite](evals/rag_cases.json) were manually reviewed against the reference evidence. The saved baseline was generated while the case file was still marked draft. Ten generated answers were separately reviewed for judge calibration.
 It covers English/Ukrainian questions, partial and unavailable answers, similar
 contracts and historical-version traps. Review the
 [question/fact/source sheet](results/rag_case_review.md), then inspect the

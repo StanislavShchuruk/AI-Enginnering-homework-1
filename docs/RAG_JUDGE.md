@@ -88,8 +88,8 @@ human labels or treating agreement as objective accuracy.
 ## Offline checks
 
 ```powershell
-python -m pytest -q tests/test_rag_judge.py --basetemp=.pytest_tmp_task9b_check -p no:cacheprovider
-python -m pytest -q --basetemp=.pytest_tmp_task9b_all -p no:cacheprovider
+python -m pytest -q tests/test_rag_judge.py -p no:cacheprovider
+python -m pytest -q -p no:cacheprovider
 ```
 
 All judge responses in tests are mocked. No test makes a hosted API call.

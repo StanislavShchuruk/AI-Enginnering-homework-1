@@ -1,0 +1,309 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual"
+      ],
+      "text": "Clock-In / Clock-Out Manual",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Register actual time"
+      ],
+      "text": "Register actual time",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Register actual time"
+      ],
+      "text": "Clock-in and clock-out record actual attendance, not merely the published roster. Open My time > Clock and confirm the workplace timezone displayed above the controls. A shift may cross midnight; always inspect both the date and the time. PeopleFlow stores timestamps in UTC and presents them in the workplace timezone. A daylight-saving transition is calculated from elapsed UTC time, not by subtracting displayed local clock labels.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Daily procedure"
+      ],
+      "text": "Daily procedure",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Daily procedure"
+      ],
+      "text": "Select Clock in when work begins. Confirm that an open attendance session appears.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Daily procedure"
+      ],
+      "text": "Select Start break when an unpaid break begins, then End break on return.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Daily procedure"
+      ],
+      "text": "Select Clock out when work ends and review the closed attendance interval.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Daily procedure"
+      ],
+      "text": "Check the daily total after the next calculation cycle, which runs every five minutes.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Daily procedure"
+      ],
+      "text": "One open attendance session is allowed per employee. CLOCK-409 means an open session already exists or a repeated clock-out was attempted. It does not mean the first event failed. Refresh the timeline before retrying. CLOCK-422 means event ordering is invalid, such as a break end preceding its start. PeopleFlow does not manufacture a missing clock-out from a roster end time.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Breaks and missing events"
+      ],
+      "text": "Breaks and missing events",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Breaks and missing events"
+      ],
+      "text": "A 30-minute unpaid break is expected for shifts longer than six hours, but the system deducts recorded breaks only; it does not silently deduct an unrecorded break. A missing break generates a manager review flag. Worked time equals the closed interval minus recorded unpaid breaks. A 09:00-17:30 interval with a 30-minute unpaid break produces 8.00 hours.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Corrections and exceptions"
+      ],
+      "text": "Corrections and exceptions",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Clock-In / Clock-Out Manual",
+        "Corrections and exceptions"
+      ],
+      "text": "For current records, use Attendance Correction Guide v2 to submit a self-service correction request. Employees propose corrected values; approval still belongs to the manager. A terminal outage should be documented with the approximate event times and a workplace explanation. Do not enter another clock-in to close an earlier session. If the total remains zero after five minutes despite a closed interval, use Attendance Troubleshooting and include the attendance calculation status in the ticket.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "91e0d43e9def9f96d780fbcd445aebf0285675d2253f6943ce430ded87ed92e2",
+  "document_id": "M05",
+  "excluded_as_duplicate_of": null,
+  "format": "html",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "manuals",
+    "contains_synthetic_pii": false,
+    "document_id": "M05",
+    "effective_date": "2026-09-01",
+    "format": "html",
+    "language": "en",
+    "path": "data/documents/manuals/M05.html",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Clock-In / Clock-Out Manual",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "e295458116fb60feabc0e6b9bb580368681f528b46845df218bbe95a9eaa03bc",
+  "source_path": "data/documents/manuals/M05.html",
+  "title": "Clock-In / Clock-Out Manual",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

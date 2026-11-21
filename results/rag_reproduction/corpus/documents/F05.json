@@ -1,0 +1,398 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          51.259986877441406,
+          317.91998291015625,
+          81.55398559570312
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1"
+      ],
+      "text": "Leave Request Guide v1",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          90.88998413085938,
+          263.7089538574219,
+          108.79098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Historical scope and entitlement"
+      ],
+      "text": "Historical scope and entitlement",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          114.01248931884766,
+          523.479248046875,
+          157.43948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Historical scope and entitlement"
+      ],
+      "text": "This edition applied from 2026-03-01 through 2026-08-31. From 2026-09-01 use Leave Request Guide v2, including for new actions on existing requests. Annual entitlements in this edition were A: 25 days, B: 15 days, and C: 28 days.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          169.38998413085938,
+          187.87997436523438,
+          187.29098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Submit leave in v1.8"
+      ],
+      "text": "Submit leave in v1.8",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          192.51248168945312,
+          304.9424743652344,
+          206.93948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Submit leave in v1.8"
+      ],
+      "text": "Open My time > Leave and choose Annual leave.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          215.01248168945312,
+          420.7785949707031,
+          229.43948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Submit leave in v1.8"
+      ],
+      "text": "Enter the first and last absence dates and review the scheduled workdays.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          237.51248168945312,
+          503.67633056640625,
+          251.93948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Submit leave in v1.8"
+      ],
+      "text": "Select full days or half days, check the available accrued balance, and add a handover note.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          260.0124816894531,
+          486.71875,
+          288.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Submit leave in v1.8"
+      ],
+      "text": "Submit at least five calendar days before the first absence unless the manager records a shorter-notice exception.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          297.0124816894531,
+          522.292724609375,
+          354.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Submit leave in v1.8"
+      ],
+      "text": "Pending requests reserved balance. The manager could Approve or Reject and should respond within two business days. Approved requests consumed balance, while rejection released the reservation. Nonworking roster days and organization holidays were excluded. An overlap returned LEAVE-409. An invalid date range or unsupported fraction returned LEAVE-422.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          366.8899841308594,
+          268.7789611816406,
+          384.7909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Historical cancellation procedure"
+      ],
+      "text": "Historical cancellation procedure",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          390.0124816894531,
+          524.08837890625,
+          476.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Historical cancellation procedure"
+      ],
+      "text": "Employees had no self-service cancellation control. To cancel a pending or approved request, the employee contacted HR Support with the request reference, absence dates, and whether the entire request should be cancelled. HR checked whether leave had already started, reviewed any payroll impact, and recorded the cancellation. The employee then reopened the request to confirm Cancelled and checked the released balance. Sending the support message alone did not restore any days.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          488.8899841308594,
+          280.34893798828125,
+          506.7909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Historical exceptions and evidence"
+      ],
+      "text": "Historical exceptions and evidence",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          512.0125122070312,
+          529.3172607421875,
+          598.9395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Leave Request Guide v1",
+        "Historical exceptions and evidence"
+      ],
+      "text": "For started leave, HR reviewed actual attendance and any payroll export before deciding whether a retrospective correction was appropriate. Employees could not erase the original approved request. HR retained the support case reference with the cancellation event. If the original request was rejected rather than cancelled, the history remained Rejected and should not be relabeled to simplify a report. New actions from 2026-09-01 use Leave Request Guide v2, including self-service cancellation of unstarted leave, even when an old request was created under v1.8.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          57.599998474121094,
+          804.280029296875,
+          537.8400268554688,
+          815.2720336914062
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "PeopleFlow 1",
+      "type": "footer"
+    }
+  ],
+  "content_hash": "fcd4cf894b632ea79efa11d8802ff2ba01637f516635123ac62ecb3162a67d39",
+  "document_id": "F05",
+  "excluded_as_duplicate_of": null,
+  "format": "pdf",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "manuals",
+    "contains_synthetic_pii": false,
+    "document_id": "F05",
+    "effective_date": "2026-03-01",
+    "format": "pdf",
+    "language": "en",
+    "path": "data/documents/manuals/F05.pdf",
+    "status": "superseded",
+    "superseded_by": "F06",
+    "supersedes": null,
+    "title": "Leave Request Guide v1",
+    "version": "1.8"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "3cc003f38542a00c6bb29ed9f8462f06276276aa2469343326fbe662ca8f571c",
+  "source_path": "data/documents/manuals/F05.pdf",
+  "title": "Leave Request Guide v1",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+    "Source extraction warnings exist; inspect restricted inputs."
+  ]
+}

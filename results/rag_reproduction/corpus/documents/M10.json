@@ -1,0 +1,330 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide"
+      ],
+      "text": "Overtime & Time-Off-in-Lieu Guide",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "Separate permission from recorded time"
+      ],
+      "text": "Separate permission from recorded time",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "Separate permission from recorded time"
+      ],
+      "text": "An attendance total above contracted hours does not automatically create payable overtime or TOIL. Obtain manager approval before the extra work starts. Contract A and C use a 40-hour week; Contract B uses a 24-hour week. Approved extra hours beyond the individual's contracted weekly hours qualify under Overtime & TOIL Policy. The weekly window runs Monday 00:00 through Sunday 23:59 in the workplace timezone.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "Request extra work"
+      ],
+      "text": "Request extra work",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "Request extra work"
+      ],
+      "text": "Open My time > Overtime and select the planned date and estimated duration.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "Request extra work"
+      ],
+      "text": "Describe the business reason and choose Cash or TOIL as the requested compensation.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "Request extra work"
+      ],
+      "text": "Submit at least one business day before the work begins.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "Request extra work"
+      ],
+      "text": "After approval, clock actual time using Clock-In / Clock-Out Manual and link the closed attendance interval.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "5.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "Request extra work"
+      ],
+      "text": "Review the finalized eligible duration before payroll cutoff.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "Request extra work"
+      ],
+      "text": "Requests use 15-minute increments. Overtime is limited to 8 hours per week and total work must not exceed 48 hours in the same week. HR can decline an otherwise approved request if the final roster violates rest or total-hour controls. Unauthorized extra time remains visible as attendance but is flagged for review rather than silently deleted or automatically paid.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "TOIL calculation and use"
+      ],
+      "text": "TOIL calculation and use",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "TOIL calculation and use"
+      ],
+      "text": "Approved overtime converts at 1.5 hours of TOIL per eligible hour. Two approved hours therefore create 3.00 hours of TOIL. The balance cap is 40 hours. A request that would exceed the cap must be split or changed to cash before approval. TOIL expires 90 calendar days after the overtime work date and cannot be carried forward by submitting a draft absence.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "Reconciliation"
+      ],
+      "text": "Reconciliation",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 17,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & Time-Off-in-Lieu Guide",
+        "Reconciliation"
+      ],
+      "text": "To take TOIL, choose the TOIL absence type, enter hours in quarter-hour increments, and obtain manager approval. Approved usage deducts hours from the oldest unexpired credit first. Cash overtime uses 1.5 times the contract hourly base and rounds only the final currency line to two decimals. OT-422 identifies an invalid duration or limit; TOIL-410 identifies an expired credit. Corrections to the underlying attendance may require the overtime award to be recalculated, with the prior award retained in history.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "e70cae90d8caafc42ba11298d095b9c1579878d60699d1ec53d43de1a5502daa",
+  "document_id": "M10",
+  "excluded_as_duplicate_of": null,
+  "format": "html",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "manuals",
+    "contains_synthetic_pii": false,
+    "document_id": "M10",
+    "effective_date": "2026-09-01",
+    "format": "html",
+    "language": "en",
+    "path": "data/documents/manuals/M10.html",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Overtime & Time-Off-in-Lieu Guide",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "21cbb229406f36945a48034a62b75bbb168db265f807c3f510c922ef02429a8f",
+  "source_path": "data/documents/manuals/M10.html",
+  "title": "Overtime & Time-Off-in-Lieu Guide",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

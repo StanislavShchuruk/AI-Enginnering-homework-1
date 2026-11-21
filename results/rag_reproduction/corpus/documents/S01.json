@@ -1,0 +1,396 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket"
+      ],
+      "text": "How to Submit a Support Ticket",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket"
+      ],
+      "text": "IT Support | Updated 1 September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Start in the right channel"
+      ],
+      "text": "Start in the right channel",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Start in the right channel"
+      ],
+      "text": "Help > Submit ticket creates a PeopleFlow support record. Use a ticket for a reproducible application failure or an unexplained result after following the relevant manual. Leave approval, attendance approval, and payroll authorization remain separate business processes. Creating a ticket does not approve a request, stop a shift, or guarantee a payroll adjustment. An active data exposure should use the security incident route in Support Escalation & Security Incidents immediately.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 7,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Required information"
+      ],
+      "text": "Required information",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Required information"
+      ],
+      "text": "Select a category: Authentication, Absence, Attendance, Shifts, Payroll, Profile, or Technical.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Required information"
+      ],
+      "text": "Enter a short subject describing the affected action and visible result.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Required information"
+      ],
+      "text": "Describe expected behavior, actual behavior, and numbered reproduction steps.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Required information"
+      ],
+      "text": "Add the event time with timezone, application version, browser version, and exact error code.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "5.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Required information"
+      ],
+      "text": "Select impact and submit. Keep the assigned ticket reference for follow-up.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Required information"
+      ],
+      "text": "Priority is assessed by support under Support Priority & SLA Policy. Select High impact for an organization-wide outage, a payroll run blocked before cutoff, or suspected exposure of restricted data. A single delayed approval usually belongs in Medium or Low depending on its impact. Repeatedly submitting the same problem creates competing records and does not accelerate the response target.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Attachments and safe handling"
+      ],
+      "text": "Attachments and safe handling",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Attachments and safe handling"
+      ],
+      "text": "Up to three PDF, PNG, JPEG, or text attachments are allowed, each no larger than 5 MB. Remove unrelated screen content and use the secure attachment classification for confidential records. Never upload passwords, tokens, or authenticator recovery material. TICKET-413 identifies a size breach; TICKET-415 identifies an unsupported attachment. If submission fails, retain the error code and retry once after removing the failing attachment.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 17,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Keep the conversation in one ticket"
+      ],
+      "text": "Keep the conversation in one ticket",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 18,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Keep the conversation in one ticket"
+      ],
+      "text": "The ticket below reports that a closed attendance interval still shows zero after the five-minute calculation cycle. Useful additional evidence is the record reference and calculation status, rather than an entire payroll export. Replies should remain in the original ticket so the diagnosis and resolution form one history. Support can request missing information and pause the resolution investigation while awaiting it; first-response commitments remain as defined in Support Priority & SLA Policy.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 19,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Ticket HR-2026-3001"
+      ],
+      "text": "Ticket HR-2026-3001",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 20,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "How to Submit a Support Ticket",
+        "Ticket HR-2026-3001"
+      ],
+      "text": "Requester: [EMAIL]; [PHONE]; [EMPLOYEE_ID]. Subject: attendance total remains zero after clock-out. Ticket HR-2026-3001 contains no password or session token.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "0a7f259d4481a0d32c3ed21ec01bb0cda03c67a919524fd3de1a0f3b0cffa9ea",
+  "document_id": "S01",
+  "excluded_as_duplicate_of": null,
+  "format": "html",
+  "metadata": {
+    "access_group": "hr_confidential",
+    "category": "support",
+    "contains_synthetic_pii": true,
+    "document_id": "S01",
+    "effective_date": "2026-09-01",
+    "format": "html",
+    "language": "en",
+    "path": "data/documents/support/S01.html",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "How to Submit a Support Ticket",
+    "version": "2.0"
+  },
+  "redaction_counts": {
+    "EMAIL": 1,
+    "EMPLOYEE_ID": 1,
+    "PHONE": 1
+  },
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "e45a5f06e90415c01499d9565ac92585ca003edee9c2041774688992cd15d494",
+  "source_path": "data/documents/support/S01.html",
+  "title": "How to Submit a Support Ticket",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

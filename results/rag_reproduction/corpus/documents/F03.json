@@ -1,0 +1,287 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 2,
+        "line": 1,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8"
+      ],
+      "text": "PeopleFlow Release Notes v1.8",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": 3,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8"
+      ],
+      "text": "Released 2026-03-01. These notes cover the version used through 2026-08-31. PeopleFlow Release Notes v2.0 describe the changes introduced on 2026-09-01.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": 5,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8",
+        "Features available in v1.8"
+      ],
+      "text": "Features available in v1.8",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": 6,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8",
+        "Features available in v1.8"
+      ],
+      "text": "Employees could view their attendance timeline, submit annual leave requests, download published payslips, and upload employee documents. Managers could decide annual leave and overtime requests through the team dashboard. Session expiry was 30 minutes idle or 12 hours after login. Password lockout followed five failures in 15 minutes and lasted 30 minutes.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": 8,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8",
+        "Attendance in this release"
+      ],
+      "text": "Attendance in this release",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 7,
+        "line": 9,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8",
+        "Attendance in this release"
+      ],
+      "text": "Employees could not submit attendance correction requests. They sent the original times, proposed times, and reason to their manager. Managers directly adjusted unlocked records within 30 calendar days; older or locked periods required HR Payroll. Attendance Correction Guide v1 contains that historical procedure.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": 11,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8",
+        "Cancelling leave"
+      ],
+      "text": "Cancelling leave",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": 12,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8",
+        "Cancelling leave"
+      ],
+      "text": "Employees could submit leave themselves, but cancellation required contacting HR Support with the request reference and the requested action. HR recorded the cancellation and restored the balance. There was no employee Cancel leave control. Leave Request Guide v1 is the matching historical guide.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": 14,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8",
+        "Shift swaps"
+      ],
+      "text": "Shift swaps",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": 15,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8",
+        "Shift swaps"
+      ],
+      "text": "Swaps were manager-initiated. Employees asked the manager to arrange a trade; the manager checked both workers' agreement, team skills, rest, and hour limits, then reassigned both shifts. There was no employee Propose swap button or colleague acceptance timer. The resulting schedule still required 11 consecutive hours of rest.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": 17,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8",
+        "Upgrade boundary"
+      ],
+      "text": "Upgrade boundary",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": 18,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "PeopleFlow Release Notes v1.8",
+        "Upgrade boundary"
+      ],
+      "text": "The v2.0 cutover is 2026-09-01. New actions after cutover use current procedures even when they concern an earlier date, subject to payroll locks. Existing attendance events, leave balances, and published rosters are retained. PeopleFlow Release Notes v2.0 explains the new self-service requests, leave cancellation, and employee-initiated swap controls.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "1ef8719b9ee284070938f4dbddb0831c0f9ef138b41436502a459d36d8cea40e",
+  "document_id": "F03",
+  "excluded_as_duplicate_of": null,
+  "format": "markdown",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "release_notes",
+    "contains_synthetic_pii": false,
+    "document_id": "F03",
+    "effective_date": "2026-03-01",
+    "format": "markdown",
+    "language": "en",
+    "path": "data/documents/release_notes/F03.md",
+    "status": "superseded",
+    "superseded_by": "F04",
+    "supersedes": null,
+    "title": "PeopleFlow Release Notes v1.8",
+    "version": "1.8"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "82c7a9f7e57c1f06dfe429c001897c8c65102bf72237f76df087ee4aa744978f",
+  "source_path": "data/documents/release_notes/F03.md",
+  "title": "PeopleFlow Release Notes v1.8",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

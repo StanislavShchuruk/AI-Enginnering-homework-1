@@ -1,0 +1,330 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2"
+      ],
+      "text": "Attendance Correction Guide v2",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Current correction model"
+      ],
+      "text": "Current correction model",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Current correction model"
+      ],
+      "text": "This v2.0 procedure takes effect on 2026-09-01 and supersedes Attendance Correction Guide v1. Employees can submit correction requests for their own attendance; managers approve or reject them. Submission does not change the ledger. Use a correction for a missing event, an incorrect timestamp, or an incorrectly recorded break. Ordinary clock events remain governed by Clock-In / Clock-Out Manual.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Submit a correction"
+      ],
+      "text": "Submit a correction",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Submit a correction"
+      ],
+      "text": "Open My time > Attendance, select the workday, and choose Request correction.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Submit a correction"
+      ],
+      "text": "Review the original timeline and enter the complete proposed timeline, including unpaid breaks.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Submit a correction"
+      ],
+      "text": "Enter a reason of 20 to 500 characters explaining what happened.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Submit a correction"
+      ],
+      "text": "Review the proposed worked hours and select Submit request.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "5.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Submit a correction"
+      ],
+      "text": "Save the request reference and check the Pending approval status.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Submit a correction"
+      ],
+      "text": "Self-service is available within 14 calendar days of the affected workday while the payroll period is unlocked. At most one pending correction is allowed per workday. ATT-409 identifies a competing pending request. Withdraw the existing request before proposing a different timeline. Employees may withdraw pending requests but cannot approve their own requests. Manager decisions should be made within two business days.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Decision and recalculation"
+      ],
+      "text": "Decision and recalculation",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Decision and recalculation"
+      ],
+      "text": "Approval replaces the affected timeline and triggers recalculation within five minutes. Rejection leaves the existing ledger unchanged and requires a reason. An employee can open the decision history to compare the original and approved values. A proposed 09:00-17:30 day with a 30-minute unpaid break should produce 8.00 worked hours after approval. An approved request that still shows zero hours after five minutes should be escalated using Attendance Troubleshooting.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Outside the self-service window"
+      ],
+      "text": "Outside the self-service window",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 17,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v2",
+        "Outside the self-service window"
+      ],
+      "text": "ATT-LOCK means payroll has locked the period, even if the date falls within 14 days. ATT-422 means the proposed event sequence is invalid. Requests outside the window or in a locked period go to HR Payroll for a controlled adjustment; the employee must not alter a different workday as a workaround. A manager can review requests in Manager Approval Dashboard but cannot use the old Attendance Correction Guide v1 direct-edit procedure to bypass v2.0 controls. The original events, request, decision, and resulting ledger revision remain linked for audit.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "a89c16c56582ee411c7c1995d98e5737b8f94915705a8c02704671917dd6df7b",
+  "document_id": "M07",
+  "excluded_as_duplicate_of": null,
+  "format": "html",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "manuals",
+    "contains_synthetic_pii": false,
+    "document_id": "M07",
+    "effective_date": "2026-09-01",
+    "format": "html",
+    "language": "en",
+    "path": "data/documents/manuals/M07.html",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": "M06",
+    "title": "Attendance Correction Guide v2",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "ebfeef6b117b655b00e53a8d7f468fcb1fb08b2feef9c4bdf5c6f633000580b5",
+  "source_path": "data/documents/manuals/M07.html",
+  "title": "Attendance Correction Guide v2",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 2,
+        "line": 1,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ"
+      ],
+      "text": "Employee FAQ",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": 3,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "Which annual leave balance applies?"
+      ],
+      "text": "Which annual leave balance applies?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": 4,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "Which annual leave balance applies?"
+      ],
+      "text": "Contract A grants 25 days, B 15 days, and C 28 days per calendar year. Your available balance reflects monthly accrual and existing reservations. Contract B's entitlement is already part-time. Up to five approved carry-over days can be used until 31 March.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": 6,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "Can I cancel approved leave?"
+      ],
+      "text": "Can I cancel approved leave?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": 7,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "Can I cancel approved leave?"
+      ],
+      "text": "Yes. In v2.0, open the request and choose Cancel leave before its first scheduled shift starts. This releases the balance immediately and notifies the manager. After leave starts, ask HR for review.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 7,
+        "line": 9,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "How do I fix a missing punch?"
+      ],
+      "text": "How do I fix a missing punch?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": 10,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "How do I fix a missing punch?"
+      ],
+      "text": "Use My time > Attendance > Request correction within 14 calendar days while the payroll period is unlocked. Your manager must approve it. Recalculation runs within five minutes after approval. Locked or older records require HR Payroll review under Attendance Correction Guide v2.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": 12,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "Can I arrange a shift swap?"
+      ],
+      "text": "Can I arrange a shift swap?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": 13,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "Can I arrange a shift swap?"
+      ],
+      "text": "Employees initiate swaps in v2.0 at least 24 hours before the earlier shift begins. The colleague must accept within 12 hours, then the manager must approve. Until approval, follow the original roster. Both employees must meet the team, skill, rest and weekly-hour checks.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": 15,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "When can I see a payslip?"
+      ],
+      "text": "When can I see a payslip?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": 16,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "When can I see a payslip?"
+      ],
+      "text": "Published statements appear by 18:00 UTC on the last business day of the month. PAY-404 means no published statement exists. A missing allowance may reflect the cutoff on the 20th at 17:00 UTC.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": 18,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "Who sees profile and sickness details?"
+      ],
+      "text": "Who sees profile and sickness details?",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": 19,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee FAQ",
+        "Who sees profile and sickness details?"
+      ],
+      "text": "Managers see business contact information and absence dates. Home address history belongs to authorized HR access, while medical attachments are restricted to HR absence administrators. Never put a medical attachment into an ordinary team message.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "8cb2e1531a63618510a93924814d550ded07e09204e6a5bcc2f2bc1bf6f60299",
+  "document_id": "F01",
+  "excluded_as_duplicate_of": null,
+  "format": "markdown",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "faq",
+    "contains_synthetic_pii": false,
+    "document_id": "F01",
+    "effective_date": "2026-09-01",
+    "format": "markdown",
+    "language": "en",
+    "path": "data/documents/faq/F01.md",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Employee FAQ",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "b6df2f7e069e52725228b366ae2f81eea8bde8b432aa51a57d390bf254ebf3d2",
+  "source_path": "data/documents/faq/F01.md",
+  "title": "Employee FAQ",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

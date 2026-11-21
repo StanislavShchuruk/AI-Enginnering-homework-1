@@ -8,6 +8,8 @@ dist/
 .ruff_cache/
 .pytest_cache/
 .env
+.env.*
+!.env.example
 data/*
 !data/.gitkeep
 models/*

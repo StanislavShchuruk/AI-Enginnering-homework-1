@@ -1,0 +1,401 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          51.11998748779297,
+          405.095947265625,
+          84.16798400878906
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Data Privacy Policy"
+      ],
+      "text": "Employee Data Privacy Policy",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          85.01248931884766,
+          198.38848876953125,
+          99.43949127197266
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Data Privacy Policy"
+      ],
+      "text": "Policy owner: HR Operations",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          107.51248931884766,
+          193.1699676513672,
+          121.93949127197266
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Data Privacy Policy"
+      ],
+      "text": "Effective 1 September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          133.88998413085938,
+          283.2479553222656,
+          151.79098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Data Privacy Policy",
+        "Who may access employee records"
+      ],
+      "text": "Who may access employee records",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          157.01248168945312,
+          527.5742797851562,
+          214.93948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Data Privacy Policy",
+        "Who may access employee records"
+      ],
+      "text": "Employees can inspect their own profile, payslips, attendance, and signed packages. Managers can inspect team schedules, approval requests, and absence dates. HR absence administrators alone can inspect medical attachments. Payroll Operations can inspect payroll earnings and verified payment destinations. Each role must be limited to the fields needed for its assigned work.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          226.88998413085938,
+          228.32298278808594,
+          244.79098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Data Privacy Policy",
+        "Access approval and audit"
+      ],
+      "text": "Access approval and audit",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          250.01248168945312,
+          531.840087890625,
+          322.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Data Privacy Policy",
+        "Access approval and audit"
+      ],
+      "text": "Role requests require a business purpose and approval by the module owner. Access expires when a temporary assignment ends. HR reviews privileged roles quarterly on 15 January, 15 April, 15 July, and 15 October. The application records actor role, operation, record reference, timestamp in UTC, and decision outcome for sensitive changes. Audit logs must not contain passwords, reset links, MFA recovery secrets, or complete medical attachment text.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          334.3899841308594,
+          183.51199340820312,
+          352.2909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Data Privacy Policy",
+        "Retention schedule"
+      ],
+      "text": "Retention schedule",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          358.3708190917969,
+          543.8399658203125,
+          499.29998779296875
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": [
+        [
+          "Record class",
+          "Retention period",
+          "Trigger"
+        ],
+        [
+          "Profile history",
+          "24 months",
+          "Employment ends"
+        ],
+        [
+          "Payroll and signed contracts",
+          "7 years",
+          "Relevant calendar year ends"
+        ],
+        [
+          "Medical attachments",
+          "12 months",
+          "Absence episode closes"
+        ],
+        [
+          "Ordinary support attachments",
+          "90 days",
+          "Ticket closes"
+        ],
+        [
+          "Access audit events",
+          "24 months",
+          "Event recorded"
+        ]
+      ],
+      "section_path": [
+        "Employee Data Privacy Policy",
+        "Retention schedule"
+      ],
+      "text": "Record class\tRetention period\tTrigger\nProfile history\t24 months\tEmployment ends\nPayroll and signed contracts\t7 years\tRelevant calendar year ends\nMedical attachments\t12 months\tAbsence episode closes\nOrdinary support attachments\t90 days\tTicket closes\nAccess audit events\t24 months\tEvent recorded",
+      "type": "table"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          508.5124816894531,
+          528.1412353515625,
+          566.4395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Data Privacy Policy",
+        "Retention schedule"
+      ],
+      "text": "A documented investigation hold pauses deletion for the specific affected records only. The record owner reviews holds every 90 days. Backups expire on a rolling 35-day schedule; a deletion request does not rewrite every historical backup immediately. Restored data must be reconciled against the deletion ledger before normal access resumes.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          578.3900146484375,
+          209.52499389648438,
+          596.291015625
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Data Privacy Policy",
+        "Requests and incidents"
+      ],
+      "text": "Requests and incidents",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          601.5125122070312,
+          529.894775390625,
+          688.4395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Data Privacy Policy",
+        "Requests and incidents"
+      ],
+      "text": "An employee may request access or a correction through the secure Privacy request form. HR acknowledges within two business days and targets completion within 20 calendar days, subject to a documented investigation hold. Identity verification must precede disclosure. Wrong-recipient exports, exposed medical files, and unauthorized payroll views are security incidents under Support Escalation & Security Incidents. Do not attach the exposed information to another ordinary ticket. Preserve a restricted reference and ask the security response group to control further sharing.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          57.599998474121094,
+          804.280029296875,
+          537.8400268554688,
+          815.2720336914062
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "HR Operations 1",
+      "type": "footer"
+    }
+  ],
+  "content_hash": "cdbd9558339086a80ed2150cb2ca8e3632525f67ecee6658f95db7e91f3ade79",
+  "document_id": "C08",
+  "excluded_as_duplicate_of": null,
+  "format": "pdf",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "policies",
+    "contains_synthetic_pii": false,
+    "document_id": "C08",
+    "effective_date": "2026-09-01",
+    "format": "pdf",
+    "language": "en",
+    "path": "data/documents/policies/C08.pdf",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Employee Data Privacy Policy",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "d9ec6186b575b70b9f50d9fe60b1b596fea7be22b9a6cf4337b3bb260b330b92",
+  "source_path": "data/documents/policies/C08.pdf",
+  "title": "Employee Data Privacy Policy",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+    "Source extraction warnings exist; inspect restricted inputs."
+  ]
+}

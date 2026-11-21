@@ -1,0 +1,309 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide"
+      ],
+      "text": "Annual Leave Request Guide",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Choose the correct balance"
+      ],
+      "text": "Choose the correct balance",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Choose the correct balance"
+      ],
+      "text": "Use My time > Leave to request annual leave. The assigned contract determines the annual entitlement: A provides 25 days, B provides 15 days, and C provides 28 days. A displayed available balance subtracts approved future leave and pending reservations; it is not simply the annual entitlement. See Annual Leave Policy for accrual and carry-over rules.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Submit a request"
+      ],
+      "text": "Submit a request",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Submit a request"
+      ],
+      "text": "Select Annual leave, then choose the first and last absence dates.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Submit a request"
+      ],
+      "text": "Review the workday preview. Nonworking roster days and organization holidays are excluded.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Submit a request"
+      ],
+      "text": "Choose a full day or a half day where the roster permits it, then check the calculated deduction.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Submit a request"
+      ],
+      "text": "Add a handover note without medical details and select Submit.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Submit a request"
+      ],
+      "text": "Requests should be submitted at least five calendar days before the first day off. A shorter notice period requires a manager exception reason. Annual leave can be requested in half-day increments. A pending request reserves the requested balance until it is approved, rejected, withdrawn, or cancelled. LEAVE-422 indicates an invalid range or unsupported fraction. LEAVE-409 indicates overlap with another active absence.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Status and cancellation"
+      ],
+      "text": "Status and cancellation",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Status and cancellation"
+      ],
+      "text": "Draft has no approval effect. Pending waits for the assigned manager; Approved authorizes the absence; Rejected records a reason. From v2.0, employees may cancel their own pending or approved annual leave before its first scheduled shift begins. Open the request, choose Cancel leave, review the released days, and confirm. Cancellation is immediate, restores the reservation or deduction, and notifies the manager. A started absence requires HR review and cannot be cancelled through self-service.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Calendar timing"
+      ],
+      "text": "Calendar timing",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": null,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Annual Leave Request Guide",
+        "Calendar timing"
+      ],
+      "text": "The first-shift boundary uses the employee's assigned workplace timezone. A leave request beginning on a nonworking day uses the first included scheduled shift. Cancelling a request does not change an already submitted payroll export; HR must reconcile any affected export separately. Leave Request Guide v2 is the current detailed cancellation guide. Leave Request Guide v1 describes the superseded support-mediated procedure and must not be used for current requests.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "59b5563c2fe911a9d5743b31a24cd1599597bbee506e1010a462fe28489d6bd4",
+  "document_id": "M03",
+  "excluded_as_duplicate_of": null,
+  "format": "html",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "manuals",
+    "contains_synthetic_pii": false,
+    "document_id": "M03",
+    "effective_date": "2026-09-01",
+    "format": "html",
+    "language": "en",
+    "path": "data/documents/manuals/M03.html",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Annual Leave Request Guide",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "48ddf196d0755295817d969da7cef83afef9fc81a34577683a701ef5e3a68945",
+  "source_path": "data/documents/manuals/M03.html",
+  "title": "Annual Leave Request Guide",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

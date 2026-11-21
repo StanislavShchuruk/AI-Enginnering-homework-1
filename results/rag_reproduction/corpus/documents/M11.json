@@ -1,0 +1,501 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          51.259986877441406,
+          376.5499572753906,
+          81.55398559570312
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard"
+      ],
+      "text": "Manager Approval Dashboard",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          85.01248931884766,
+          244.9244842529297,
+          99.43949127197266
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard"
+      ],
+      "text": "Manager desk guide | September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          111.38998413085938,
+          236.98095703125,
+          129.29098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Establish decision authority"
+      ],
+      "text": "Establish decision authority",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          134.51248168945312,
+          531.6693115234375,
+          206.93948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Establish decision authority"
+      ],
+      "text": "Open Team > Approvals and check the active team and delegation dates. The dashboard combines annual leave, attendance corrections, overtime, TOIL usage, and accepted shift swaps. A notification count is a shortcut to pending work, not an authorization to view other teams. Managers cannot approve their own requests; those route to the next authorized manager or HR if no alternative is configured.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          218.88998413085938,
+          179.1959991455078,
+          236.79098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Process the queue"
+      ],
+      "text": "Process the queue",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          242.01248168945312,
+          362.965576171875,
+          256.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Process the queue"
+      ],
+      "text": "Filter by request type and sort by submission time, oldest first.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          264.5124816894531,
+          399.757568359375,
+          278.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Process the queue"
+      ],
+      "text": "Open the full record rather than deciding from the notification preview.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          287.0124816894531,
+          453.4547119140625,
+          301.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Process the queue"
+      ],
+      "text": "Compare the dates, balance impact, roster coverage, and any conflicting request.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          309.5124816894531,
+          450.5251770019531,
+          323.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Process the queue"
+      ],
+      "text": "Choose Approve or Reject. Rejection requires a reason of at least 20 characters.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          332.0124816894531,
+          408.525146484375,
+          346.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "5.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Process the queue"
+      ],
+      "text": "Confirm that the decision appears in history and the pending count falls.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          354.5124816894531,
+          515.877197265625,
+          426.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Process the queue"
+      ],
+      "text": "Target a decision within two business days. PeopleFlow sends a reminder after one business day and escalates an undecided request to HR after three business days. These are internal queue targets and do not replace the support response SLAs in Support Priority & SLA Policy. Bulk approval is available only for annual leave and requires opening the batch summary; attendance corrections and swaps require individual review.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          438.8899841308594,
+          194.3800048828125,
+          456.7909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Type-specific checks"
+      ],
+      "text": "Type-specific checks",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          462.0124816894531,
+          521.1271362304688,
+          548.9395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Type-specific checks"
+      ],
+      "text": "For annual leave, review coverage and contract balance under Annual Leave Policy. Current employees may cancel before leave starts without a new manager decision; the dashboard shows Cancelled afterward. For attendance, review original and proposed timelines before applying Attendance Correction Guide v2. Approval triggers recalculation within five minutes. For swaps, confirm colleague acceptance and inspect both replacement assignments, skill tags, weekly hours, and 11-hour rest intervals under Shift Schedule & Swap Guide.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          560.8900146484375,
+          262.2529296875,
+          578.791015625
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Concurrency and confidentiality"
+      ],
+      "text": "Concurrency and confidentiality",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          584.0125122070312,
+          523.5003051757812,
+          670.9395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Concurrency and confidentiality"
+      ],
+      "text": "APPROVAL-409 means someone else acted on the request after it was opened. Reload the record and read the saved decision before taking another action. A delegated manager may act only while the delegation is active. Managers can see absence dates and the evidence-complete indicator but not confidential medical attachments. A payroll lock discovered during attendance approval blocks ledger changes and routes the matter to HR Payroll. Do not clear the lock or reclassify a request merely to remove it from the queue.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          682.8900146484375,
+          206.63900756835938,
+          700.791015625
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Handover to a delegate"
+      ],
+      "text": "Handover to a delegate",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          706.0125122070312,
+          531.8403930664062,
+          763.9395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Manager Approval Dashboard",
+        "Handover to a delegate"
+      ],
+      "text": "Before going on leave, check that the delegate's team and active dates are correct. The delegate can act only during that period and does not gain access to medical attachments or payment destinations. If an action is missing, check the selected organization and role rather than using another person's session.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          57.599998474121094,
+          804.280029296875,
+          537.8400268554688,
+          815.2720336914062
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "PeopleFlow 1",
+      "type": "footer"
+    }
+  ],
+  "content_hash": "9c6676a36d49c5fad129efcc3c4be103efeebc687455f4038094a9d5b52edcb0",
+  "document_id": "M11",
+  "excluded_as_duplicate_of": null,
+  "format": "pdf",
+  "metadata": {
+    "access_group": "managers_hr",
+    "category": "manuals",
+    "contains_synthetic_pii": false,
+    "document_id": "M11",
+    "effective_date": "2026-09-01",
+    "format": "pdf",
+    "language": "en",
+    "path": "data/documents/manuals/M11.pdf",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Manager Approval Dashboard",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "e218c860835197c4b797f28438ab51bb864fb649e5fb72250b24ffc02df3cfd5",
+  "source_path": "data/documents/manuals/M11.pdf",
+  "title": "Manager Approval Dashboard",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+    "Source extraction warnings exist; inspect restricted inputs."
+  ]
+}

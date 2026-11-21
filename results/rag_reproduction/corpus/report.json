@@ -1,0 +1,506 @@
+{
+  "chunking": {
+    "chunk_count": 184,
+    "chunking_version": "1.0",
+    "chunks_file": "chunks.jsonl",
+    "document_count": 32,
+    "documents": [
+      {
+        "chunk_count": 8,
+        "content_hash": "158a124719c8cea1113e8be7c255175acd2a62c4ccc439307317a06faa6a03c1",
+        "document_id": "C01",
+        "source_hash": "9bf43d18b693233a193398048671bd2410ed59d8c9ff9c6de5608316c4adfa9a"
+      },
+      {
+        "chunk_count": 7,
+        "content_hash": "d919663eb1e8cdba6cda39ec4209102d29950d928baa1554af51a4e3a6f6063f",
+        "document_id": "C02",
+        "source_hash": "4eb8d86672280a264db44ebf2801abbeb122228ff0766ac4f13e954655d24017"
+      },
+      {
+        "chunk_count": 9,
+        "content_hash": "37c0eb066b0f80c1279642a0904e8408b6ddb92c37cffd5e82989218c6791156",
+        "document_id": "C03",
+        "source_hash": "0436d0d7163ebba2fbc8aaa83fe5741c74fd9d7fdecbf05b4362cfc94e21fbff"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "7f23bc9c6094aa6adbf52528634998c246a628f8ed72c614a08778cc6bcebce2",
+        "document_id": "C04",
+        "source_hash": "a37a037ef8a1179864752097f8c01624112af44dcd57bab72f5a238434fadd0f"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "6bdc069fef105b9253f03184c6012fefbef07af1bd9bb7743b98bd458d7f4f41",
+        "document_id": "C05",
+        "source_hash": "cac43cc819781a07d160abd7c2f7b267988435f4d563d60b39646e7311b202df"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "41a633da10b5ffa84da28e42e024cd7f67564bb88ff79f09f62819f4e43a10fb",
+        "document_id": "C06",
+        "source_hash": "48c7288f0b97cc60f39ae4d4095b9ee27a942f4c3fe012e5beecdbfaa1237642"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "baeac91d748a9cd700cdc702eae607cc6ed98329f02972b55d8fad61f9206dcf",
+        "document_id": "C07",
+        "source_hash": "a463840297f2c56afb4e87c8da591f8d14531a8475fb61076921152487bbe1dd"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "cdbd9558339086a80ed2150cb2ca8e3632525f67ecee6658f95db7e91f3ade79",
+        "document_id": "C08",
+        "source_hash": "d9ec6186b575b70b9f50d9fe60b1b596fea7be22b9a6cf4337b3bb260b330b92"
+      },
+      {
+        "chunk_count": 7,
+        "content_hash": "8cb2e1531a63618510a93924814d550ded07e09204e6a5bcc2f2bc1bf6f60299",
+        "document_id": "F01",
+        "source_hash": "b6df2f7e069e52725228b366ae2f81eea8bde8b432aa51a57d390bf254ebf3d2"
+      },
+      {
+        "chunk_count": 7,
+        "content_hash": "3bad8df7bb164d85568c65c2618d538096a7285a0a13d7576ec8eae63f40e1cf",
+        "document_id": "F02",
+        "source_hash": "db114e4bf869b95e4468b106d4accffade77dd17f6b31f492ed8c80be2002407"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "1ef8719b9ee284070938f4dbddb0831c0f9ef138b41436502a459d36d8cea40e",
+        "document_id": "F03",
+        "source_hash": "82c7a9f7e57c1f06dfe429c001897c8c65102bf72237f76df087ee4aa744978f"
+      },
+      {
+        "chunk_count": 4,
+        "content_hash": "704378eae7881054452e84e84f464aeb0c632584b5d12c8be934e634c9348dd9",
+        "document_id": "F04",
+        "source_hash": "044b8c6646c03c8fe343c16e688ffea3913cbca0b3ab717045203978c485665a"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "fcd4cf894b632ea79efa11d8802ff2ba01637f516635123ac62ecb3162a67d39",
+        "document_id": "F05",
+        "source_hash": "3cc003f38542a00c6bb29ed9f8462f06276276aa2469343326fbe662ca8f571c"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "774a04f28e2978263ee222559e37d5c64976d66a759954b2945e76633b401824",
+        "document_id": "F06",
+        "source_hash": "c509e930dc8c30181c341f653698c7910298b7ed0556f9abc59d10db3a72cddf"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "8a0948a125e3a313b86664d0427b4d79ca91e223c5959188b05f68104368801a",
+        "document_id": "M01",
+        "source_hash": "4d27426e9c1b903720b8ba17d7a121a04f279c65667d6b225fc97f7f0732e768"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "8194148a30a12c39f51ec5c75647a5f7de1be35a436c13175a8abe06d48d3818",
+        "document_id": "M02",
+        "source_hash": "c6ba37048adea3de24f9a145eefa55bff11a583ab0f64aba3c3f471e428fa85a"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "59b5563c2fe911a9d5743b31a24cd1599597bbee506e1010a462fe28489d6bd4",
+        "document_id": "M03",
+        "source_hash": "48ddf196d0755295817d969da7cef83afef9fc81a34577683a701ef5e3a68945"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "559ad21d7d249020f6660e7ec495fee853d4265d99855c40537a7c88ae22aeec",
+        "document_id": "M04",
+        "source_hash": "4cdb4641279fe49ff34cce91a733eadf3ae16dc548723a4771d96bd6564fa41e"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "91e0d43e9def9f96d780fbcd445aebf0285675d2253f6943ce430ded87ed92e2",
+        "document_id": "M05",
+        "source_hash": "e295458116fb60feabc0e6b9bb580368681f528b46845df218bbe95a9eaa03bc"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "f210b4dcd6873c9e2cf01635b89ff3d34ba6faf2faf218ae4b78a6e73c791ea3",
+        "document_id": "M06",
+        "source_hash": "1e81de92b02a491b16f2b664ef9a7b4f0a20b17433f0a1f79a39ddd3871f9a2f"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "a89c16c56582ee411c7c1995d98e5737b8f94915705a8c02704671917dd6df7b",
+        "document_id": "M07",
+        "source_hash": "ebfeef6b117b655b00e53a8d7f468fcb1fb08b2feef9c4bdf5c6f633000580b5"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "6dea5b7de53a4f5d3d69fc5c9d634df8ae45943d1cb6a6a9959ef80a35e55f7a",
+        "document_id": "M08",
+        "source_hash": "8b776cd9034dea17f59d4b765de0659fcd39f0f05eff4911383bf6eb4e1c008a"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "7759b79b295ce48a29ea04054f124b9a1db2662bba1ebcf221459b07fae050f2",
+        "document_id": "M09",
+        "source_hash": "3f4708974f50c908775f5c8589039630da53e2847033205bca8f5af727bb5871"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "e70cae90d8caafc42ba11298d095b9c1579878d60699d1ec53d43de1a5502daa",
+        "document_id": "M10",
+        "source_hash": "21cbb229406f36945a48034a62b75bbb168db265f807c3f510c922ef02429a8f"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "9c6676a36d49c5fad129efcc3c4be103efeebc687455f4038094a9d5b52edcb0",
+        "document_id": "M11",
+        "source_hash": "e218c860835197c4b797f28438ab51bb864fb649e5fb72250b24ffc02df3cfd5"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "4d3ce9fef48ee1e2b971e771de7d8c0c4465a5f7d104ed172f1ec3a2ce74ce64",
+        "document_id": "M12",
+        "source_hash": "7dc80762ed8b771ba95c48429edf63e63142867be2c3ebf917cf91f7ec9992ec"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "0a7f259d4481a0d32c3ed21ec01bb0cda03c67a919524fd3de1a0f3b0cffa9ea",
+        "document_id": "S01",
+        "source_hash": "e45a5f06e90415c01499d9565ac92585ca003edee9c2041774688992cd15d494"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "d215bd852ba787e6c3f883c73f00a83a29cce80ac3bd6effb438047b5a2f9b57",
+        "document_id": "S02",
+        "source_hash": "2b33b71212f93059899678f31271f225ceb8c5aba8d911b6718585ffedb0a868"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "3885587c82550b713cea46b8b4d64d431f990479c16263d76ae51c7bd2a96bb5",
+        "document_id": "S03",
+        "source_hash": "f2f92a2548464e5593164bcaead764c9b4cd89c97c9d27670ab9490cae0a0df9"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "02101d7b4b21aeac4cb5c9bf590f71d4667fc8bacfd2422f2d8f55527e803fde",
+        "document_id": "S04",
+        "source_hash": "d0730e3edc2b64d68c235b0a0f8f7c219439160a266e5e3e37e988090555196a"
+      },
+      {
+        "chunk_count": 6,
+        "content_hash": "4d66f53b247aaa1f960b82ce7f44b15dbe37cd9b0f34406153c4e93c7f7634b4",
+        "document_id": "S05",
+        "source_hash": "fdbbcc8c61b9cb39fbaae805f641e288198f876473c67fe64a33970d97d1ec9e"
+      },
+      {
+        "chunk_count": 5,
+        "content_hash": "9606ef1022dd5e8a4c8d0b245e433b06a73edfff34feb38074fe307a19f28d51",
+        "document_id": "S06",
+        "source_hash": "1dc9364d7880568f022d2d205c54236f276de832f1c5ef0c5b76b020fedce28f"
+      }
+    ],
+    "hash_types": {
+      "content_hash": "SHA-256 of normalized semantic content before redaction",
+      "source_hash": "SHA-256 of original source bytes"
+    },
+    "max_tokens": 600,
+    "target_tokens": 400,
+    "token_counter": "unicode-word-or-punctuation-v1"
+  },
+  "duplicate_groups": [],
+  "errors": [],
+  "excluded_documents": [],
+  "excluded_duplicate_documents": 0,
+  "included_documents": 32,
+  "limitations": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ],
+  "manifest_documents": 32,
+  "processing_version": "1.0",
+  "redaction_counts": {
+    "ADDRESS": 3,
+    "BANK_ACCOUNT": 3,
+    "BANK_ROUTING": 2,
+    "EMAIL": 4,
+    "EMPLOYEE_ID": 6,
+    "MEDICAL_INFO": 4,
+    "PERSON": 17,
+    "PHONE": 3
+  },
+  "sanitized_documents": 32,
+  "source_duplicate_groups": [],
+  "warnings": {
+    "C01": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "C02": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "C03": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+      "Source extraction warnings exist; inspect restricted inputs."
+    ],
+    "C04": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+      "Source extraction warnings exist; inspect restricted inputs."
+    ],
+    "C05": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "C06": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+      "Source extraction warnings exist; inspect restricted inputs."
+    ],
+    "C07": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "C08": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+      "Source extraction warnings exist; inspect restricted inputs."
+    ],
+    "F01": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "F02": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "F03": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "F04": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "F05": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+      "Source extraction warnings exist; inspect restricted inputs."
+    ],
+    "F06": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "M01": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "M02": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+      "Source extraction warnings exist; inspect restricted inputs."
+    ],
+    "M03": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "M04": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+      "Source extraction warnings exist; inspect restricted inputs."
+    ],
+    "M05": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "M06": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+      "Source extraction warnings exist; inspect restricted inputs."
+    ],
+    "M07": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "M08": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "M09": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+      "Source extraction warnings exist; inspect restricted inputs."
+    ],
+    "M10": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "M11": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+      "Source extraction warnings exist; inspect restricted inputs."
+    ],
+    "M12": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "S01": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "S02": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+      "Source extraction warnings exist; inspect restricted inputs."
+    ],
+    "S03": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "S04": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "S05": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ],
+    "S06": [
+      "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+      "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+      "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+      "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+      "Sanitization does not change access permissions; authorization is required downstream.",
+      "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+    ]
+  },
+  "withheld_documents": 0
+}

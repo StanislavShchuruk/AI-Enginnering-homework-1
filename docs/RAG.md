@@ -125,8 +125,8 @@ These two smoke observations are not a semantic accuracy evaluation.
 ## Offline verification
 
 ```powershell
-python -m pytest -q tests/test_rag.py tests/test_ollama.py -p no:cacheprovider --basetemp=.pytest_tmp_task8_target
-python -m pytest -q -p no:cacheprovider --basetemp=.pytest_tmp_task8_all
+python -m pytest -q tests/test_rag.py tests/test_ollama.py -p no:cacheprovider
+python -m pytest -q -p no:cacheprovider
 python -m ruff check src/ai_project/rag.py tests/test_rag.py src/ai_project/providers.py src/ai_project/config.py
 ```
 

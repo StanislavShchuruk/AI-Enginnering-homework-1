@@ -1,0 +1,454 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          51.259986877441406,
+          355.8039855957031,
+          81.55398559570312
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide"
+      ],
+      "text": "Sick Leave Reporting Guide",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          90.88998413085938,
+          239.13897705078125,
+          108.79098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Report an absence promptly"
+      ],
+      "text": "Report an absence promptly",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          114.01248931884766,
+          531.8402709960938,
+          186.43948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Report an absence promptly"
+      ],
+      "text": "Use My time > Absence > Report sickness before the scheduled shift starts whenever reasonably possible. If illness prevents portal access, notify the manager through the established absence channel and ask HR to record the report. A notification is not a requirement to disclose a diagnosis to a manager. The portal accepts an initial open-ended report; add an expected return date when it becomes known.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          198.38998413085938,
+          174.84100341796875,
+          216.29098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Record the period"
+      ],
+      "text": "Record the period",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          221.51248168945312,
+          457.51812744140625,
+          235.93948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Record the period"
+      ],
+      "text": "Select the first missed scheduled workday and the expected final missed workday.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          244.01248168945312,
+          511.2467346191406,
+          258.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Record the period"
+      ],
+      "text": "Choose Sickness as the absence type and indicate whether the report is new or an extension.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          266.5124816894531,
+          428.9371032714844,
+          280.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Record the period"
+      ],
+      "text": "Upload evidence only in the confidential medical attachment field if required.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          289.0124816894531,
+          452.898193359375,
+          303.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Record the period"
+      ],
+      "text": "Submit, then check that the absence status reads Reported or Evidence pending.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          311.5124816894531,
+          531.8402709960938,
+          369.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Record the period"
+      ],
+      "text": "The paid sick allowances are 10 days for Contract A, 5 for B, and 12 for C per calendar year. Nonworking roster days do not consume the balance. Paid sick days do not carry over. A report does not guarantee payment; HR checks eligibility and the available balance under Sick Pay & Absence Policy. Do not request annual leave merely because a sick balance is exhausted.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          381.3899841308594,
+          221.08197021484375,
+          399.2909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Evidence and notification"
+      ],
+      "text": "Evidence and notification",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          404.5124816894531,
+          531.0707397460938,
+          476.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Evidence and notification"
+      ],
+      "text": "Self-certification covers up to three consecutive scheduled workdays in one sickness episode. Evidence is required from the fourth scheduled workday and should be uploaded within two business days of that threshold. Consecutive episodes separated only by nonworking days count as one episode. Managers receive the absence dates and coverage impact, while medical attachments remain restricted to HR absence administrators.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          488.8899841308594,
+          172.6699981689453,
+          506.7909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "On return to work"
+      ],
+      "text": "On return to work",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          512.0125122070312,
+          529.92626953125,
+          584.4395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "On return to work"
+      ],
+      "text": "Select Confirm return on the first day back and review the charged scheduled days. If the expected end date changed, update it before confirming. ABS-413 means an attachment exceeds 10 MB; ABS-415 means the file is not PDF, PNG, or JPEG. Replace an unreadable file rather than adding repeated copies. Keep the clinical note in the confidential attachment field; the absence timeline only needs the dates and evidence status.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          596.3900146484375,
+          181.3669891357422,
+          614.291015625
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Absence case note"
+      ],
+      "text": "Absence case note",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          619.5125122070312,
+          508.2647399902344,
+          648.4395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Sick Leave Reporting Guide",
+        "Absence case note"
+      ],
+      "text": "[PERSON], employee [EMPLOYEE_ID], reported [MEDICAL_INFO]. [MEDICAL_INFO].",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          57.599998474121094,
+          804.280029296875,
+          537.8400268554688,
+          815.2720336914062
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "PeopleFlow 1",
+      "type": "footer"
+    }
+  ],
+  "content_hash": "559ad21d7d249020f6660e7ec495fee853d4265d99855c40537a7c88ae22aeec",
+  "document_id": "M04",
+  "excluded_as_duplicate_of": null,
+  "format": "pdf",
+  "metadata": {
+    "access_group": "hr_confidential",
+    "category": "manuals",
+    "contains_synthetic_pii": true,
+    "document_id": "M04",
+    "effective_date": "2026-09-01",
+    "format": "pdf",
+    "language": "en",
+    "path": "data/documents/manuals/M04.pdf",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Sick Leave Reporting Guide",
+    "version": "2.0"
+  },
+  "redaction_counts": {
+    "EMPLOYEE_ID": 1,
+    "MEDICAL_INFO": 2,
+    "PERSON": 1
+  },
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "4cdb4641279fe49ff34cce91a733eadf3ae16dc548723a4771d96bd6564fa41e",
+  "source_path": "data/documents/manuals/M04.pdf",
+  "title": "Sick Leave Reporting Guide",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+    "Source extraction warnings exist; inspect restricted inputs."
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          51.11998748779297,
+          330.3600158691406,
+          84.16798400878906
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & TOIL Policy"
+      ],
+      "text": "Overtime & TOIL Policy",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          85.01248931884766,
+          198.38848876953125,
+          99.43949127197266
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & TOIL Policy"
+      ],
+      "text": "Policy owner: HR Operations",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          107.51248931884766,
+          193.1699676513672,
+          121.93949127197266
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & TOIL Policy"
+      ],
+      "text": "Effective 1 September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          133.88998413085938,
+          190.739990234375,
+          151.79098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & TOIL Policy",
+        "Compensation basis"
+      ],
+      "text": "Compensation basis",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          157.01248168945312,
+          520.5496826171875,
+          229.43948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & TOIL Policy",
+        "Compensation basis"
+      ],
+      "text": "This policy governs payment and time off for approved additional work. Contract A and C have 40 contracted hours each week; B has 24. Eligible overtime is manager-approved actual work beyond the individual's contracted weekly hours, measured Monday through Sunday in the assigned workplace timezone. Absence hours, unused roster hours, and unworked planned overtime do not count as actual worked hours.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          241.38998413085938,
+          157.51199340820312,
+          259.2909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & TOIL Policy",
+        "Approval limits"
+      ],
+      "text": "Approval limits",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          264.5124816894531,
+          530.4722900390625,
+          351.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & TOIL Policy",
+        "Approval limits"
+      ],
+      "text": "Submit planned overtime at least one business day before work starts. Managers approve the purpose, maximum eligible duration, and Cash or TOIL compensation choice. Duration uses 15-minute increments. The weekly overtime ceiling is 8 hours and the total-work ceiling is 48 hours. Both controls apply; permission for 8 overtime hours never authorizes exceeding 48 total hours. Shift arrangements must also preserve 11 consecutive hours of rest. Emergencies require a documented HR exception review, not deletion of actual attendance.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          363.3899841308594,
+          220.34097290039062,
+          381.2909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & TOIL Policy",
+        "Calculation and rounding"
+      ],
+      "text": "Calculation and rounding",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          386.5124816894531,
+          525.7892456054688,
+          458.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & TOIL Policy",
+        "Calculation and rounding"
+      ],
+      "text": "Cash overtime pays 1.5 times the contract hourly base. Derive an hourly base from annual salary divided by 52 and then by contracted weekly hours; keep intermediate precision and round the final earnings line to two currency decimals. TOIL awards 1.5 hours per approved overtime hour and keeps balances in quarter-hour increments. Two eligible overtime hours generate three TOIL hours. The same work cannot produce both cash and TOIL.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          470.8899841308594,
+          215.29696655273438,
+          488.7909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & TOIL Policy",
+        "Credits and adjustments"
+      ],
+      "text": "Credits and adjustments",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          494.0124816894531,
+          529.3277587890625,
+          580.9395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Overtime & TOIL Policy",
+        "Credits and adjustments"
+      ],
+      "text": "TOIL is capped at 40 hours and expires 90 calendar days after the overtime work date. Managers must split an award or change the compensation choice before approving a credit that would exceed the cap. Approved TOIL absence consumes the oldest unexpired credit first. Expiry does not automatically create a cash payment. Payroll cutoff is the 20th calendar day at 17:00 UTC. A later attendance correction requires a linked overtime recalculation, with the old award and any balancing entry retained in audit history.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          57.599998474121094,
+          804.280029296875,
+          537.8400268554688,
+          815.2720336914062
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "HR Operations 1",
+      "type": "footer"
+    }
+  ],
+  "content_hash": "41a633da10b5ffa84da28e42e024cd7f67564bb88ff79f09f62819f4e43a10fb",
+  "document_id": "C06",
+  "excluded_as_duplicate_of": null,
+  "format": "pdf",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "policies",
+    "contains_synthetic_pii": false,
+    "document_id": "C06",
+    "effective_date": "2026-09-01",
+    "format": "pdf",
+    "language": "en",
+    "path": "data/documents/policies/C06.pdf",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Overtime & TOIL Policy",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "48c7288f0b97cc60f39ae4d4095b9ee27a942f4c3fe012e5beecdbfaa1237642",
+  "source_path": "data/documents/policies/C06.pdf",
+  "title": "Overtime & TOIL Policy",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+    "Source extraction warnings exist; inspect restricted inputs."
+  ]
+}

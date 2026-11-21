@@ -199,8 +199,8 @@ The saved case and prompt hashes were checked against the files after completion
 ## Offline checks
 
 ```powershell
-python -m pytest -q tests/test_rag_evaluation.py tests/test_rag.py -p no:cacheprovider --basetemp=.pytest_tmp_task9a_target
-python -m pytest -q -p no:cacheprovider --basetemp=.pytest_tmp_task9a_all
+python -m pytest -q tests/test_rag_evaluation.py tests/test_rag.py -p no:cacheprovider
+python -m pytest -q -p no:cacheprovider
 python -m ruff check src/ai_project/rag_evaluation.py src/ai_project/rag.py tests/test_rag_evaluation.py
 ```
 

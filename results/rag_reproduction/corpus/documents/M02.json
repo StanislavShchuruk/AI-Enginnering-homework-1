@@ -1,0 +1,480 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          51.259986877441406,
+          382.68798828125,
+          81.55398559570312
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management"
+      ],
+      "text": "Employee Profile Management",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          85.01248931884766,
+          268.8330078125,
+          99.43949127197266
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management"
+      ],
+      "text": "HR Operations | Revised 1 September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          111.38998413085938,
+          172.68299865722656,
+          129.29098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Profile ownership"
+      ],
+      "text": "Profile ownership",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          134.51248168945312,
+          520.560302734375,
+          206.93948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Profile ownership"
+      ],
+      "text": "The Profile module stores contact details separately from employment terms. Employees can edit their preferred display name, personal contact number, and home address. Legal name, employee identifier, and assigned contract require HR review. Changing an address does not change payroll residency rules automatically. Payroll Operations must confirm any tax configuration change separately before the next payroll cutoff.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          218.88998413085938,
+          232.61297607421875,
+          236.79098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Update contact information"
+      ],
+      "text": "Update contact information",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          242.01248168945312,
+          332.3475036621094,
+          256.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Update contact information"
+      ],
+      "text": "Open My profile > Personal information and select Edit.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          264.5124816894531,
+          456.4051818847656,
+          278.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Update contact information"
+      ],
+      "text": "Enter the new contact details and choose the date the address becomes effective.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          287.0124816894531,
+          368.2575988769531,
+          301.4394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Update contact information"
+      ],
+      "text": "Review the old and proposed values on the confirmation panel.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          309.5124816894531,
+          440.0356140136719,
+          323.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Update contact information"
+      ],
+      "text": "Select Submit change and reopen Change history to verify the recorded result.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          332.0124816894531,
+          528.1096801757812,
+          389.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Update contact information"
+      ],
+      "text": "Contact edits save immediately except legal-name and primary-login changes, which enter Pending HR review. Review normally completes within two business days. The primary work login cannot be replaced with a personal address through self-service. A verified recovery address can receive reset messages only after HR enables that feature for the organization.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          401.8899841308594,
+          201.594970703125,
+          419.7909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Validation and privacy"
+      ],
+      "text": "Validation and privacy",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          425.0124816894531,
+          531.8402709960938,
+          482.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Validation and privacy"
+      ],
+      "text": "An address requires street, city, country, and postal code where the selected country uses one. Phone input accepts a leading plus sign and 7 to 15 digits; spaces and hyphens are removed for validation. PROFILE-422 means a required value failed validation. PROFILE-409 means another edit was saved after the form opened; reload and compare values before resubmitting.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          494.8899841308594,
+          275.96795654296875,
+          512.791015625
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "A change taking effect next month"
+      ],
+      "text": "A change taking effect next month",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          518.0125122070312,
+          517.6202392578125,
+          590.4395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "A change taking effect next month"
+      ],
+      "text": "When a move is scheduled for 2026-10-01, enter that effective date rather than replacing the historical address for September. Managers see the business contact view and cannot browse a home address through the team directory. HR can view the historical address chain for authorized administration. If an address appears in an unrelated screen, report the exposure under Support Escalation & Security Incidents and do not copy it into an ordinary support description.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          602.3900146484375,
+          333.0639343261719,
+          620.291015625
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Contact record awaiting an address change"
+      ],
+      "text": "Contact record awaiting an address change",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          625.5125122070312,
+          525.1067504882812,
+          654.4395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Employee Profile Management",
+        "Contact record awaiting an address change"
+      ],
+      "text": "[PERSON]; [EMAIL]; [PHONE]; [ADDRESS].",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          57.599998474121094,
+          804.280029296875,
+          537.8400268554688,
+          815.2720336914062
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "PeopleFlow 1",
+      "type": "footer"
+    }
+  ],
+  "content_hash": "8194148a30a12c39f51ec5c75647a5f7de1be35a436c13175a8abe06d48d3818",
+  "document_id": "M02",
+  "excluded_as_duplicate_of": null,
+  "format": "pdf",
+  "metadata": {
+    "access_group": "hr_confidential",
+    "category": "manuals",
+    "contains_synthetic_pii": true,
+    "document_id": "M02",
+    "effective_date": "2026-09-01",
+    "format": "pdf",
+    "language": "en",
+    "path": "data/documents/manuals/M02.pdf",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Employee Profile Management",
+    "version": "2.0"
+  },
+  "redaction_counts": {
+    "ADDRESS": 1,
+    "EMAIL": 1,
+    "PERSON": 1,
+    "PHONE": 1
+  },
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "c6ba37048adea3de24f9a145eefa55bff11a583ab0f64aba3c3f471e428fa85a",
+  "source_path": "data/documents/manuals/M02.pdf",
+  "title": "Employee Profile Management",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+    "Source extraction warnings exist; inspect restricted inputs."
+  ]
+}

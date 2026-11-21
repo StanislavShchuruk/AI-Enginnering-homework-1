@@ -1,0 +1,371 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 2,
+        "line": 1,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting"
+      ],
+      "text": "Attendance Troubleshooting",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": 3,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting"
+      ],
+      "text": "IT Support | Updated 1 September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": 5,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Zero hours after a shift"
+      ],
+      "text": "Zero hours after a shift",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": 6,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Zero hours after a shift"
+      ],
+      "text": "PeopleFlow calculates closed intervals every five minutes. An open session may show zero worked hours until clock-out closes the interval. Check the timeline rather than repeatedly pressing Clock out. A 09:00-17:30 interval with a 30-minute unpaid break should total 8.00 hours. Calculation uses UTC elapsed time, which can differ from local label subtraction during daylight-saving changes.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": 8,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Diagnostic sequence"
+      ],
+      "text": "Diagnostic sequence",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": 9,
+        "page": null,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Diagnostic sequence"
+      ],
+      "text": "Check the workplace timezone and both dates for overnight shifts.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": 10,
+        "page": null,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Diagnostic sequence"
+      ],
+      "text": "Confirm that clock-in, any break events, and clock-out appear in sequence.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": 11,
+        "page": null,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Diagnostic sequence"
+      ],
+      "text": "Wait one complete five-minute calculation cycle after the latest accepted event.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": 12,
+        "page": null,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Diagnostic sequence"
+      ],
+      "text": "Refresh once and inspect the calculation status.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": 13,
+        "page": null,
+        "part": null
+      },
+      "marker": "5.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Diagnostic sequence"
+      ],
+      "text": "If a closed valid interval remains zero, report its record reference and status to support.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": 15,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Missing and duplicate events"
+      ],
+      "text": "Missing and duplicate events",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": 16,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Missing and duplicate events"
+      ],
+      "text": "CLOCK-409 indicates an open session already exists or an already closed interval received another clock-out. Inspect the saved timeline before retrying; a duplicate rejection does not imply the original event was lost. CLOCK-422 indicates invalid ordering. PeopleFlow never invents a missing clock-out from the published shift end. Use Attendance Correction Guide v2 to request the missing event with an accurate reason and a complete proposed timeline.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": 18,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Correction controls"
+      ],
+      "text": "Correction controls",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": 19,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Correction controls"
+      ],
+      "text": "Since 2026-09-01, employees can submit their own attendance correction requests within 14 calendar days of the workday if payroll is unlocked. Approval remains with the manager and triggers recalculation within five minutes. ATT-409 means a pending correction already exists; withdraw it before submitting a replacement. ATT-LOCK routes to HR Payroll. A request outside the window also requires HR Payroll review. Attendance Correction Guide v1's direct manager-edit procedure is historical and must not be used to bypass these controls.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 17,
+        "line": 21,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Investigation evidence"
+      ],
+      "text": "Investigation evidence",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 18,
+        "line": 22,
+        "page": null,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Troubleshooting",
+        "Investigation evidence"
+      ],
+      "text": "Provide the affected date, timezone, visible event sequence, latest calculation state, correction request status, and exact error code. Do not attach unrelated team attendance or a full payroll statement. If approval succeeded but recalculation failed, support investigates the linked calculation job while HR retains the approved request. Do not edit another workday to compensate, and do not approve an overtime award against a known incorrect total.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "02101d7b4b21aeac4cb5c9bf590f71d4667fc8bacfd2422f2d8f55527e803fde",
+  "document_id": "S04",
+  "excluded_as_duplicate_of": null,
+  "format": "markdown",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "support",
+    "contains_synthetic_pii": false,
+    "document_id": "S04",
+    "effective_date": "2026-09-01",
+    "format": "markdown",
+    "language": "en",
+    "path": "data/documents/support/S04.md",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Attendance Troubleshooting",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "d0730e3edc2b64d68c235b0a0f8f7c219439160a266e5e3e37e988090555196a",
+  "source_path": "data/documents/support/S04.md",
+  "title": "Attendance Troubleshooting",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

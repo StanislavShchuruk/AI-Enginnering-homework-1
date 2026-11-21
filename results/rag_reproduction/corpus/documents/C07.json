@@ -1,0 +1,430 @@
+{
+  "blocks": [
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 0,
+        "line": null,
+        "page": null,
+        "part": "section0/footer"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "HR Operations |",
+      "type": "footer"
+    },
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 0,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes"
+      ],
+      "text": "Probation & Contract Changes",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 1,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes"
+      ],
+      "text": "Policy owner: HR Operations",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 2,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes"
+      ],
+      "text": "Effective 1 September 2026",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 3,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Probation reviews"
+      ],
+      "text": "Probation reviews",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 4,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Probation reviews"
+      ],
+      "text": "HR must keep the contract assignment and the signed terms aligned. A new contract normally includes a three-calendar-month probation period. HR sets the start date, review date, manager, and contract type before activation. Probation does not reduce the leave or sick-pay entitlement stated in the assigned contract. Managers should schedule a midpoint discussion after six weeks and a final review at least 10 calendar days before the probation end date.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 5,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Record the outcome"
+      ],
+      "text": "Record the outcome",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 6,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Record the outcome"
+      ],
+      "text": "Open HR administration > Contracts and select the active assignment.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 7,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Record the outcome"
+      ],
+      "text": "Record the review outcome and attach the reviewed decision document.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 8,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Record the outcome"
+      ],
+      "text": "Obtain HR approval before changing probation dates or contract terms.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": null,
+        "element": 9,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Record the outcome"
+      ],
+      "text": "Notify the employee through My documents and retain the acknowledgement or signature receipt.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 10,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Record the outcome"
+      ],
+      "text": "An extension is limited to one additional calendar month under this policy and requires a recorded reason before the original end date. If no decision is recorded, the system raises a review alert; it does not automatically dismiss the employee or create a signed extension. HR must resolve the record explicitly.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 11,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Amendments and effective dates"
+      ],
+      "text": "Amendments and effective dates",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 12,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Amendments and effective dates"
+      ],
+      "text": "Changes to weekly hours, salary, contract type, or entitlement require a new effective-dated amendment. Never overwrite the old signed terms. The new assignment takes effect at 00:00 in the workplace timezone on the approved date. Salary changes starting midmonth use calendar-day proration: old monthly salary multiplied by old-term calendar days divided by month length, plus the equivalent new-term amount. Round only the final monthly base-pay line to two decimals.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 13,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Downstream controls"
+      ],
+      "text": "Downstream controls",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 14,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Downstream controls"
+      ],
+      "text": "HR previews leave accrual, weekly overtime thresholds, and future roster compatibility before activating an amendment. Contract B entitlements are already part-time amounts and must not be prorated a second time. If the amendment is approved after the payroll cutoff on the 20th at 17:00 UTC, Payroll Operations records a separately identified adjustment in the next run. A rejected signature package leaves the existing contract active. Employee Documents & E-Signatures governs reissuing a corrected package and preserving the previous audit evidence.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 15,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Approval record"
+      ],
+      "text": "Approval record",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 16,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Approval record"
+      ],
+      "text": "Before completing a change, check the effective dates, the approver's authority and the applicable contract version. Store the decision and reason in the restricted employee record. HR Operations reviews a sample of completed changes each month against the approval trail. Incorrect rule assignments are corrected prospectively; any retrospective adjustment is documented separately.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": null,
+        "element": 17,
+        "line": null,
+        "page": null,
+        "part": "body"
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Probation & Contract Changes",
+        "Approval record"
+      ],
+      "text": "Policy changes require an authorized approver, an effective date and a published replacement. HR Operations reviews the policy annually. Administrative disputes should be raised within 10 calendar days of notification; HR targets a written response within five business days and retains the original evidence during review.",
+      "type": "paragraph"
+    }
+  ],
+  "content_hash": "baeac91d748a9cd700cdc702eae607cc6ed98329f02972b55d8fad61f9206dcf",
+  "document_id": "C07",
+  "excluded_as_duplicate_of": null,
+  "format": "docx",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "policies",
+    "contains_synthetic_pii": false,
+    "document_id": "C07",
+    "effective_date": "2026-09-01",
+    "format": "docx",
+    "language": "en",
+    "path": "data/documents/policies/C07.docx",
+    "status": "active",
+    "superseded_by": null,
+    "supersedes": null,
+    "title": "Probation & Contract Changes",
+    "version": "2.0"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "a463840297f2c56afb4e87c8da591f8d14531a8475fb61076921152487bbe1dd",
+  "source_path": "data/documents/policies/C07.docx",
+  "title": "Probation & Contract Changes",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values."
+  ]
+}

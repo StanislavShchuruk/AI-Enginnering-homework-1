@@ -1,0 +1,10 @@
+# Hash-validated artifacts must retain authored bytes across Windows/Linux clones.
+evals/*.json text eol=crlf
+evals/*.csv text eol=crlf
+docs/prompts/*.txt text eol=lf
+data/manifest.json text eol=crlf
+data/documents/**/*.html text eol=crlf
+data/documents/**/*.md text eol=crlf
+data/documents/**/*.pdf binary
+data/documents/**/*.docx binary
+results/*.json text eol=crlf

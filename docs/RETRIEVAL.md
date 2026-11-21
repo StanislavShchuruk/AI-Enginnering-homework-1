@@ -147,8 +147,8 @@ payloads are in the git-ignored index directory as `public-smoke.json` and
 ## Offline verification
 
 ```powershell
-python -m pytest -q tests/test_retrieval.py --basetemp=.pytest_tmp_task4_verify
-python -m pytest -q --basetemp=.pytest_tmp_task4_all
+python -m pytest -q tests/test_retrieval.py
+python -m pytest -q
 ```
 
 The tests mock embeddings and HTTP; they make no live API calls. Real persistent

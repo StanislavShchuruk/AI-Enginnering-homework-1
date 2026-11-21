@@ -70,6 +70,8 @@ def project(tmp_path: Path) -> Path:
 
 def test_defaults_do_not_load_secrets() -> None:
     with patch.dict("os.environ", {}, clear=True), patch("ai_project.config.load_dotenv") as loader:
+        # Even a loader that would inject hosted settings must never run for Ollama.
+        loader.side_effect = AssertionError("Ollama must use process environment only")
         settings = Settings.ollama_from_env()
     loader.assert_not_called()
     assert settings.provider == "ollama" and settings.model == "qwen3:8b"

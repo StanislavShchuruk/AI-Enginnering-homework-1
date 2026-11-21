@@ -1,0 +1,424 @@
+{
+  "blocks": [
+    {
+      "heading_level": 1,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          51.259986877441406,
+          399.7819519042969,
+          81.55398559570312
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1"
+      ],
+      "text": "Attendance Correction Guide v1",
+      "type": "heading"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          90.88998413085938,
+          164.02499389648438,
+          108.79098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Historical scope"
+      ],
+      "text": "Historical scope",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          114.01248931884766,
+          525.2432250976562,
+          157.43948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Historical scope"
+      ],
+      "text": "This procedure applied from 2026-03-01 through 2026-08-31. For actions taken from 2026-09-01, use Attendance Correction Guide v2. Retain this edition with completed manager adjustments. In v1.8 employees could see attendance events but could not submit a correction request themselves.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          169.38998413085938,
+          245.63900756835938,
+          187.29098510742188
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Manager-mediated correction"
+      ],
+      "text": "Manager-mediated correction",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          192.51248168945312,
+          456.67822265625,
+          206.93948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "1.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Manager-mediated correction"
+      ],
+      "text": "The employee checked My time > Attendance and identified the affected workday.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          215.01248168945312,
+          515.9087524414062,
+          243.93948364257812
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "2.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Manager-mediated correction"
+      ],
+      "text": "The employee sent the manager the original event times, proposed times, and a factual reason through the internal attendance channel.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          252.01248168945312,
+          511.57232666015625,
+          280.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "3.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Manager-mediated correction"
+      ],
+      "text": "The manager opened Team > Attendance, selected the employee and date, and chose Adjust record.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          289.0124816894531,
+          515.0057983398438,
+          317.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "4.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Manager-mediated correction"
+      ],
+      "text": "The manager entered the replacement values, recorded the employee's reason, and saved the adjustment.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": 0,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          326.0124816894531,
+          510.0497131347656,
+          354.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": "5.",
+      "ordered": true,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Manager-mediated correction"
+      ],
+      "text": "The employee reopened the timeline after the next five-minute calculation cycle to confirm the result.",
+      "type": "list_item"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          363.0124816894531,
+          527.5953369140625,
+          420.9394836425781
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Manager-mediated correction"
+      ],
+      "text": "There was no employee Submit correction button and no employee correction-request status page. An email or chat message to the manager did not itself change the attendance ledger. The manager was responsible for checking the roster and retaining the explanation in the adjustment note. Manager adjustment history stored both previous and replacement timestamps.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          432.8899841308594,
+          160.41098022460938,
+          450.7909851074219
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Historical limits"
+      ],
+      "text": "Historical limits",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          456.0124816894531,
+          531.8402709960938,
+          528.4395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Historical limits"
+      ],
+      "text": "Managers could adjust unlocked records within 30 calendar days of the workday. Older records or a locked payroll period required HR Payroll intervention. The same event-order rule applied: clock-in precedes breaks and clock-out, and unpaid breaks must remain within the work interval. ATT-LOCK meant the period was locked; ATT-422 meant the proposed timeline was invalid. Saving a note alone did not clear either condition.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": 2,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          540.3900146484375,
+          197.25299072265625,
+          558.291015625
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Reading old evidence"
+      ],
+      "text": "Reading old evidence",
+      "type": "heading"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": true,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          63.599998474121094,
+          563.5125122070312,
+          515.3102416992188,
+          650.4395141601562
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [
+        "Attendance Correction Guide v1",
+        "Reading old evidence"
+      ],
+      "text": "A historical adjustment marked Completed means the manager directly saved the replacement values; it does not prove an employee self-service request existed. When investigating an August record after the September upgrade, use the audit event's creation date to identify the original workflow. New corrections, including requests concerning an old date, now use Attendance Correction Guide v2 and may still require HR for the locked period. Do not recreate old manager messages as new approval requests merely to imitate the current interface.",
+      "type": "paragraph"
+    },
+    {
+      "heading_level": null,
+      "is_semantic": false,
+      "list_level": null,
+      "location": {
+        "bbox": [
+          57.599998474121094,
+          804.280029296875,
+          537.8400268554688,
+          815.2720336914062
+        ],
+        "element": null,
+        "line": null,
+        "page": 1,
+        "part": null
+      },
+      "marker": null,
+      "ordered": null,
+      "rows": null,
+      "section_path": [],
+      "text": "PeopleFlow 1",
+      "type": "footer"
+    }
+  ],
+  "content_hash": "f210b4dcd6873c9e2cf01635b89ff3d34ba6faf2faf218ae4b78a6e73c791ea3",
+  "document_id": "M06",
+  "excluded_as_duplicate_of": null,
+  "format": "pdf",
+  "metadata": {
+    "access_group": "all_employees",
+    "category": "manuals",
+    "contains_synthetic_pii": false,
+    "document_id": "M06",
+    "effective_date": "2026-03-01",
+    "format": "pdf",
+    "language": "en",
+    "path": "data/documents/manuals/M06.pdf",
+    "status": "superseded",
+    "superseded_by": "M07",
+    "supersedes": null,
+    "title": "Attendance Correction Guide v1",
+    "version": "1.8"
+  },
+  "redaction_counts": {},
+  "sanitization_version": "1.1",
+  "schema_version": "1.1",
+  "source_hash": "1e81de92b02a491b16f2b664ef9a7b4f0a20b17433f0a1f79a39ddd3871f9a2f",
+  "source_path": "data/documents/manuals/M06.pdf",
+  "title": "Attendance Correction Guide v1",
+  "warnings": [
+    "Deterministic redaction is best effort; unrecognized or unlabeled PII may remain.",
+    "Name rules depend on English context and capitalization; configure patterns or values for other languages, naming conventions, and unlabeled names.",
+    "Default address rules target numbered North American street addresses; configure patterns or values for other address formats.",
+    "Phone, employee-ID, bank and medical rules cover common explicit forms, not every identifier or clinical narrative. Indirect identifiers and reidentification are not assessed.",
+    "Sanitization does not change access permissions; authorization is required downstream.",
+    "Short-name references require a previously identified full name, unique ownership, and person-specific context; ambiguous references are retained and reported without values.",
+    "Source extraction warnings exist; inspect restricted inputs."
+  ]
+}
